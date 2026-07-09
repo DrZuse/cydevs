@@ -41,7 +41,7 @@
 
 <div class="split">
   <div>
-    <p>Palma Fiore — комплекс из 56 современных квартир в четырёх корпусах в районе Ливадия, Ларнака. Представлены варианты с 1, 2 и 3 спальнями. Цена от €192 000.</p>
+    <p>Palma Fiore — комплекс из 56 современных квартир в четырёх корпусах в районе Ливадия, Ларнака. Квартиры с 1, 2 и 3 спальнями (77–140 м²), цены от €192 000 до €365 000 (+VAT). Общие удобства: бассейн, тренажёрный зал, паровая баня и сауна. Все квартиры — энергокласс A: двойное остекление, солнечные панели для нагрева воды, подготовка под фотоэлектрические системы.</p>
 
     <h2>Характеристики</h2>
     <div class="table-wrap">
@@ -50,16 +50,16 @@
       <tbody>
       
         <tr><td>apartment</td><td>1</td>
-          <td>—</td><td>—</td>
-          <td><span class="muted">по запросу</span></td></tr>
+          <td>77.0</td><td>—</td>
+          <td>€192 000</td></tr>
       
         <tr><td>apartment</td><td>2</td>
-          <td>—</td><td>—</td>
-          <td><span class="muted">по запросу</span></td></tr>
+          <td>110.0</td><td>—</td>
+          <td>€244 000</td></tr>
       
         <tr><td>apartment</td><td>3</td>
-          <td>—</td><td>—</td>
-          <td><span class="muted">по запросу</span></td></tr>
+          <td>140.0</td><td>—</td>
+          <td>€365 000</td></tr>
       
       </tbody>
     </table>
@@ -68,7 +68,7 @@
     
 
     <h2>Расположение</h2>
-    <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
   </div>
 
@@ -81,7 +81,7 @@
         <dt>Стадия</dt><dd>В продаже · в продаже</dd>
         <dt>Начало стройки</dt><dd>—</dd>
         <dt>Завершение</dt><dd>—</dd>
-        
+        <dt>Адрес</dt><dd>XJ3Q+QX9, Livadia, Larnaca</dd>
       </dl>
     </div>
     <div class="panel" style="margin-top:16px">
@@ -91,16 +91,16 @@
         <span class="chip ">♨ тёплый пол: ?</span>
         <span class="chip">бассейн</span>
         
+        <span class="chip">спортзал</span>
         
-        
-        
-        
+        <span class="chip">энергокласс A</span>
+        <span class="chip">сауна</span><span class="chip">паровая баня</span><span class="chip">солнечные панели для нагрева воды</span><span class="chip">подготовка под фотоэлектрические системы</span><span class="chip">двойное остекление</span><span class="chip">гарантия застройщика 5 лет</span>
       </div>
     </div>
     
     <div class="panel" style="margin-top:16px">
       <h3 style="margin-top:0">Источники</h3>
-      <ul class="linklist small"><li><a href="https://marinakisproperty.com/available-properties/palma-fiore/" target="_blank" rel="noopener">marinakisproperty.com/available-properties/...</a></li></ul>
+      <ul class="linklist small"><li><a href="https://marinakisproperty.com/available-properties/palma-fiore/" target="_blank" rel="noopener">marinakisproperty.com/available-properties/...</a></li><li><a href="https://viewer.mapme.com/66c00918-6b13-4b35-af5c-8934375c9a04/location/b15b7679-b85a-4b6f-9e29-f84ec81f935c" target="_blank" rel="noopener">viewer.mapme.com/66c00918-6b13-4b35-af5c-89...</a></li></ul>
     </div>
   </aside>
 </div>
@@ -118,9 +118,9 @@
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
 
-  var map=L.map('map').setView([34.953,33.628],13);
+  var map=L.map('map').setView([34.9544125,33.6399844],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.circle([34.953,33.628],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Palma Fiore" + ' (примерно)');
+  L.marker([34.9544125,33.6399844]).addTo(map).bindPopup("Palma Fiore");
 
 });
 </script>
