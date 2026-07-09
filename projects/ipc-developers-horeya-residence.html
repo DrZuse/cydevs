@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Horeya Residence · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Horeya Residence</div>
+<h1>Horeya Residence <span class="tag selling">В продаже</span></h1>
+<p class="muted">
+  <a href="../developers/ipc-developers.html">IPC Developers</a> · 
+  Квартиры · Larnaca, Larnaca
+</p>
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="https://www.ipcdevelopers.com/projects/horeya-residence/" target="_blank" rel="noopener">www.ipcdevelopers.com/projects/horeya-residence/</a>
+</div>
+
+
+<div class="split">
+  <div>
+    <p>Horeya Residence — комплекс из двух корпусов в самом центре Ларнаки, в шаговой доступности от моря (около 500 м) и новой Марины Ларнаки. В одном корпусе только 2-спальные апартаменты, во втором — 1- и 3-спальные апартаменты и пентхаусы с видом на море и Марину. Рядом расположены American Academy, Med High English School и новый Американский университет, вся городская инфраструктура — в пешей доступности. Здание сдано в эксплуатацию в октябре 2024 года, часть юнитов ещё в продаже (данные по ценам актуальны на январь 2026). Класс энергоэффективности А, предусмотрены фотоэлектрические панели (на пентхаусах), система «умный дом», оптоволоконный интернет и подготовка для зарядки электромобиля.</p>
+
+    <h2>Характеристики</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <tbody>
+      
+        <tr><td>apartment</td><td>1</td>
+          <td>50</td><td>—</td>
+          <td>€170 000</td></tr>
+      
+        <tr><td>apartment</td><td>2</td>
+          <td>—</td><td>—</td>
+          <td><span class="muted">по запросу</span></td></tr>
+      
+        <tr><td>apartment</td><td>3</td>
+          <td>94</td><td>—</td>
+          <td>€260 000</td></tr>
+      
+        <tr><td>apartment</td><td>3</td>
+          <td>115</td><td>—</td>
+          <td>€315 000</td></tr>
+      
+        <tr><td>penthouse</td><td>3</td>
+          <td>115</td><td>—</td>
+          <td>€375 000</td></tr>
+      
+      </tbody>
+    </table>
+    </div>
+
+    
+
+    <h2>Расположение</h2>
+    
+    <div id="map"></div>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>€170 000 – €375 000</dd>
+        <dt>Тип недвижимости</dt><dd>Квартиры</dd>
+        <dt>Стадия</dt><dd>В продаже · сдан в эксплуатацию (10/2024), продажа оставшихся юнитов</dd>
+        <dt>Начало стройки</dt><dd>—</dd>
+        <dt>Завершение</dt><dd>2024-10</dd>
+        <dt>Адрес</dt><dd>Larnaca city centre, near the New Marina</dd>
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      <div class="row">
+        <span class="chip on">☀ фотовольтаика: да</span>
+        <span class="chip ">♨ тёплый пол: ?</span>
+        
+        <span class="chip">паркинг</span>
+        
+        <span class="chip">умный дом</span>
+        <span class="chip">энергокласс A</span>
+        <span class="chip">оптоволоконный интернет</span><span class="chip">подготовка под зарядку электромобиля</span><span class="chip">система очистки воды</span>
+      </div>
+    </div>
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small"><li><a href="https://www.ipcdevelopers.com/projects/horeya-residence/" target="_blank" rel="noopener">www.ipcdevelopers.com/projects/horeya-residence/</a></li><li><a href="https://www.ipc-international.com/ipc-developments/horeya-residence/" target="_blank" rel="noopener">www.ipc-international.com/ipc-developments/...</a></li><li><a href="https://dom.com.cy/en/live/complexes/complex-larnaca/horeya-residence/" target="_blank" rel="noopener">dom.com.cy/en/live/complexes/complex-larnac...</a></li><li><a href="https://index.cy/complex/horeya-residence/" target="_blank" rel="noopener">index.cy/complex/horeya-residence/</a></li></ul>
+    </div>
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-09. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([34.925578,33.629585],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([34.925578,33.629585]).addTo(map).bindPopup("Horeya Residence");
+
+});
+</script>
+
+
+</body>
+</html>

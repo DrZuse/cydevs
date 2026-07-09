@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunset View Villas · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Sunset View Villas</div>
+<h1>Sunset View Villas <span class="tag under_construction">Строится</span></h1>
+<p class="muted">
+  <a href="../developers/korantina.html">Korantina Homes</a> · 
+  Виллы · Paphos, Peyia (Sea Caves / Coral Bay)
+</p>
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="https://korantinahomes.com/projects/sunset-view-villas/" target="_blank" rel="noopener">korantinahomes.com/projects/sunset-view-villas/</a>
+</div>
+
+
+<div class="split">
+  <div>
+    <p>Проект из 26 просторных вилл, каждая с частным бассейном, в одном из красивейших районов острова — рядом с Sea Caves и оживлённым Coral Bay, в 5 минутах ходьбы от флагманского курорта Cap St Georges Hotel &amp; Resort. Резиденты получают эксклюзивный доступ к инфраструктуре курорта: клубный дом с консьержем, спа, рестораны высокой кухни, спортивные объекты, частные пляжи. Планировки: виллы 3 и 6 спален, покрытая площадь 194–363 м², участки 240–1 163 м². Продажи ведутся off-plan, объект строится.</p>
+
+    <h2>Характеристики</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <tbody>
+      
+        <tr><td>villa</td><td>3</td>
+          <td>194.0</td><td>—</td>
+          <td>€1 100 000</td></tr>
+      
+        <tr><td>villa</td><td>6</td>
+          <td>363.0</td><td>—</td>
+          <td><span class="muted">до ~€2,800,000 +НДС; покрытая площадь до 363 м², участок до 1163 м²</span></td></tr>
+      
+      </tbody>
+    </table>
+    </div>
+
+    
+
+    <h2>Расположение</h2>
+    <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    <div id="map"></div>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>€1 100 000 – €2 800 000</dd>
+        <dt>Тип недвижимости</dt><dd>Виллы</dd>
+        <dt>Стадия</dt><dd>Строится · off-plan, строится</dd>
+        <dt>Начало стройки</dt><dd>—</dd>
+        <dt>Завершение</dt><dd>—</dd>
+        <dt>Адрес</dt><dd>Sea Caves, Пейя, Пафос</dd>
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      <div class="row">
+        <span class="chip ">☀ фотовольтаика: ?</span>
+        <span class="chip ">♨ тёплый пол: ?</span>
+        <span class="chip">бассейн</span>
+        <span class="chip">паркинг</span>
+        
+        
+        
+        <span class="chip">частный бассейн</span><span class="chip">доступ к инфраструктуре Cap St Georges</span><span class="chip">клубный дом с консьержем</span><span class="chip">спа</span><span class="chip">рестораны</span><span class="chip">спортивные объекты</span><span class="chip">частные пляжи</span>
+      </div>
+    </div>
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small"><li><a href="https://korantinahomes.com/projects/sunset-view-villas/" target="_blank" rel="noopener">korantinahomes.com/projects/sunset-view-villas/</a></li><li><a href="https://cyprus-real.estate/property/sunset-view-villas-22339/" target="_blank" rel="noopener">cyprus-real.estate/property/sunset-view-vil...</a></li></ul>
+    </div>
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-09. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([34.8863887,32.3325108],13);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.circle([34.8863887,32.3325108],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Sunset View Villas" + ' (примерно)');
+
+});
+</script>
+
+
+</body>
+</html>

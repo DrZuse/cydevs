@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Avenue 12 · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Avenue 12</div>
+<h1>Avenue 12 <span class="tag under_construction">Строится</span></h1>
+<p class="muted">
+  <a href="../developers/admare.html">Admare Property</a> · 
+  Квартиры · Limassol, Potamos Germasogeia
+</p>
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="https://admareproperty.com/avenue12" target="_blank" rel="noopener">admareproperty.com/avenue12</a>
+</div>
+
+
+<div class="split">
+  <div>
+    <p>Avenue 12 — современный жилой комплекс из 17 апартаментов в 250-300 метрах от пляжа и парка Дасуди в районе Потамос Гермасойя. Новая очередь ранее реализованного проекта Avenue того же застройщика. Планировки включают одно-, двух- и трёхспальные апартаменты, на верхнем этаже расположены пентхаусы с собственным бассейном. Апартаменты сдаются с полной чистовой отделкой: встроенные шкафы в спальнях, высокие потолки, современная кухня, тёплые полы, оборудованные ванные комнаты. Предусмотрен крытый паркинг и контролируемый вход на охраняемую территорию.</p>
+
+    <h2>Характеристики</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <tbody>
+      
+        <tr><td>apartment</td><td>1</td>
+          <td>74</td><td>—</td>
+          <td>€290 000</td></tr>
+      
+        <tr><td>apartment</td><td>2</td>
+          <td>108</td><td>—</td>
+          <td>€550 000</td></tr>
+      
+        <tr><td>penthouse</td><td>3</td>
+          <td>221.9</td><td>верхний</td>
+          <td><span class="muted">по запросу, с собственным бассейном</span></td></tr>
+      
+      </tbody>
+    </table>
+    </div>
+
+    
+
+    <h2>Расположение</h2>
+    
+    <div id="map"></div>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>€290 000 – €550 000</dd>
+        <dt>Тип недвижимости</dt><dd>Квартиры</dd>
+        <dt>Стадия</dt><dd>Строится</dd>
+        <dt>Начало стройки</dt><dd>—</dd>
+        <dt>Завершение</dt><dd>—</dd>
+        
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      <div class="row">
+        <span class="chip ">☀ фотовольтаика: ?</span>
+        <span class="chip on">♨ тёплый пол: да</span>
+        <span class="chip">бассейн</span>
+        <span class="chip">паркинг</span>
+        
+        
+        
+        <span class="chip">встроенные шкафы</span><span class="chip">высокие потолки</span><span class="chip">контролируемый вход на территорию</span>
+      </div>
+    </div>
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small"><li><a href="https://admareproperty.com/avenue12" target="_blank" rel="noopener">admareproperty.com/avenue12</a></li><li><a href="https://estateofcyprus.com/new-buildings/avenue-12-limassol/" target="_blank" rel="noopener">estateofcyprus.com/new-buildings/avenue-12-...</a></li><li><a href="https://resortec-property.com/avenue-12.html" target="_blank" rel="noopener">resortec-property.com/avenue-12.html</a></li><li><a href="https://realting.com/property-for-sale/cyprus/admare-property/1152373" target="_blank" rel="noopener">realting.com/property-for-sale/cyprus/admar...</a></li></ul>
+    </div>
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-09. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([34.6967,33.08224],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([34.6967,33.08224]).addTo(map).bindPopup("Avenue 12");
+
+});
+</script>
+
+
+</body>
+</html>

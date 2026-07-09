@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ararat Grand Residences · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Ararat Grand Residences</div>
+<h1>Ararat Grand Residences <span class="tag under_construction">Строится</span></h1>
+<p class="muted">
+  <a href="../developers/cyprus-developers-alliance.html">Cyprus Developers Alliance (CDA Group)</a> · 
+  Жилой комплекс · Limassol, Agios Tychonas / Amathounta (Parekklisia)
+</p>
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="https://cyprus-alliance.com/property-for-sale/project/a100" target="_blank" rel="noopener">cyprus-alliance.com/property-for-sale/project/a100</a>
+</div>
+
+
+<div class="split">
+  <div>
+    <p>Ararat Grand Residences — элитный клубный жилой комплекс на 24 этажа, расположенный прямо на набережной в одном из самых престижных районов Лимасола, Амафунде, на участке площадью около 8000 кв.м. Здание в стиле ар-деко облицовано натуральным полированным травертином и слоновой мраморной плиткой. Комплекс включает всего 17 резиденций: 16 роскошных апартаментов и пятиуровневый пентхаус на 8 спален. Вид на море открывается с любого этажа, а с верхних этажей открывается панорама на Лимасол, море и горы Троодос. На территории комплекса — полу-олимпийский мозаичный бассейн 25х10 м, теннисный корт, парк, детская площадка, спа, сауна, хаммам, массажный кабинет, крытый бассейн в стиле грота, сигарная комната, VIP-бар для членов клуба, винный погреб и ювелирный бутик. На момент последней проверки завершены земляные и фундаментные работы, каркас здания возведён до 21 этажа, кладка и облицовка выполнены до 17 этажа включительно.</p>
+
+    <h2>Характеристики</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <tbody>
+      
+        <tr><td>apartment</td><td>—</td>
+          <td>—</td><td>—</td>
+          <td><span class="muted">по запросу</span></td></tr>
+      
+        <tr><td>apartment</td><td>8</td>
+          <td>—</td><td>—</td>
+          <td><span class="muted">пентхаус на 5 уровней, по запросу</span></td></tr>
+      
+      </tbody>
+    </table>
+    </div>
+
+    
+
+    <h2>Расположение</h2>
+    
+    <div id="map"></div>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>по запросу</dd>
+        <dt>Тип недвижимости</dt><dd>Жилой комплекс</dd>
+        <dt>Стадия</dt><dd>Строится · Каркас здания возведён до 21 этажа, кладка и облицовка выполнены до 17 этажа включительно (по состоянию на данные из открытых источников)</dd>
+        <dt>Начало стройки</dt><dd>—</dd>
+        <dt>Завершение</dt><dd>—</dd>
+        <dt>Адрес</dt><dd>Seafront Avenue, Amathounta area, near St Raphael Hotel and marina, Limassol</dd>
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      <div class="row">
+        <span class="chip ">☀ фотовольтаика: ?</span>
+        <span class="chip ">♨ тёплый пол: ?</span>
+        <span class="chip">бассейн</span>
+        
+        <span class="chip">спортзал</span>
+        
+        
+        <span class="chip">спа</span><span class="chip">сауна</span><span class="chip">хаммам</span><span class="chip">массажный кабинет</span><span class="chip">теннисный корт</span><span class="chip">детская площадка</span><span class="chip">сигарная комната</span><span class="chip">винный погреб</span><span class="chip">ювелирный бутик</span><span class="chip">VIP-бар</span><span class="chip">рестораны</span>
+      </div>
+    </div>
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small"><li><a href="https://cyprus-alliance.com/property-for-sale/project/a100" target="_blank" rel="noopener">cyprus-alliance.com/property-for-sale/project/a100</a></li><li><a href="https://dom.com.cy/en/live/complexes/towers-limassol/ararat-grand-residences/" target="_blank" rel="noopener">dom.com.cy/en/live/complexes/towers-limasso...</a></li><li><a href="https://cyprus-alliance.com/news/ararat-grand-residences-height-luxury" target="_blank" rel="noopener">cyprus-alliance.com/news/ararat-grand-resid...</a></li><li><a href="https://estateofcyprus.com/new-buildings/ararat-grand-residences-limassol/" target="_blank" rel="noopener">estateofcyprus.com/new-buildings/ararat-gra...</a></li><li><a href="https://cyprus-real.estate/property/a100-ararat-grand-residences-8931/" target="_blank" rel="noopener">cyprus-real.estate/property/a100-ararat-gra...</a></li><li><a href="https://dom.com.cy/en/live/digest/the-ararat-grand-residences-skyscraper-is-rapidly-growing-skyward/" target="_blank" rel="noopener">dom.com.cy/en/live/digest/the-ararat-grand-...</a></li><li><a href="https://anisad.com/project/33-cyprus-developers-alliance-ararat-grand-residences" target="_blank" rel="noopener">anisad.com/project/33-cyprus-developers-all...</a></li></ul>
+    </div>
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-09. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([34.71483,33.16071],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([34.71483,33.16071]).addTo(map).bindPopup("Ararat Grand Residences");
+
+});
+</script>
+
+
+</body>
+</html>

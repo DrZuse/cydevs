@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YOO Limassol Inspired by Starck · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / YOO Limassol Inspired by Starck</div>
+<h1>YOO Limassol Inspired by Starck <span class="tag under_construction">Строится</span></h1>
+<p class="muted">
+  <a href="../developers/property-gallery.html">Property Gallery Developers</a> · 
+  Жилой комплекс · Limassol, Limassol seafront (near Amathus/Pyrgos)
+</p>
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="https://cypruspropertygallery.com/yoo-limassol-apartments-en" target="_blank" rel="noopener">cypruspropertygallery.com/yoo-limassol-apartments-en</a>
+</div>
+
+
+<div class="split">
+  <div>
+    <p>YOO Limassol — первый на Кипре брендированный жилой проект, созданный в партнёрстве Property Gallery Developers и всемирно известного французского дизайнера Филиппа Старка (студия YOO Inspired by Starck) совместно с YOO Global и Sarels EPCM Ltd. Комплекс расположен на первой линии моря в Лимассоле и по мастер-плану включает семь жилых корпусов с эксклюзивными апартаментами и виллами у моря, объединёнными в единую резортную инфраструктуру. Проект позиционируется как «город в городе» с расширенным сервисом для резидентов (консьерж, клубные пространства, зоны отдыха). Осенью 2025 года на площадке открыт офис продаж (Sales Suite) при участии руководства YOO Global. Строительство ведётся поэтапно: корпуса G и F вместе с инфраструктурой первой фазы должны быть завершены к сентябрю 2026 года, корпуса C, E и B — в течение 2027 года, а сдача всех жилых корпусов вместе с первыми 40 виллами у моря запланирована на начало 2028 года.</p>
+
+    <h2>Характеристики</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <tbody>
+      
+        <tr><td>apartment</td><td>—</td>
+          <td>—</td><td>—</td>
+          <td><span class="muted">цена по запросу; во внешних источниках упоминаются стартовые цены от $690 000, точность не подтверждена</span></td></tr>
+      
+        <tr><td>villa</td><td>—</td>
+          <td>—</td><td>—</td>
+          <td><span class="muted">цена по запросу</span></td></tr>
+      
+      </tbody>
+    </table>
+    </div>
+
+    
+
+    <h2>Расположение</h2>
+    
+    <div id="map"></div>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>по запросу</dd>
+        <dt>Тип недвижимости</dt><dd>Жилой комплекс</dd>
+        <dt>Стадия</dt><dd>Строится · активное строительство; корпуса G, F и инфраструктура 1-й фазы — к сентябрю 2026, корпуса C, E, B — в течение 2027, полная сдача с первыми 40 виллами — к началу 2028</dd>
+        <dt>Начало стройки</dt><dd>2023</dd>
+        <dt>Завершение</dt><dd>2028</dd>
+        
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      <div class="row">
+        <span class="chip ">☀ фотовольтаика: ?</span>
+        <span class="chip ">♨ тёплый пол: ?</span>
+        <span class="chip">бассейн</span>
+        
+        
+        
+        
+        <span class="chip">дизайн Филиппа Старка (YOO Inspired by Starck)</span><span class="chip">первая линия моря</span><span class="chip">консьерж-сервис</span><span class="chip">резортная инфраструктура</span>
+      </div>
+    </div>
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small"><li><a href="https://cypruspropertygallery.com/yoo-limassol-apartments-en" target="_blank" rel="noopener">cypruspropertygallery.com/yoo-limassol-apar...</a></li><li><a href="https://cypruspropertygallery.com/yoo-limassol-in-active-construction-phase" target="_blank" rel="noopener">cypruspropertygallery.com/yoo-limassol-in-a...</a></li><li><a href="https://yoolimassol.com/news/yoo-inspired-by-starck-teams-up-with-property-gallery-for-exclusive-limassol-beachside-residences" target="_blank" rel="noopener">yoolimassol.com/news/yoo-inspired-by-starck...</a></li><li><a href="https://cyprustimes.com/cyprus-daily/yoo-limassol-inspired-by-starck-is-entering-its-second-phase-of-construction/" target="_blank" rel="noopener">cyprustimes.com/cyprus-daily/yoo-limassol-i...</a></li><li><a href="https://luxurylifestyleawards.com/winners/branded-residences/property-gallery-developers-and-constructors-ltd-yoo-limassol" target="_blank" rel="noopener">luxurylifestyleawards.com/winners/branded-r...</a></li></ul>
+    </div>
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-09. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([34.710493,33.19072],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([34.710493,33.19072]).addTo(map).bindPopup("YOO Limassol Inspired by Starck");
+
+});
+</script>
+
+
+</body>
+</html>

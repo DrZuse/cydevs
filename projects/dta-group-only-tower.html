@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ONLY Tower (ONLY Boutique Suites &amp; Residences) · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / ONLY Tower (ONLY Boutique Suites &amp; Residences)</div>
+<h1>ONLY Tower (ONLY Boutique Suites &amp; Residences) <span class="tag under_construction">Строится</span></h1>
+<p class="muted">
+  <a href="../developers/dta-group.html">DTA Group</a> · 
+  Смешанный · Limassol, Potamos Germasogeias (tourist area)
+</p>
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="https://dtagroup.com/projects/only-boutique-suites-residences/" target="_blank" rel="noopener">dtagroup.com/projects/only-boutique-suites-residences/</a>
+</div>
+
+
+<div class="split">
+  <div>
+    <p>ONLY Tower — знаковая высотная башня со смешанным назначением на прибрежной дороге туристической зоны Гермасогейя, в пешей доступности от песчаных пляжей. Проект объединяет жилые апартаменты и офисные помещения в одном современном здании закрытого типа (gated). Предлагаются апартаменты с 2 и 3 спальнями, включая двухуровневые лофты (double-height loft) с 3 спальнями и собственными крышными садами. Комплекс расположен рядом с кафе, ресторанами, бутиками, банками, пятизвёздочными отелями, школами и медицинскими учреждениями. На момент проверки из 46 апартаментов оставалось всего 4 непроданных.</p>
+
+    <h2>Характеристики</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <tbody>
+      
+        <tr><td>apartment</td><td>2</td>
+          <td>—</td><td>—</td>
+          <td><span class="muted">по запросу</span></td></tr>
+      
+        <tr><td>apartment</td><td>3</td>
+          <td>—</td><td>—</td>
+          <td><span class="muted">по запросу; в т.ч. двухуровневые лофты с крышным садом</span></td></tr>
+      
+      </tbody>
+    </table>
+    </div>
+
+    
+
+    <h2>Расположение</h2>
+    
+    <div id="map"></div>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>по запросу</dd>
+        <dt>Тип недвижимости</dt><dd>Смешанный</dd>
+        <dt>Стадия</dt><dd>Строится · строительство, продано 42 из 46 апартаментов</dd>
+        <dt>Начало стройки</dt><dd>—</dd>
+        <dt>Завершение</dt><dd>—</dd>
+        <dt>Адрес</dt><dd>8 Alyos Street, Potamos Germasogeias, 4046, Limassol</dd>
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      <div class="row">
+        <span class="chip ">☀ фотовольтаика: ?</span>
+        <span class="chip ">♨ тёплый пол: ?</span>
+        
+        <span class="chip">паркинг</span>
+        
+        
+        
+        <span class="chip">закрытая территория (gated)</span><span class="chip">офисные помещения</span><span class="chip">крышные сады у лофтов</span><span class="chip">центральное расположение в туристической зоне</span>
+      </div>
+    </div>
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small"><li><a href="https://dtagroup.com/projects/only-boutique-suites-residences/" target="_blank" rel="noopener">dtagroup.com/projects/only-boutique-suites-...</a></li><li><a href="https://www.facebook.com/DTACyprus/videos/check-out-our-latest-video-on-the-progress-of-our-luxurious-only-tower/974534603043984/" target="_blank" rel="noopener">www.facebook.com/DTACyprus/videos/check-out...</a></li><li><a href="https://dtabooking.com/only-boutique-suites-residences/" target="_blank" rel="noopener">dtabooking.com/only-boutique-suites-residences/</a></li></ul>
+    </div>
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-09. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([34.696165,33.090017],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([34.696165,33.090017]).addTo(map).bindPopup("ONLY Tower (ONLY Boutique Suites \u0026 Residences)");
+
+});
+</script>
+
+
+</body>
+</html>

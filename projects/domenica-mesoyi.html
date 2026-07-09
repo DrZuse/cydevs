@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mesoyi Residences (Mesogi Residence 8) · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Mesoyi Residences (Mesogi Residence 8)</div>
+<h1>Mesoyi Residences (Mesogi Residence 8) <span class="tag under_construction">Строится</span></h1>
+<p class="muted">
+  <a href="../developers/domenica.html">Domenica Group</a> · 
+  Виллы · Paphos, Mesoyi
+</p>
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="https://domenicagroup.com/portfolio/mesogi-residence-8/" target="_blank" rel="noopener">domenicagroup.com/portfolio/mesogi-residence-8/</a>
+</div>
+
+
+<div class="split">
+  <div>
+    <p>Mesoyi Residences (на сайте застройщика — Mesogi Residence 8) — масштабный проект в спокойной сельской местности деревни Месойи (Mesoyi/Mesogi), раскинувшийся на территории более 35 000 м². Развитие сочетает уединение природы с близостью к современной городской инфраструктуре Пафоса. Проект предлагает большой выбор вилл с 3–6 спальнями площадью 120–219 м², с опциональной просторной крышной террасой с баром. Дома оснащены закрытым въездом, солнечными панелями, BBQ-зоной, системой сигнализации/домофоном и подготовкой под зарядку электромобиля. Проект находится в стадии строительства.</p>
+
+    <h2>Характеристики</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <tbody>
+      
+        <tr><td>villa</td><td>3</td>
+          <td>191</td><td>—</td>
+          <td>€445 000</td></tr>
+      
+        <tr><td>villa</td><td>4</td>
+          <td>219</td><td>—</td>
+          <td><span class="muted">виллы 3–6 спален, 120–219 м², от €395,000</span></td></tr>
+      
+      </tbody>
+    </table>
+    </div>
+
+    
+
+    <h2>Расположение</h2>
+    
+    <div id="map"></div>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>€395 000 – €445 000</dd>
+        <dt>Тип недвижимости</dt><dd>Виллы</dd>
+        <dt>Стадия</dt><dd>Строится · строится</dd>
+        <dt>Начало стройки</dt><dd>—</dd>
+        <dt>Завершение</dt><dd>—</dd>
+        
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      <div class="row">
+        <span class="chip on">☀ фотовольтаика: да</span>
+        <span class="chip ">♨ тёплый пол: ?</span>
+        
+        <span class="chip">паркинг</span>
+        
+        
+        
+        <span class="chip">закрытый въезд (gated)</span><span class="chip">солнечные панели</span><span class="chip">BBQ-зона</span><span class="chip">сигнализация/домофон</span><span class="chip">подготовка под зарядку электромобиля</span><span class="chip">опциональная крышная терраса с баром</span>
+      </div>
+    </div>
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small"><li><a href="https://domenicagroup.com/portfolio/mesogi-residence-8/" target="_blank" rel="noopener">domenicagroup.com/portfolio/mesogi-residence-8/</a></li><li><a href="https://dom.com.cy/en/live/complexes/luxury-complex-paphos/mesoyi-residences/" target="_blank" rel="noopener">dom.com.cy/en/live/complexes/luxury-complex...</a></li></ul>
+    </div>
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-09. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([34.804089,32.443269],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([34.804089,32.443269]).addTo(map).bindPopup("Mesoyi Residences (Mesogi Residence 8)");
+
+});
+</script>
+
+
+</body>
+</html>

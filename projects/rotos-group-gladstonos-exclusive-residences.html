@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Coeo Gladstonos Exclusive Residences · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Coeo Gladstonos Exclusive Residences</div>
+<h1>Coeo Gladstonos Exclusive Residences <span class="tag under_construction">Строится</span></h1>
+<p class="muted">
+  <a href="../developers/rotos-group.html">Rotos Group</a> · 
+  Смешанный · Nicosia, Gladstonos / Pedieos river, city centre
+</p>
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="https://rotosgroup.com/gladstonos-exclusive-residences/" target="_blank" rel="noopener">rotosgroup.com/gladstonos-exclusive-residences/</a>
+</div>
+
+
+<div class="split">
+  <div>
+    <p>Coeo Gladstonos Exclusive Residences — эксклюзивный жилой комплекс премиум-класса в самом центре Никосии, на улице Гладстонос, вдоль реки Педиэос и рядом с линейным парком города. Комплекс включает 26 резиденций: 3- и 4-спальные апартаменты площадью от 155 до 310 м² и роскошные 2-этажные виллы с приватными бассейнами, террасами и садами. Стоимость проекта оценивается в 40 млн евро. Все резиденции получат класс энергоэффективности A и оснащаются индивидуальными фотоэлектрическими (солнечными) системами, а также технологиями умного дома для управления кондиционированием, освещением, wi-fi, домашним кинотеатром и музыкой. На территории предусмотрены сауна, спортзал, детская площадка и круглосуточный консьерж-сервис. Строительство было начато около 2021 года, проект официально представлен публике в 2023 году.</p>
+
+    <h2>Характеристики</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <tbody>
+      
+        <tr><td>apartment</td><td>3</td>
+          <td>155</td><td>—</td>
+          <td><span class="muted">по запросу</span></td></tr>
+      
+        <tr><td>apartment</td><td>4</td>
+          <td>310</td><td>—</td>
+          <td><span class="muted">по запросу</span></td></tr>
+      
+        <tr><td>villa</td><td>—</td>
+          <td>—</td><td>2-storey</td>
+          <td><span class="muted">вилла с приватным бассейном, по запросу</span></td></tr>
+      
+      </tbody>
+    </table>
+    </div>
+
+    
+
+    <h2>Расположение</h2>
+    
+    <div id="map"></div>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>по запросу</dd>
+        <dt>Тип недвижимости</dt><dd>Смешанный</dd>
+        <dt>Стадия</dt><dd>Строится · строительство начато, проект публично представлен в 2023 году</dd>
+        <dt>Начало стройки</dt><dd>2021</dd>
+        <dt>Завершение</dt><dd>—</dd>
+        <dt>Адрес</dt><dd>Gladstonos Street, Nicosia</dd>
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      <div class="row">
+        <span class="chip on">☀ фотовольтаика: да</span>
+        <span class="chip ">♨ тёплый пол: ?</span>
+        <span class="chip">бассейн</span>
+        
+        <span class="chip">спортзал</span>
+        <span class="chip">умный дом</span>
+        <span class="chip">энергокласс A</span>
+        <span class="chip">сауна</span><span class="chip">детская площадка</span><span class="chip">консьерж</span><span class="chip">линейный парк рядом</span><span class="chip">виллы с приватными садами и террасами</span>
+      </div>
+    </div>
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small"><li><a href="https://rotosgroup.com/gladstonos-exclusive-residences/" target="_blank" rel="noopener">rotosgroup.com/gladstonos-exclusive-residences/</a></li><li><a href="https://www.cbn.com.cy/article/2023/10/25/739124/coeo-gladstonos-exclusive-residences-high-end-luxury-in-the-heart-of-nicosia/" target="_blank" rel="noopener">www.cbn.com.cy/article/2023/10/25/739124/co...</a></li><li><a href="https://www.cbn.com.cy/article/2023/9/18/732672/an-exclusive-introduction-to-the-coeo-gladstonos-exclusive-residences-by-rotos-group/" target="_blank" rel="noopener">www.cbn.com.cy/article/2023/9/18/732672/an-...</a></li><li><a href="https://dom.com.cy/en/live/digest/construction-of-a-new-elite-complex-has-begun-in-nicosia/" target="_blank" rel="noopener">dom.com.cy/en/live/digest/construction-of-a...</a></li><li><a href="https://dom.com.cy/en/live/complexes/complex-nikosii/coeo-gladstonos-exclusive-residences/" target="_blank" rel="noopener">dom.com.cy/en/live/complexes/complex-nikosi...</a></li><li><a href="https://estateofcyprus.com/the-information-on-the-luxury-development-in-gladstonos/" target="_blank" rel="noopener">estateofcyprus.com/the-information-on-the-l...</a></li></ul>
+    </div>
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-09. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([35.16876,33.34867],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([35.16876,33.34867]).addTo(map).bindPopup("Coeo Gladstonos Exclusive Residences");
+
+});
+</script>
+
+
+</body>
+</html>

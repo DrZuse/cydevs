@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nissi Golden Sands · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Nissi Golden Sands</div>
+<h1>Nissi Golden Sands <span class="tag selling">В продаже</span></h1>
+<p class="muted">
+  <a href="../developers/chacholis-developers.html">A. Chacholis Developers Ltd</a> · 
+  Смешанный · Ayia Napa, Nissi Beach
+</p>
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="http://www.chacholis.com/re_proj_detail.php?id_project=3" target="_blank" rel="noopener">www.chacholis.com/re_proj_detail.php?id_project=3</a>
+</div>
+
+
+<div class="split">
+  <div>
+    <p>Флагманский жилой комплекс Nissi Golden Sands расположен в сердце космополитичной Айя-Напы, всего в нескольких метрах от знаменитого золотого песка пляжа Нисси. Проект сочетает разные форматы жилья: 22 отдельно стоящих дома и 10 таунхаусов (2–4 спальни), каждый с частным садом и парковкой, а также 42 апартамента с 1 и 2 спальнями. Комплекс ориентирован как на постоянное проживание, так и на инвестиции и сдачу в аренду благодаря близости к пляжу и центру курорта. Компания предлагает участие в проекте на этапе строительства (off-plan) на условиях примерно на 20% дешевле розничной цены до момента завершения. Локация обеспечивает пешую доступность к пляжу, ресторанам и развлекательной инфраструктуре Айя-Напы.</p>
+
+    <h2>Характеристики</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <tbody>
+      
+        <tr><td>detached_house</td><td>—</td>
+          <td>—</td><td>—</td>
+          <td><span class="muted">2–4 спальни; цена по запросу</span></td></tr>
+      
+        <tr><td>semi_detached_house</td><td>—</td>
+          <td>—</td><td>—</td>
+          <td><span class="muted">таунхаус, 2–4 спальни; цена по запросу</span></td></tr>
+      
+        <tr><td>apartment</td><td>1</td>
+          <td>—</td><td>—</td>
+          <td><span class="muted">цена по запросу</span></td></tr>
+      
+        <tr><td>apartment</td><td>2</td>
+          <td>—</td><td>—</td>
+          <td><span class="muted">цена по запросу</span></td></tr>
+      
+      </tbody>
+    </table>
+    </div>
+
+    
+
+    <h2>Расположение</h2>
+    <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    <div id="map"></div>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>по запросу</dd>
+        <dt>Тип недвижимости</dt><dd>Смешанный</dd>
+        <dt>Стадия</dt><dd>В продаже</dd>
+        <dt>Начало стройки</dt><dd>—</dd>
+        <dt>Завершение</dt><dd>—</dd>
+        <dt>Адрес</dt><dd>рядом с пляжем Nissi Beach, Ayia Napa</dd>
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      <div class="row">
+        <span class="chip ">☀ фотовольтаика: ?</span>
+        <span class="chip ">♨ тёплый пол: ?</span>
+        
+        <span class="chip">паркинг</span>
+        
+        
+        
+        <span class="chip">частный сад у домов</span><span class="chip">рядом с пляжем Nissi Beach</span>
+      </div>
+    </div>
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small"><li><a href="http://www.chacholis.com/re_proj_detail.php?id_project=3" target="_blank" rel="noopener">www.chacholis.com/re_proj_detail.php?id_project=3</a></li><li><a href="http://www.findglocal.com/CY/Ayia-Napa/508744499244421/Chacholis-Group---A.Chaholis-Developers" target="_blank" rel="noopener">www.findglocal.com/CY/Ayia-Napa/50874449924...</a></li></ul>
+    </div>
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-09. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([34.9874851,33.9678021],13);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.circle([34.9874851,33.9678021],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Nissi Golden Sands" + ' (примерно)');
+
+});
+</script>
+
+
+</body>
+</html>

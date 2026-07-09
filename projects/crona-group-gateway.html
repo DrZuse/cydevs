@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GATEWAY (Residences &amp; Offices) · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / GATEWAY (Residences &amp; Offices)</div>
+<h1>GATEWAY (Residences &amp; Offices) <span class="tag under_construction">Строится</span></h1>
+<p class="muted">
+  <a href="../developers/crona-group.html">Crona Group</a> · 
+  Смешанный · Limassol, Mesa Geitonia
+</p>
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="https://www.cronagroup.com/projects/gateway" target="_blank" rel="noopener">www.cronagroup.com/projects/gateway</a>
+</div>
+
+
+<div class="split">
+  <div>
+    <p>Gateway — многофункциональный проект в районе Меса Гитония, примерно в 2 км от моря, на въезде в деловой центр Лимасола. Комплекс объединяет жилую часть Gateway Residences (16 квартир площадью от 73 до 140,2 м²) и коммерческую часть Gateway Offices (4-этажное здание с 5 современными офисами, каждый на отдельном этаже). Жилые юниты комплектуются встроенной кухней и шкафами, крытой верандой, лифтом и охраняемым паркингом, для резидентов доступны общий бассейн и озеленённая территория. Инвестиционную привлекательность проекта обеспечивают удачное расположение и наличие собственного офисного центра в составе комплекса. Строительство продолжается, ожидаемый срок завершения — 2027 год.</p>
+
+    <h2>Характеристики</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <tbody>
+      
+        <tr><td>apartment</td><td>—</td>
+          <td>73.0</td><td>—</td>
+          <td>€299 300</td></tr>
+      
+        <tr><td>apartment</td><td>—</td>
+          <td>74.5</td><td>—</td>
+          <td>€316 480</td></tr>
+      
+        <tr><td>apartment</td><td>—</td>
+          <td>140.2</td><td>—</td>
+          <td><span class="muted">крупнейший юнит, по запросу</span></td></tr>
+      
+      </tbody>
+    </table>
+    </div>
+
+    
+    <h2>Планировки, 3D и медиа</h2>
+    <ul class="linklist">
+      
+      
+      <li>▶ <a href="https://www.facebook.com/cronagroup/videos/2652263825133833/" target="_blank" rel="noopener">Видео</a></li>
+    </ul>
+    
+
+    <h2>Расположение</h2>
+    
+    <div id="map"></div>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>€299 300 – €316 480</dd>
+        <dt>Тип недвижимости</dt><dd>Смешанный</dd>
+        <dt>Стадия</dt><dd>Строится · Строится</dd>
+        <dt>Начало стройки</dt><dd>—</dd>
+        <dt>Завершение</dt><dd>2027</dd>
+        
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      <div class="row">
+        <span class="chip ">☀ фотовольтаика: ?</span>
+        <span class="chip ">♨ тёплый пол: ?</span>
+        <span class="chip">бассейн</span>
+        <span class="chip">паркинг</span>
+        
+        
+        
+        <span class="chip">встроенная кухня</span><span class="chip">крытая веранда</span><span class="chip">лифт</span><span class="chip">офисный центр в составе комплекса</span><span class="chip">закрытая территория</span>
+      </div>
+    </div>
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small"><li><a href="https://www.cronagroup.com/projects/gateway" target="_blank" rel="noopener">www.cronagroup.com/projects/gateway</a></li><li><a href="https://www.cronagroup.com/projects/gateway-offices" target="_blank" rel="noopener">www.cronagroup.com/projects/gateway-offices</a></li><li><a href="https://www.cronagroup.com/units/gateway-residence-302" target="_blank" rel="noopener">www.cronagroup.com/units/gateway-residence-302</a></li><li><a href="https://realcy.app/listings/329-gateway_offices/" target="_blank" rel="noopener">realcy.app/listings/329-gateway_offices/</a></li><li><a href="https://inhome.cy/en/realty/gateway-offices-in-mesa-geitonia-limassol-699f5f125abe9aaaf09a8b0d/" target="_blank" rel="noopener">inhome.cy/en/realty/gateway-offices-in-mesa...</a></li></ul>
+    </div>
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-09. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([34.699949,33.045071],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([34.699949,33.045071]).addTo(map).bindPopup("GATEWAY (Residences \u0026 Offices)");
+
+});
+</script>
+
+
+</body>
+</html>

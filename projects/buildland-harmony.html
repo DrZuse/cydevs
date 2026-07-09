@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harmony Residence · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Harmony Residence</div>
+<h1>Harmony Residence <span class="tag under_construction">Строится</span></h1>
+<p class="muted">
+  <a href="../developers/buildland.html">BuildLand Developments</a> · 
+  Таунхаусы · Nicosia, Strovolos
+</p>
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="https://buildland.com.cy/harmony/" target="_blank" rel="noopener">buildland.com.cy/harmony/</a>
+</div>
+
+
+<div class="split">
+  <div>
+    <p>Harmony Residence — проект таунхаусов/домов BuildLand в районе Строволос, Никосия. Юниты имеют участок площадью около 273 м², внутреннюю площадь около 199 м² и крытый паркинг около 38 м². Дома рассчитаны на 3 спальни и 3 санузла с планировкой открытая кухня-гостиная, металлический каркас конструкции. Проект позиционируется как просторное жильё с большими верандами для семей, ищущих дом с собственной территорией в развитом районе Строволос. По данным на момент проверки, объект находится в стадии строительства.</p>
+
+    <h2>Характеристики</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <tbody>
+      
+        <tr><td>townhouse</td><td>3</td>
+          <td>199</td><td>—</td>
+          <td><span class="muted">по запросу</span></td></tr>
+      
+      </tbody>
+    </table>
+    </div>
+
+    
+
+    <h2>Расположение</h2>
+    
+    <div id="map"></div>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>по запросу</dd>
+        <dt>Тип недвижимости</dt><dd>Таунхаусы</dd>
+        <dt>Стадия</dt><dd>Строится · строительство</dd>
+        <dt>Начало стройки</dt><dd>—</dd>
+        <dt>Завершение</dt><dd>—</dd>
+        
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      <div class="row">
+        <span class="chip ">☀ фотовольтаика: ?</span>
+        <span class="chip ">♨ тёплый пол: ?</span>
+        
+        <span class="chip">паркинг</span>
+        
+        
+        
+        <span class="chip">большие веранды</span><span class="chip">собственный участок ~273 м²</span><span class="chip">крытый паркинг ~38 м²</span>
+      </div>
+    </div>
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small"><li><a href="https://buildland.com.cy/harmony/" target="_blank" rel="noopener">buildland.com.cy/harmony/</a></li><li><a href="https://cy.near-place.com/harmony-residence-build-land-489hfqf-strovolos" target="_blank" rel="noopener">cy.near-place.com/harmony-residence-build-l...</a></li></ul>
+    </div>
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-09. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([35.185566,33.382276],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([35.185566,33.382276]).addTo(map).bindPopup("Harmony Residence");
+
+});
+</script>
+
+
+</body>
+</html>

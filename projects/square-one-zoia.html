@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZOIA · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / ZOIA</div>
+<h1>ZOIA <span class="tag off_plan">Офплан</span></h1>
+<p class="muted">
+  <a href="../developers/square-one.html">Square One</a> · 
+  Квартиры · Limassol, Kato Polemidia (Berengaria area)
+</p>
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="https://cyprus-mail.com/2026/06/22/squareone-unveils-zoia-a-new-landmark-residential-development-in-kato-polemidia" target="_blank" rel="noopener">cyprus-mail.com/2026/06/22/squareone-unveils-zo...</a>
+</div>
+
+
+<div class="split">
+  <div>
+    <p>ZOIA — новый жилой квартал Square One в Като Полемидия, официально представленный 25 июня 2026 года. Комплекс состоит из четырёх пятиэтажных корпусов и включает 147 квартир с 1, 2 и 3 спальнями, в том числе пентхаусы с приватными садами на крыше. Расположен примерно в 400 м от кампуса Кипрского технологического университета (CUT) и около 1,8 км от побережья. Проект спроектирован как community-ориентированное жильё: предусмотрены собственные управляющие объектом, мобильное приложение для резидентов и программа совместных мероприятий. Инфраструктура включает открытый бассейн, тренажёрный зал, ландшафтные сады, крытый паркинг, детскую площадку, спа и зону для барбекю. Заявленная валовая доходность для квартир с 1-2 спальнями — до 8%, для трёхкомнатных — до 7%.</p>
+
+    <h2>Характеристики</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <tbody>
+      
+        <tr><td>apartment</td><td>1</td>
+          <td>—</td><td>—</td>
+          <td>€212 000</td></tr>
+      
+        <tr><td>apartment</td><td>2</td>
+          <td>—</td><td>—</td>
+          <td><span class="muted">по запросу</span></td></tr>
+      
+        <tr><td>apartment</td><td>3</td>
+          <td>—</td><td>—</td>
+          <td><span class="muted">по запросу</span></td></tr>
+      
+      </tbody>
+    </table>
+    </div>
+
+    
+
+    <h2>Расположение</h2>
+    <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    <div id="map"></div>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>от €212 000</dd>
+        <dt>Тип недвижимости</dt><dd>Квартиры</dd>
+        <dt>Стадия</dt><dd>Офплан · проект запущен в продажу 25 июня 2026, строительство на начальной стадии</dd>
+        <dt>Начало стройки</dt><dd>2026-06</dd>
+        <dt>Завершение</dt><dd>—</dd>
+        
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      <div class="row">
+        <span class="chip ">☀ фотовольтаика: ?</span>
+        <span class="chip ">♨ тёплый пол: ?</span>
+        <span class="chip">бассейн</span>
+        <span class="chip">паркинг</span>
+        <span class="chip">спортзал</span>
+        
+        
+        <span class="chip">147 квартир, 4 корпуса</span><span class="chip">ландшафтные сады</span><span class="chip">детская площадка</span><span class="chip">спа</span><span class="chip">зона барбекю</span><span class="chip">приложение для резидентов</span>
+      </div>
+    </div>
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small"><li><a href="https://cyprus-mail.com/2026/06/22/squareone-unveils-zoia-a-new-landmark-residential-development-in-kato-polemidia" target="_blank" rel="noopener">cyprus-mail.com/2026/06/22/squareone-unveil...</a></li><li><a href="https://cyprus-mail.com/2026/06/26/square-ones-zoia-brings-lifestyle-led-living-to-limassol" target="_blank" rel="noopener">cyprus-mail.com/2026/06/26/square-ones-zoia...</a></li><li><a href="https://en.sigmalive.com/squareone-unveils-zoia-in-one-of-limassols-fastest-growing-districts/" target="_blank" rel="noopener">en.sigmalive.com/squareone-unveils-zoia-in-...</a></li><li><a href="https://squareone.com.cy/en/projects/zoia" target="_blank" rel="noopener">squareone.com.cy/en/projects/zoia</a></li></ul>
+    </div>
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-09. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([34.690548,33.0034555],13);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.circle([34.690548,33.0034555],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("ZOIA" + ' (примерно)');
+
+});
+</script>
+
+
+</body>
+</html>

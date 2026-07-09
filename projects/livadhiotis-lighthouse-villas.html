@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Lighthouse Villas · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / The Lighthouse Villas</div>
+<h1>The Lighthouse Villas <span class="tag completed_unsold">Готов, в продаже</span></h1>
+<p class="muted">
+  <a href="../developers/livadhiotis.html">Livadhiotis Developers</a> · 
+  Виллы · Larnaca, Перволия (Pervolia)
+</p>
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="https://livadhiotisdevelopers.com/the-lighthouse-villas/" target="_blank" rel="noopener">livadhiotisdevelopers.com/the-lighthouse-villas/</a>
+</div>
+
+
+<div class="split">
+  <div>
+    <p>Эксклюзивный закрытый (gated) прибрежный комплекс роскошных вилл на побережье Ларнаки, в районе Перволия (Pervolia). Каждая вилла имеет частный гараж, ухоженный сад и подогреваемый бассейн. Виллы спроектированы для максимально комфортной жизни: внутренние и внешние зоны гостиной/столовой, просторные спальни с собственными душевыми (ensuite). Полное кондиционирование и подогрев пола обеспечивают комфорт круглый год. Комплекс расположен в двух минутах ходьбы от пляжа Перволии с Голубым флагом и в трёх минутах от исторического старого маяка Фарос. До центра деревни — около 5 минут, до международного аэропорта Ларнаки — около 10 минут, до центра Ларнаки — 15 минут. Вилла типа «3 спальни» имеет внутреннюю площадь около 190 м², крытую веранду ~19 м², открытую веранду ~55 м² и участок 905–918 м². Виллы построены и сданы; отдельные предлагаются к продаже и краткосрочной аренде.</p>
+
+    <h2>Характеристики</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <tbody>
+      
+        <tr><td>villa</td><td>3</td>
+          <td>190</td><td>—</td>
+          <td><span class="muted">≈ €735,000 (по данным листингов вторичного рынка/аггрегаторов); официальная цена — по запросу</span></td></tr>
+      
+      </tbody>
+    </table>
+    </div>
+
+    
+    <h2>Планировки, 3D и медиа</h2>
+    <ul class="linklist">
+      <li>📐 <a href="https://livadhiotisdevelopers.com/wp-content/uploads/2022/02/The-Lighthouse-Villas-booklet-1.pdf" target="_blank" rel="noopener">Планировка / чертёж</a></li>
+      
+      
+    </ul>
+    
+
+    <h2>Расположение</h2>
+    
+    <div id="map"></div>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>по запросу</dd>
+        <dt>Тип недвижимости</dt><dd>Виллы</dd>
+        <dt>Стадия</dt><dd>Готов, в продаже · построен и сдан; отдельные виллы предлагаются к продаже/аренде</dd>
+        <dt>Начало стройки</dt><dd>—</dd>
+        <dt>Завершение</dt><dd>—</dd>
+        <dt>Адрес</dt><dd>побережье Перволии, рядом со старым маяком Фарос, Ларнака</dd>
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      <div class="row">
+        <span class="chip ">☀ фотовольтаика: ?</span>
+        <span class="chip on">♨ тёплый пол: да</span>
+        <span class="chip">бассейн</span>
+        <span class="chip">паркинг</span>
+        
+        
+        
+        <span class="chip">частный гараж</span><span class="chip">подогреваемый бассейн</span><span class="chip">полное кондиционирование</span><span class="chip">спальни с собственными душевыми (ensuite)</span><span class="chip">закрытый комплекс (gated)</span><span class="chip">участок 905–918 м²</span><span class="chip">2 минуты до пляжа с Голубым флагом</span>
+      </div>
+    </div>
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small"><li><a href="https://livadhiotisdevelopers.com/the-lighthouse-villas/" target="_blank" rel="noopener">livadhiotisdevelopers.com/the-lighthouse-villas/</a></li><li><a href="https://livadhiotisdevelopers.com/wp-content/uploads/2022/02/The-Lighthouse-Villas-booklet-1.pdf" target="_blank" rel="noopener">livadhiotisdevelopers.com/wp-content/upload...</a></li><li><a href="https://dom.com.cy/en/live/complexes/complex-larnaca/the-lighthouse-villas/" target="_blank" rel="noopener">dom.com.cy/en/live/complexes/complex-larnac...</a></li></ul>
+    </div>
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-09. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([34.819388,33.596582],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([34.819388,33.596582]).addTo(map).bindPopup("The Lighthouse Villas");
+
+});
+</script>
+
+
+</body>
+</html>

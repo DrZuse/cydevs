@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Periyiali Konnos Resort Residences · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Periyiali Konnos Resort Residences</div>
+<h1>Periyiali Konnos Resort Residences <span class="tag selling">В продаже</span></h1>
+<p class="muted">
+  <a href="../developers/oikos.html">Oikos</a> · 
+  Виллы · Protaras, Cape Greco / Konnos Beach, Famagusta
+</p>
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="https://oikos-cy.com/periyiali-konnos-beach-residence-resort-cyprus-luxury-villas/" target="_blank" rel="noopener">oikos-cy.com/periyiali-konnos-beach-residence-r...</a>
+</div>
+
+
+<div class="split">
+  <div>
+    <p>Periyiali Konnos Resort Residences — закрытый курортный комплекс премиальных вилл на первой береговой линии у пляжа Коннос в парке мыса Греко близ Протараса. По данным застройщика и агрегатора geoln.com, комплекс включает от 40 до 43 вилл (в разных источниках указано и то, и другое число) с системой «умный дом», собственным причалом для яхт, подземным паркингом (в т.ч. VIP-туннель для фронтальных вилл) и прямым выходом к пляжу, где наблюдаются морские черепахи. В каждой вилле есть частный бассейн с террасой для загара, предусмотрено место под спа, спортзал и комнату отдыха. Клубный дом резорта включает стойку ресепшн, спа, сауну, спортзал, бизнес-центр, консьерж-сервис, лаунж-зону, ресторан Aoratous и услуги проката яхт/авто, дайвинга, персонального тренера, йога-инструктора и такси. Строительство проекта датируется примерно 2022 годом; по данным geoln.com, апартаменты/виллы в проекте продаются от 710 000 евро (цены изначально указаны в долларах на сайте-агрегаторе, ~10 000 USD за м2), при этом сам комплекс также используется как курортный отель для отдыха (бронирование через Booking.com, TripAdvisor, Jet2Villas), что типично для кипрских buy-to-let резортов.</p>
+
+    <h2>Характеристики</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <tbody>
+      
+        <tr><td>villa</td><td>4</td>
+          <td>—</td><td>—</td>
+          <td>€710 000</td></tr>
+      
+      </tbody>
+    </table>
+    </div>
+
+    
+
+    <h2>Расположение</h2>
+    
+    <div id="map"></div>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>от €710 000</dd>
+        <dt>Тип недвижимости</dt><dd>Виллы</dd>
+        <dt>Стадия</dt><dd>В продаже · Построен и функционирует (используется также как курортный комплекс для отдыха); отдельные виллы могут быть в продаже/перепродаже</dd>
+        <dt>Начало стройки</dt><dd>—</dd>
+        <dt>Завершение</dt><dd>2022</dd>
+        
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      <div class="row">
+        <span class="chip ">☀ фотовольтаика: ?</span>
+        <span class="chip ">♨ тёплый пол: ?</span>
+        <span class="chip">бассейн</span>
+        <span class="chip">паркинг</span>
+        <span class="chip">спортзал</span>
+        <span class="chip">умный дом</span>
+        
+        <span class="chip">яхт-марина</span><span class="chip">спа и сауна</span><span class="chip">ресторан</span><span class="chip">консьерж-сервис</span><span class="chip">электронно-контролируемый закрытый доступ</span><span class="chip">подземный паркинг с VIP-туннелем для фронтальных вилл</span>
+      </div>
+    </div>
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small"><li><a href="https://oikos-cy.com/periyiali-konnos-beach-residence-resort-cyprus-luxury-villas/" target="_blank" rel="noopener">oikos-cy.com/periyiali-konnos-beach-residen...</a></li><li><a href="https://geoln.com/cyprus/protaras/4826" target="_blank" rel="noopener">geoln.com/cyprus/protaras/4826</a></li><li><a href="https://geoln.com/developers/oikos-group" target="_blank" rel="noopener">geoln.com/developers/oikos-group</a></li><li><a href="https://www.periyialiresort.com/" target="_blank" rel="noopener">www.periyialiresort.com/</a></li><li><a href="https://www.holidayhome.com/en/periyiali-resort-frontansicht-villa-nefeli-2" target="_blank" rel="noopener">www.holidayhome.com/en/periyiali-resort-fro...</a></li></ul>
+    </div>
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-09. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([34.988292,34.073264],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([34.988292,34.073264]).addTo(map).bindPopup("Periyiali Konnos Resort Residences");
+
+});
+</script>
+
+
+</body>
+</html>

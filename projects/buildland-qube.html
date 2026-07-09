@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qube · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Qube</div>
+<h1>Qube <span class="tag off_plan">Офплан</span></h1>
+<p class="muted">
+  <a href="../developers/buildland.html">BuildLand Developments</a> · 
+  Квартиры · Nicosia, Strovolos (Dasoupoli)
+</p>
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="https://buildland.com.cy/qube/" target="_blank" rel="noopener">buildland.com.cy/qube/</a>
+</div>
+
+
+<div class="split">
+  <div>
+    <p>Qube — новый жилой проект BuildLand в районе Дасуполи муниципалитета Строволос, недалеко от проспекта Лимасол и парка Акрополис. Локация удобна близостью к центру города (около 1.5 км), крупным магистралям, магазинам, ресторанам и школам; до общей больницы около 4 км, до аэропорта — около 40 км. Проект позиционируется как современный жилой комплекс квартир. Начало строительства запланировано на сентябрь 2025 года, поэтому на момент проверки проект находится на стадии продаж «на бумаге» (off-plan). Детальные планировки, количество юнитов и цены на сайте застройщика не публикуются в открытом доступе.</p>
+
+    <h2>Характеристики</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <tbody>
+      
+        <tr><td colspan="5" class="empty">Поюнитные данные не опубликованы. Общий диапазон: по запросу.</td></tr>
+      
+      </tbody>
+    </table>
+    </div>
+
+    
+
+    <h2>Расположение</h2>
+    
+    <div id="map"></div>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>по запросу</dd>
+        <dt>Тип недвижимости</dt><dd>Квартиры</dd>
+        <dt>Стадия</dt><dd>Офплан · проект / начало строительства ожидается</dd>
+        <dt>Начало стройки</dt><dd>2025-09</dd>
+        <dt>Завершение</dt><dd>—</dd>
+        
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      <div class="row">
+        <span class="chip ">☀ фотовольтаика: ?</span>
+        <span class="chip ">♨ тёплый пол: ?</span>
+        
+        
+        
+        
+        
+        
+      </div>
+    </div>
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small"><li><a href="https://buildland.com.cy/qube/" target="_blank" rel="noopener">buildland.com.cy/qube/</a></li><li><a href="https://buildland.com.cy/projects/" target="_blank" rel="noopener">buildland.com.cy/projects/</a></li></ul>
+    </div>
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-09. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([35.135389,33.363472],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([35.135389,33.363472]).addTo(map).bindPopup("Qube");
+
+});
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leohome Klirou Village · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Leohome Klirou Village</div>
+<h1>Leohome Klirou Village <span class="tag selling">В продаже</span></h1>
+<p class="muted">
+  <a href="../developers/leohome.html">Leohome Constructions &amp; Developers</a> · 
+  Виллы · Klirou, Nicosia District
+</p>
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="https://leohome.com.cy/art-property/houses-in-klirou/" target="_blank" rel="noopener">leohome.com.cy/art-property/houses-in-klirou/</a>
+</div>
+
+
+<div class="split">
+  <div>
+    <p>Klirou Village — проект из шести отдельно стоящих домов в живописной деревне Клиру, примерно в 20–25 минутах езды от Никосии. Дома расположены среди зелени, рядом с водохранилищем Клиру и лесом, с удобным доступом к шоссе и инфраструктуре. Планировки варьируются от 2 до 4 спален, с возможностью достройки мансардного этажа или сада на крыше. Проект выполнен с применением термоизоляционных фасадных материалов и качественных материалов отделки, часть домов уже сдана в 2024 году, остальные продолжают продаваться. Покупатели могут претендовать на государственный грант до 35 000 евро по пересмотренной программе субсидирования сельских районов на 2026–2027 годы.</p>
+
+    <h2>Характеристики</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <tbody>
+      
+        <tr><td>house</td><td>2</td>
+          <td>100</td><td>—</td>
+          <td>€170 000</td></tr>
+      
+        <tr><td>house</td><td>3</td>
+          <td>169</td><td>—</td>
+          <td>€225 000</td></tr>
+      
+        <tr><td>house</td><td>—</td>
+          <td>90</td><td>—</td>
+          <td>€170 000</td></tr>
+      
+      </tbody>
+    </table>
+    </div>
+
+    
+
+    <h2>Расположение</h2>
+    
+    <div id="map"></div>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>€170 000 – €225 000</dd>
+        <dt>Тип недвижимости</dt><dd>Виллы</dd>
+        <dt>Стадия</dt><dd>В продаже · Часть домов сдана в 2024 году, оставшиеся из 6 юнитов продолжают продаваться под госпрограмму субсидирования 2026–2027</dd>
+        <dt>Начало стройки</dt><dd>—</dd>
+        <dt>Завершение</dt><dd>2024</dd>
+        
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      <div class="row">
+        <span class="chip ">☀ фотовольтаика: ?</span>
+        <span class="chip ">♨ тёплый пол: ?</span>
+        
+        
+        
+        
+        <span class="chip">энергокласс A</span>
+        <span class="chip">термоизоляционный фасад</span><span class="chip">возможность достройки мансарды или сада на крыше</span><span class="chip">участки от 216 до 283 м²</span>
+      </div>
+    </div>
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small"><li><a href="https://leohome.com.cy/art-property/houses-in-klirou/" target="_blank" rel="noopener">leohome.com.cy/art-property/houses-in-klirou/</a></li><li><a href="https://leohome.com.cy/art-property_location/klirou/" target="_blank" rel="noopener">leohome.com.cy/art-property_location/klirou/</a></li><li><a href="https://leohome.com.cy/subsidy-under-the-housing-scheme-for-rural-revitalization/" target="_blank" rel="noopener">leohome.com.cy/subsidy-under-the-housing-sc...</a></li><li><a href="https://dom.com.cy/en/live/complexes/complex-nikosii/leohome-village/" target="_blank" rel="noopener">dom.com.cy/en/live/complexes/complex-nikosi...</a></li></ul>
+    </div>
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-09. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([35.028554,33.176862],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([35.028554,33.176862]).addTo(map).bindPopup("Leohome Klirou Village");
+
+});
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>О проекте и источниках · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="index.html" class="">Обзор</a>
+    <a href="projects.html" class="">Проекты</a>
+    <a href="completed.html" class="">Завершённые</a>
+    <a href="news.html" class="">Новости</a>
+    <a href="legal.html" class="">Суды</a>
+    <a href="about.html" class="active">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<h1>О проекте</h1>
+<p>Дашборд <b>cydevs</b> — структурированная база застройщиков жилой недвижимости Кипра
+(виллы, таунхаусы, квартиры, жилые комплексы), их проектов, контактов, отзывов, новостей
+и судебных дел. Данные хранятся в JSON (<code>data/*.json</code>), дашборд — статический,
+пересобирается скриптом из данных.</p>
+
+<div class="grid kpis" style="margin:16px 0">
+  <div class="kpi"><div class="n brand">87</div><div class="l">застройщиков</div></div>
+  <div class="kpi"><div class="n">807</div><div class="l">активных проектов</div></div>
+  <div class="kpi"><div class="n">462</div><div class="l">завершённых</div></div>
+  <div class="kpi"><div class="n">0</div><div class="l">новостей</div></div>
+</div>
+
+<h2>Источники данных</h2>
+<ul>
+  <li><b>Застройщики и проекты:</b> официальные сайты компаний, ассоциация LBDA/ΣΕΤΑΚ (lbda.com.cy),
+    открытые агрегаторы (cyprus-real.estate и др.).</li>
+  <li><b>Новости:</b> Cyprus Property News, Cyprus Mail, Financial Mirror, In-Cyprus (RSS/HTML).</li>
+  <li><b>Отзывы:</b> рейтинг и ссылки Google Maps / Trustpilot.</li>
+  <li><b>Суды и статус компаний:</b> CyLaw (решения), реестр компаний / OpenCorporates (статус).</li>
+  <li><b>Геолокация:</b> координаты из объявлений и геокодер OpenStreetMap Nominatim.</li>
+</ul>
+
+<h2>Ограничения (честно)</h2>
+<ul>
+  <li>Крупные порталы (Bazaraki, DOM, home.cy) блокируют автоматический сбор и не имеют
+    публичного API — в автообновление не входят. Часть цен поэтому «по запросу».</li>
+  <li>Полные тексты Google-отзывов бесплатно недоступны (лимит API — 5 отзывов): храним
+    рейтинг и ссылку. Полный сбор включается платным ключом в <code>.env</code>.</li>
+  <li>Активные иски первой инстанции на Кипре не публичны (eJustice закрыт для третьих лиц) —
+    покрываются только опубликованные решения CyLaw, новости и статус компании.</li>
+  <li>Сайты застройщиков могут отдавать 403 скриптам — сбор работает «мягко»: при недоступности
+    источника прежние данные сохраняются, обновление логируется.</li>
+</ul>
+
+<h2>Как обновлять</h2>
+<p>Полный цикл сбора и пересборки: <code>bash update.sh</code> (в среде с доступом в интернет).
+Автоматически — раз в неделю через GitHub Actions (<code>.github/workflows/update-dashboard.yml</code>),
+либо запуском вручную. Отдельные шаги — скрипты <code>scripts/collect_*.py</code>.</p>
+
+<p class="muted small">Данные обновлены: 2026-07-09. Значения полей, помеченные «—» или «по запросу»,
+означают, что информация не опубликована в открытых источниках, а не отсутствие объекта.</p>
+
+<div class="foot">
+  Данные обновлены: 2026-07-09. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="about.html">О проекте</a>.
+</div>
+</main>
+<script src="assets/app.js"></script>
+
+</body>
+</html>

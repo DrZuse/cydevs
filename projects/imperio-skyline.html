@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Imperio Skyline · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Imperio Skyline</div>
+<h1>Imperio Skyline <span class="tag under_construction">Строится</span></h1>
+<p class="muted">
+  <a href="../developers/imperio.html">Imperio Properties</a> · 
+  Смешанный · Limassol, Germasogeia hills (холмы Гермасойя)
+</p>
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="https://www.imperioproperties.com/imperio-skyline/" target="_blank" rel="noopener">www.imperioproperties.com/imperio-skyline/</a>
+</div>
+
+
+<div class="split">
+  <div>
+    <p>Imperio Skyline — новый крупный жилой проект Imperio на холмах Лимассола (район Гермасойя), представленный в начале 2025 года. Это изысканное закрытое сообщество (gated community), задуманное как баланс между городской и загородной жизнью в окружении зелени. Комплекс включает просторные 3-спальные дома и виллы, а также современные квартиры с 1-2 спальнями. Каждая резиденция наполнена естественным светом и имеет приватные террасы с открытыми видами на город, горы и море. Проект спроектирован по стандартам устойчивого развития. (ссылка на сайте могла измениться)</p>
+
+    <h2>Характеристики</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <tbody>
+      
+        <tr><td>apartment</td><td>1</td>
+          <td>—</td><td>—</td>
+          <td>€289 000</td></tr>
+      
+        <tr><td>apartment</td><td>2</td>
+          <td>—</td><td>—</td>
+          <td><span class="muted">по запросу</span></td></tr>
+      
+        <tr><td>villa</td><td>3</td>
+          <td>—</td><td>—</td>
+          <td>€795 000</td></tr>
+      
+      </tbody>
+    </table>
+    </div>
+
+    
+    <h2>Планировки, 3D и медиа</h2>
+    <ul class="linklist">
+      
+      <li>🧊 <a href="https://skyline.imperioproperties.com/" target="_blank" rel="noopener">3D-тур / рендер</a></li>
+      
+    </ul>
+    
+
+    <h2>Расположение</h2>
+    
+    <div id="map"></div>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>€289 000 – €795 000</dd>
+        <dt>Тип недвижимости</dt><dd>Смешанный</dd>
+        <dt>Стадия</dt><dd>Строится · анонсирован в январе 2025, строительство / в продаже</dd>
+        <dt>Начало стройки</dt><dd>2025-01</dd>
+        <dt>Завершение</dt><dd>—</dd>
+        <dt>Адрес</dt><dd>Limassol hills, Cyprus</dd>
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      <div class="row">
+        <span class="chip on">☀ фотовольтаика: да</span>
+        <span class="chip ">♨ тёплый пол: ?</span>
+        <span class="chip">бассейн</span>
+        <span class="chip">паркинг</span>
+        
+        
+        <span class="chip">энергокласс A</span>
+        <span class="chip">закрытое сообщество (gated)</span><span class="chip">клубный дом с бассейном, спортзалом, коворкингом и лаунджем</span><span class="chip">зарядные станции для электромобилей</span><span class="chip">панорамные виды на город, горы и море</span>
+      </div>
+    </div>
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small"><li><a href="https://www.imperioproperties.com/imperio-skyline/" target="_blank" rel="noopener">www.imperioproperties.com/imperio-skyline/</a></li><li><a href="https://skyline.imperioproperties.com/" target="_blank" rel="noopener">skyline.imperioproperties.com/</a></li><li><a href="https://www.cbn.com.cy/article/106541/imperio-skyline-the-new-major-residential-development-coming-to-limassol" target="_blank" rel="noopener">www.cbn.com.cy/article/106541/imperio-skyli...</a></li></ul>
+    </div>
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-09. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([34.7246847,33.0667444],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([34.7246847,33.0667444]).addTo(map).bindPopup("Imperio Skyline");
+
+});
+</script>
+
+
+</body>
+</html>

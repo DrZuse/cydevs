@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pissouri Forest Park · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Pissouri Forest Park</div>
+<h1>Pissouri Forest Park <span class="tag under_construction">Строится</span></h1>
+<p class="muted">
+  <a href="../developers/property-gallery.html">Property Gallery Developers</a> · 
+  Жилой комплекс · Pissouri, Limassol district
+</p>
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="https://cypruspropertygallery.com/pissouri-forest-park" target="_blank" rel="noopener">cypruspropertygallery.com/pissouri-forest-park</a>
+</div>
+
+
+<div class="split">
+  <div>
+    <p>Pissouri Forest Park — комплекс из 25 вилл и 13 бунгало на 2 и 3 спальни, расположенный на самой высокой точке живописной деревни Писсури с панорамным видом на бухту Писсури (один из лучших пляжей острова со статусом «Голубой флаг»). Проект граничит с крупнейшим на Кипре национальным парком Century Park площадью 7,5 га и находится примерно на полпути между Лимассолом и Пафосом (около 20 минут езды до каждого города). Все юниты имеют открытую планировку гостиной, столовой и кухни, собственные бассейны, а также просторные террасы и сады. Девелопер предлагает гибкий график платежей: 10% при бронировании, 30% при подписании договора, остаток — четырьмя равными траншами. По состоянию на начало 2026 года проект вышел на финальную стадию строительства, сдача первой очереди запланирована на январь 2026 года.</p>
+
+    <h2>Характеристики</h2>
+    <div class="table-wrap">
+    <table>
+      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <tbody>
+      
+        <tr><td>villa</td><td>2</td>
+          <td>—</td><td>—</td>
+          <td><span class="muted">по запросу</span></td></tr>
+      
+        <tr><td>villa</td><td>3</td>
+          <td>—</td><td>—</td>
+          <td><span class="muted">по запросу</span></td></tr>
+      
+        <tr><td>apartment</td><td>2</td>
+          <td>—</td><td>—</td>
+          <td><span class="muted">бунгало, по запросу</span></td></tr>
+      
+        <tr><td>apartment</td><td>3</td>
+          <td>—</td><td>—</td>
+          <td><span class="muted">бунгало, по запросу</span></td></tr>
+      
+      </tbody>
+    </table>
+    </div>
+
+    
+
+    <h2>Расположение</h2>
+    
+    <div id="map"></div>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>по запросу</dd>
+        <dt>Тип недвижимости</dt><dd>Жилой комплекс</dd>
+        <dt>Стадия</dt><dd>Строится · финальная стадия строительства; сдача первой очереди запланирована на сентябрь 2026 (ранее январь 2026)</dd>
+        <dt>Начало стройки</dt><dd>—</dd>
+        <dt>Завершение</dt><dd>2026-09</dd>
+        
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      <div class="row">
+        <span class="chip ">☀ фотовольтаика: ?</span>
+        <span class="chip ">♨ тёплый пол: ?</span>
+        <span class="chip">бассейн</span>
+        
+        
+        
+        
+        <span class="chip">частные бассейны у каждого юнита</span><span class="chip">террасы и сады</span><span class="chip">граничит с национальным парком</span><span class="chip">вид на бухту Писсури</span>
+      </div>
+    </div>
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small"><li><a href="https://cypruspropertygallery.com/pissouri-forest-park" target="_blank" rel="noopener">cypruspropertygallery.com/pissouri-forest-park</a></li><li><a href="https://cypruspropertygallery.com/pissouri-forest-park-by-property-gallery-reaches-final-construction-stage-first-phase-delivery-scheduled-for-january-2026" target="_blank" rel="noopener">cypruspropertygallery.com/pissouri-forest-p...</a></li><li><a href="https://cyprus-mail.com/2025/01/08/pissouri-forest-park-luxury-homes-in-the-heart-of-nature" target="_blank" rel="noopener">cyprus-mail.com/2025/01/08/pissouri-forest-...</a></li><li><a href="https://cyprus-real.estate/property/pissouri-forest-park-23761/" target="_blank" rel="noopener">cyprus-real.estate/property/pissouri-forest...</a></li></ul>
+    </div>
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-09. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([34.66335,32.69261],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([34.66335,32.69261]).addTo(map).bindPopup("Pissouri Forest Park");
+
+});
+</script>
+
+
+</body>
+</html>
