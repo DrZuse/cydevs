@@ -36,13 +36,13 @@
 
 <div class="notice" style="margin:14px 0">
   📷 Фото, планировки и подробности — на странице проекта у застройщика:
-  <a href="https://africanosproperties.com/projects/" target="_blank" rel="noopener">africanosproperties.com/projects/</a>
+  <a href="https://africanosproperties.com/project/mackenzy-star-residences-coming-soon/" target="_blank" rel="noopener">africanosproperties.com/project/mackenzy-star-r...</a>
 </div>
 
 
 <div class="split">
   <div>
-    <p>Mackenzy Star Residences — новый жилой проект Africanos Property Developers в престижном районе Маккензи (Mackenzie) в Ларнаке, со статусом «Coming Soon» (скоро в продаже). Расположение обеспечивает быстрый доступ к солёному озеру, международному аэропорту, центру города, набережной Финикудес и прибрежной дороге Пиале Паша. На официальном сайте проект указан в каталоге как готовящийся к запуску; детальные характеристики (число и типы квартир, площади, цены) на момент проверки официально не опубликованы.</p>
+    <p>Mackenzy Star Residences — новый жилой проект Africanos Property Developers в престижном прибрежном районе Маккензи (Mackenzie) в Ларнаке, со статусом «Coming Soon» (скоро в продаже). Расположение даёт быстрый доступ к солёному озеру, международному аэропорту, центру города, набережной Финикудес и прибрежной дороге Пиале Паша. На странице проекта уже опубликована таблица из 18 квартир с 1–3 спальнями (50–104 м² внутренней площади), включая два пентхауса с приватными крышами-садами 82 и 94 м²; у каждой квартиры есть машиноместо. Цены на момент проверки не опубликованы (статусы Available/Reserved), одна квартира зарезервирована.</p>
     
 
     <h2>Характеристики</h2>
@@ -52,9 +52,17 @@
       <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
       <tbody>
       
-        <tr><td>apartment</td><td>—</td>
-          <td>—</td><td>—</td>
+        <tr><td>apartment</td><td>1</td>
+          <td>50</td><td>—</td>
+          <td><span class="muted">по запросу; внутренняя площадь 50–51 м²</span></td></tr>
+      
+        <tr><td>apartment</td><td>2</td>
+          <td>80</td><td>—</td>
           <td><span class="muted">по запросу</span></td></tr>
+      
+        <tr><td>apartment</td><td>3</td>
+          <td>104</td><td>—</td>
+          <td><span class="muted">по запросу; 80–104 м², пентхаусы с крышами-садами</span></td></tr>
       
       </tbody>
     </table>
@@ -64,7 +72,7 @@
     
 
     <h2>Расположение</h2>
-    <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
   </div>
 
@@ -74,7 +82,7 @@
       <dl class="detail">
         <dt>Цена</dt><dd>по запросу</dd>
         <dt>Тип недвижимости</dt><dd>Квартиры</dd>
-        <dt>Стадия</dt><dd>Офплан · скоро в продаже (Coming Soon)</dd>
+        <dt>Стадия</dt><dd>Офплан · скоро в продаже (Coming Soon); таблица квартир уже опубликована</dd>
         <dt>Начало стройки</dt><dd>—</dd>
         <dt>Завершение</dt><dd>—</dd>
         
@@ -92,11 +100,11 @@
         <span class="chip ">☀ фотовольтаика: ?</span>
         <span class="chip ">♨ тёплый пол: ?</span>
         
+        <span class="chip">паркинг</span>
         
         
         
-        
-        
+        <span class="chip">приватные крыши-сады у пентхаусов (82 и 94 м²)</span>
       </div>
       
     </div>
@@ -106,11 +114,11 @@
       <h3 style="margin-top:0">Источники</h3>
       <ul class="linklist small">
         
-        <li>✅ <a href="https://africanosproperties.com/projects/" target="_blank" rel="noopener"><strong>africanosproperties.com/projects/</strong></a>
+        <li>✅ <a href="https://africanosproperties.com/project/mackenzy-star-residences-coming-soon/" target="_blank" rel="noopener"><strong>africanosproperties.com/project/mackenzy-st...</strong></a>
           <span class="muted">— главный источник (сайт застройщика)</span></li>
         
         
-        <li><a href="https://africanosproperties.com/stage/projects-for-sale/" target="_blank" rel="noopener">africanosproperties.com/stage/projects-for-sale/</a>
+        <li><a href="https://africanosproperties.com/projects/" target="_blank" rel="noopener">africanosproperties.com/projects/</a>
           <span class="muted">· сайт застройщика</span></li>
         
       </ul>
@@ -132,9 +140,9 @@
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
 
-  var map=L.map('map').setView([34.8940617,33.6356293],13);
+  var map=L.map('map').setView([34.900536,33.629187],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.circle([34.8940617,33.6356293],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Mackenzy Star Residences" + ' (примерно)');
+  L.marker([34.900536,33.629187]).addTo(map).bindPopup("Mackenzy Star Residences");
 
 });
 </script>
