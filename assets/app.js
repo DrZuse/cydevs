@@ -20,8 +20,10 @@ function initProjectFilter() {
   function num(v) { v = parseFloat(v); return isNaN(v) ? null : v; }
   function apply() {
     var region = f.region.value, type = f.type.value, status = f.status.value;
-    var beds = f.beds.value, pmax = num(f.pmax.value);
-    var pv = f.pv.checked, uf = f.uf.checked;
+    var beds = f.beds.value, pmax = num(f.pmax.value), amin = num(f.amin.value);
+    var ec = f.ec.value;
+    var pv = f.pv.checked, uf = f.uf.checked, pool = f.pool.checked,
+      gated = f.gated.checked, sea = f.sea.checked, smart = f.smart.checked;
     var shown = 0;
     cards.forEach(function (c) {
       var ok = true;
@@ -30,8 +32,14 @@ function initProjectFilter() {
       if (status && c.dataset.status !== status) ok = false;
       if (beds && (c.dataset.beds || '').split(',').indexOf(beds) < 0) ok = false;
       if (pmax !== null) { var pm = num(c.dataset.pmin); if (pm === null || pm > pmax) ok = false; }
+      if (amin !== null) { var am = num(c.dataset.amax); if (am === null || am < amin) ok = false; }
+      if (ec && c.dataset.ec !== ec) ok = false;
       if (pv && c.dataset.pv !== '1') ok = false;
       if (uf && c.dataset.uf !== '1') ok = false;
+      if (pool && c.dataset.pool !== '1') ok = false;
+      if (gated && c.dataset.gated !== '1') ok = false;
+      if (sea && c.dataset.sea !== '1') ok = false;
+      if (smart && c.dataset.smart !== '1') ok = false;
       c.style.display = ok ? '' : 'none';
       if (ok) shown++;
     });
