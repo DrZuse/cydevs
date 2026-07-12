@@ -6,7 +6,7 @@
 <title>Inner City 2 · cydevs</title>
 <link rel="preconnect" href="https://unpkg.com">
 
-
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 
 <link rel="stylesheet" href="../assets/styles.css">
 </head>
@@ -67,7 +67,9 @@
 
     
 
+    <h2>Расположение</h2>
     
+    <div id="map"></div>
   </div>
 
   <aside>
@@ -157,6 +159,18 @@
 </main>
 <script src="../assets/app.js"></script>
 
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([34.7743988,32.4231586],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([34.7743988,32.4231586]).addTo(map).bindPopup("Inner City 2");
+
+});
+</script>
 
 
 </body>

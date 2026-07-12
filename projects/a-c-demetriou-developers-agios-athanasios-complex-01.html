@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agios Athanasios Complex 01 · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Agios Athanasios Complex 01</div>
+<h1>Agios Athanasios Complex 01 <span class="tag selling">В продаже</span></h1>
+<p class="muted">
+  <a href="../developers/a-c-demetriou-developers.html">A.C. Demetriou Developers</a> · 
+  Жилой комплекс · Limassol
+</p>
+
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="https://acdemetriou.biz/properties" target="_blank" rel="noopener">acdemetriou.biz/properties</a>
+</div>
+
+
+<div class="split">
+  <div>
+    
+    
+
+    <h2>Характеристики</h2>
+    <div class="table-wrap">
+    
+    <table>
+      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <tbody>
+      
+        <tr><td colspan="5" class="empty">Поюнитные данные не опубликованы. Общий диапазон: по запросу.</td></tr>
+      
+      </tbody>
+    </table>
+    
+    </div>
+
+    
+
+    <h2>Расположение</h2>
+    
+    <div id="map"></div>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>по запросу</dd>
+        <dt>Тип недвижимости</dt><dd>Жилой комплекс</dd>
+        <dt>Стадия</dt><dd>В продаже</dd>
+        <dt>Начало стройки</dt><dd>—</dd>
+        <dt>Завершение</dt><dd>—</dd>
+        
+        
+        
+        
+        
+        
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      
+      <div class="row">
+        <span class="chip ">☀ фотовольтаика: ?</span>
+        <span class="chip ">♨ тёплый пол: ?</span>
+        
+        
+        
+        
+        
+        
+      </div>
+      
+    </div>
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small"><li><a href="https://acdemetriou.biz/properties" target="_blank" rel="noopener">acdemetriou.biz/properties</a></li></ul>
+    </div>
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-12. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([34.6852901,33.0332657],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([34.6852901,33.0332657]).addTo(map).bindPopup("Agios Athanasios Complex 01");
+
+});
+</script>
+
+
+</body>
+</html>
