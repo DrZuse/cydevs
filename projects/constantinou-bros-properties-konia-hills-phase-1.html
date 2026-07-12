@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Konia Hills Phase 1 · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Konia Hills Phase 1</div>
+<h1>Konia Hills Phase 1 <span class="tag selling">В продаже</span></h1>
+<p class="muted">
+  <a href="../developers/constantinou-bros-properties.html">Constantinou Bros Properties</a> · 
+  Виллы · Paphos, Konia
+</p>
+
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="https://www.constantinoubrosproperties.com/development/konia-hills-phase-1/114/" target="_blank" rel="noopener">www.constantinoubrosproperties.com/development/...</a>
+</div>
+
+
+<div class="split">
+  <div>
+    <p>Konia Hills Phase 1 — первая очередь закрытого (gated) посёлка эксклюзивных вилл в деревне Кония с видами на Средиземное море и город Пафос. Фаза завершена (33 виллы); в продаже остаётся вилла с 2 спальнями (Villa 37). Виллы построены по высочайшим стандартам: облицованные плиткой балконы и веранды, ландшафтные частные сады, собственная парковка и опция частного бассейна. Цены от €411 984.</p>
+    <p class="muted">Всего юнитов в фазе: 33.</p>
+
+    <h2>Характеристики</h2>
+    <div class="table-wrap">
+    
+    <table>
+      <thead><tr><th>Юнит</th><th>Этаж</th><th>Спальни</th><th>С/у</th><th>Парковка</th>
+        <th>Внутр., м²</th><th>Веранды, м²</th><th>Всего, м²</th><th>Участок, м²</th><th>Цена</th><th>Статус</th></tr></thead>
+      <tbody>
+      
+        
+        <tr>
+          <td>Villa 37</td>
+          <td>—</td>
+          <td>2</td>
+          <td>1</td>
+          <td>—</td>
+          <td>93</td>
+          <td>—</td>
+          <td>98</td>
+          <td>—</td>
+          <td><span class="muted">по запросу</span></td>
+          <td>доступно</td>
+        </tr>
+      
+        
+        <tr>
+          <td>Villa 51</td>
+          <td>—</td>
+          <td>2</td>
+          <td>1</td>
+          <td>—</td>
+          <td>93</td>
+          <td>—</td>
+          <td>98</td>
+          <td>—</td>
+          <td><span class="muted">по запросу</span></td>
+          <td>продано</td>
+        </tr>
+      
+      </tbody>
+    </table>
+    
+    </div>
+
+    
+
+    <h2>Расположение</h2>
+    
+    <div id="map"></div>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>от €411 984</dd>
+        <dt>Тип недвижимости</dt><dd>Виллы</dd>
+        <dt>Стадия</dt><dd>В продаже · завершена; в продаже последняя вилла · Completed</dd>
+        <dt>Начало стройки</dt><dd>—</dd>
+        <dt>Завершение</dt><dd>Pending</dd>
+        <dt>Код проекта</dt><dd>114</dd>
+        <dt>Энергокласс</dt><dd>A+</dd>
+        
+        
+        
+        
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      
+      <div class="row">
+        
+          
+        
+          <span class="chip ">личный бассейн: опция</span>
+        
+          
+        
+          
+        
+          
+        
+          <span class="chip on">закрытая территория: да</span>
+        
+          <span class="chip on">охрана: да</span>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          <span class="chip on">вид на море: да</span>
+        
+          <span class="chip on">вид на горы: да</span>
+        
+        
+        
+        <span class="chip">керамическая плитка на полу</span><span class="chip">декоративная каменная кладка камина</span><span class="chip">шторки на окнах спален</span><span class="chip">двухстекольные окна</span><span class="chip">гранитные столешницы на кухне</span><span class="chip">мастер-спальня с ванной en-suite</span><span class="chip">частная парковка</span><span class="chip">ландшадный частный сад</span><span class="chip">плиточные балконы и террасы</span><span class="chip">вариант установки частного бассейна</span>
+      </div>
+      
+    </div>
+    
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small">
+        
+        <li>✅ <a href="https://www.constantinoubrosproperties.com/development/konia-hills-phase-1/114/" target="_blank" rel="noopener"><strong>www.constantinoubrosproperties.com/developm...</strong></a>
+          <span class="muted">— главный источник (сайт застройщика)</span></li>
+        
+        
+      </ul>
+    </div>
+    
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-12. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([34.786788,32.468807],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([34.786788,32.468807]).addTo(map).bindPopup("Konia Hills Phase 1");
+
+});
+</script>
+
+
+</body>
+</html>
