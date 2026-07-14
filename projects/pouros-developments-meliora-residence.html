@@ -49,10 +49,24 @@
     <div class="table-wrap">
     
     <table>
-      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <thead><tr><th>Юнит</th><th>Этаж</th><th>Спальни</th><th>С/у</th><th>Парковка</th>
+        <th>Внутр., м²</th><th>Веранды, м²</th><th>Всего, м²</th><th>Участок, м²</th><th>Цена</th><th>Статус</th></tr></thead>
       <tbody>
       
-        <tr><td colspan="5" class="empty">Поюнитные данные не опубликованы. Общий диапазон: по запросу.</td></tr>
+        
+        <tr>
+          <td><a href="https://www.pourosdevelopments.com/property/2-bedroom-apartment-304/1079/" target="_blank" rel="noopener">304</a></td>
+          <td>3</td>
+          <td>2</td>
+          <td>1</td>
+          <td>2</td>
+          <td>77.0</td>
+          <td>19.0</td>
+          <td>129.0</td>
+          <td>—</td>
+          <td>€385 000</td>
+          <td>доступно</td>
+        </tr>
       
       </tbody>
     </table>
@@ -107,7 +121,7 @@
     <div class="panel">
       <h3 style="margin-top:0">Кратко</h3>
       <dl class="detail">
-        <dt>Цена</dt><dd>по запросу</dd>
+        <dt>Цена</dt><dd>от €385 000</dd>
         <dt>Тип недвижимости</dt><dd>Квартиры</dd>
         <dt>Стадия</dt><dd>Офплан</dd>
         <dt>Начало стройки</dt><dd>—</dd>
@@ -156,9 +170,9 @@
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
 
-  var map=L.map('map').setView([34.690548,33.0034555],15);
+  var map=L.map('map').setView([34.674245,33.0002029],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([34.690548,33.0034555]).addTo(map).bindPopup("Meliora Residence");
+  L.marker([34.674245,33.0002029]).addTo(map).bindPopup("Meliora Residence");
 
 });
 </script>
