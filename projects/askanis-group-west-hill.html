@@ -29,7 +29,7 @@
 <h1>West Hill <span class="tag selling">В продаже</span></h1>
 <p class="muted">
   <a href="../developers/askanis-group.html">Askanis Group</a> · 
-  Квартиры · Limassol
+  Смешанный · Limassol, Санта-Барбара Хилл, Аматус
 </p>
 
 
@@ -42,7 +42,7 @@
 
 <div class="split">
   <div>
-    <p>West Hill — жилой комплекс на холмах Лимассола с видом на город и море. В состав входят апартаменты и пентхаусы с частными бассейнами и благоустроенной территорией.</p>
+    <p>West Hill — новейший проект Askanis Group: четыре корпуса (Levanda, Anthemis, Dhalia, Lilia) на западном склоне холма Санта-Барбара (восток Лимассола, район Аматус) над археологическим памятником Древний Аматус. 1/2/3-спальные апартаменты и пентхаусы, коммунальный бассейн, ландшафтные сады, крытая парковка. Энергокласс «A». 1- и 2-спальные распроданы, в продаже — 3-спальные и пентхаус.</p>
     
 
     <h2>Характеристики</h2>
@@ -52,29 +52,21 @@
       <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
       <tbody>
       
-        <tr><td>apartment</td><td>2</td>
+        <tr><td>apartment</td><td>1</td>
           <td>—</td><td>—</td>
-          <td>€640 000</td></tr>
+          <td><span class="muted">1-спальные, распродано (0 из 6)</span></td></tr>
       
         <tr><td>apartment</td><td>2</td>
           <td>—</td><td>—</td>
-          <td>€670 000</td></tr>
+          <td><span class="muted">2-спальные, распродано (0 из 11)</span></td></tr>
       
         <tr><td>apartment</td><td>3</td>
           <td>—</td><td>—</td>
-          <td>€920 000</td></tr>
+          <td>€1 111 000</td></tr>
       
-        <tr><td>apartment</td><td>3</td>
+        <tr><td>penthouse</td><td>—</td>
           <td>—</td><td>—</td>
-          <td>€960 000</td></tr>
-      
-        <tr><td>penthouse</td><td>3</td>
-          <td>—</td><td>—</td>
-          <td>€1 750 000</td></tr>
-      
-        <tr><td>penthouse</td><td>4</td>
-          <td>—</td><td>—</td>
-          <td>€2 200 000</td></tr>
+          <td>€2 950 000</td></tr>
       
       </tbody>
     </table>
@@ -129,13 +121,13 @@
     <div class="panel">
       <h3 style="margin-top:0">Кратко</h3>
       <dl class="detail">
-        <dt>Цена</dt><dd>€640 000 – €2 200 000</dd>
-        <dt>Тип недвижимости</dt><dd>Квартиры</dd>
+        <dt>Цена</dt><dd>€1 111 000 – €2 950 000</dd>
+        <dt>Тип недвижимости</dt><dd>Смешанный</dd>
         <dt>Стадия</dt><dd>В продаже</dd>
         <dt>Начало стройки</dt><dd>—</dd>
         <dt>Завершение</dt><dd>—</dd>
         
-        
+        <dt>Энергокласс</dt><dd>A</dd>
         
         
         
@@ -152,8 +144,8 @@
         <span class="chip">паркинг</span>
         
         
-        
-        
+        <span class="chip">энергокласс A</span>
+        <span class="chip">коммунальный бассейн</span><span class="chip">ландшафтные сады</span><span class="chip">гостевая парковка</span><span class="chip">крытая парковка с ДУ</span>
       </div>
       
     </div>
@@ -178,9 +170,9 @@
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
 
-  var map=L.map('map').setView([34.6852901,33.0332657],15);
+  var map=L.map('map').setView([34.715156,33.147232],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([34.6852901,33.0332657]).addTo(map).bindPopup("West Hill");
+  L.marker([34.715156,33.147232]).addTo(map).bindPopup("West Hill");
 
 });
 </script>

@@ -6,7 +6,7 @@
 <title>The Gallery · cydevs</title>
 <link rel="preconnect" href="https://unpkg.com">
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
 
 <link rel="stylesheet" href="../assets/styles.css">
 </head>
@@ -29,7 +29,7 @@
 <h1>The Gallery <span class="tag off_plan">Офплан</span></h1>
 <p class="muted">
   <a href="../developers/askanis-group.html">Askanis Group</a> · 
-  Квартиры · Limassol
+  — · Limassol
 </p>
 
 
@@ -42,7 +42,7 @@
 
 <div class="split">
   <div>
-    <p>The Gallery — проект под изучение (off-plan) в Лимассоле. Планируется строительство апартаментов и пентхаусов с современным дизайном и высокими стандартами качества.</p>
+    <p>The Gallery — проект под изучение (Coming Soon). Типы объектов, планировки и цены застройщиком пока не опубликованы.</p>
     
 
     <h2>Характеристики</h2>
@@ -52,17 +52,7 @@
       <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
       <tbody>
       
-        <tr><td>apartment</td><td>2</td>
-          <td>—</td><td>—</td>
-          <td><span class="muted">Price unavailable</span></td></tr>
-      
-        <tr><td>apartment</td><td>3</td>
-          <td>—</td><td>—</td>
-          <td><span class="muted">Price unavailable</span></td></tr>
-      
-        <tr><td>penthouse</td><td>3</td>
-          <td>—</td><td>—</td>
-          <td><span class="muted">Price unavailable</span></td></tr>
+        <tr><td colspan="5" class="empty">Поюнитные данные не опубликованы. Общий диапазон: по запросу.</td></tr>
       
       </tbody>
     </table>
@@ -71,32 +61,10 @@
 
     
     
-    <h2>Справочные цены из внешних источников</h2>
-    <p class="muted" style="margin:4px 0">Цена застройщика (в таблице выше) — источник правды. Ниже — цены на этот объект с сайтов риелторов и агрегаторов, приведены для справки. Источников: 1. Знаком ✓ отмечены цены, подтверждённые минимум двумя независимыми источниками.</p>
-    
-    <div class="table-wrap">
-    <table>
-      <thead><tr><th>✓</th><th>Спальни</th><th>Площадь, м²</th><th>Справочная цена</th><th>Источник</th></tr></thead>
-      <tbody>
-      
-        <tr class="muted">
-          <td><span class="muted" title="Не подтверждено вторым источником">—</span></td>
-          <td>—</td>
-          <td>—</td>
-          <td>€90 000</td>
-          <td><a href="https://www.forbes.com/sites/joanneshurvell/2026/05/22/vima-2026-highlights-from-cyprus-emerging-international-art-fair/" target="_blank" rel="noopener">forbes.com</a> <span class="muted" style="font-size:11px">(name)</span></td></tr>
-      
-      </tbody>
-    </table>
-    </div>
-    
-    
 
     
 
-    <h2>Расположение</h2>
     
-    <div id="map"></div>
   </div>
 
   <aside>
@@ -104,7 +72,7 @@
       <h3 style="margin-top:0">Кратко</h3>
       <dl class="detail">
         <dt>Цена</dt><dd>по запросу</dd>
-        <dt>Тип недвижимости</dt><dd>Квартиры</dd>
+        <dt>Тип недвижимости</dt><dd>—</dd>
         <dt>Стадия</dt><dd>Офплан</dd>
         <dt>Начало стройки</dt><dd>—</dd>
         <dt>Завершение</dt><dd>—</dd>
@@ -146,18 +114,6 @@
 </main>
 <script src="../assets/app.js"></script>
 
-
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded',function(){
-  if(typeof L==='undefined')return;
-
-  var map=L.map('map').setView([34.6852901,33.0332657],15);
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([34.6852901,33.0332657]).addTo(map).bindPopup("The Gallery");
-
-});
-</script>
 
 
 </body>
