@@ -29,7 +29,7 @@
 <h1>Green Hills <span class="tag selling">В продаже</span></h1>
 <p class="muted">
   <a href="../developers/crona-group.html">Crona Group</a> · 
-  Смешанный · Limassol
+  Смешанный · Limassol, Pyrgos
 </p>
 
 
@@ -209,9 +209,9 @@
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
 
-  var map=L.map('map').setView([34.6852901,33.0332657],15);
+  var map=L.map('map').setView([34.7236,33.1417],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([34.6852901,33.0332657]).addTo(map).bindPopup("Green Hills");
+  L.marker([34.7236,33.1417]).addTo(map).bindPopup("Green Hills");
 
 });
 </script>
