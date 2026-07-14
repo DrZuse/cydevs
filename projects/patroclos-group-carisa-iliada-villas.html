@@ -26,7 +26,7 @@
 <main>
 
 <div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Carisa Iliada Villas</div>
-<h1>Carisa Iliada Villas <span class="tag under_construction">Строится</span></h1>
+<h1>Carisa Iliada Villas <span class="tag selling">В продаже</span></h1>
 <p class="muted">
   <a href="../developers/patroclos-group.html">Patroclos Group</a> · 
   Виллы · Larnaca, Oroklini
@@ -49,12 +49,54 @@
     <div class="table-wrap">
     
     <table>
-      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <thead><tr><th>Юнит</th><th>Этаж</th><th>Спальни</th><th>С/у</th><th>Парковка</th>
+        <th>Внутр., м²</th><th>Веранды, м²</th><th>Всего, м²</th><th>Участок, м²</th><th>Цена</th><th>Статус</th></tr></thead>
       <tbody>
       
-        <tr><td>villa</td><td>3</td>
-          <td>135</td><td>—</td>
-          <td><span class="muted">PRICE UPON REQUEST</span></td></tr>
+        
+        <tr>
+          <td>Andromache</td>
+          <td>—</td>
+          <td>3</td>
+          <td>3</td>
+          <td>2</td>
+          <td>135</td>
+          <td>50</td>
+          <td>—</td>
+          <td>—</td>
+          <td><span class="muted">PRICE UPON REQUEST</span></td>
+          <td>продано</td>
+        </tr>
+      
+        
+        <tr>
+          <td>Eleni</td>
+          <td>—</td>
+          <td>3</td>
+          <td>3</td>
+          <td>2</td>
+          <td>135</td>
+          <td>50</td>
+          <td>—</td>
+          <td>—</td>
+          <td><span class="muted">PRICE UPON REQUEST</span></td>
+          <td>продано</td>
+        </tr>
+      
+        
+        <tr>
+          <td>Ira</td>
+          <td>—</td>
+          <td>3</td>
+          <td>3</td>
+          <td>2</td>
+          <td>135</td>
+          <td>50</td>
+          <td>—</td>
+          <td>—</td>
+          <td><span class="muted">PRICE UPON REQUEST</span></td>
+          <td>доступно</td>
+        </tr>
       
       </tbody>
     </table>
@@ -77,7 +119,7 @@
       <dl class="detail">
         <dt>Цена</dt><dd>по запросу</dd>
         <dt>Тип недвижимости</dt><dd>Виллы</dd>
-        <dt>Стадия</dt><dd>Строится · строительство</dd>
+        <dt>Стадия</dt><dd>В продаже · строительство · Delivered</dd>
         <dt>Начало стройки</dt><dd>—</dd>
         <dt>Завершение</dt><dd>—</dd>
         
@@ -92,13 +134,45 @@
       <h3 style="margin-top:0">Оснащение</h3>
       
       <div class="row">
-        <span class="chip ">☀ фотовольтаика: ?</span>
-        <span class="chip ">♨ тёплый пол: ?</span>
         
-        <span class="chip">паркинг</span>
+          
+        
+          <span class="chip on">личный бассейн: да</span>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
         
         
-        <span class="chip">энергокласс A</span>
+        
         
       </div>
       
@@ -106,7 +180,7 @@
     
     <div class="panel" style="margin-top:16px">
       <h3 style="margin-top:0">Источники</h3>
-      <ul class="linklist small"><li><a href="https://patroclos.com.cy/projects/carisa-iliada-villas" target="_blank" rel="noopener">patroclos.com.cy/projects/carisa-iliada-villas</a></li></ul>
+      <ul class="linklist small"><li><a href="https://patroclos.com.cy/projects/carisa-iliada-villas" target="_blank" rel="noopener">patroclos.com.cy/projects/carisa-iliada-villas</a></li><li><a href="https://patroclos.com.cy/projects/carisa-iliada-villas/" target="_blank" rel="noopener">patroclos.com.cy/projects/carisa-iliada-villas/</a></li></ul>
     </div>
   </aside>
 </div>
@@ -124,9 +198,9 @@
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
 
-  var map=L.map('map').setView([34.9822755,33.6558552],15);
+  var map=L.map('map').setView([34.9613875,33.6541719],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([34.9822755,33.6558552]).addTo(map).bindPopup("Carisa Iliada Villas");
+  L.marker([34.9613875,33.6541719]).addTo(map).bindPopup("Carisa Iliada Villas");
 
 });
 </script>
