@@ -6,7 +6,7 @@
 <title>Old Vines Residences · cydevs</title>
 <link rel="preconnect" href="https://unpkg.com">
 
-
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 
 <link rel="stylesheet" href="../assets/styles.css">
 </head>
@@ -43,7 +43,7 @@
 <div class="split">
   <div>
     <p>Old Vines Residences — проект из 9 эксклюзивных апартаментов в районе Айос-Афанасиос (Agios Athanasios), Лимассол. На сайте застройщика есть доступные квартиры.</p>
-    
+    <p class="muted">Проект Old Vines Residences — современный жилой комплекс в престижном районе Агиос Афанасий, Лимассол. Состоит из 9 эксклюзивных квартир (1-3 спальни) и пентхаусов с частными кровельными садами. Особенности: современная архитектура с чистыми линиями и натуральными текстурами, высококачественная отделка и премиальные материалы, просторные планировки с открытым дизайном, частный бассейн и ландшафтные сады, удобное расположение рядом с трассой, лучшими школами и городским центром. Идеально для жизни и инвестиций. Статус: доступно (некоторые единицы проданы). Застройщик: MSP Ioannou Bros (основана в 1987 г.).</p>
 
     <h2>Характеристики</h2>
     <div class="table-wrap">
@@ -60,7 +60,7 @@
           <td>101</td>
           <td>—</td>
           <td>2</td>
-          <td>2</td>
+          <td>2.0</td>
           <td>1</td>
           <td>96.7</td>
           <td>32.0</td>
@@ -77,7 +77,7 @@
           <td>102</td>
           <td>—</td>
           <td>1</td>
-          <td>1</td>
+          <td>1.0</td>
           <td>1</td>
           <td>62.65</td>
           <td>13.4</td>
@@ -94,7 +94,7 @@
           <td>103</td>
           <td>—</td>
           <td>1</td>
-          <td>1</td>
+          <td>1.0</td>
           <td>1</td>
           <td>63.5</td>
           <td>14.9</td>
@@ -111,7 +111,7 @@
           <td>201</td>
           <td>—</td>
           <td>2</td>
-          <td>2</td>
+          <td>2.0</td>
           <td>1</td>
           <td>96.7</td>
           <td>32.0</td>
@@ -128,7 +128,7 @@
           <td>202</td>
           <td>—</td>
           <td>2</td>
-          <td>2</td>
+          <td>2.0</td>
           <td>1</td>
           <td>96.1</td>
           <td>32.0</td>
@@ -145,7 +145,7 @@
           <td>301</td>
           <td>—</td>
           <td>2</td>
-          <td>2</td>
+          <td>2.0</td>
           <td>2</td>
           <td>97.7</td>
           <td>32.0</td>
@@ -162,7 +162,7 @@
           <td>302</td>
           <td>—</td>
           <td>2</td>
-          <td>2</td>
+          <td>2.0</td>
           <td>2</td>
           <td>96.1</td>
           <td>32.0</td>
@@ -179,7 +179,7 @@
           <td>401</td>
           <td>—</td>
           <td>3</td>
-          <td>2</td>
+          <td>2.0</td>
           <td>2</td>
           <td>131.0</td>
           <td>69.54</td>
@@ -196,7 +196,7 @@
           <td>402</td>
           <td>—</td>
           <td>3</td>
-          <td>2</td>
+          <td>2.0</td>
           <td>2</td>
           <td>130.0</td>
           <td>70.7</td>
@@ -215,8 +215,24 @@
     
 
     
-
+    <h2>Планировки, документы и медиа</h2>
+    <ul class="linklist">
+      <li>📄 <a href="https://mspioannoubros.com/wp-content/uploads/2026/04/OLD-VINES-PRICE-LIST.pdf" target="_blank" rel="noopener">Брошюра проекта (PDF)</a></li>
+      <li>💶 <a href="https://mspioannoubros.com/wp-content/uploads/2026/04/OLD-VINES-PRICE-LIST.pdf" target="_blank" rel="noopener">Прайс-лист (PDF)</a></li>
+      <li>📐 <a href="https://mspioannoubros.com/wp-content/uploads/2026/04/Old-Vines-Residence.pdf" target="_blank" rel="noopener">Планировка / чертёж</a></li>
+      
+      
+      
+      
+      
+      
+      
+    </ul>
     
+
+    <h2>Расположение</h2>
+    
+    <div id="map"></div>
   </div>
 
   <aside>
@@ -225,7 +241,7 @@
       <dl class="detail">
         <dt>Цена</dt><dd>€890 000 – €1 360 000</dd>
         <dt>Тип недвижимости</dt><dd>Квартиры</dd>
-        <dt>Стадия</dt><dd>В продаже</dd>
+        <dt>Стадия</dt><dd>В продаже · Available</dd>
         <dt>Начало стройки</dt><dd>—</dd>
         <dt>Завершение</dt><dd>—</dd>
         
@@ -241,6 +257,24 @@
       
       <div class="row">
         
+          <span class="chip on">общий бассейн: да</span>
+        
+          <span class="chip ">личный бассейн: нет</span>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          <span class="chip on">кладовая: да</span>
+        
           
         
           
@@ -255,31 +289,13 @@
         
           
         
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
+          <span class="chip ">вид на море: нет</span>
         
           
         
         
         
-        
+        <span class="chip">современная архитектура с чистыми линиями и натуральными текстурами</span><span class="chip">высококачественная отделка и премиальные материалы</span><span class="chip">просторные планировки с открытым дизайном</span><span class="chip">частный бассейн и ландшафтные сады</span><span class="chip">частные кровельные сады у пентхаусов</span>
       </div>
       
     </div>
@@ -300,12 +316,24 @@
 </div>
 
 <div class="foot">
-  Данные обновлены: 2026-07-14. Дашборд застройщиков жилой недвижимости Кипра.
+  Данные обновлены: 2026-07-15. Дашборд застройщиков жилой недвижимости Кипра.
   Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
 </div>
 </main>
 <script src="../assets/app.js"></script>
 
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([34.693306,33.069472],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([34.693306,33.069472]).addTo(map).bindPopup("Old Vines Residences");
+
+});
+</script>
 
 
 </body>

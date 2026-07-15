@@ -6,7 +6,7 @@
 <title>Carmen Residence · cydevs</title>
 <link rel="preconnect" href="https://unpkg.com">
 
-
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 
 <link rel="stylesheet" href="../assets/styles.css">
 </head>
@@ -43,7 +43,7 @@
 <div class="split">
   <div>
     <p>Проект из 4 частных домов в Лимассоле. Каждый дом двухэтажный: на первом этаже — кухня-гостиная-столовая открытой планировки и гостевой санузел, на втором — 4 спальни и 3 ванные. Крытая парковка на 2 машины, фотоэлектрическая система 3 кВт.</p>
-    
+    <p class="muted">Проект состоит из 4 частных домов. Солнечная электростанция 3 кВт.</p>
 
     <h2>Характеристики</h2>
     <div class="table-wrap">
@@ -64,7 +64,9 @@
 
     
 
+    <h2>Расположение</h2>
     
+    <div id="map"></div>
   </div>
 
   <aside>
@@ -73,12 +75,12 @@
       <dl class="detail">
         <dt>Цена</dt><dd>по запросу</dd>
         <dt>Тип недвижимости</dt><dd>Виллы</dd>
-        <dt>Стадия</dt><dd>В продаже</dd>
+        <dt>Стадия</dt><dd>В продаже · Completed</dd>
         <dt>Начало стройки</dt><dd>—</dd>
-        <dt>Завершение</dt><dd>—</dd>
-        
-        
-        
+        <dt>Завершение</dt><dd>01/06/2025</dd>
+        <dt>Код проекта</dt><dd>123</dd>
+        <dt>Энергокласс</dt><dd>A+</dd>
+        <dt>Титулы</dt><dd>выпущены</dd>
         
         
         
@@ -88,32 +90,84 @@
       <h3 style="margin-top:0">Оснащение</h3>
       
       <div class="row">
-        <span class="chip on">☀ фотовольтаика: да</span>
-        <span class="chip ">♨ тёплый пол: ?</span>
         
-        <span class="chip">паркинг</span>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          <span class="chip on">фотовольтаика: да</span>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
         
         
         
-        
+        <span class="chip">Высококачественные строительные материалы</span><span class="chip">Открытая планировка кухни-гостиной-столовой</span><span class="chip">Гостьевой туалет на первом этаже</span><span class="chip">4 спальни и 3 санузла на втором этаже</span><span class="chip">Крытая парковка на 2 машины</span>
       </div>
       
     </div>
     
+    
     <div class="panel" style="margin-top:16px">
       <h3 style="margin-top:0">Источники</h3>
-      <ul class="linklist small"><li><a href="https://www.pourosdevelopments.com/project/carmen-residence/123/" target="_blank" rel="noopener">www.pourosdevelopments.com/project/carmen-r...</a></li></ul>
+      <ul class="linklist small">
+        
+        <li>✅ <a href="https://www.pourosdevelopments.com/project/carmen-residence/123/" target="_blank" rel="noopener"><strong>www.pourosdevelopments.com/project/carmen-r...</strong></a>
+          <span class="muted">— главный источник (сайт застройщика)</span></li>
+        
+        
+      </ul>
     </div>
+    
   </aside>
 </div>
 
 <div class="foot">
-  Данные обновлены: 2026-07-14. Дашборд застройщиков жилой недвижимости Кипра.
+  Данные обновлены: 2026-07-15. Дашборд застройщиков жилой недвижимости Кипра.
   Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
 </div>
 </main>
 <script src="../assets/app.js"></script>
 
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([34.6852901,33.0332657],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([34.6852901,33.0332657]).addTo(map).bindPopup("Carmen Residence");
+
+});
+</script>
 
 
 </body>

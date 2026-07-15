@@ -6,7 +6,7 @@
 <title>RIVEREDGE BUILDING · cydevs</title>
 <link rel="preconnect" href="https://unpkg.com">
 
-
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 
 <link rel="stylesheet" href="../assets/styles.css">
 </head>
@@ -43,7 +43,7 @@
 <div class="split">
   <div>
     <p>RIVEREDGE BUILDING — проект на берегу реки в районе Айос Афанасиос (Лимассол): 3 этажа, 8 просторных апартаментов с 2–3 спальнями и большими террасами, вид на город. В 5 минутах от моря и центра Лимассола. Продано 2 из 8 юнитов (по данным сайта застройщика).</p>
-    
+    <p class="muted">The decoration emphasises the quiet and calming side, while the dynamic aspect of the project is reflected by the structure. All apartments are very spacious with 2 bedrooms, 2 bathrooms and large terraces.</p>
 
     <h2>Характеристики</h2>
     <div class="table-wrap">
@@ -64,8 +64,8 @@
           <td>1</td>
           <td>75</td>
           <td>44.05</td>
-          <td>—</td>
-          <td>—</td>
+          <td></td>
+          <td></td>
           <td><span class="muted">по запросу</span></td>
           <td>доступно</td>
         </tr>
@@ -81,8 +81,8 @@
           <td>1</td>
           <td>95</td>
           <td>27.400000000000002</td>
-          <td>—</td>
-          <td>—</td>
+          <td></td>
+          <td></td>
           <td><span class="muted">по запросу</span></td>
           <td>продано</td>
         </tr>
@@ -98,8 +98,8 @@
           <td>1</td>
           <td>75</td>
           <td>22.45</td>
-          <td>—</td>
-          <td>—</td>
+          <td></td>
+          <td></td>
           <td><span class="muted">по запросу</span></td>
           <td>доступно</td>
         </tr>
@@ -115,8 +115,8 @@
           <td>1</td>
           <td>75</td>
           <td>21.25</td>
-          <td>—</td>
-          <td>—</td>
+          <td></td>
+          <td></td>
           <td><span class="muted">по запросу</span></td>
           <td>доступно</td>
         </tr>
@@ -132,8 +132,8 @@
           <td>1</td>
           <td>95</td>
           <td>78.25</td>
-          <td>—</td>
-          <td>—</td>
+          <td></td>
+          <td></td>
           <td><span class="muted">по запросу</span></td>
           <td>доступно</td>
         </tr>
@@ -149,8 +149,8 @@
           <td>1</td>
           <td>75</td>
           <td>22.45</td>
-          <td>—</td>
-          <td>—</td>
+          <td></td>
+          <td></td>
           <td><span class="muted">по запросу</span></td>
           <td>доступно</td>
         </tr>
@@ -166,8 +166,8 @@
           <td>1</td>
           <td>95</td>
           <td>27.400000000000002</td>
-          <td>—</td>
-          <td>—</td>
+          <td></td>
+          <td></td>
           <td><span class="muted">по запросу</span></td>
           <td>продано</td>
         </tr>
@@ -183,8 +183,8 @@
           <td>1</td>
           <td>75</td>
           <td>44.05</td>
-          <td>—</td>
-          <td>—</td>
+          <td></td>
+          <td></td>
           <td><span class="muted">по запросу</span></td>
           <td>доступно</td>
         </tr>
@@ -198,8 +198,24 @@
     
 
     
-
+    <h2>Планировки, документы и медиа</h2>
+    <ul class="linklist">
+      
+      
+      <li>📐 <a href="https://www.dynamicsphera.com/storage/app/media/PDFs/RIVEREDGE/RIVER%20EDGE%20BUILDING%20-%20DRAWINGS.pdf" target="_blank" rel="noopener">Планировка / чертёж</a></li>
+      
+      <li>🔗 <a href="https://www.dynamicsphera.com/storage/app/media/PDFs/RIVEREDGE/RIVER%20EDGE%20BUILDING%20-%20DRAWINGS.pdf" target="_blank" rel="noopener">Прочий документ</a></li>
+      
+      
+      
+      
+      
+    </ul>
     
+
+    <h2>Расположение</h2>
+    
+    <div id="map"></div>
   </div>
 
   <aside>
@@ -210,8 +226,8 @@
         <dt>Тип недвижимости</dt><dd>Квартиры</dd>
         <dt>Стадия</dt><dd>Офплан · Проектирование / ранняя стадия</dd>
         <dt>Начало стройки</dt><dd>—</dd>
-        <dt>Завершение</dt><dd>—</dd>
-        
+        <dt>Завершение</dt><dd>December 2023</dd>
+        <dt>Код проекта</dt><dd>riveredge-building</dd>
         
         
         
@@ -223,32 +239,84 @@
       <h3 style="margin-top:0">Оснащение</h3>
       
       <div class="row">
-        <span class="chip ">☀ фотовольтаика: ?</span>
-        <span class="chip ">♨ тёплый пол: ?</span>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          <span class="chip on">кладовая: да</span>
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          <span class="chip ">вид на море: нет</span>
+        
+          
         
         
         
-        
-        
-        
+        <span class="chip">large terraces</span><span class="chip">spacious apartments</span><span class="chip">high-quality decoration</span>
       </div>
       
     </div>
     
+    
     <div class="panel" style="margin-top:16px">
       <h3 style="margin-top:0">Источники</h3>
-      <ul class="linklist small"><li><a href="https://www.dynamicsphera.com/project/riveredge-building" target="_blank" rel="noopener">www.dynamicsphera.com/project/riveredge-building</a></li></ul>
+      <ul class="linklist small">
+        
+        <li>✅ <a href="https://www.dynamicsphera.com/project/riveredge-building" target="_blank" rel="noopener"><strong>www.dynamicsphera.com/project/riveredge-building</strong></a>
+          <span class="muted">— главный источник (сайт застройщика)</span></li>
+        
+        
+      </ul>
     </div>
+    
   </aside>
 </div>
 
 <div class="foot">
-  Данные обновлены: 2026-07-14. Дашборд застройщиков жилой недвижимости Кипра.
+  Данные обновлены: 2026-07-15. Дашборд застройщиков жилой недвижимости Кипра.
   Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
 </div>
 </main>
 <script src="../assets/app.js"></script>
 
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+
+  var map=L.map('map').setView([34.6852901,33.0332657],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([34.6852901,33.0332657]).addTo(map).bindPopup("RIVEREDGE BUILDING");
+
+});
+</script>
 
 
 </body>
