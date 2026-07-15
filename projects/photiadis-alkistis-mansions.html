@@ -29,7 +29,7 @@
 <h1>Alkistis Mansions <span class="tag off_plan">Офплан</span></h1>
 <p class="muted">
   <a href="../developers/photiadis.html">Photos Photiades Group (Photiades Homes)</a> · 
-  Квартиры · Nicosia
+  Квартиры · Nicosia, Strovolos
 </p>
 
 
@@ -108,7 +108,7 @@
     
 
     <h2>Расположение</h2>
-    <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
   </div>
 
@@ -205,9 +205,9 @@
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
 
-  var map=L.map('map').setView([35.1746503,33.3638783],13);
+  var map=L.map('map').setView([35.1517083,33.366087],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.circle([35.1746503,33.3638783],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Alkistis Mansions" + ' (примерно)');
+  L.marker([35.1517083,33.366087]).addTo(map).bindPopup("Alkistis Mansions");
 
 });
 </script>

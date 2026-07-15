@@ -156,7 +156,7 @@
     
 
     <h2>Расположение</h2>
-    <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
   </div>
 
@@ -258,9 +258,9 @@
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
 
-  var map=L.map('map').setView([35.1291688,33.375107],13);
+  var map=L.map('map').setView([35.1477993,33.3514881],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.circle([35.1291688,33.375107],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Thetidos Residences" + ' (примерно)');
+  L.marker([35.1477993,33.3514881]).addTo(map).bindPopup("Thetidos Residences");
 
 });
 </script>

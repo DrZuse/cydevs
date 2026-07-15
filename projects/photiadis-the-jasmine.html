@@ -29,7 +29,7 @@
 <h1>The Jasmine Residence <span class="tag selling">В продаже</span></h1>
 <p class="muted">
   <a href="../developers/photiadis.html">Photos Photiades Group (Photiades Homes)</a> · 
-  Смешанный · Nicosia
+  Смешанный · Nicosia, Carolina Park
 </p>
 
 
@@ -219,9 +219,9 @@
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
 
-  var map=L.map('map').setView([35.170811799999996,33.3223299],15);
+  var map=L.map('map').setView([35.0771328,33.3892305],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([35.170811799999996,33.3223299]).addTo(map).bindPopup("The Jasmine Residence");
+  L.marker([35.0771328,33.3892305]).addTo(map).bindPopup("The Jasmine Residence");
 
 });
 </script>

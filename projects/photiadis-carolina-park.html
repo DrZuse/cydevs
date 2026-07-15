@@ -29,7 +29,7 @@
 <h1>Carolina Park <span class="tag selling">В продаже</span></h1>
 <p class="muted">
   <a href="../developers/photiadis.html">Photos Photiades Group (Photiades Homes)</a> · 
-  Жилой комплекс · Nicosia, окраина Никосии, около 8 км от центра города
+  Жилой комплекс · Nicosia, Dali (Νέα Λήδρα), ~8 км от въезда в Никосию
 </p>
 
 
@@ -119,7 +119,7 @@
     
 
     <h2>Расположение</h2>
-    <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
   </div>
 
@@ -224,9 +224,9 @@
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
 
-  var map=L.map('map').setView([35.1038025,33.3899355],13);
+  var map=L.map('map').setView([35.0771328,33.3892305],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.circle([35.1038025,33.3899355],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Carolina Park" + ' (примерно)');
+  L.marker([35.0771328,33.3892305]).addTo(map).bindPopup("Carolina Park");
 
 });
 </script>
