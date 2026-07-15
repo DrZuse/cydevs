@@ -140,7 +140,7 @@
         <dt>Титулы</dt><dd>гарантированы застройщиком</dd>
         
         
-        
+        <dt>Адрес</dt><dd>Theokritou, Athienou</dd>
       </dl>
     </div>
     <div class="panel" style="margin-top:16px">
@@ -219,9 +219,9 @@
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
 
-  var map=L.map('map').setView([35.0618614,33.5404951],15);
+  var map=L.map('map').setView([35.05639,33.5339],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([35.0618614,33.5404951]).addTo(map).bindPopup("Athienou Court");
+  L.marker([35.05639,33.5339]).addTo(map).bindPopup("Athienou Court");
 
 });
 </script>
