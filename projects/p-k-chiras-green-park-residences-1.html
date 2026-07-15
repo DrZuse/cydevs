@@ -29,7 +29,7 @@
 <h1>Green Park Residences 1 <span class="tag under_construction">Строится</span></h1>
 <p class="muted">
   <a href="../developers/p-k-chiras.html">P&amp;K Chiras</a> · 
-  Квартиры · Larnaca
+  Квартиры · Larnaca, Kiti
 </p>
 
 
@@ -314,9 +314,9 @@
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
 
-  var map=L.map('map').setView([34.9236095,33.6236184],15);
+  var map=L.map('map').setView([34.8464781,33.5727305],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([34.9236095,33.6236184]).addTo(map).bindPopup("Green Park Residences 1");
+  L.marker([34.8464781,33.5727305]).addTo(map).bindPopup("Green Park Residences 1");
 
 });
 </script>
