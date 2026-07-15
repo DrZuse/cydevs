@@ -29,7 +29,7 @@
 <h1>Lush (Larnaca) <span class="tag off_plan">Офплан</span></h1>
 <p class="muted">
   <a href="../developers/ppc-platinum-properties.html">PPC Platinum Properties</a> · 
-  Квартиры · Larnaca
+  Квартиры · Larnaca, Vergina
 </p>
 
 
@@ -184,7 +184,7 @@
         
         
         
-        
+        <dt>Адрес</dt><dd>~4 км от пляжей Blue Flag, тихий семейный район у выезда на трассы (точный адрес застройщик не публикует)</dd>
       </dl>
     </div>
     <div class="panel" style="margin-top:16px">
@@ -269,9 +269,9 @@
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
 
-  var map=L.map('map').setView([34.9236095,33.6236184],15);
+  var map=L.map('map').setView([34.923,33.595],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([34.9236095,33.6236184]).addTo(map).bindPopup("Lush (Larnaca)");
+  L.marker([34.923,33.595]).addTo(map).bindPopup("Lush (Larnaca)");
 
 });
 </script>
