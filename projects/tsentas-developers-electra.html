@@ -267,6 +267,7 @@
     <h2>Расположение</h2>
     
     <div id="map"></div>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.172284813635756,33.35070679989471" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -361,10 +362,11 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=35.172284813635756,33.35070679989471" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
   var map=L.map('map').setView([35.172284813635756,33.35070679989471],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([35.172284813635756,33.35070679989471]).addTo(map).bindPopup("Electra");
+  L.marker([35.172284813635756,33.35070679989471]).addTo(map).bindPopup("Electra" + gmapsLink);
 
 });
 </script>

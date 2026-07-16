@@ -369,6 +369,7 @@
     <h2>Расположение</h2>
     
     <div id="map"></div>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.944117,32.9719104" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -468,10 +469,11 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.944117,32.9719104" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
   var map=L.map('map').setView([34.944117,32.9719104],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([34.944117,32.9719104]).addTo(map).bindPopup("FC233 Kyperounta Valley- \u0394\u03b9\u03b1\u03bc\u03b5\u03c1\u03b9\u03c3\u03bc\u03b1\u03c4\u03b1");
+  L.marker([34.944117,32.9719104]).addTo(map).bindPopup("FC233 Kyperounta Valley- \u0394\u03b9\u03b1\u03bc\u03b5\u03c1\u03b9\u03c3\u03bc\u03b1\u03c4\u03b1" + gmapsLink);
 
 });
 </script>

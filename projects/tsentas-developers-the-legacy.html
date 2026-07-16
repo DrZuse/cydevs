@@ -270,6 +270,7 @@
     <h2>Расположение</h2>
     
     <div id="map"></div>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.168635,33.356507" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -364,10 +365,11 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=35.168635,33.356507" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
   var map=L.map('map').setView([35.168635,33.356507],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([35.168635,33.356507]).addTo(map).bindPopup("The Legacy");
+  L.marker([35.168635,33.356507]).addTo(map).bindPopup("The Legacy" + gmapsLink);
 
 });
 </script>

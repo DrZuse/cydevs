@@ -73,6 +73,7 @@
     <h2>Расположение</h2>
     <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
     <div id="map"></div>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.9761182,33.8483675" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -167,10 +168,11 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.9761182,33.8483675" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
   var map=L.map('map').setView([34.9761182,33.8483675],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.circle([34.9761182,33.8483675],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("St. George\u0027s Residence 3 \u0026 4" + ' (примерно)');
+  L.circle([34.9761182,33.8483675],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("St. George\u0027s Residence 3 \u0026 4" + ' (примерно)' + gmapsLink);
 
 });
 </script>

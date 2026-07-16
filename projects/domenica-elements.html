@@ -795,6 +795,7 @@
     <h2>Расположение</h2>
     
     <div id="map"></div>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.782361,32.423333" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -891,10 +892,11 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.782361,32.423333" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
   var map=L.map('map').setView([34.782361,32.423333],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([34.782361,32.423333]).addTo(map).bindPopup("Elements");
+  L.marker([34.782361,32.423333]).addTo(map).bindPopup("Elements" + gmapsLink);
 
 });
 </script>

@@ -355,6 +355,7 @@
     <h2>Расположение</h2>
     <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
     <div id="map"></div>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.0995648,33.3815988" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -449,10 +450,11 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=35.0995648,33.3815988" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
   var map=L.map('map').setView([35.0995648,33.3815988],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.circle([35.0995648,33.3815988],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("\u0414\u043e\u043c\u0430 \u0432 \u041b\u0430\u0442\u0441\u0438\u0438 (3-4 \u0441\u043f\u0430\u043b\u044c\u043d\u0438)" + ' (примерно)');
+  L.circle([35.0995648,33.3815988],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("\u0414\u043e\u043c\u0430 \u0432 \u041b\u0430\u0442\u0441\u0438\u0438 (3-4 \u0441\u043f\u0430\u043b\u044c\u043d\u0438)" + ' (примерно)' + gmapsLink);
 
 });
 </script>

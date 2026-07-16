@@ -308,6 +308,7 @@
     <h2>Расположение</h2>
     <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
     <div id="map"></div>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6928124,33.0570315" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -402,10 +403,11 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.6928124,33.0570315" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
   var map=L.map('map').setView([34.6928124,33.0570315],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.circle([34.6928124,33.0570315],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Agios Nicolas" + ' (примерно)');
+  L.circle([34.6928124,33.0570315],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Agios Nicolas" + ' (примерно)' + gmapsLink);
 
 });
 </script>
