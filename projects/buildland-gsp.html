@@ -29,14 +29,14 @@
 <h1>GSP Project (K3 GSP Residence) <span class="tag off_plan">Офплан</span></h1>
 <p class="muted">
   <a href="../developers/buildland.html">BuildLand Developments</a> · 
-  Квартиры · Nicosia, Latsia
+  Квартиры · Nicosia, Strovolos
 </p>
 
 
 
 <div class="notice" style="margin:14px 0">
   📷 Фото, планировки и подробности — на странице проекта у застройщика:
-  <a href="https://buildland.com.cy/projects/gsp-project/" target="_blank" rel="noopener">buildland.com.cy/projects/gsp-project/</a>
+  <a href="https://buildland.com.cy/archive-projects/gsp-project/" target="_blank" rel="noopener">buildland.com.cy/archive-projects/gsp-project/</a>
 </div>
 
 
@@ -60,12 +60,12 @@
           <td>K1</td>
           <td>—</td>
           <td>4</td>
-          <td>—</td>
-          <td>2</td>
-          <td>206</td>
+          <td></td>
+          <td></td>
+          <td></td>
           <td>18</td>
-          <td>—</td>
-          <td>340</td>
+          <td></td>
+          <td></td>
           <td><span class="muted">по запросу</span></td>
           <td>продано</td>
         </tr>
@@ -77,12 +77,12 @@
           <td>K2</td>
           <td>—</td>
           <td>3</td>
-          <td>—</td>
-          <td>2</td>
-          <td>176.5</td>
-          <td>22.4</td>
-          <td>—</td>
-          <td>374</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>17</td>
+          <td></td>
+          <td></td>
           <td><span class="muted">по запросу</span></td>
           <td>доступно</td>
         </tr>
@@ -94,12 +94,12 @@
           <td>K3</td>
           <td>—</td>
           <td>4</td>
-          <td>—</td>
-          <td>2</td>
-          <td>238</td>
-          <td>26.65</td>
-          <td>—</td>
-          <td>450</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td>18.65</td>
+          <td></td>
+          <td></td>
           <td><span class="muted">по запросу</span></td>
           <td>продано</td>
         </tr>
@@ -149,9 +149,9 @@
     
 
     <h2>Расположение</h2>
-    
+    <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.185566,33.382276" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.1328993,33.3454972" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -160,7 +160,7 @@
       <dl class="detail">
         <dt>Цена</dt><dd>по запросу</dd>
         <dt>Тип недвижимости</dt><dd>Квартиры</dd>
-        <dt>Стадия</dt><dd>Офплан · продажа off-plan · Off plan</dd>
+        <dt>Стадия</dt><dd>Офплан · продажа off-plan · Off plan; 1 из 3 домов Available</dd>
         <dt>Начало стройки</dt><dd>—</dd>
         <dt>Завершение</dt><dd>—</dd>
         <dt>Код проекта</dt><dd>K3 GSP Residence</dd>
@@ -224,7 +224,7 @@
       <h3 style="margin-top:0">Источники</h3>
       <ul class="linklist small">
         
-        <li>✅ <a href="https://buildland.com.cy/projects/gsp-project/" target="_blank" rel="noopener"><strong>buildland.com.cy/projects/gsp-project/</strong></a>
+        <li>✅ <a href="https://buildland.com.cy/archive-projects/gsp-project/" target="_blank" rel="noopener"><strong>buildland.com.cy/archive-projects/gsp-project/</strong></a>
           <span class="muted">— главный источник (сайт застройщика)</span></li>
         
         
@@ -249,11 +249,11 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=35.185566,33.382276" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=35.1328993,33.3454972" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
-  var map=L.map('map').setView([35.185566,33.382276],15);
+  var map=L.map('map').setView([35.1328993,33.3454972],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([35.185566,33.382276]).addTo(map).bindPopup("GSP Project (K3 GSP Residence)" + gmapsLink);
+  L.circle([35.1328993,33.3454972],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("GSP Project (K3 GSP Residence)" + ' (примерно)' + gmapsLink);
 
 });
 </script>

@@ -36,7 +36,7 @@
 
 <div class="notice" style="margin:14px 0">
   📷 Фото, планировки и подробности — на странице проекта у застройщика:
-  <a href="https://buildland.com.cy/harmony/" target="_blank" rel="noopener">buildland.com.cy/harmony/</a>
+  <a href="https://buildland.com.cy/archive-projects/harmony/" target="_blank" rel="noopener">buildland.com.cy/archive-projects/harmony/</a>
 </div>
 
 
@@ -115,9 +115,9 @@
     
 
     <h2>Расположение</h2>
-    
+    <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.185566,33.382276" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.1328993,33.3454972" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -126,7 +126,7 @@
       <dl class="detail">
         <dt>Цена</dt><dd>по запросу</dd>
         <dt>Тип недвижимости</dt><dd>Таунхаусы</dd>
-        <dt>Стадия</dt><dd>Строится · строительство · Under Construction</dd>
+        <dt>Стадия</dt><dd>Строится · строительство · Under Construction, Due: January 2023 на странице (устарело); таблицы юнитов нет</dd>
         <dt>Начало стройки</dt><dd>—</dd>
         <dt>Завершение</dt><dd>January 2023</dd>
         <dt>Код проекта</dt><dd>Harmony</dd>
@@ -190,12 +190,12 @@
       <h3 style="margin-top:0">Источники</h3>
       <ul class="linklist small">
         
-        <li>✅ <a href="https://buildland.com.cy/harmony/" target="_blank" rel="noopener"><strong>buildland.com.cy/harmony/</strong></a>
+        <li>✅ <a href="https://buildland.com.cy/archive-projects/harmony/" target="_blank" rel="noopener"><strong>buildland.com.cy/archive-projects/harmony/</strong></a>
           <span class="muted">— главный источник (сайт застройщика)</span></li>
         
         
-        <li><a href="https://cy.near-place.com/harmony-residence-build-land-489hfqf-strovolos" target="_blank" rel="noopener">cy.near-place.com/harmony-residence-build-l...</a>
-          <span class="muted">· прочее</span></li>
+        <li><a href="https://buildland.com.cy/projects/" target="_blank" rel="noopener">buildland.com.cy/projects/</a>
+          <span class="muted">· сайт застройщика</span></li>
         
       </ul>
     </div>
@@ -215,11 +215,11 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=35.185566,33.382276" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=35.1328993,33.3454972" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
-  var map=L.map('map').setView([35.185566,33.382276],15);
+  var map=L.map('map').setView([35.1328993,33.3454972],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([35.185566,33.382276]).addTo(map).bindPopup("Harmony Residence" + gmapsLink);
+  L.circle([35.1328993,33.3454972],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Harmony Residence" + ' (примерно)' + gmapsLink);
 
 });
 </script>
