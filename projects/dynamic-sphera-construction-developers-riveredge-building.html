@@ -109,7 +109,7 @@
         
         <tr>
           <td>201</td>
-          <td>1</td>
+          <td>2</td>
           <td>2</td>
           <td>2</td>
           <td>1</td>
@@ -126,7 +126,7 @@
         
         <tr>
           <td>202</td>
-          <td>1</td>
+          <td>2</td>
           <td>3</td>
           <td>2</td>
           <td>1</td>
@@ -143,7 +143,7 @@
         
         <tr>
           <td>203</td>
-          <td>1</td>
+          <td>2</td>
           <td>2</td>
           <td>2</td>
           <td>1</td>
@@ -160,7 +160,7 @@
         
         <tr>
           <td>301</td>
-          <td>1</td>
+          <td>3</td>
           <td>3</td>
           <td>2</td>
           <td>1</td>
@@ -177,7 +177,7 @@
         
         <tr>
           <td>302</td>
-          <td>1</td>
+          <td>3</td>
           <td>2</td>
           <td>2</td>
           <td>1</td>
@@ -214,9 +214,9 @@
     
 
     <h2>Расположение</h2>
-    
+    <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6852901,33.0332657" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.720238,33.035159" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -225,9 +225,9 @@
       <dl class="detail">
         <dt>Цена</dt><dd>по запросу</dd>
         <dt>Тип недвижимости</dt><dd>Квартиры</dd>
-        <dt>Стадия</dt><dd>Офплан · Проектирование / ранняя стадия</dd>
+        <dt>Стадия</dt><dd>Офплан · Проектирование / ранняя стадия · На сайте «expected to be delivered by December 2023» — устаревший текст: по состоянию на июль 2026 проект в разделе Under Study, офплан-продажи (2 из 8 юнитов проданы).</dd>
         <dt>Начало стройки</dt><dd>—</dd>
-        <dt>Завершение</dt><dd>December 2023</dd>
+        <dt>Завершение</dt><dd>—</dd>
         <dt>Код проекта</dt><dd>riveredge-building</dd>
         
         
@@ -293,6 +293,9 @@
           <span class="muted">— главный источник (сайт застройщика)</span></li>
         
         
+        <li><a href="https://cyprus-real.estate/property/riveredge-5828/" target="_blank" rel="noopener">cyprus-real.estate/property/riveredge-5828/</a>
+          <span class="muted">· агрегатор</span></li>
+        
       </ul>
     </div>
     
@@ -311,11 +314,11 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.6852901,33.0332657" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.720238,33.035159" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
-  var map=L.map('map').setView([34.6852901,33.0332657],15);
+  var map=L.map('map').setView([34.720238,33.035159],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([34.6852901,33.0332657]).addTo(map).bindPopup("RIVEREDGE BUILDING" + gmapsLink);
+  L.circle([34.720238,33.035159],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("RIVEREDGE BUILDING" + ' (примерно)' + gmapsLink);
 
 });
 </script>
