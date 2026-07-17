@@ -29,7 +29,7 @@
 <h1>City Colours <span class="tag selling">В продаже</span></h1>
 <p class="muted">
   <a href="../developers/korantina.html">Korantina Homes</a> · 
-  Смешанный · Paphos
+  — · Paphos, центр Пафоса
 </p>
 
 
@@ -42,7 +42,7 @@
 
 <div class="split">
   <div>
-    <p>City Colours — современный жилой комплекс из двух блоков в центре Пафоса, рядом с Парком красок. Включает виллы с 3 спальнями, апартаменты с 3 спальнями и магазин. Планировки максимизируют естественное освещение и функциональность.</p>
+    <p>City Colours — современный жилой комплекс из двух блоков в центре Пафоса, рядом с парком Park of Colours. Апартаменты с 1, 2 и 3 спальнями (65–162 м²); общий бассейн, тренажёрный зал, охрана 24/7, частная крытая парковка, виды на море и город.</p>
     <p class="muted">City Colours — современный жилой комплекс из двух блоков в центре Пафоса, рядом с Park of Colours. Современные апартаменты (1, 2, 3 спальни, 65–162 м²), ориентированы на городскую жизнь и инвестиции. В шаговой доступности магазины, рестораны, публичные службы и школы; в нескольких минутах — гавань Пафоса, пляж и аэропорт. Удобства: коммунальный бассейн, тренажёрный зал, охрана 24/7, частная крытая парковка, виды на море и город. До пляжа 5 мин, супермаркет 1 мин, рестораны 2 мин, аэропорт 20 мин, гавань 10 мин, больница 5 мин. На странице нет таблицы конкретных юнитов, документов (PDF), цен и сроков сдачи.</p>
 
     <h2>Характеристики</h2>
@@ -52,11 +52,15 @@
       <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
       <tbody>
       
-        <tr><td>apartment</td><td>3</td>
+        <tr><td>apartment</td><td>1</td>
           <td>—</td><td>—</td>
           <td><span class="muted">по запросу</span></td></tr>
       
-        <tr><td>villa</td><td>3</td>
+        <tr><td>apartment</td><td>2</td>
+          <td>—</td><td>—</td>
+          <td><span class="muted">по запросу</span></td></tr>
+      
+        <tr><td>apartment</td><td>3</td>
           <td>—</td><td>—</td>
           <td><span class="muted">по запросу</span></td></tr>
       
@@ -100,7 +104,7 @@
     <h2>Расположение</h2>
     
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.7743988,32.4231586" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.782785,32.4235461" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -108,7 +112,7 @@
       <h3 style="margin-top:0">Кратко</h3>
       <dl class="detail">
         <dt>Цена</dt><dd>по запросу</dd>
-        <dt>Тип недвижимости</dt><dd>Смешанный</dd>
+        <dt>Тип недвижимости</dt><dd>—</dd>
         <dt>Стадия</dt><dd>В продаже · в продаже</dd>
         <dt>Начало стройки</dt><dd>—</dd>
         <dt>Завершение</dt><dd>—</dd>
@@ -117,7 +121,7 @@
         
         
         
-        
+        <dt>Адрес</dt><dd>рядом с Park of Colours, центр Пафоса</dd>
       </dl>
     </div>
     <div class="panel" style="margin-top:16px">
@@ -195,11 +199,11 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.7743988,32.4231586" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.782785,32.4235461" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
-  var map=L.map('map').setView([34.7743988,32.4231586],15);
+  var map=L.map('map').setView([34.782785,32.4235461],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([34.7743988,32.4231586]).addTo(map).bindPopup("City Colours" + gmapsLink);
+  L.marker([34.782785,32.4235461]).addTo(map).bindPopup("City Colours" + gmapsLink);
 
 });
 </script>
