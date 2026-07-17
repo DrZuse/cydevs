@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mirna Residence · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Mirna Residence</div>
+<h1>Mirna Residence <span class="tag selling">В продаже</span></h1>
+<p class="muted">
+  <a href="../developers/ipc-developers.html">IPC Developers</a> · 
+  Квартиры · Larnaca, Larnaca
+</p>
+
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="https://www.ipcdevelopers.com/projects/mirna-residence/" target="_blank" rel="noopener">www.ipcdevelopers.com/projects/mirna-residence/</a>
+</div>
+
+
+<div class="split">
+  <div>
+    <p>Mirna Residence — резиденция из 8 просторных апартаментов высокого класса с видом на море в центре Ларнаки, в 500-600 м от моря и новой Марины.</p>
+    
+
+    <h2>Характеристики</h2>
+    <div class="table-wrap">
+    
+    <table>
+      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <tbody>
+      
+        <tr><td>apartment</td><td>—</td>
+          <td>—</td><td>—</td>
+          <td>€210 000</td></tr>
+      
+      </tbody>
+    </table>
+    
+    </div>
+
+    
+    
+
+    
+
+    <h2>Расположение</h2>
+    
+    <div id="map"></div>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.936319,33.626949" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>от €210 000</dd>
+        <dt>Тип недвижимости</dt><dd>Квартиры</dd>
+        <dt>Стадия</dt><dd>В продаже · построен, в продаже (фотоотчёт стройки на сайте — до июня 2023)</dd>
+        <dt>Начало стройки</dt><dd>—</dd>
+        <dt>Завершение</dt><dd>2024-03</dd>
+        
+        
+        
+        
+        
+        <dt>Адрес</dt><dd>Larnaca city centre, near the New Marina</dd>
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      
+      <div class="row">
+        <span class="chip ">☀ фотовольтаика: ?</span>
+        <span class="chip ">♨ тёплый пол: ?</span>
+        
+        
+        
+        
+        
+        <span class="chip">вид на море</span>
+      </div>
+      
+    </div>
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small"><li><a href="https://www.ipcdevelopers.com/projects/mirna-residence/" target="_blank" rel="noopener">www.ipcdevelopers.com/projects/mirna-residence/</a></li><li><a href="https://www.ipc-international.com/ipc-developments/mirna-residence/" target="_blank" rel="noopener">www.ipc-international.com/ipc-developments/...</a></li><li><a href="https://dom.com.cy/en/live/complexes/complex-larnaca/mirna-residence/" target="_blank" rel="noopener">dom.com.cy/en/live/complexes/complex-larnac...</a></li></ul>
+    </div>
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-17. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.936319,33.626949" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+
+  var map=L.map('map').setView([34.936319,33.626949],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([34.936319,33.626949]).addTo(map).bindPopup("Mirna Residence" + gmapsLink);
+
+});
+</script>
+
+
+</body>
+</html>
