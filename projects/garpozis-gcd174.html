@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Apartment GCD174 (Mesa Geitonia) · cydevs</title>
+<title>Olio · cydevs</title>
 <link rel="preconnect" href="https://unpkg.com">
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
@@ -25,8 +25,8 @@
 </header>
 <main>
 
-<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Apartment GCD174 (Mesa Geitonia)</div>
-<h1>Apartment GCD174 (Mesa Geitonia) <span class="tag off_plan">Офплан</span></h1>
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Olio</div>
+<h1>Olio <span class="tag off_plan">Офплан</span></h1>
 <p class="muted">
   <a href="../developers/garpozis.html">Garpozis Construction &amp; Developments</a> · 
   Квартиры · Limassol, Mesa Geitonia
@@ -42,7 +42,7 @@
 
 <div class="split">
   <div>
-    <p>Квартира с 2 спальнями и 2 санузлами (общая 104 м², крытая 88 м²) в районе Меса-Гитония, офф-план с завершением в 2026 году. Энергокласс A+.</p>
+    <p>Olio — малоэтажный жилой дом в тихом районе Меса-Гейтония: 3 этажа, 7 квартир, современная архитектура. В продаже квартира с 2 спальнями (88 м² внутренняя, 104 м² общая, 1-й этаж).</p>
     <p class="muted">Страница описывает один юнит (квартира-флэт), номер юнита застройщиком не присвоен. Кондиционирование — VRV, отопление — центральное. Год постройки указан как 2026 при условии Off-Plan; явный срок сдачи (delivery date) на странице не назван.</p>
 
     <h2>Характеристики</h2>
@@ -95,9 +95,9 @@
     
 
     <h2>Расположение</h2>
-    <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.701862,33.0449947" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.69377,33.042772" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -106,9 +106,9 @@
       <dl class="detail">
         <dt>Цена</dt><dd>по запросу</dd>
         <dt>Тип недвижимости</dt><dd>Квартиры</dd>
-        <dt>Стадия</dt><dd>Офплан · офф-план, завершение в 2026 · Off-Plan</dd>
+        <dt>Стадия</dt><dd>Офплан · начальная стадия, готовность ~10% (по 3D-туру) · Идентификация: «OLiO EL PROJECT» в чертеже градостроительного разрешения из брошюры GCD174 (Меса-Гейтония, участок 137). Готовность ~10% по туру.</dd>
         <dt>Начало стройки</dt><dd>—</dd>
-        <dt>Завершение</dt><dd>2026</dd>
+        <dt>Завершение</dt><dd>—</dd>
         <dt>Код проекта</dt><dd>GCD174</dd>
         <dt>Энергокласс</dt><dd>A+</dd>
         
@@ -177,6 +177,12 @@
         <li><a href="https://www.garpozisdevelopments.com/en/properties/residential" target="_blank" rel="noopener">www.garpozisdevelopments.com/en/properties/...</a>
           <span class="muted">· сайт застройщика</span></li>
         
+        <li><a href="https://360estatecy.com/properties/olio/" target="_blank" rel="noopener">360estatecy.com/properties/olio/</a>
+          <span class="muted">· developer_3d_tour</span></li>
+        
+        <li><a href="https://go.beyondstudios.pro/garpozis/" target="_blank" rel="noopener">go.beyondstudios.pro/garpozis/</a>
+          <span class="muted">· developer_3d_tour</span></li>
+        
       </ul>
     </div>
     
@@ -195,11 +201,11 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.701862,33.0449947" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.69377,33.042772" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
-  var map=L.map('map').setView([34.701862,33.0449947],13);
+  var map=L.map('map').setView([34.69377,33.042772],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.circle([34.701862,33.0449947],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Apartment GCD174 (Mesa Geitonia)" + ' (примерно)' + gmapsLink);
+  L.marker([34.69377,33.042772]).addTo(map).bindPopup("Olio" + gmapsLink);
 
 });
 </script>

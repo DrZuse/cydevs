@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Apartment GCD185 (Petrou &amp; Pavlou) · cydevs</title>
+<title>Lily · cydevs</title>
 <link rel="preconnect" href="https://unpkg.com">
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
@@ -25,8 +25,8 @@
 </header>
 <main>
 
-<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Apartment GCD185 (Petrou &amp; Pavlou)</div>
-<h1>Apartment GCD185 (Petrou &amp; Pavlou) <span class="tag off_plan">Офплан</span></h1>
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Lily</div>
+<h1>Lily <span class="tag off_plan">Офплан</span></h1>
 <p class="muted">
   <a href="../developers/garpozis.html">Garpozis Construction &amp; Developments</a> · 
   Квартиры · Limassol, Petrou &amp; Pavlou
@@ -42,7 +42,7 @@
 
 <div class="split">
   <div>
-    <p>Квартира с 2 спальнями и 2 санузлами (общая 116 м², крытая 86 м², крытая веранда 26 м²) в районе Петру-и-Павлу, офф-план с завершением в 2026 году. Кладовая, лифт, вид на море и горы; 1 км до центра, 3 км до моря.</p>
+    <p>Lily — современный жилой дом (Капсалос/Петру-и-Павлу): белые фасады с деревянными акцентами, изогнутые балконы со стеклянными ограждениями, озеленение на каждом уровне. В продаже квартира с 2 спальнями (86 м² внутренняя, 116 м² общая), мастер-спальня с санузлом.</p>
     <p class="muted">Мастер-спальня с собственным санузлом (en suite). Адрес застройщика: 16 Androkleous Street, Mesa Geitonia, Limassol, Cyprus.</p>
 
     <h2>Характеристики</h2>
@@ -95,9 +95,9 @@
     
 
     <h2>Расположение</h2>
-    <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.685249,33.0324177" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.69644,33.02411" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -106,7 +106,7 @@
       <dl class="detail">
         <dt>Цена</dt><dd>по запросу</dd>
         <dt>Тип недвижимости</dt><dd>Квартиры</dd>
-        <dt>Стадия</dt><dd>Офплан · офф-план, завершение в 2026 · OFF-Plan</dd>
+        <dt>Стадия</dt><dd>Офплан · начальная стадия, готовность ~10% (тур, обновление 07/2026) · Идентификация: план «LILY» в брошюре юнита GCD185. По туру (обновление 07/2026) готовность ~10%, сроки TBA; на сайте застройщика год сдачи 2026 — расхождение.</dd>
         <dt>Начало стройки</dt><dd>—</dd>
         <dt>Завершение</dt><dd>2026</dd>
         <dt>Код проекта</dt><dd>GCD185</dd>
@@ -177,6 +177,12 @@
         <li><a href="https://www.garpozisdevelopments.com/en/properties/residential" target="_blank" rel="noopener">www.garpozisdevelopments.com/en/properties/...</a>
           <span class="muted">· сайт застройщика</span></li>
         
+        <li><a href="https://360estatecy.com/properties/lily/" target="_blank" rel="noopener">360estatecy.com/properties/lily/</a>
+          <span class="muted">· developer_3d_tour</span></li>
+        
+        <li><a href="https://go.beyondstudios.pro/garpozis/" target="_blank" rel="noopener">go.beyondstudios.pro/garpozis/</a>
+          <span class="muted">· developer_3d_tour</span></li>
+        
       </ul>
     </div>
     
@@ -195,11 +201,11 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.685249,33.0324177" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.69644,33.02411" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
-  var map=L.map('map').setView([34.685249,33.0324177],13);
+  var map=L.map('map').setView([34.69644,33.02411],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.circle([34.685249,33.0324177],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Apartment GCD185 (Petrou \u0026 Pavlou)" + ' (примерно)' + gmapsLink);
+  L.marker([34.69644,33.02411]).addTo(map).bindPopup("Lily" + gmapsLink);
 
 });
 </script>

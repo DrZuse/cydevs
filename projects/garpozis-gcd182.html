@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>House GCD182 (Akrounta) · cydevs</title>
+<title>Akrounta · cydevs</title>
 <link rel="preconnect" href="https://unpkg.com">
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
@@ -25,8 +25,8 @@
 </header>
 <main>
 
-<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / House GCD182 (Akrounta)</div>
-<h1>House GCD182 (Akrounta) <span class="tag under_construction">Строится</span></h1>
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Akrounta</div>
+<h1>Akrounta <span class="tag under_construction">Строится</span></h1>
 <p class="muted">
   <a href="../developers/garpozis.html">Garpozis Construction &amp; Developments</a> · 
   Виллы · Limassol, Akrounta
@@ -42,7 +42,7 @@
 
 <div class="split">
   <div>
-    <p>Двухуровневый дом с 3 спальнями (крытая площадь 141 м², участок 427 м²) в деревне Акрунда; завершение в 2027 году. Энергокласс A.</p>
+    <p>Akrounta — закрытый анклав современных вилл в деревне Акрунда на фоне гор: кубистическая геометрия, белые фасады с тёмными акцентами, панорамное остекление с видом на долину; у каждой резиденции свой участок с газоном и крытой парковкой. В продаже вилла 3 спальни, 141 м² (участок 427 м²), энергокласс A. Старт строительства Q2/2026, расчётная сдача Q4/2027.</p>
     <p class="muted">Отдельный жилой дом (detached), статус доступен, цена по запросу, год постройки 2027, состояние новое.</p>
 
     <h2>Характеристики</h2>
@@ -95,9 +95,9 @@
     
 
     <h2>Расположение</h2>
-    <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.7669066,33.0843591" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.76696,33.07909" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -106,8 +106,8 @@
       <dl class="detail">
         <dt>Цена</dt><dd>по запросу</dd>
         <dt>Тип недвижимости</dt><dd>Виллы</dd>
-        <dt>Стадия</dt><dd>Строится · строится, завершение в 2027</dd>
-        <dt>Начало стройки</dt><dd>—</dd>
+        <dt>Стадия</dt><dd>Строится · подготовка участка, готовность ~10% (тур, обновление 07/2026) · 3D-тур застройщика (обновление 07/2026): готовность ~10%, Planning and Design — completed, Site Preparation — in progress; старт Q2/2026, сдача Q4/2027.</dd>
+        <dt>Начало стройки</dt><dd>Q2/2026</dd>
         <dt>Завершение</dt><dd>2027</dd>
         <dt>Код проекта</dt><dd>GCD182</dd>
         <dt>Энергокласс</dt><dd>A</dd>
@@ -177,6 +177,12 @@
         <li><a href="https://www.garpozisdevelopments.com/en/properties/residential" target="_blank" rel="noopener">www.garpozisdevelopments.com/en/properties/...</a>
           <span class="muted">· сайт застройщика</span></li>
         
+        <li><a href="https://360estatecy.com/properties/akrounta/" target="_blank" rel="noopener">360estatecy.com/properties/akrounta/</a>
+          <span class="muted">· developer_3d_tour</span></li>
+        
+        <li><a href="https://go.beyondstudios.pro/garpozis/" target="_blank" rel="noopener">go.beyondstudios.pro/garpozis/</a>
+          <span class="muted">· developer_3d_tour</span></li>
+        
       </ul>
     </div>
     
@@ -195,11 +201,11 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.7669066,33.0843591" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.76696,33.07909" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
-  var map=L.map('map').setView([34.7669066,33.0843591],13);
+  var map=L.map('map').setView([34.76696,33.07909],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.circle([34.7669066,33.0843591],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("House GCD182 (Akrounta)" + ' (примерно)' + gmapsLink);
+  L.marker([34.76696,33.07909]).addTo(map).bindPopup("Akrounta" + gmapsLink);
 
 });
 </script>

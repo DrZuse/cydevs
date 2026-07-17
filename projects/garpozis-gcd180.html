@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Penthouse GCD180 (Apostolos Andreas) · cydevs</title>
+<title>Rhea (Penthouse GCD180) · cydevs</title>
 <link rel="preconnect" href="https://unpkg.com">
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
@@ -25,8 +25,8 @@
 </header>
 <main>
 
-<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Penthouse GCD180 (Apostolos Andreas)</div>
-<h1>Penthouse GCD180 (Apostolos Andreas) <span class="tag completed_unsold">Готов, в продаже</span></h1>
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Rhea (Penthouse GCD180)</div>
+<h1>Rhea (Penthouse GCD180) <span class="tag completed_unsold">Готов, в продаже</span></h1>
 <p class="muted">
   <a href="../developers/garpozis.html">Garpozis Construction &amp; Developments</a> · 
   Квартиры · Limassol, Apostolos Andreas
@@ -57,16 +57,50 @@
         
         
         <tr>
-          <td><a href="https://www.garpozisdevelopments.com/storage/app/properties/180/docs/e2ZwP7Sg5ddfhq1kCRTe29fPMC7aLz9HE07M9TBJ.pdf" target="_blank" rel="noopener">GCD180</a></td>
-          <td>1</td>
-          <td>3</td>
-          <td>1</td>
-          <td>1</td>
-          <td>95</td>
-          <td>24</td>
-          <td>105</td>
+          <td>101</td>
           <td>—</td>
-          <td><span class="muted">Price Upon Request</span></td>
+          <td>2</td>
+          <td></td>
+          <td></td>
+          <td>79</td>
+          <td>—</td>
+          <td>105</td>
+          <td></td>
+          <td><span class="muted">по запросу</span></td>
+          <td>резерв</td>
+        </tr>
+      
+        
+        
+        
+        <tr>
+          <td>201</td>
+          <td>—</td>
+          <td>2</td>
+          <td></td>
+          <td></td>
+          <td>79</td>
+          <td>—</td>
+          <td>105.5</td>
+          <td></td>
+          <td><span class="muted">по запросу</span></td>
+          <td>резерв</td>
+        </tr>
+      
+        
+        
+        
+        <tr>
+          <td>301</td>
+          <td>—</td>
+          <td>3</td>
+          <td></td>
+          <td></td>
+          <td>95</td>
+          <td>—</td>
+          <td>116.5</td>
+          <td></td>
+          <td>€420 000</td>
           <td>доступно</td>
         </tr>
       
@@ -95,9 +129,9 @@
     
 
     <h2>Расположение</h2>
-    <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6785204,33.0180287" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.679168,33.020156" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -106,7 +140,7 @@
       <dl class="detail">
         <dt>Цена</dt><dd>по запросу</dd>
         <dt>Тип недвижимости</dt><dd>Квартиры</dd>
-        <dt>Стадия</dt><dd>Готов, в продаже · готов (2026), в продаже</dd>
+        <dt>Стадия</dt><dd>Готов, в продаже · готов (2026), в продаже · Тот же дом Rhea, что и GCD173 (см. его запись). По брошюре юниты 101/201 (2 сп., 105/105.5 м²) — RESERVED; параметры GCD180 (3 сп., 95 м² внутр.) ближе к юниту 301 — возможно дублирование листинга GCD173.</dd>
         <dt>Начало стройки</dt><dd>—</dd>
         <dt>Завершение</dt><dd>2026</dd>
         <dt>Код проекта</dt><dd>GCD180</dd>
@@ -177,6 +211,12 @@
         <li><a href="https://www.garpozisdevelopments.com/en/properties/residential" target="_blank" rel="noopener">www.garpozisdevelopments.com/en/properties/...</a>
           <span class="muted">· сайт застройщика</span></li>
         
+        <li><a href="https://360estatecy.com/properties/rhea/" target="_blank" rel="noopener">360estatecy.com/properties/rhea/</a>
+          <span class="muted">· developer_3d_tour</span></li>
+        
+        <li><a href="https://go.beyondstudios.pro/garpozis/" target="_blank" rel="noopener">go.beyondstudios.pro/garpozis/</a>
+          <span class="muted">· developer_3d_tour</span></li>
+        
       </ul>
     </div>
     
@@ -195,11 +235,11 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.6785204,33.0180287" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.679168,33.020156" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
-  var map=L.map('map').setView([34.6785204,33.0180287],13);
+  var map=L.map('map').setView([34.679168,33.020156],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.circle([34.6785204,33.0180287],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Penthouse GCD180 (Apostolos Andreas)" + ' (примерно)' + gmapsLink);
+  L.marker([34.679168,33.020156]).addTo(map).bindPopup("Rhea (Penthouse GCD180)" + gmapsLink);
 
 });
 </script>
