@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sea Breeze 4 · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Sea Breeze 4</div>
+<h1>Sea Breeze 4 <span class="tag selling">В продаже</span></h1>
+<p class="muted">
+  <a href="../developers/pandomus.html">Pandomus</a> · 
+  Квартиры · Limassol, Tsirion
+</p>
+
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="https://pandomusgroup.com/property/1-bedroom-apartment/1040/" target="_blank" rel="noopener">pandomusgroup.com/property/1-bedroom-apartment/1040/</a>
+</div>
+
+
+<div class="split">
+  <div>
+    <p>Sea Breeze 4 — современный жилой комплекс из 8 апартаментов в районе Tsireio (Лимассол), сочетающий современную архитектуру и качественные материалы в открытой планировке. Квартиры комплекса отличаются просторными помещениями, большими балконами и спокойной цветовой палитрой интерьеров, что создаёт атмосферу отдыха вдали от городской суеты. Является одним из проектов серии Sea Breeze от Pandomus Group. (ПРИМЕЧАНИЕ: исходный URL указывал на sea-breeze-2, исправлен на sea-breeze-4)</p>
+    
+
+    <h2>Характеристики</h2>
+    <div class="table-wrap">
+    
+    <table>
+      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <tbody>
+      
+        <tr><td>apartment</td><td>1</td>
+          <td>68</td><td>2</td>
+          <td><span class="muted">юнит 1 Bedroom Apartment, цена по запросу</span></td></tr>
+      
+        <tr><td>apartment</td><td>2</td>
+          <td>98</td><td>1</td>
+          <td><span class="muted">юнит 101, продан</span></td></tr>
+      
+        <tr><td>apartment</td><td>1</td>
+          <td>62</td><td>2</td>
+          <td><span class="muted">юнит 102, продан</span></td></tr>
+      
+        <tr><td>apartment</td><td>1</td>
+          <td>64</td><td>2</td>
+          <td><span class="muted">юнит 103, продан</span></td></tr>
+      
+        <tr><td>apartment</td><td>2</td>
+          <td>95</td><td>3</td>
+          <td><span class="muted">юнит 2 Bedroom Apartment, продан</span></td></tr>
+      
+        <tr><td>apartment</td><td>2</td>
+          <td>98</td><td>2</td>
+          <td><span class="muted">юнит 201, продан</span></td></tr>
+      
+        <tr><td>apartment</td><td>1</td>
+          <td>62</td><td>2</td>
+          <td><span class="muted">юнит 202, продан</span></td></tr>
+      
+      </tbody>
+    </table>
+    
+    </div>
+
+    
+    
+
+    
+
+    <h2>Расположение</h2>
+    
+    <div id="map"></div>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6975737,33.0245456" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>по запросу</dd>
+        <dt>Тип недвижимости</dt><dd>Квартиры</dd>
+        <dt>Стадия</dt><dd>В продаже</dd>
+        <dt>Начало стройки</dt><dd>—</dd>
+        <dt>Завершение</dt><dd>2023</dd>
+        
+        
+        
+        
+        
+        
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      
+      <div class="row">
+        <span class="chip ">☀ фотовольтаика: ?</span>
+        <span class="chip ">♨ тёплый пол: ?</span>
+        
+        
+        
+        
+        
+        <span class="chip">большие балконы</span><span class="chip">открытая планировка</span>
+      </div>
+      
+    </div>
+    
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small">
+        
+        <li>✅ <a href="https://pandomusgroup.com/property/1-bedroom-apartment/1040/" target="_blank" rel="noopener"><strong>pandomusgroup.com/property/1-bedroom-apartm...</strong></a>
+          <span class="muted">— главный источник (сайт застройщика)</span></li>
+        
+        
+        <li><a href="https://pandomusgroup.com/projects/sea-breeze-4/" target="_blank" rel="noopener">pandomusgroup.com/projects/sea-breeze-4/</a>
+          <span class="muted">· сайт застройщика</span></li>
+        
+      </ul>
+    </div>
+    
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-17. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.6975737,33.0245456" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+
+  var map=L.map('map').setView([34.6975737,33.0245456],15);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.marker([34.6975737,33.0245456]).addTo(map).bindPopup("Sea Breeze 4" + gmapsLink);
+
+});
+</script>
+
+
+</body>
+</html>

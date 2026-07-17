@@ -186,7 +186,7 @@
     
     <h2>Планировки, документы и медиа</h2>
     <ul class="linklist">
-      <li>📄 <a href="https://pandomusgroup.com/project/chyc-residence/118/?file_download_project=CHYC RESIDENCE.pdf-0&amp;key=e6b66b5c77&amp;cfn=brochure&amp;property_id=5a9a37b9-98ca-4b94-a0cf-ddfd5a66f99d" target="_blank" rel="noopener">Брошюра проекта (PDF)</a></li>
+      <li>📄 <a href="https://pandomusgroup.com/?file_download_project=CHYC RESIDENCE.pdf-0" target="_blank" rel="noopener">Брошюра проекта (PDF)</a></li>
       
       
       
@@ -202,7 +202,7 @@
     <h2>Расположение</h2>
     
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.711529,33.082263" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.7115294895211,33.08226278763556" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -213,7 +213,7 @@
         <dt>Тип недвижимости</dt><dd>Квартиры</dd>
         <dt>Стадия</dt><dd>В продаже · Under Construction</dd>
         <dt>Начало стройки</dt><dd>—</dd>
-        <dt>Завершение</dt><dd>30/06/2026</dd>
+        <dt>Завершение</dt><dd>2026-06-30</dd>
         <dt>Код проекта</dt><dd>118</dd>
         <dt>Энергокласс</dt><dd>A</dd>
         
@@ -300,11 +300,11 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.711529,33.082263" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.7115294895211,33.08226278763556" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
-  var map=L.map('map').setView([34.711529,33.082263],15);
+  var map=L.map('map').setView([34.7115294895211,33.08226278763556],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([34.711529,33.082263]).addTo(map).bindPopup("CHYC Residence" + gmapsLink);
+  L.marker([34.7115294895211,33.08226278763556]).addTo(map).bindPopup("CHYC Residence" + gmapsLink);
 
 });
 </script>

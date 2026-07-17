@@ -26,10 +26,10 @@
 <main>
 
 <div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Alaia Residence</div>
-<h1>Alaia Residence <span class="tag under_construction">Строится</span></h1>
+<h1>Alaia Residence <span class="tag selling">В продаже</span></h1>
 <p class="muted">
   <a href="../developers/pandomus.html">Pandomus</a> · 
-  Смешанный · Limassol
+  Смешанный · Limassol, Agios Athanasios
 </p>
 
 
@@ -174,11 +174,25 @@
     
 
     
+    <h2>Планировки, документы и медиа</h2>
+    <ul class="linklist">
+      <li>📄 <a href="https://pandomusgroup.com/?file_download_project=ALAIA RESIDENCE.pdf-0" target="_blank" rel="noopener">Брошюра проекта (PDF)</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+    
 
     <h2>Расположение</h2>
     
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.710886,33.046133" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.710885669397975,33.04613342632126" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -187,9 +201,9 @@
       <dl class="detail">
         <dt>Цена</dt><dd>по запросу</dd>
         <dt>Тип недвижимости</dt><dd>Смешанный</dd>
-        <dt>Стадия</dt><dd>Строится · строительство · Under Construction</dd>
+        <dt>Стадия</dt><dd>В продаже · строительство · Under Construction</dd>
         <dt>Начало стройки</dt><dd>—</dd>
-        <dt>Завершение</dt><dd>01/04/2026</dd>
+        <dt>Завершение</dt><dd>2026-04-01</dd>
         <dt>Код проекта</dt><dd>121</dd>
         <dt>Энергокласс</dt><dd>A</dd>
         
@@ -273,11 +287,11 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.710886,33.046133" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.710885669397975,33.04613342632126" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
-  var map=L.map('map').setView([34.710886,33.046133],15);
+  var map=L.map('map').setView([34.710885669397975,33.04613342632126],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([34.710886,33.046133]).addTo(map).bindPopup("Alaia Residence" + gmapsLink);
+  L.marker([34.710885669397975,33.04613342632126]).addTo(map).bindPopup("Alaia Residence" + gmapsLink);
 
 });
 </script>

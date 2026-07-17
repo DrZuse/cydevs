@@ -29,7 +29,7 @@
 <h1>Sea Breeze 5 <span class="tag selling">В продаже</span></h1>
 <p class="muted">
   <a href="../developers/pandomus.html">Pandomus</a> · 
-  Квартиры · Limassol, Ayios Athanasios (Agios Athanasios)
+  Квартиры · Limassol, Agios Athanasios
 </p>
 
 
@@ -235,11 +235,25 @@
     
 
     
+    <h2>Планировки, документы и медиа</h2>
+    <ul class="linklist">
+      <li>📄 <a href="https://pandomusgroup.com/?file_download_project=SEA BREEZE 5.pdf-0" target="_blank" rel="noopener">Брошюра проекта (PDF)</a></li>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </ul>
+    
 
     <h2>Расположение</h2>
     
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.713855,33.05989" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.71385469999999,33.0598902" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -250,7 +264,7 @@
         <dt>Тип недвижимости</dt><dd>Квартиры</dd>
         <dt>Стадия</dt><dd>В продаже · Under Construction</dd>
         <dt>Начало стройки</dt><dd>—</dd>
-        <dt>Завершение</dt><dd>01/12/2025</dd>
+        <dt>Завершение</dt><dd>2025-12-01</dd>
         <dt>Код проекта</dt><dd>116</dd>
         <dt>Энергокласс</dt><dd>A</dd>
         
@@ -334,11 +348,11 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.713855,33.05989" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.71385469999999,33.0598902" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
-  var map=L.map('map').setView([34.713855,33.05989],15);
+  var map=L.map('map').setView([34.71385469999999,33.0598902],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([34.713855,33.05989]).addTo(map).bindPopup("Sea Breeze 5" + gmapsLink);
+  L.marker([34.71385469999999,33.0598902]).addTo(map).bindPopup("Sea Breeze 5" + gmapsLink);
 
 });
 </script>
