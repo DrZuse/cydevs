@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rhea (Apartment GCD173) · cydevs</title>
+<title>Rhea · cydevs</title>
 <link rel="preconnect" href="https://unpkg.com">
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
@@ -25,8 +25,8 @@
 </header>
 <main>
 
-<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Rhea (Apartment GCD173)</div>
-<h1>Rhea (Apartment GCD173) <span class="tag completed_unsold">Готов, в продаже</span></h1>
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Rhea</div>
+<h1>Rhea <span class="tag completed_unsold">Готов, в продаже</span></h1>
 <p class="muted">
   <a href="../developers/garpozis.html">Garpozis Construction &amp; Developments</a> · 
   Квартиры · Limassol, Apostolos Andreas
@@ -42,7 +42,7 @@
 
 <div class="split">
   <div>
-    <p>Квартира на весь 3-й этаж (3 спальни, 95 м² внутренняя, 116.5 м² общая) в малоэтажном доме Rhea на западе Лимасола (Агиос-Иоаннис / Апостолос-Андреас), по одному юниту на этаж. Цена по таблице юнитов застройщика — €420,000 (юнит 301); юниты 101 и 201 зарезервированы.</p>
+    <p>Малоэтажный дом Rhea Residences на западе Лимасола (Агиос-Иоаннис / Апостолос-Андреас): 3 квартиры, по одной на этаж. В продаже квартира на весь 3-й этаж (3 спальни, 95 м² внутренняя, 116.5 м² общая) за €420,000 (юнит 301); юниты 101 и 201 зарезервированы. На сайте застройщика тот же дом продублирован двумя карточками (GCD173 и GCD180) — слито в одну запись.</p>
     <p class="muted">Расположение: в 2 км от города и в 2 км от моря. Поблизости: школы, парки, детские площадки, кафе/бары/рестораны, супермаркеты, аптеки, магазины и сервисы. Год постройки 2026, состояние новое. Цена по запросу.</p>
 
     <h2>Характеристики</h2>
@@ -140,7 +140,7 @@
       <dl class="detail">
         <dt>Цена</dt><dd>от €420 000</dd>
         <dt>Тип недвижимости</dt><dd>Квартиры</dd>
-        <dt>Стадия</dt><dd>Готов, в продаже · готов (2026), в продаже · Здание сопоставлено с проектом RHEA 3D-тура по гео (пин тура в 230 м от центроида квартала) — это единственный проект тура на западе Лимасола. В туре RHEA помечен «90%» (обновление не позднее 2025); на сайте застройщика юниты уже «New».</dd>
+        <dt>Стадия</dt><dd>Готов, в продаже · готов (2026), в продаже · Здание сопоставлено с проектом RHEA 3D-тура по гео (пин тура в 230 м от центроида квартала) — это единственный проект тура на западе Лимасола. В туре RHEA помечен «90%» (обновление не позднее 2025); на сайте застройщика юниты уже «New». Карточка GCD180 (issue #222) — дубль того же дома: брошюра-JPEG обеих карточек идентична байт-в-байт, «floor plans» GCD180 — та же юнит-таблица RHEA (101/201 reserved, 301 €420,000), а в доме единственный 3-спальный юнит — 301; атрибуты GCD180 (1-й этаж, 105 м² общая при 95 м² крытой, 3 сп.) — противоречивая смесь данных юнитов 101 и 301. Записи слиты 2026-07-17.</dd>
         <dt>Начало стройки</dt><dd>—</dd>
         <dt>Завершение</dt><dd>2026</dd>
         <dt>Код проекта</dt><dd>GCD173</dd>
@@ -208,6 +208,9 @@
           <span class="muted">— главный источник (сайт застройщика)</span></li>
         
         
+        <li><a href="https://www.garpozisdevelopments.com/en/property/residential-apartment-apostolos-andreas-limassol/180" target="_blank" rel="noopener">www.garpozisdevelopments.com/en/property/re...</a>
+          <span class="muted">· сайт застройщика</span></li>
+        
         <li><a href="https://www.garpozisdevelopments.com/en/properties/residential" target="_blank" rel="noopener">www.garpozisdevelopments.com/en/properties/...</a>
           <span class="muted">· сайт застройщика</span></li>
         
@@ -239,7 +242,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
   var map=L.map('map').setView([34.679168,33.020156],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([34.679168,33.020156]).addTo(map).bindPopup("Rhea (Apartment GCD173)" + gmapsLink);
+  L.marker([34.679168,33.020156]).addTo(map).bindPopup("Rhea" + gmapsLink);
 
 });
 </script>
