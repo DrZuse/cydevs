@@ -110,3 +110,8 @@ tbody tr:hover{background:var(--panel-2)}
 
 .priceref{font-size:11px;line-height:1.3}
 .priceref a{color:#0a7}
+
+.unit-toggle{background:none;border:0;padding:4px 0;font:inherit;font-size:13px;
+  color:var(--brand);cursor:pointer}
+.unit-toggle:hover{color:var(--brand-ink)}
+.unit-toggle .arr{display:inline-block;width:1em}

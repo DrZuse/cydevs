@@ -46,7 +46,14 @@
     
 
     <h2>Характеристики</h2>
+    
+    
+    
+    
+    
     <div class="table-wrap">
+    
+    
     
     <table>
       <thead><tr><th>Юнит</th><th>Этаж</th><th>Спальни</th><th>С/у</th><th>Парковка</th>
@@ -57,40 +64,6 @@
         
         
         <tr>
-          <td>studio</td>
-          <td>Ground</td>
-          <td>0</td>
-          <td>1.0</td>
-          <td>—</td>
-          <td>—</td>
-          <td>—</td>
-          <td>—</td>
-          <td>—</td>
-          <td><span class="muted">по запросу</span></td>
-          <td>продано</td>
-        </tr>
-      
-        
-        
-        
-        <tr>
-          <td>apartment</td>
-          <td>Ground</td>
-          <td>1</td>
-          <td>1.0</td>
-          <td>—</td>
-          <td>—</td>
-          <td>—</td>
-          <td>—</td>
-          <td>—</td>
-          <td><span class="muted">по запросу</span></td>
-          <td>продано</td>
-        </tr>
-      
-        
-        
-        
-        <tr>
           <td>apartment</td>
           <td>Ground</td>
           <td>2</td>
@@ -103,41 +76,7 @@
           <td><span class="muted">по запросу</span></td>
           <td>доступно</td>
         </tr>
-      
-        
-        
-        
-        <tr>
-          <td>studio</td>
-          <td>1st</td>
-          <td>0</td>
-          <td>1.0</td>
-          <td>—</td>
-          <td>—</td>
-          <td>—</td>
-          <td>—</td>
-          <td>—</td>
-          <td><span class="muted">по запросу</span></td>
-          <td>резерв</td>
-        </tr>
-      
-        
-        
-        
-        <tr>
-          <td>apartment</td>
-          <td>1st</td>
-          <td>1</td>
-          <td>1.0</td>
-          <td>—</td>
-          <td>—</td>
-          <td>—</td>
-          <td>—</td>
-          <td>—</td>
-          <td><span class="muted">по запросу</span></td>
-          <td>продано</td>
-        </tr>
-      
+    
         
         
         
@@ -154,59 +93,141 @@
           <td><span class="muted">по запросу</span></td>
           <td>доступно</td>
         </tr>
-      
-        
-        
-        
-        <tr>
-          <td>studio</td>
-          <td>2nd</td>
-          <td>0</td>
-          <td>1.0</td>
-          <td>—</td>
-          <td>—</td>
-          <td>—</td>
-          <td>—</td>
-          <td>—</td>
-          <td><span class="muted">по запросу</span></td>
-          <td>продано</td>
-        </tr>
-      
-        
-        
-        
-        <tr>
-          <td>apartment</td>
-          <td>2nd</td>
-          <td>1</td>
-          <td>1.0</td>
-          <td>—</td>
-          <td>—</td>
-          <td>—</td>
-          <td>—</td>
-          <td>—</td>
-          <td><span class="muted">по запросу</span></td>
-          <td>резерв</td>
-        </tr>
-      
-        
-        
-        
-        <tr>
-          <td>apartment</td>
-          <td>2nd</td>
-          <td>2</td>
-          <td>2.0</td>
-          <td>—</td>
-          <td>—</td>
-          <td>—</td>
-          <td>—</td>
-          <td>—</td>
-          <td><span class="muted">по запросу</span></td>
-          <td>продано</td>
-        </tr>
-      
+    
       </tbody>
+      
+      
+      <tbody>
+        <tr><td colspan="11">
+          <button type="button" class="unit-toggle" aria-expanded="false"
+            onclick="var t=this.closest('tbody').nextElementSibling;t.hidden=!t.hidden;this.setAttribute('aria-expanded',!t.hidden);this.querySelector('.arr').textContent=t.hidden?'▸':'▾'">
+            <span class="arr">▸</span> Проданные и зарезервированные юниты (7)</button>
+        </td></tr>
+      </tbody>
+    
+      <tbody hidden>
+      
+        
+        
+        
+        <tr>
+          <td>studio</td>
+          <td>Ground</td>
+          <td>0</td>
+          <td>1.0</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td><span class="muted">по запросу</span></td>
+          <td>продано</td>
+        </tr>
+    
+        
+        
+        
+        <tr>
+          <td>apartment</td>
+          <td>Ground</td>
+          <td>1</td>
+          <td>1.0</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td><span class="muted">по запросу</span></td>
+          <td>продано</td>
+        </tr>
+    
+        
+        
+        
+        <tr>
+          <td>studio</td>
+          <td>1st</td>
+          <td>0</td>
+          <td>1.0</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td><span class="muted">по запросу</span></td>
+          <td>резерв</td>
+        </tr>
+    
+        
+        
+        
+        <tr>
+          <td>apartment</td>
+          <td>1st</td>
+          <td>1</td>
+          <td>1.0</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td><span class="muted">по запросу</span></td>
+          <td>продано</td>
+        </tr>
+    
+        
+        
+        
+        <tr>
+          <td>studio</td>
+          <td>2nd</td>
+          <td>0</td>
+          <td>1.0</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td><span class="muted">по запросу</span></td>
+          <td>продано</td>
+        </tr>
+    
+        
+        
+        
+        <tr>
+          <td>apartment</td>
+          <td>2nd</td>
+          <td>1</td>
+          <td>1.0</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td><span class="muted">по запросу</span></td>
+          <td>резерв</td>
+        </tr>
+    
+        
+        
+        
+        <tr>
+          <td>apartment</td>
+          <td>2nd</td>
+          <td>2</td>
+          <td>2.0</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td>—</td>
+          <td><span class="muted">по запросу</span></td>
+          <td>продано</td>
+        </tr>
+    
+      </tbody>
+      
     </table>
     
     </div>
