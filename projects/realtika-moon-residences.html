@@ -162,54 +162,13 @@
 
     
     
-    <h2>Справочные цены из внешних источников</h2>
-    <p class="muted" style="margin:4px 0">Цена застройщика (в таблице выше) — источник правды. Ниже — цены на этот объект с сайтов риелторов и агрегаторов, приведены для справки. Источников: 3, из них подтверждено ≥2 совпадающими: 2 (✓). Знаком ✓ отмечены цены, подтверждённые минимум двумя независимыми источниками.</p>
-    
-    <div class="table-wrap">
-    <table>
-      <thead><tr><th>✓</th><th>Спальни</th><th>Площадь, м²</th><th>Справочная цена</th><th>Источник</th></tr></thead>
-      <tbody>
-      
-        <tr class="muted">
-          <td><span class="muted" title="Не подтверждено вторым источником">—</span></td>
-          <td>2</td>
-          <td>160.0</td>
-          <td>€11 950 000</td>
-          <td><a href="https://www.propertyfinder.eg/en/plp/buy/apartment-for-sale-cairo-new-cairo-city-the-5th-settlement-fifth-square-moon-residences-72712193.html" target="_blank" rel="noopener">propertyfinder.eg</a> <span class="muted" style="font-size:11px">(bedrooms, name)</span></td></tr>
-      
-        <tr class="muted">
-          <td><span class="muted" title="Не подтверждено вторым источником">—</span></td>
-          <td>3</td>
-          <td>105.0</td>
-          <td>€12 364 000</td>
-          <td><a href="https://aqarsky.com/en/unit/apartment-for-sale-in-moon-residences-new-cairo-area-105-m²/" target="_blank" rel="noopener">aqarsky.com</a> <span class="muted" style="font-size:11px">(bedrooms, name)</span></td></tr>
-      
-        <tr>
-          <td>✓</td>
-          <td>3</td>
-          <td>205.0</td>
-          <td>€14 800 000</td>
-          <td><a href="https://www.propertyfinder.eg/en/plp/buy/apartment-for-sale-cairo-new-cairo-city-the-5th-settlement-fifth-square-moon-residences-91013374.html" target="_blank" rel="noopener">propertyfinder.eg</a> <span class="muted" style="font-size:11px">(bedrooms, name)</span></td></tr>
-      
-        <tr>
-          <td>✓</td>
-          <td>—</td>
-          <td>121.0</td>
-          <td>€15 300 000</td>
-          <td><a href="https://elbayt.com/en/projects/cairo/new-cairo/5th-settlement/moon-residences/property-prices" target="_blank" rel="noopener">elbayt.com</a> <span class="muted" style="font-size:11px">(name)</span></td></tr>
-      
-      </tbody>
-    </table>
-    </div>
-    
-    
 
     
 
     <h2>Расположение</h2>
-    <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.7130838,33.0879427" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.721483,33.088569" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -226,7 +185,7 @@
         <dt>Титулы</dt><dd>оформляются</dd>
         
         
-        
+        <dt>Адрес</dt><dd>Agiou Georgiou, Agia Paraskevi</dd>
       </dl>
     </div>
     <div class="panel" style="margin-top:16px">
@@ -304,11 +263,11 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.7130838,33.0879427" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.721483,33.088569" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
-  var map=L.map('map').setView([34.7130838,33.0879427],13);
+  var map=L.map('map').setView([34.721483,33.088569],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.circle([34.7130838,33.0879427],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Moon Residences" + ' (примерно)' + gmapsLink);
+  L.marker([34.721483,33.088569]).addTo(map).bindPopup("Moon Residences" + gmapsLink);
 
 });
 </script>
