@@ -109,9 +109,9 @@
     
 
     <h2>Расположение</h2>
-    <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6852901,33.0332657" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6657782,33.00978" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -128,7 +128,7 @@
         
         
         
-        <dt>Адрес</dt><dd>City Centre</dd>
+        <dt>Адрес</dt><dd>Sarantaporou, Limassol</dd>
       </dl>
     </div>
     <div class="panel" style="margin-top:16px">
@@ -195,7 +195,7 @@
 </div>
 
 <div class="foot">
-  Данные обновлены: 2026-07-16. Дашборд застройщиков жилой недвижимости Кипра.
+  Данные обновлены: 2026-07-17. Дашборд застройщиков жилой недвижимости Кипра.
   Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
 </div>
 </main>
@@ -206,11 +206,11 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.6852901,33.0332657" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.6657782,33.00978" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
-  var map=L.map('map').setView([34.6852901,33.0332657],13);
+  var map=L.map('map').setView([34.6657782,33.00978],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.circle([34.6852901,33.0332657],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("CityLink" + ' (примерно)' + gmapsLink);
+  L.marker([34.6657782,33.00978]).addTo(map).bindPopup("CityLink" + gmapsLink);
 
 });
 </script>
