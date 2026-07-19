@@ -94,6 +94,19 @@
           <td>доступно</td>
         </tr>
     
+      </tbody>
+      
+      
+      <tbody>
+        <tr><td colspan="11">
+          <button type="button" class="unit-toggle" aria-expanded="false"
+            onclick="var t=this.closest('tbody').nextElementSibling;t.hidden=!t.hidden;this.setAttribute('aria-expanded',!t.hidden);this.querySelector('.arr').textContent=t.hidden?'▸':'▾'">
+            <span class="arr">▸</span> Проданные и зарезервированные юниты (3)</button>
+        </td></tr>
+      </tbody>
+    
+      <tbody hidden>
+      
         
         
         
@@ -108,7 +121,7 @@
           <td>181</td>
           <td>545</td>
           <td><span class="muted">€760k - €880k</span></td>
-          <td>доступно</td>
+          <td>резерв</td>
         </tr>
     
         
@@ -125,7 +138,7 @@
           <td>—</td>
           <td>132</td>
           <td><span class="muted">€760k - €880k</span></td>
-          <td>доступно</td>
+          <td>резерв</td>
         </tr>
     
         
@@ -142,7 +155,7 @@
           <td>—</td>
           <td>134</td>
           <td><span class="muted">€760k - €880k</span></td>
-          <td>доступно</td>
+          <td>резерв</td>
         </tr>
     
       </tbody>
@@ -301,7 +314,7 @@
 </div>
 
 <div class="foot">
-  Данные обновлены: 2026-07-17. Дашборд застройщиков жилой недвижимости Кипра.
+  Данные обновлены: 2026-07-19. Дашборд застройщиков жилой недвижимости Кипра.
   Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
 </div>
 </main>
