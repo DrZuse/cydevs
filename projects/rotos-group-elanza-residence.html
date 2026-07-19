@@ -45,6 +45,9 @@
     <p>Elanza Residence — современный 5-этажный жилой дом в районе Строволос (Никосия), рядом с English School и парком Agios Demetrios. Комплекс включает 2- и 3-спальные апартаменты нескольких планировок: 8 квартир с 2 спальнями площадью 87 м² (веранда 21 м²), 6 квартир с 2 спальнями площадью 89 м² (веранда 26 м², приватный сад 7 м²) и 2 квартиры с 3 спальнями площадью 125 м² (веранда 26 м², приватный сад 7 м²). Расположение обеспечивает удобный доступ к центру города и шоссе, а также близость к университетам, школам, супермаркетам, спортзалам и кафе. Каждая квартира имеет открытую кухню-гостиную и как минимум одну спальню с собственной ванной комнатой.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -294,6 +297,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.148998,33.350618" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -395,6 +399,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.148998,33.350618],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.148998,33.350618]).addTo(map).bindPopup("Elanza Residence" + gmapsLink);
+
+
 
 });
 </script>

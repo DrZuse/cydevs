@@ -45,6 +45,9 @@
     <p>Amphipolis Mansions B — второй корпус проекта Amphipolis Mansions, аналогичный по концепции корпусу A: пятиэтажное здание с 10 двухспальными квартирами по проекту архитектурного бюро Michael Cosmas Architecture. Расположение обеспечивает как городскую доступность Никосии, так и быстрый выезд на автомагистраль. Заявлены энергокласс А, индивидуальная фотовольтаика на каждую квартиру, тёплые полы с тепловым насосом и 2 парковочных места на квартиру. Точные размеры квартир по корпусу B отдельно не публикуются, ожидаются идентичными корпусу A (88 м² жилой площади плюс веранда 24 м²). Проект в активной продаже.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -90,6 +93,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.1380789,33.3716028" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -192,6 +196,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.1380789,33.3716028],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.1380789,33.3716028]).addTo(map).bindPopup("Amphipolis Mansions B" + gmapsLink);
+
+
 
 });
 </script>

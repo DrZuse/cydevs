@@ -45,6 +45,9 @@
     <p>Silver House — малоэтажный жилой проект на 19 апартаментов разных размеров в Като Пафос, на тихой боковой улице примерно в 150 метрах от лучшего песчаного пляжа района. Апартаменты различаются по площади, но выдержаны в едином высоком стандарте отделки; доступны варианты с 2 и 3 спальнями. В пешей доступности — набережная, средневековый замок Пафоса и пятизвёздочные отели.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -81,6 +84,7 @@
 
     <h2>Расположение</h2>
     <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.7558336,32.4128639" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -182,6 +186,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.7558336,32.4128639],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.circle([34.7558336,32.4128639],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Silver House" + ' (примерно)' + gmapsLink);
+
+
 
 });
 </script>

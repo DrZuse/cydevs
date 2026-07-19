@@ -45,6 +45,9 @@
     <p>Жилой дом FC158 Zakaki Court 8 в районе Zakaki (Limassol). Всего 11 юнитов: 6 продано, 5 свободно. Координаты — с карты застройщика.</p>
     <p class="muted">Проект завершён. Энергосертификат класса A. Предусмотрены: солнечный водонагреватель, система напора воды, установка лифта, подготовка под фотоэлектрическую систему, электрическое отопление (тёплые полы) и VRV-кондиционирование.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -287,6 +290,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6608686,33.0029558" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -391,6 +395,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.6608686,33.0029558],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.6608686,33.0029558]).addTo(map).bindPopup("FC158 Zakaki Court 8" + gmapsLink);
+
+
 
 });
 </script>

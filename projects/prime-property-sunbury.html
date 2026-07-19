@@ -45,6 +45,9 @@
     <p>Стильный охраняемый комплекс с внутренними удобствами в престижном туристическом районе Папас в Лимассоле, в нескольких минутах ходьбы от песчаного пляжа парка Дасуди. Тихая обстановка и близость ко всем городским удобствам, включая супермаркет Papas. Статус: сдан.</p>
     <p class="muted">Проект включает 8 апартаментов и пентхаусов с 1-4 спальнями. Пентхаусы на 3 этаже имеют частные террасы на крыше и индивидуальные бассейны.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -94,6 +97,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.697531,33.083655" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -196,6 +200,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.697531,33.083655],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.697531,33.083655]).addTo(map).bindPopup("Sunbury" + gmapsLink);
+
+
 
 });
 </script>

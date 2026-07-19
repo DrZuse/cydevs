@@ -45,6 +45,9 @@
     <p>Imperial Residences - это эксклюзивный комплекс роскошных вилл в стиле современной и средиземноморской архитектуры. Расположенный в знаменитом Venus Rock Golf Resort, он предлагает 3-, 5- и 7-спальные виллы. Каждая вилла имеет частный бассейн, просторные интерьеры и большие террасы, обеспечивая прекрасный вид на Средиземное море.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -389,6 +392,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.70275,32.612583" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -492,6 +496,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.70275,32.612583],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.70275,32.612583]).addTo(map).bindPopup("Imperial Residences" + gmapsLink);
+
+
 
 });
 </script>

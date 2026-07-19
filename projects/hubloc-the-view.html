@@ -43,6 +43,9 @@
     <p>The View — жилой блок квартир в живописных холмах Айя-Фила (Лимассол). Предлагаются квартиры с 2 и 3 спальнями с беспрепятственными панорамными видами на город; акцент на комфорт, функциональность и современный высококачественный дизайн. В стадии строительства; в продаже.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -162,6 +165,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.7203451,33.0239797" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -266,6 +270,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.7203451,33.0239797],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.7203451,33.0239797]).addTo(map).bindPopup("The View" + gmapsLink);
+
+
 
 });
 </script>

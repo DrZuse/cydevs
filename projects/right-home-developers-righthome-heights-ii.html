@@ -45,6 +45,9 @@
     <p>Righthome Heights II — комплекс вилл Right Home Developers в Ороклини (округ Ларнака). 2 юнита, спален: 3. Цены от €380 000+VAT.</p>
     <p class="muted">Код проекта RHII00 на сайте застройщика. Расстояния: удобства 200 m, аэропорт 15 km, море 2 km, транспорт 200 m.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -120,6 +123,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.979608,33.660854" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -224,6 +228,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.979608,33.660854],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.979608,33.660854]).addTo(map).bindPopup("Righthome Heights II" + gmapsLink);
+
+
 
 });
 </script>

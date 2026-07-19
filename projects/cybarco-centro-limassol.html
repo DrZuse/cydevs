@@ -45,6 +45,9 @@
     <p>Centro Limassol — новый бутик-проект в историческом центре Лимассола, между Средневековым замком и мариной для суперъяхт. Вокруг — мощёные улочки с историческими зданиями, кафе, ресторанами и магазинами. В проекте представлены апартаменты и магазины от €355 000.</p>
     <p class="muted">Бутиковая жилая застройка в Лимассоле (старый город, район Medieval Castle). 60 апартаментов с 1–2 спальнями. Страница не упоминает срок сдачи, НДС, титулы, наличие бассейна/фитнеса и прочих удобств — детали в брошюре/прайс-листе.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -448,6 +451,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6770724,33.0389841" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -549,6 +553,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.6770724,33.0389841],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.6770724,33.0389841]).addTo(map).bindPopup("Centro Limassol" + gmapsLink);
+
+
 
 });
 </script>

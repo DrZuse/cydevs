@@ -45,6 +45,9 @@
     <p>Жилой комплекс West Park Court расположен на окраине Пафоса рядом с городом Ероскипу. Проект состоит из просторных апартаментов с 2 и 3 спальнями, пентхаусов и офиса. Westpark Court II — последняя очередь популярного комплекса, расположенная в тихом и удобном месте с большими балконами и крытой парковкой. Стоимость — €278 000.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -144,6 +147,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.766633,32.438561" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -246,6 +250,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.766633,32.438561],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.766633,32.438561]).addTo(map).bindPopup("West Park Court" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Eauzone Chloraka — отдельный проект вилл в районе Хлораки (Пафос), развитие концепции Eauzone на новой локации после успеха предыдущих бутиковых проектов компании в этом районе (включая Lambda Type Residences). Виллы выполнены в фирменном для Kuutio Homes стиле — сочетание натуральных материалов, современных линий и качественной отделки.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -155,6 +158,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.789084,32.420028" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -259,6 +263,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.789084,32.420028],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.789084,32.420028]).addTo(map).bindPopup("Eauzone Chloraka" + gmapsLink);
+
+
 
 });
 </script>

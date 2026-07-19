@@ -45,6 +45,9 @@
     <p>Два корпуса с 1- и 2-комнатными квартирами в Ливадии, Ларнака. Проект расположен рядом с Американским университетом Кипра и новой мариной и портом.</p>
     <p class="muted">Проект состоит из 2 блоков, включающих 1 и 2 спальные апартаменты.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -117,6 +120,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.94375,33.624113" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -219,6 +223,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.94375,33.624113],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.94375,33.624113]).addTo(map).bindPopup("Plus 80-Livadia" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Флагманский проект компании: 2 блока в ~80 м от моря, апартаменты 1-3 спальни с верандами/террасами, приватные сады, крышные террасы, вид на Соляное озеро.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -124,6 +127,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.894118,33.635988" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -229,6 +233,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.894118,33.635988],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.894118,33.635988]).addTo(map).bindPopup("PLUS 21 / Roy Terraces" + gmapsLink);
+
+
 
 });
 </script>

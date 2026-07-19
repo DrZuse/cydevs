@@ -45,6 +45,9 @@
     <p>Limassol Greens — крупнейший мастер-планный жилой комплекс на Кипре в Лимассоле, включающий виллы, апартаменты, магазины, гольф-поле и спа-курорт. Проект расположен рядом с City of Dreams Mediterranean Casino Resort, в 5 минутах от пляжа Ледис-Майл и 10 минутах от марины Лимассола.</p>
     <p class="muted">Проект общей площадью 1,4 млн м² (застриваемая 150 000 м²); запланировано 500 вилл и 250 апартаментов. В 5 мин от пляжа Lady&#39;s Mile, в 10 мин от марины Лимассола; по соседству — крупнейший казино-курорт Средиземноморья. Энергосертификат класса A. Конкретные юниты с номерами/ценами на странице не приведены (есть отдельный PDF-прайс-лист).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -150,6 +153,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.644469099999995,32.9777927" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -251,6 +255,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.644469099999995,32.9777927],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.644469099999995,32.9777927]).addTo(map).bindPopup("Limassol Greens" + gmapsLink);
+
+
 
 });
 </script>

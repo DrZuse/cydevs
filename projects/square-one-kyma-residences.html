@@ -45,6 +45,9 @@
     <p>KYMA (KYMA Seaside Residences) — комплекс из 22 премиальных апартаментов у моря в историческом старом городе Лимассола, примерно в 100 м от пляжа Олимпион (Olympion Beach) и рядом со спортивным центром GSO. Расположен в шаговой доступности от порта и лучших пляжей города. Комплекс предлагает готовые под ключ решения и опциональную 5-летнюю гарантию арендного дохода; предусмотрены парковка, патио, входы с двух улиц, солнечные панели и общий бассейн. Проект был заявлен готовым к июню 2026 года.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -90,6 +93,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.680556,33.051553" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -195,6 +199,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.680556,33.051553],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.680556,33.051553]).addTo(map).bindPopup("KYMA Residences" + gmapsLink);
+
+
 
 });
 </script>

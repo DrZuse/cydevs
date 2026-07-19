@@ -45,6 +45,9 @@
     <p>Oxygen Residences — проект современных городских апартаментов в самом центре Пафоса, представляющий собой четырёхэтажный кубический объём с полупрозрачным двойным фасадом, который фильтрует переход между городским и приватным пространством. Проект расположен в шаговой доступности от бесконечного множества удобств центра города и задаёт новый стандарт роскошной городской жизни благодаря эффектным интерьерам и качественному местоположению, а также развитому спектру общедомовых сервисов.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -104,6 +107,7 @@
 
     <h2>Расположение</h2>
     <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.7743988,32.4231586" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -205,6 +209,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.7743988,32.4231586],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.circle([34.7743988,32.4231586],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Oxygen Residences" + ' (примерно)' + gmapsLink);
+
+
 
 });
 </script>

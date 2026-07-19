@@ -45,6 +45,9 @@
     <p>Жилой дом FC132 Agia Fylla Court B в районе Agia Fylla B (Limassol). Всего 10 юнитов: 4 продано, 6 свободно. Координаты — с карты застройщика.</p>
     <p class="muted">Расположение: Лимассол, улица Rossias Street, район Agia Fyla. Близко к школе Agias Fylaxeos High School. На территории предусмотрена покрытая парковка. Застройщик гарантирует инвестиционную доходность.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -270,6 +273,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.7248664,33.0156298" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -376,6 +380,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.7248664,33.0156298],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.7248664,33.0156298]).addTo(map).bindPopup("FC132 Agia Fylla Court B" + gmapsLink);
+
+
 
 });
 </script>

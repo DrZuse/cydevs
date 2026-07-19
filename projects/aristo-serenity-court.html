@@ -45,6 +45,9 @@
     <p>Serenity Court - это комплекс из трех просторных трехспальных квартир, каждая на своем этаже. Квартиры имеют открытую планировку, соединяющую кухню с гостиной и столовой, и выходят на крытую веранду.</p>
     <p class="muted">Проект состоит из трёх трёхкомнатных квартир, каждая на отдельном этаже. Пентхаус (3-й этаж) имеет доступ на кровную террасу (roof garden). Есть крытые веранды. Цены указаны без НДС (+VAT).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -151,6 +154,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.767603,32.437636" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -254,6 +258,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.767603,32.437636],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.767603,32.437636]).addTo(map).bindPopup("Serenity Court" + gmapsLink);
+
+
 
 });
 </script>

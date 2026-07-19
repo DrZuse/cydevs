@@ -45,6 +45,9 @@
     <p>Жилой комплекс SEASIDE расположен в прибрежной части Ларнаки. Предлагает квартиры для приобретения, ориентированные на комфортный образ жизни.</p>
     <p class="muted">Четырехэтажное здание современной архитектуры, спроектированное для максимального естественного освещения и вентиляции.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -94,6 +97,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.9295,33.6368" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -202,6 +206,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.9295,33.6368],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.9295,33.6368]).addTo(map).bindPopup("SEASIDE (Larnaca)" + gmapsLink);
+
+
 
 });
 </script>

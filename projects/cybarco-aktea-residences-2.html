@@ -45,6 +45,9 @@
     <p>Городские апартаменты из серии Aktea Residences в нескольких минутах от побережья Лимассола. Эклектичный дизайн и люксовые материалы. Рядом пляжи, ночная жизнь и деловой центр.</p>
     <p class="muted">Страница по URL aktea-residences-2 фактически описывает проект «Aktea Residences 4» (Лимассол). В разделе Snapshot указано, что 100% квартир в Aktea Residences 1, 2 и 3 уже проданы; в наличии — квартиры в комплексе (24 городские квартиры, общий бассейн). Брошюра и прайс-лист на странице также относятся к Aktea Residences 4.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -264,6 +267,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6940731,33.0677842" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -365,6 +369,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.6940731,33.0677842],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.6940731,33.0677842]).addTo(map).bindPopup("Aktea Residences 2" + gmapsLink);
+
+
 
 });
 </script>

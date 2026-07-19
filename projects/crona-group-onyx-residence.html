@@ -45,6 +45,48 @@
     <p>ONYX Residence — клубный дом премиум-класса в туристическом районе Гермасойя, всего в 0,7 км от моря. Комплекс включает ограниченную коллекцию из 16 апартаментов с 2-3 спальнями и пентхаусов с просторными террасами. В отделке использованы синие панели Onix и гранит, высокие потолки и высокие межкомнатные двери. Пентхаусы оснащены собственным спа с джакузи и сауной, для всех резидентов доступны общий бассейн и озеленённая территория. Проект полностью готов к заселению, продажи ведутся на оставшиеся юниты.</p>
     
 
+    
+    
+    <div class="panel bzk" style="margin:14px 0;border-left:3px solid var(--brand)">
+      <h3 style="margin-top:0">Bazaraki <span class="muted small" style="font-weight:normal">· <a href="https://www.bazaraki.com/new-buildings/348-onyx_residence/" target="_blank" rel="noopener">страница объявления</a> · снимок 2026-07-19</span></h3>
+      <p class="muted small" style="margin:2px 0 8px">Ниже — только сведения, которых нет на сайте застройщика (источник правды — сайт застройщика).</p>
+      
+      
+      <div class="row">
+        <span class="chip" title="Источник: bazaraki.com">доступ для колясок: да</span><span class="chip" title="Источник: bazaraki.com">этажей: 4</span>
+      </div>
+      
+      
+      
+      <p class="small muted" style="margin:8px 0 0">Рядом: airport — 60 km, city center — 6.5 km, beach — 700 m, marina — 7 km, school — 300 m, supermarket — 1 km, hospital — 2 km</p>
+      
+      
+      <div class="table-wrap" style="margin-top:8px">
+      <table>
+        <thead><tr><th>Юнит</th><th>Спальни</th><th>С/у</th><th>Жилая, м²</th><th>Участок, м²</th><th>Цена (bazaraki)</th></tr></thead>
+        <tbody>
+        
+          <tr><td>402</td><td>2</td><td>2</td>
+            <td>86</td>
+            <td>194</td>
+            <td>€777.000 +VAT</td></tr>
+        
+        </tbody>
+      </table>
+      </div>
+      
+      
+      <details style="margin-top:8px"><summary class="muted">Описание с bazaraki.com (EN)</summary>
+        <p class="small" style="white-space:pre-line">ONYX Residence is a clubhouse with a limited collection of 2-3 bedroom apartments and luxury penthouses with spacious terraces. The project includes 16 apartments of a premium class in a thriving location, a central spot in the heart of Limassol’s tourist area.
+
+Our professionals allowed elegance to meet with functionality in every detail: Onix Blue Panels and granite finishes are complimented by our high ceilings and tall interior doors. Extra features are present in our penthouses with their own spa and spacious terraces to spend unforgettable evenings with a community united by the experience of luxury and quality.</p></details>
+      
+      
+      <p class="small muted" style="margin:8px 0 0">📍 Гео-метка bazaraki расходится с меткой застройщика на 210 м — на карте ниже показаны обе (серая — bazaraki).</p>
+      
+    </div>
+    
+
     <h2>Характеристики</h2>
     
     
@@ -125,6 +167,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.704366,33.092369" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -212,6 +255,9 @@
         <li><a href="https://domik.io/en/project/onyx-residence-15393" target="_blank" rel="noopener">domik.io/en/project/onyx-residence-15393</a>
           <span class="muted">· прочее</span></li>
         
+        <li><a href="https://www.bazaraki.com/new-buildings/348-onyx_residence/" target="_blank" rel="noopener">www.bazaraki.com/new-buildings/348-onyx_residence/</a>
+          <span class="muted">· агрегатор</span></li>
+        
       </ul>
     </div>
     
@@ -235,6 +281,13 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.704366,33.092369],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.704366,33.092369]).addTo(map).bindPopup("ONYX Residence" + gmapsLink);
+
+
+
+  // вторая метка — из объявления bazaraki (расходится с меткой застройщика)
+  L.circleMarker([34.704489658008,33.09466207626425],{radius:9,color:'#777',fillColor:'#999',fillOpacity:0.7})
+    .addTo(map).bindPopup('Метка Bazaraki (210 м от метки застройщика)<br><a href="https://www.bazaraki.com/new-buildings/348-onyx_residence/" target="_blank" rel="noopener">Открыть объявление</a>');
+  map.fitBounds(L.latLngBounds([[34.704366,33.092369],[34.704489658008,33.09466207626425]]).pad(0.35));
 
 });
 </script>

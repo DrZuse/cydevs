@@ -45,6 +45,9 @@
     <p>Naftikos Residences — проект для городской жизни всего в 50 метрах от моря в Лимассоле. Апартаменты и пентхаусы выполнены в морском стиле с акцентом на качество, удобство и благополучие. Цена от €740 000.</p>
     <p class="muted">Проект в Лимассоле: 37 двух- и трёхспальных квартир и 7 пентхаусов с частными крышными террасами. Расположен в 50 м от моря. Минимальная цена от €740,000 (по странице). Энергосертификат класса A.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -240,6 +243,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6909078,33.0728584" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -341,6 +345,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.6909078,33.0728584],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.6909078,33.0728584]).addTo(map).bindPopup("Naftikos Residences" + gmapsLink);
+
+
 
 });
 </script>

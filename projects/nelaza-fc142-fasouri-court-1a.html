@@ -45,6 +45,9 @@
     <p>Жилой дом FC142 Fasouri Court 1A в районе Fasouri 1A (Limassol). Всего 14 юнитов: 10 продано, 4 свободно. Координаты — с карты застройщика.</p>
     <p class="muted">Проект завершён. На странице упоминается наличие закрытого паркинга. Технические характеристики и планировки доступны для скачивания.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -576,6 +579,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6545281,32.9648381" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -682,6 +686,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.6545281,32.9648381],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.6545281,32.9648381]).addTo(map).bindPopup("FC142 Fasouri Court 1A" + gmapsLink);
+
+
 
 });
 </script>

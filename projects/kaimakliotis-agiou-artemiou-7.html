@@ -43,6 +43,9 @@
     <p>Малоэтажный жилой дом Kaimakliotis Developers по адресу Agiou Artemiou 7 в районе Арадиппу (Ларнака), сдан в мае 2024 года. В здании 12 квартир с 2 спальнями (внутренняя площадь 81,75 м² + крытая веранда 17,4 м²), открытая планировка кухни-гостиной, встроенная стиральная машина. Расположение — в пешей доступности от ТЦ Metropolis Mall, супермаркета Lidl, пекарни, детских площадок и парка; лёгкий выезд на основные шоссе; 11 км до аэропорта Ларнаки. Цены: 1-й этаж €185 000, 2-й этаж €190 000, 3-й этаж €195 000 (+НДС). Отдельные титулы ожидаются в ближайшие месяцы. Квартиры 101, 103, 202 и 204 уже проданы. На июль 2026 это единственный проект застройщика в продаже (страница /sales/).</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -111,6 +114,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.9374496,33.592969" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -187,6 +191,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.9374496,33.592969],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.9374496,33.592969]).addTo(map).bindPopup("Agiou Artemiou 7 Residences" + gmapsLink);
+
+
 
 });
 </script>

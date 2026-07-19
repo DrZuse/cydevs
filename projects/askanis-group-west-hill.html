@@ -45,6 +45,9 @@
     <p>West Hill — новейший проект Askanis Group: четыре корпуса (Levanda, Anthemis, Dhalia, Lilia) на западном склоне холма Санта-Барбара (восток Лимассола, район Аматус) над археологическим памятником Древний Аматус. 1/2/3-спальные апартаменты и пентхаусы, коммунальный бассейн, ландшафтные сады, крытая парковка. Энергокласс «A». 1- и 2-спальные распроданы, в продаже — 3-спальные и пентхаус.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -140,6 +143,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.715156,33.147232" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -244,6 +248,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.715156,33.147232],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.715156,33.147232]).addTo(map).bindPopup("West Hill" + gmapsLink);
+
+
 
 });
 </script>

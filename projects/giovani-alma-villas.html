@@ -45,6 +45,38 @@
     <p>ALMA Villas — проект от Giovani Homes в Каппарисе, одном из самых популярных и живописных районов Протараса, активном круглый год. Комплекс состоит из четырнадцати резиденций с двумя и тремя спальнями, обращённых к морю Каппариса. Каждая вилла построена на большом участке, имеет собственный бассейн, большой сад с внутренним двориком и сад на крыше, откуда открываются виды на закаты Протараса. Дизайн выполнен в современных архитектурных трендах с чёткими геометрическими линиями и вниманием к деталям, обеспечивая приватность и спокойствие. Виллы имеют класс энергоэффективности A и оснащены под современные технологические потребности жильцов. Комплекс расположен всего в 350 метрах от пляжа Каппарис — идеальный выбор для постоянного или сезонного проживания.</p>
     
 
+    
+    
+    <div class="panel bzk" style="margin:14px 0;border-left:3px solid var(--brand)">
+      <h3 style="margin-top:0">Bazaraki <span class="muted small" style="font-weight:normal">· <a href="https://www.bazaraki.com/new-buildings/25-alma_villas/" target="_blank" rel="noopener">страница объявления</a> · снимок 2026-07-19</span></h3>
+      <p class="muted small" style="margin:2px 0 8px">Ниже — только сведения, которых нет на сайте застройщика (источник правды — сайт застройщика).</p>
+      
+      
+      <div class="row">
+        <span class="chip" title="Источник: bazaraki.com">доступ для колясок: да</span><span class="chip" title="Источник: bazaraki.com">паркинг: 1</span><span class="chip" title="Источник: bazaraki.com">фотовольтаика: разводка</span><span class="chip" title="Источник: bazaraki.com">вид: Seaview</span><span class="chip" title="Источник: bazaraki.com">парковочные места: 3</span>
+      </div>
+      
+      
+      
+      <p class="small muted" style="margin:8px 0 0">Рядом: airport — 60 km, beach — 2 km, supermarket — 1.5 km, marina — 7 km, school — 2 km, hospital — 5 km, city center — 2 km</p>
+      
+      
+      
+      <details style="margin-top:8px"><summary class="muted">Описание с bazaraki.com (EN)</summary>
+        <p class="small" style="white-space:pre-line">The Alma Villas project is located in Kapparis one of the most popular and beautiful areas of Protaras, which is active all year round. It offers many shopping and entertainment options in winter and summer and has some of the most serene beaches in Cyprus. 
+
+The Alma Villas project consists of fourteen two and three bedroom residences, which overlook the sea of Kapparis. Each residence is built on a large plot, has its own private swimming pool, a large garden with a courtyard and a roof garden where its residents can enjoy the magical sunsets of Protaras.
+
+Designed based on the modern trends of architecture, Alma Villas stand out for their modern geometric lines and emphasis on detail, ensuring their residents privacy and peacefulness. 
+
+The interior of each villa is designed in a way that combines the interior with the exterior, so that the residents can enjoy the mild Mediterranean climate of Cyprus every season. With natural materials and earthy colours predominating, the comfortable interiors of the residences are a haven of relaxation and tranquility. With an emphasis on high quality materials and all the modern needs of a residence, Alma Villas are energy class A, and have provisions that meet the technological needs of the occupants of a home. Just 350 meters from Kapparis beach, the Alma Villas residential complex is the ultimate choice for permanent or holiday home in one of the most magnificent areas of Cyprus.</p></details>
+      
+      
+      <p class="small muted" style="margin:8px 0 0">📍 Гео-метка bazaraki расходится с меткой застройщика на 101 м — на карте ниже показаны обе (серая — bazaraki).</p>
+      
+    </div>
+    
+
     <h2>Характеристики</h2>
     
     
@@ -328,6 +360,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.06049,34.00057" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -409,6 +442,9 @@
         <li><a href="https://www.kredium.com/international-real-estate/project/alma-villas" target="_blank" rel="noopener">www.kredium.com/international-real-estate/p...</a>
           <span class="muted">· агрегатор</span></li>
         
+        <li><a href="https://www.bazaraki.com/new-buildings/25-alma_villas/" target="_blank" rel="noopener">www.bazaraki.com/new-buildings/25-alma_villas/</a>
+          <span class="muted">· агрегатор</span></li>
+        
       </ul>
     </div>
     
@@ -432,6 +468,13 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.06049,34.00057],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.06049,34.00057]).addTo(map).bindPopup("ALMA Villas" + gmapsLink);
+
+
+
+  // вторая метка — из объявления bazaraki (расходится с меткой застройщика)
+  L.circleMarker([35.06118562117106,34.00127979776022],{radius:9,color:'#777',fillColor:'#999',fillOpacity:0.7})
+    .addTo(map).bindPopup('Метка Bazaraki (101 м от метки застройщика)<br><a href="https://www.bazaraki.com/new-buildings/25-alma_villas/" target="_blank" rel="noopener">Открыть объявление</a>');
+  map.fitBounds(L.latLngBounds([[35.06049,34.00057],[35.06118562117106,34.00127979776022]]).pad(0.35));
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Проект Zanatzia Plots &amp; Villas расположен в живописной деревне Суни-Занация между Пафосом и Лимасолом — в 10 минутах езды от центра Лимасола. Участки и виллы с 3 спальнями находятся на вершине холма с панорамным видом на сельскую местность и Средиземное море. В состав проекта также входят офис и магазин. Стоимость — €434 500.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -175,6 +178,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.733194,32.867528" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -276,6 +280,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.733194,32.867528],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.733194,32.867528]).addTo(map).bindPopup("Zanatzia Plots \u0026 Villas" + gmapsLink);
+
+
 
 });
 </script>

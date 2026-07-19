@@ -45,6 +45,9 @@
     <p>Seville Residence — современные дома с планировкой 3+1 в новом районе южной Никосии. Архитектура проекта подчеркивает минимализм и гармонию с окружающей средой, предлагая высокий класс энергоэффективности А.</p>
     <p class="muted">Проект входит в фазу 3 комплекса CITIO (участок 3). Архитектор Costas Maratheftis. Энергокласс A. НДС 5% на первые 130 кв.м внутренней площади и до €350 000 цены, далее 19%.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -126,6 +129,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.117216,33.401275" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -230,6 +234,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.117216,33.401275],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.117216,33.401275]).addTo(map).bindPopup("Seville Residence" + gmapsLink);
+
+
 
 });
 </script>

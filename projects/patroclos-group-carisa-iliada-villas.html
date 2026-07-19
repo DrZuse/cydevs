@@ -45,6 +45,9 @@
     <p>Carisa Iliada Villas — это три трёхкомнатные виллы с современной архитектурой и высококачественной отделкой. Расположены в 250 метрах от моря и в 10 минутах езды от центра Ларнаки. Виллы носят имена Элени, Гера и Андромаха и предлагают эксклюзивные возможности для инвестиций в недвижимость. Одна из вилл (Ira Villa) доступна для бронирования.</p>
     <p class="muted">Проект состоит из трех вилл: Eleni, Hera и Andromachi.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -136,6 +139,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.9613875,33.6541719" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -241,6 +245,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.9613875,33.6541719],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.9613875,33.6541719]).addTo(map).bindPopup("Carisa Iliada Villas" + gmapsLink);
+
+
 
 });
 </script>

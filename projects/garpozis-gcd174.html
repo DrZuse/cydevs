@@ -45,6 +45,9 @@
     <p>Olio — малоэтажный жилой дом в тихом районе Меса-Гейтония: 3 этажа, 7 квартир, современная архитектура. В продаже квартира с 2 спальнями (88 м² внутренняя, 104 м² общая, 1-й этаж).</p>
     <p class="muted">Страница описывает один юнит (квартира-флэт), номер юнита застройщиком не присвоен. Кондиционирование — VRV, отопление — центральное. Год постройки указан как 2026 при условии Off-Plan; явный срок сдачи (delivery date) на странице не назван.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -103,6 +106,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.69377,33.042772" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -214,6 +218,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.69377,33.042772],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.69377,33.042772]).addTo(map).bindPopup("Olio" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Отдельная просторная вилла с 5 спальнями в престижном районе Sea Caves — одном из самых живописных мест Кипра, с видами на море из каждой точки участка. На первом этаже: просторная гостиная с открытой кухней-столовой, гостевой санузел, спальня с ванной комнатой en-suite и дополнительная комната (кабинет/игровая/спальня). В цокольном этаже: тренажёрный зал, зона релакса с сауной, дополнительная спальня, прачечная и крытый гараж на два авто. Ландшафтный сад с бассейном открывает беспрепятственные виды на море.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -117,6 +120,7 @@
 
     <h2>Расположение</h2>
     <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.8863887,32.3325108" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -218,6 +222,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.8863887,32.3325108],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.circle([34.8863887,32.3325108],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Sea Caves Seafront Villa" + ' (примерно)' + gmapsLink);
+
+
 
 });
 </script>

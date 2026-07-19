@@ -45,6 +45,9 @@
     <p>Carisa Elysium — это современный жилой комплекс из трёх блоков, состоящий из 52 люксовых квартир с одной или двумя спальнями. Расположен в 400 метрах от побережья в престижном районе Ливадия, рядом с Американским университетом и Ларнакским яхт-клубом. Включает в себя общий бассейн, спортзал, детскую игровую площадку, игровую комнату, сауну и охраняемый вход. Квартиры идеально подходят как для инвестиций, так и для аренды. Срок сдачи — 30 ноября 2025 года. Класс энергоэффективности — A.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -1011,6 +1014,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.9505125,33.6441406" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -1115,6 +1119,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.9505125,33.6441406],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.9505125,33.6441406]).addTo(map).bindPopup("Carisa Elysium Residences" + gmapsLink);
+
+
 
 });
 </script>

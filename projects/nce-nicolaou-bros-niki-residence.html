@@ -45,6 +45,9 @@
     <p>Niki Residence — новый жилой комплекс от NCE Nicolaou Bros Developers в районе Агиос Домециос, у границы с центральной Никосией, рядом с University of Nicosia и European University. Проект состоит из двух корпусов: Block A с 1-спальными квартирами и Block B с 1- и 2-спальными квартирами. Планировки ориентированы на профессионалов и студентов, акцент сделан на качественном строительстве, теплоизоляции и фотовольтаике. Здание относится к энергоклассу А, часть квартир имеет крытый паркинг и кладовые. Цены на сайте застройщика не публикуются.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -396,6 +399,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.1079,33.3729" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -500,6 +504,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.1079,33.3729],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.1079,33.3729]).addTo(map).bindPopup("Niki Residence" + gmapsLink);
+
+
 
 });
 </script>

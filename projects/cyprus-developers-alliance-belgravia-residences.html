@@ -45,6 +45,9 @@
     <p>Belgravia Residences — закрытый охраняемый клубный комплекс в викторианском стиле, нетипичном для архитектуры Кипра, включающий всего 24 апартамента с 2, 3 и 4 спальнями. Три корпуса образуют симметричную структуру в форме буквы «П». Двух- и трёхэтажные пентхаусы на верхних этажах оснащены собственными бассейнами на крыше и каминами с мраморными порталами в гостиных. В центре комплекса расположен крупный мозаичный бассейн, вокруг которого разбита зона отдыха с беседкой, деревянной перголой и английским ландшафтным садом. Также в комплексе есть фитнес-центр и сауна. Проект завершён компанией Zemco Construction.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -494,6 +497,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.694635,33.077592" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -563,6 +567,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.694635,33.077592],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.694635,33.077592]).addTo(map).bindPopup("Belgravia Residences" + gmapsLink);
+
+
 
 });
 </script>

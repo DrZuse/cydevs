@@ -45,6 +45,9 @@
     <p>Закрытый комплекс из 15 вилл в Pegeia, Пафос, с 3-5 спальнями (площадь 265-455 кв.м). Проект завершён и предлагает премиум-класс благоустройства и современные инженерные решения.</p>
     <p class="muted">Жилой комплекс Leto&#39;s — закрытый (gated) комплекс из 15 премиальных вилл в Пейе (Pegeia), Пафос. Статус: Completed. Площади вилл 265–455 м², 3–5 спален. На сайте детально показана только вилла №7 (Coral Bay, Paphos, 4 спальни, 420 м²); остальные юниты в наличии не раскрыты. Есть форма запроса прайс-листа, но прямой PDF-ссылки на него нет.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -123,6 +126,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.873696,32.358712" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -225,6 +229,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.873696,32.358712],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.873696,32.358712]).addTo(map).bindPopup("Leto\u0027s" + gmapsLink);
+
+
 
 });
 </script>

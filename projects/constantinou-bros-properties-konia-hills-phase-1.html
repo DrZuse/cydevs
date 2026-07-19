@@ -45,6 +45,9 @@
     <p>Konia Hills Phase 1 — первая очередь закрытого (gated) посёлка эксклюзивных вилл в деревне Кония с видами на Средиземное море и город Пафос. Фаза завершена (33 виллы); в продаже остаётся вилла с 2 спальнями (Villa 37). Виллы построены по высочайшим стандартам: облицованные плиткой балконы и веранды, ландшафтные частные сады, собственная парковка и опция частного бассейна. Цены от €411 984.</p>
     <p class="muted">Всего юнитов в фазе: 33.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -119,6 +122,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.786788,32.468807" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -221,6 +225,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.786788,32.468807],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.786788,32.468807]).addTo(map).bindPopup("Konia Hills Phase 1" + gmapsLink);
+
+
 
 });
 </script>

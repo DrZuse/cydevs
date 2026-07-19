@@ -45,6 +45,9 @@
     <p>AKASA — жилой комплекс в престижном районе Панthea в Лимассоле, с видами на побережье и город. Проект включает 21 квартиру с 2 и 3 спальнями, верхние этажи с эксклюзивным доступом к приватным крышным садам. В комплексе предусмотрены тренажёрный зал, бассейн и по два парковочных места на квартиру. Строительство было начато застройщиком после публикации новостей о старте проекта. Расположение в Панthea Hills обеспечивает панорамные виды на море и город.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -499,6 +502,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.712823,33.041387" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -606,6 +610,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.712823,33.041387],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.712823,33.041387]).addTo(map).bindPopup("AKASA" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Maple Residence — студенческий жилой проект BuildLand в Энгоми, самый близкий к кампусу University of Nicosia жилой комплекс (1 минута пешком). Три этажа, 12 квартир: премиум-студии (40 м²) и 1-спальные квартиры (46-50 м²), на третьем этаже — пентхаусные варианты с руф-гарденом. У всех квартир парковка и кладовая. Статус на сайте — Construction 2026. Цены не публикуются.</p>
     <p class="muted">студенческий проект рядом с University of Nicosia</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -277,6 +280,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.16573,33.31587" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -349,6 +353,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.16573,33.31587],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.16573,33.31587]).addTo(map).bindPopup("Maple Residence" + gmapsLink);
+
+
 
 });
 </script>

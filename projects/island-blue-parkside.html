@@ -45,6 +45,9 @@
     <p>Parkside — комплекс из 9 квартир в двухэтажном здании в районе Като Пафос. Включает 5 однокомнатных и 1 двухкомнатную квартиру, а также 3 студии. Здание выделяется архитектурой из открытого бетона и кирпичных экранов. На крыше — общий бассейн, на первом этаже — парковка.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -260,6 +263,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.765162,32.422532" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -361,6 +365,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.765162,32.422532],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.765162,32.422532]).addTo(map).bindPopup("Parkside" + gmapsLink);
+
+
 
 });
 </script>

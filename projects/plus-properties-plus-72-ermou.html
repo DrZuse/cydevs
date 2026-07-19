@@ -45,6 +45,9 @@
     <p>Проект в Ларнаке идеально подходит для инвестиций с высокой доходностью от краткосрочной аренды. Состоит из 1-спальных квартир и студий.</p>
     <p class="muted">Проект состоит из студий и квартир с 1 спальней.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -80,6 +83,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.914103,33.635031" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -182,6 +186,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.914103,33.635031],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.914103,33.635031]).addTo(map).bindPopup("Plus 72 - Ermou" + gmapsLink);
+
+
 
 });
 </script>

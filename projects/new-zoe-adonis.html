@@ -45,6 +45,9 @@
     <p>Проект из 3 отдельно стоящих вилл с 4 спальнями (218 м²) в туристической зоне Пилы, в 430 м от пляжа с голубым флагом. Три уровня, крыша-сад с видом на море.</p>
     <p class="muted">Проект состоит из 3 отдельных вилл с 4 спальнями каждая. Расположены на Pyla Dhekelia Road, 430 м от пляжа с Синим флагом. Участки: H1=611 м², H2=931 м², H3=531 м². Есть возможность приобретения с НДС 5%. Титулы гарантированы.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -165,6 +168,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.976974,33.679486" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -268,6 +272,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.976974,33.679486],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.976974,33.679486]).addTo(map).bindPopup("Adonis Luxury Residences" + gmapsLink);
+
+
 
 });
 </script>

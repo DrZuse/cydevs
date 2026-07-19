@@ -45,6 +45,9 @@
     <p>SANTERO RESIDENCE — жилой комплекс в районе Апостолос Варнавас (центр Лимассола): 3 этажа, 9 просторных апартаментов с 1 и 2 спальнями и большими террасами, вид на центр города и море. Сдача ожидается в декабре 2027. Продано 3 из 9 юнитов (по данным сайта застройщика).</p>
     <p class="muted">Проект SANTERO RESIDENCE находится в районе Апостолос Варнавас в центре Лимассола. 3-этажный дом, 9 люксовых квартир с 1-2 спальнями и большими террасами. Ожидаемая сдача: декабрь 2027 года. Вид на море и городской центр.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -294,6 +297,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.681625,33.001753" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -395,6 +399,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.681625,33.001753],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.681625,33.001753]).addTo(map).bindPopup("SANTERO RESIDENCE" + gmapsLink);
+
+
 
 });
 </script>

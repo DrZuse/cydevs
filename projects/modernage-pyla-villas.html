@@ -45,6 +45,9 @@
     <p>Stassand Villas (в ранних источниках фигурировал как &#34;Pyla Villas&#34;) — комплекс независимых вилл от ModernAge Homes на улице Andreas Zakou в селе Пила района Ларнаки, примерно в 15 минутах от центра города и около 2 км от пляжей категории &#34;Голубой флаг&#34;. Виллы имеют 3 спальни и 2 ванные комнаты, полностью независимые строения, спроектированные с учётом природного окружения; отделка импортной плиткой, качественные алюминиевые окна, импортная сантехника и фурнитура. Проект подпадает под государственную программу Housing Revitalisation Plan с грантами до €65 000. Статус по данным застройщика: строится, ориентировочное завершение — декабрь 2026.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -110,6 +113,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.996680999999995,33.690374" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -214,6 +218,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.996680999999995,33.690374],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.996680999999995,33.690374]).addTo(map).bindPopup("Stassand Villas" + gmapsLink);
+
+
 
 });
 </script>

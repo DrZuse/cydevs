@@ -45,6 +45,9 @@
     <p>Senior Residence расположен в сложившемся жилом районе Лации, Никосия, рядом со школой Senior School и стадионом GSP. В наличии только одна резиденция с частным бассейном, современной итальянской кухней и энергоэффективными материалами. В проекте представлены квартиры/3-спальные, студии и магазин. Обеспечен быстрый доступ к школам, супермаркетам, медучреждениям и основным магистралям.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -89,6 +92,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.1079,33.3729" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -194,6 +198,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.1079,33.3729],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.1079,33.3729]).addTo(map).bindPopup("Senior Residence (GSP area)" + gmapsLink);
+
+
 
 });
 </script>

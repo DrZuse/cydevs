@@ -45,6 +45,9 @@
     <p>Жилой дом FC267 Ypsonas Court 7 в районе Ypsonas (Limassol). Всего 14 юнитов: 0 продано, 11 свободно, 3 в брони. Координаты — с карты застройщика.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -338,6 +341,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6828889,32.9741111" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -442,6 +446,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.6828889,32.9741111],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.6828889,32.9741111]).addTo(map).bindPopup("FC267 Ypsonas Court 7" + gmapsLink);
+
+
 
 });
 </script>

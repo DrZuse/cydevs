@@ -45,6 +45,9 @@
     <p>Два жилых дома на 1-3-спальные квартиры в Латсии, энергоэффективность класса A.</p>
     <p class="muted">Проект Cyview 171 &amp; 172 в районе Лация, Никосия. 15 квартир с 1-3 спальнями. Энергоэффективность класса A. В каждую квартиру входит частная парковка, кладовая, просторные террасы. Предусмотрена установка фотоэлектрических панелей, система водоснабжения под давлением, термические окна и кирпичи, ванные комнаты en-suite. Некоторые квартиры на третьем этаже имеют доступ на крышу.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -341,6 +344,7 @@
 
     <h2>Расположение</h2>
     <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.0995648,33.3815988" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -445,6 +449,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.0995648,33.3815988],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.circle([35.0995648,33.3815988],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Cyview 171 \u0026 172" + ' (примерно)' + gmapsLink);
+
+
 
 });
 </script>

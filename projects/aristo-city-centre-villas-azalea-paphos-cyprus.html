@@ -45,6 +45,9 @@
     <p>Azalea Villas - это эксклюзивный современный комплекс с 4- и 5-спальными виллами в центре Пафоса. Все виллы имеют частные бассейны, просторные террасы и роскошные отделки в одном из самых востребованных жилых кварталов центра Пафоса.</p>
     <p class="muted">Эксклюзивный современный комплекс вилл 4-5 спален с частными бассейнами и просторными террасами в центре Пафос. Высококачественная отделка, энергоэффективность класса A.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -223,6 +226,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.768361,32.431333" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -326,6 +330,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.768361,32.431333],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.768361,32.431333]).addTo(map).bindPopup("Azalea Villas" + gmapsLink);
+
+
 
 });
 </script>

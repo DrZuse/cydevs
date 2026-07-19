@@ -45,6 +45,9 @@
     <p>Sea Haven — комплекс вилл Right Home Developers в Протарасе (округ Фамагуста). 6 юнитов, спальни 4–5. Стадия: off-plan (предпродажи). Цены от €780 000+VAT.</p>
     <p class="muted">Код проекта Sea_Haven на сайте застройщика. Расстояния: удобства 300 m, аэропорт 55 km, море 400 m, транспорт 300 m.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -229,6 +232,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.020272,34.046824" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -332,6 +336,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.020272,34.046824],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.020272,34.046824]).addTo(map).bindPopup("Sea Haven" + gmapsLink);
+
+
 
 });
 </script>

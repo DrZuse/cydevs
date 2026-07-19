@@ -45,6 +45,9 @@
     <p>SPHERA BLOCK C &amp; D — два объединённых жилых блока по 3 этажа, всего 16 апартаментов с 1, 2 и 3 спальнями, вид на город и горы. В 5 минутах от главной дороги Лимассола. Проект завершён; в продаже остаётся 1 из 16 юнитов (по данным сайта застройщика).</p>
     <p class="muted">Проект состоит из 2 объединенных жилых блоков (Block C и Block D). Каждый блок имеет 3 этажа. В Block C на каждом этаже по 3 квартиры: 1-комнатная, 2-комнатная и 3-комнатная. В Block D на первых двух этажах по 2 квартиры (2-комнатные), на третьем этаже Block D расположена 3-комнатная квартира на весь этаж.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -372,6 +375,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.709705,33.005165" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -473,6 +477,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.709705,33.005165],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.709705,33.005165]).addTo(map).bindPopup("Sphera Block C \u0026 D" + gmapsLink);
+
+
 
 });
 </script>

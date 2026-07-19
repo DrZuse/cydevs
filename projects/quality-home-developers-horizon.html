@@ -45,6 +45,34 @@
     <p>Horizon — комплекс апартаментов с видом на море в самом центре Пафоса от Quality Home Developers. Проект включает 10 квартир: семь двухкомнатных, одну однокомнатную и две трёхкомнатные, площадью от 75 до 129 кв.м, распределённых по трём этажам. Здание оснащено технологией «умный дом», видеодомофоном, имеет крытую парковку и кладовые помещения. На территории комплекса предусмотрены общий бассейн и тренажёрный зал. Расположение обеспечивает видовые характеристики на море благодаря близости к побережью в центральной части города.</p>
     
 
+    
+    
+    <div class="panel bzk" style="margin:14px 0;border-left:3px solid var(--brand)">
+      <h3 style="margin-top:0">Bazaraki <span class="muted small" style="font-weight:normal">· <a href="https://www.bazaraki.com/new-buildings/198-horizon/" target="_blank" rel="noopener">страница объявления</a> · снимок 2026-07-19</span></h3>
+      <p class="muted small" style="margin:2px 0 8px">Ниже — только сведения, которых нет на сайте застройщика (источник правды — сайт застройщика).</p>
+      <p style="margin:6px 0"><b>Цена по объявлению:</b> €267.500 – €495.000 +VAT</p>
+      
+      <div class="row">
+        <span class="chip" title="Источник: bazaraki.com">срок сдачи: 2027</span><span class="chip" title="Источник: bazaraki.com">доступ для колясок: да</span><span class="chip" title="Источник: bazaraki.com">отопление: разводка</span><span class="chip" title="Источник: bazaraki.com">этажей: 1-3</span>
+      </div>
+      
+      
+      
+      <p class="small muted" style="margin:8px 0 0">Рядом: airport — 9 km, hospital — 900 m, beach — 2 km, supermarket — 3 km, school — 600 m, city center — 2 km</p>
+      
+      
+      
+      <details style="margin-top:8px"><summary class="muted">Описание с bazaraki.com (EN)</summary>
+        <p class="small" style="white-space:pre-line">Horizon offers an exceptional location and our contemporary signature design focused on luxurious, modern open-plan living. 
+
+The development comprises 7x two-bedroom, 1x one-bedroom and 2x three-bedroom apartments ranging from 55 to 104  spread across three floors. Luxury amenities include Smart technology, Video intercom, Seaview, covered parking, storage, and a communal pool.
+
+ Each apartment boasts a unique modern layout, harmoniously integrating space and natural light, ensuring an effortlessly refined living experience</p></details>
+      
+      
+    </div>
+    
+
     <h2>Характеристики</h2>
     
     
@@ -200,6 +228,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.765793,32.431748" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -208,7 +237,7 @@
     <div class="panel">
       <h3 style="margin-top:0">Кратко</h3>
       <dl class="detail">
-        <dt>Цена</dt><dd>по запросу</dd>
+        <dt>Цена</dt><dd>€267 500 – €495 000 <a href="https://www.bazaraki.com/new-buildings/198-horizon/" target="_blank" rel="noopener" style="text-decoration:none" title="На сайте застройщика цена не найдена — указана по объявлению на bazaraki.com (клик — открыть источник)"><sup>?</sup></a></dd>
         <dt>Тип недвижимости</dt><dd>Квартиры</dd>
         <dt>Стадия</dt><dd>В продаже</dd>
         <dt>Начало стройки</dt><dd>—</dd>
@@ -281,6 +310,9 @@
         <li><a href="https://qualityhomeco.com/property-city/paphos/" target="_blank" rel="noopener">qualityhomeco.com/property-city/paphos/</a>
           <span class="muted">· сайт застройщика</span></li>
         
+        <li><a href="https://www.bazaraki.com/new-buildings/198-horizon/" target="_blank" rel="noopener">www.bazaraki.com/new-buildings/198-horizon/</a>
+          <span class="muted">· агрегатор</span></li>
+        
       </ul>
     </div>
     
@@ -304,6 +336,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.765793,32.431748],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.765793,32.431748]).addTo(map).bindPopup("Horizon" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Westminster Residences — жилая башня стоимостью около 40 млн евро в туристической зоне муниципалитета Германасойя, примерно в 150-350 метрах от моря. По таблице застройщика комплекс включает 54 юнита — апартаменты с 1–5 спальнями, включая двухуровневые пентхаусы. Площади апартаментов варьируются от 43 до 479 кв.м. Пентхаусы предлагают панорамный вид на город, собственные сады на крыше и приватные бассейны-инфинити. Срок сдачи по данным застройщика — апрель 2027 года; к июлю 2026 года 52 из 54 юнитов проданы.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -1045,6 +1048,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.703947,33.102941" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -1146,6 +1150,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.703947,33.102941],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.703947,33.102941]).addTo(map).bindPopup("Westminster Residences" + gmapsLink);
+
+
 
 });
 </script>

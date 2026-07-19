@@ -45,6 +45,9 @@
     <p>ORBEA LIVING — жилой комплекс в районе Ипсонас (Лимассол): 3 этажа, 16 просторных апартаментов с 1 и 2 спальнями и большими террасами. Сдача ожидается в 2028 году. Продано 4 из 16 юнитов (по данным сайта застройщика).</p>
     <p class="muted">ORBEA LIVING — 3-этажный жилой комплекс из 16 апартаментов с 1-2 спальнями. Все апартаменты просторные, с большими террасами. Расположен в районе Ипсонас (Лимассол), в тихом районе с удобным доступом к морскому фронту. Предлагает виды на море и центр города. Ожидаемая сдача — апрель 2028 года.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -399,6 +402,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.692636,32.96602" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -500,6 +504,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.692636,32.96602],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.692636,32.96602]).addTo(map).bindPopup("ORBEA LIVING" + gmapsLink);
+
+
 
 });
 </script>

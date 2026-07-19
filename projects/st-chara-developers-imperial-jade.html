@@ -45,6 +45,9 @@
     <p>Комплекс роскошных приморских вилл в Протарасе, сдан в 2022 году. Четыре виллы с 4 спальнями и частными бассейнами (V02, V04, V06, V07) доступны к продаже, у каждой — отдельная страница на сайте застройщика. Энергоэффективность B+/A.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -140,6 +143,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.02025,34.046389" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -242,6 +246,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.02025,34.046389],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.02025,34.046389]).addTo(map).bindPopup("Imperial Jade" + gmapsLink);
+
+
 
 });
 </script>

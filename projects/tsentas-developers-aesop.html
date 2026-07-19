@@ -45,6 +45,9 @@
     <p>Малоэтажный жилой комплекс со спокойной архитектурой, просторными верандами и связью с природным окружением, в тихом зелёном районе Никосии. Сдача Q4 2027.</p>
     <p class="muted">По каталогу юнитов на сайте: 9 доступно, 3 продано (проверено 2026-07-16).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -304,6 +307,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.150680638116995,33.38801347879027" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -405,6 +409,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.150680638116995,33.38801347879027],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.150680638116995,33.38801347879027]).addTo(map).bindPopup("Aesop Residence" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Дома FC206 Pernera Houses в районе Pernera (Nicosia). Всего 2 юнитов: 0 продано, 2 свободно. Координаты — с карты застройщика.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -120,6 +123,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.1634444,33.3915556" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -227,6 +231,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.1634444,33.3915556],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.1634444,33.3915556]).addTo(map).bindPopup("FC206 Pernera Houses" + gmapsLink);
+
+
 
 });
 </script>

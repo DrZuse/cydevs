@@ -45,6 +45,9 @@
     <p>Проект из четырёх отдельно стоящих домов в одном из наиболее живописных районов Латсии (Никосия), на участке, примыкающем к обширной зелёной зоне рядом с бывшим Laiki Sporting Club и с прямым выездом на автомагистраль. Проект сочетает современную архитектуру, роскошь и повседневный комфорт, ориентирован на покупателей, ищущих не просто дом, а полноценную loft-локацию с инфраструктурой. Точное официальное название проекта (номер линейки Perfect Homes), площади, планировки и цены на открытых источниках не установлены.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -76,6 +79,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.092037,33.39093" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -178,6 +182,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.092037,33.39093],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.092037,33.39093]).addTo(map).bindPopup("Novo Casa Latsia Detached Houses" + gmapsLink);
+
+
 
 });
 </script>

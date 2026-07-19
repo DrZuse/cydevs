@@ -45,6 +45,9 @@
     <p>Peyia Villas — жилой комплекс вилл в районе Пейя (Pegeia) недалеко от Пафоса. Проект включает 27 трёхспальных вилл различного размера участков (плюс 8 уже завершённых и проданных домов). Каждая вилла рассчитана на 3 спальни и 2 ванные комнаты, к комплексу относятся 2 общих (коммунальных) бассейна. Отличительная черта проекта — открытые панорамные виды на Средиземное море. Точные цены и даты сдачи публично не указаны.</p>
     <p class="muted">Исходный URL — страница-агрегатор объявтов &#39;Properties For Sale in Paphos&#39; (фильтры/поиск). На странице отсутствует отдельный проект &#39;Peyia Villas&#39;: нет описания, юнитов, характеристик, брошюр или сроков сдачи. Проектная страница застройщика для Peyia Villas не найдена в предоставленном источнике.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -125,6 +128,7 @@
 
     <h2>Расположение</h2>
     <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.8835052,32.3803202" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -229,6 +233,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.8835052,32.3803202],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.circle([34.8835052,32.3803202],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Peyia Villas" + ' (примерно)' + gmapsLink);
+
+
 
 });
 </script>

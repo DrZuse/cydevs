@@ -45,6 +45,9 @@
     <p>Жилой комплекс Green Park Residences 1 расположен в районе Кити, Ларнака, в 200 метрах от церкви Ангелоктисти. Проект включает 7 квартир с двумя спальнями. Здание имеет энергетический класс А.</p>
     <p class="muted">Проект расположен в 200 метрах от церкви Ангелоктиста в Кити (Ларнака). Начало строительства — февраль 2025 года. Все квартиры с roof garden оснащены фотоэлектрическими панелями.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -239,6 +242,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.8464781,33.5727305" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -340,6 +344,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.8464781,33.5727305],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.8464781,33.5727305]).addTo(map).bindPopup("Green Park Residences 1" + gmapsLink);
+
+
 
 });
 </script>

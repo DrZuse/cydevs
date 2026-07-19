@@ -45,6 +45,9 @@
     <p>Комплекс из двух корпусов в 200 метрах от побережья Лимассола с непрерывным видом на море из каждой квартиры. Просторные интерьеры и большие балконы. Рядом автомагистрали, ключевые объекты инфраструктуры и места для отдыха.</p>
     <p class="muted">Двухкорпусный жилой комплекс в Лимассоле в 150–200 м от побережья; квартиры с 2 и 3 спальнями с видами на море. Стадия строительства, срок сдачи, цены и таблица наличия юнитов на странице не указаны.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -107,6 +110,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6852901,33.0332657" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -209,6 +213,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.6852901,33.0332657],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.6852901,33.0332657]).addTo(map).bindPopup("Horizon Residence" + gmapsLink);
+
+
 
 });
 </script>

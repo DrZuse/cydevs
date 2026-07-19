@@ -45,6 +45,9 @@
     <p>Mare Monte Resort — экологичный многофункциональный курорт (Eco Development) на участке 194 321 кв.м у деревни Нео-Хорио в районе полуострова Акамас. Заявлен как автономный и устойчивый комплекс: пятизвёздочный отель, жилая застройка, гериатрическая клиника, спортивный центр, культурные и природоохранные объекты, фотоэлектрический парк и станция очистки сточных вод. Проект находится на стадии проработки (under study), состав юнитов и цены не опубликованы.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -77,6 +80,7 @@
 
     <h2>Расположение</h2>
     <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.0265386,32.3634406" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -178,6 +182,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.0265386,32.3634406],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.circle([35.0265386,32.3634406],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Mare Monte Resort" + ' (примерно)' + gmapsLink);
+
+
 
 });
 </script>

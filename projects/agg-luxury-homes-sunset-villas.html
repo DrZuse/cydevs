@@ -45,6 +45,9 @@
     <p>Sunset Villas — эксклюзивный анклав из 19 вилл в Киссонерге с захватывающими видами на море с кровельных террас, в пешей доступности от моря. Каждая вилла имеет частный бассейн, сад и террасу на крыше. Проект ориентирован на любителей заката и приватной прибрежной жизни в престижном районе Пафоса.</p>
     <p class="muted">Комплекс из 19 вилл в Киссонерге (Paphos). Завершение Q4 2024. Каждая вилла с личным бассейном, садом и крышей-террасой. До 4 спален, 3 ванные комнаты, 4 уровня. Контролируемый въезд, охрана. Страница обновлена 11 ноября 2024. Цены от €sold (распродано) — конкретные юниты и их цены на странице не приведены.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -153,6 +156,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.826197,32.393981" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -254,6 +258,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.826197,32.393981],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.826197,32.393981]).addTo(map).bindPopup("Sunset Villas" + gmapsLink);
+
+
 
 });
 </script>

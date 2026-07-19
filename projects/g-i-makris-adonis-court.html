@@ -43,6 +43,9 @@
     <p>Жилой дом Adonis Court на 3 этажа в районе Акрополис (Строволос, Никосия), рядом с парком Акрополис: современная архитектура, люкс-спецификации, высокие энергетические характеристики, тихий район. В продаже квартира №102: 3 спальни, 2 ванные/WC, 142 м², €270 000. Адрес: 3, Sophocleous Street, 2008 Strovolos, Nicosia.</p>
     <p class="muted">Страница Property for Sale: в продаже квартира Flat 102 в Adonis Court (Акрополис, рядом с парком Акрополис), дом на 3 этажа. Пин застройщика на Google Maps: 35.148146, 33.366564 (35°08&#39;53.3&#34;N 33°21&#39;59.6&#34;E). Планировка — images/adonisfloorplan.jpg. Выделенная страница adonis-court.html содержит только слоганы (Modern Architecture, High Technical Standards, High Energy Performance, Quiet area next to the Acropolis park).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -101,6 +104,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.148146,33.366564" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -209,6 +213,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.148146,33.366564],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.148146,33.366564]).addTo(map).bindPopup("Adonis Court" + gmapsLink);
+
+
 
 });
 </script>

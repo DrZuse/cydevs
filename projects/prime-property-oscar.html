@@ -45,6 +45,9 @@
     <p>Современный охраняемый проект на 6 люксовых объектов: пять 1-, 2- и 3-комнатных квартир и один 3-комнатный пентхаус с собственной террасой на крыше и частным бассейном. Высококачественные отделочные материалы, паркет из массива дерева, мраморные ванные комнаты. Статус: сдан.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -114,6 +117,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.698685,33.091996" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -216,6 +220,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.698685,33.091996],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.698685,33.091996]).addTo(map).bindPopup("Oscar" + gmapsLink);
+
+
 
 });
 </script>

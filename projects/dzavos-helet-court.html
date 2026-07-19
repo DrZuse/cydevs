@@ -45,6 +45,9 @@
     <p>Helet Court — эксклюзивный жилой комплекс в центре Лимассола. Состоит из пяти современных квартир: четырёх однокомнатных и одного трёхкомнатного пентхауса. Расположен в тихом жилом районе рядом со всей инфраструктурой.</p>
     <p class="muted">На странице только общее описание: 5 апартаментов (четыре 1-спальных + 3-спальный пентхаус) в центре Лимассола. Планировки, цены, сроки, характеристики, документы, изображения юнитов отсутствуют — всё через контактную форму.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -132,6 +135,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6852901,33.0332657" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -234,6 +238,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.6852901,33.0332657],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.6852901,33.0332657]).addTo(map).bindPopup("Helet Court" + gmapsLink);
+
+
 
 });
 </script>

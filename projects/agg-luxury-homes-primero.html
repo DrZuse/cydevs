@@ -45,6 +45,9 @@
     <p>Primero — жилой комплекс в благоустроенном зелёном районе Пафоса, в пешей доступности от супермаркетов, магазинов и бутиков улицы Kolonakiou. До приморской набережной и песчаного пляжа можно дойти пешком, а центр города находится всего в 1 км.</p>
     <p class="muted">Проект завершён (сдача Q1 2023). Застройщик AGG Luxury Homes. Конкретных юнитов с номерами на странице нет — указаны только типовые характеристики (до 3 спален, 2 ванные). Цены помечены как «sold».</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -110,6 +113,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.695186,33.071101" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -215,6 +219,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.695186,33.071101],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.695186,33.071101]).addTo(map).bindPopup("Primero" + gmapsLink);
+
+
 
 });
 </script>

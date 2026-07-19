@@ -45,6 +45,9 @@
     <p>Проект в районе Фанеромени в Ларнаке, в нескольких минутах от пляжа Финикудес. Включает апартаменты с 3 спальнями и пентхаусы. Близость к общественным удобствам, ресторанам и торговым центрам.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -107,6 +110,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.91426,33.621605" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -209,6 +213,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.91426,33.621605],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.91426,33.621605]).addTo(map).bindPopup("Plus 61 - FANEROMENI" + gmapsLink);
+
+
 
 });
 </script>

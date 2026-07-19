@@ -45,6 +45,9 @@
     <p>WIMBLEDON — 4-этажный жилой комплекс в Пано (Верхнем) Пафосе, в деловом районе города. Включает виллы с 3–4 спальнями, апартаменты и пентхаусы. Цена от €295,000.</p>
     <p class="muted">4-этажное жилое здание в Pano (Upper) Paphos, деловой район в центре города. Всего 9 квартир: 2×1-спальные (от 49 кв.м), 5×2-спальные (от 77 кв.м), 2×3-спальные (от 126 кв.м, включая пентхаус). Цена указана на сайте как «From €270» (вероятно усечено). 1 парковочное место, меблированное лобби, вид на город. Завершение Q1 2028. Обновлено на сайте 6 июля 2026.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -158,6 +161,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.778025,32.428021" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -259,6 +263,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.778025,32.428021],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.778025,32.428021]).addTo(map).bindPopup("WIMBLEDON" + gmapsLink);
+
+
 
 });
 </script>

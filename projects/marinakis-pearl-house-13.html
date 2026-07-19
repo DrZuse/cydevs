@@ -45,6 +45,9 @@
     <p>Pearl House 13 — очередной жилой дом серии Pearl House от Marinakis Property в Ларнаке. Числится в разделе Upcoming Properties на сайте девелопера.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -116,6 +119,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.928636,33.615238" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -218,6 +222,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.928636,33.615238],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.928636,33.615238]).addTo(map).bindPopup("Pearl House 13" + gmapsLink);
+
+
 
 });
 </script>

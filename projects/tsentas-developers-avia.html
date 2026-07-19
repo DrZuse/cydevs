@@ -45,6 +45,9 @@
     <p>Престижный жилой дом в районе Париссинос (Энгоми): квартиры с 2–3 спальнями и квартира на первом этаже с собственным садом. Построен; из 10 квартир осталась одна.</p>
     <p class="muted">По каталогу юнитов на сайте: 1 доступно, 9 продано (проверено 2026-07-16).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -270,6 +273,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.154201,33.327579" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -371,6 +375,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.154201,33.327579],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.154201,33.327579]).addTo(map).bindPopup("Avia Residence" + gmapsLink);
+
+
 
 });
 </script>

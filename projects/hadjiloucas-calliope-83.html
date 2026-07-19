@@ -45,6 +45,9 @@
     <p>Caλλiope (#83) — люксовый дом на престижной авеню Каллиполеос: шесть резиденций «квартира на весь этаж» с 4–5 спальнями (165–179 м² внутри), плюс докупаемая крыша-сад у пентхауса. Просторные светлые интерьеры, премиальные материалы и отделка. Цены от €510.000 до €590.000 +VAT.</p>
     <p class="muted">Юнит-таблица сайта (CMS ForSale): 6 доступно, 0 продано; всего в проекте 6 квартир (проверено 2026-07-16).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -175,6 +178,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.1626375,33.3741406" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -244,6 +248,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.1626375,33.3741406],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.1626375,33.3741406]).addTo(map).bindPopup("Ca\u03bb\u03bbiope (#83)" + gmapsLink);
+
+
 
 });
 </script>

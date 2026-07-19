@@ -45,6 +45,9 @@
     <p>Island Dream — комплекс вилл Right Home Developers в Каппарисе (округ Фамагуста). 4 юнита, спален: 2. Стадия: off-plan (предпродажи), сдача 2025. Цены от €320 000+VAT.</p>
     <p class="muted">Код проекта Island_Dream на сайте застройщика. Расстояния: удобства 500 m, аэропорт 40 km, море 600 m, транспорт 400 m.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -168,6 +171,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.059032,33.999584" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -271,6 +275,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.059032,33.999584],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.059032,33.999584]).addTo(map).bindPopup("Island Dream" + gmapsLink);
+
+
 
 });
 </script>

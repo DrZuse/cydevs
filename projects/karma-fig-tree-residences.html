@@ -45,6 +45,9 @@
     <p>Fig Tree Residences — комплекс в прогулочной доступности от всемирно известного пляжа Fig Tree Bay. Рядом — магазины, рестораны и развлечения. В 35 минутах от международного аэропорта Ларнаки и рядом с природным парком Каво Греко. Представлены виллы и апартаменты от 2 до 6 спален.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -283,6 +286,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.00931,34.05911" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -384,6 +388,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.00931,34.05911],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.00931,34.05911]).addTo(map).bindPopup("Fig Tree Residences" + gmapsLink);
+
+
 
 });
 </script>

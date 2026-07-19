@@ -45,6 +45,9 @@
     <p>Tryfonos Hills — отдельно стоящий 3-спальный дом с видом на море в районе Агиос Тихонас, Лимасол. Дом включает открытую гостиную, столовую с кухней, 3 спальни, ванные комнаты и террасы. Оснащён системой кондиционирования и центральным отоплением, имеет озеленённые сады. Расположен в 5–10 минутах езды от пляжа. Статус: сдан.</p>
     <p class="muted">3-спальный отдельно стоящий дом в районе Агиос Тихонас, Лимассол. 2.7 км до моря, 5-10 минут езды до пляжа и городской инфраструктуры.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -80,6 +83,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.729396,33.144621" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -182,6 +186,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.729396,33.144621],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.729396,33.144621]).addTo(map).bindPopup("Tryfonos Hills" + gmapsLink);
+
+
 
 });
 </script>

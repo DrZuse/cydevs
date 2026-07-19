@@ -45,6 +45,9 @@
     <p>Arya — проект в одном из перспективных развивающихся районов Западного Лимассола, включающий 25 квартир с одной спальней. Резидентам доступна общая зона с бассейном. Изначально сдача ожидалась в октябре 2024 года, однако по состоянию на середину 2026 года проект продолжает числиться среди текущих проектов застройщика, что может указывать на перенос сроков сдачи.</p>
     <p class="muted">Проект состоит из 25 квартир с одной спальней и общей зоной с бассейном. Расположен в западной части Лимассола.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -126,6 +129,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.657592,33.007524" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -228,6 +232,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.657592,33.007524],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.657592,33.007524]).addTo(map).bindPopup("Arya" + gmapsLink);
+
+
 
 });
 </script>

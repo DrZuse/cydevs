@@ -45,6 +45,9 @@
     <p>Проект в недавно застроенном районе Вергина в самом сердце Ларнаки включает 6 роскошных апартаментов, расположенных вблизи всей необходимой инфраструктуры. Локация выигрывает от близости к новой больнице Ларнаки, торговому центру Metropolis Mall, автомагистрали Никосия-Лимассол и стадиону GSZ. Здание описывается застройщиком как объект «ультра высокого качества» с продуманной планировкой, обеспечивающей функциональность и комфорт. Апартаменты отличаются просторными балконами; предусмотрены парковочные места и кладовые помещения. Подробные данные о метраже, ценах и точной стадии строительства в открытых источниках не публикуются.</p>
     <p class="muted">6 Luxurious Apartments in the heart of Larnaca near all amenities. Near New Larnaca Hospital, Metropolis Mall, Nicosia and Lemesos Motorway, Larnaca GSZ Football Stadium. Delivery: 30/12/2023. All units have parking, no storage, 2 bathrooms, no guest WC.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -236,6 +239,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.92003,33.59809" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -340,6 +344,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.92003,33.59809],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.92003,33.59809]).addTo(map).bindPopup("Vergina Apartments" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Zelemenos Village — эксклюзивный виллообразующий подпроект Leptos на холмах вблизи Талы, в составе знаменитого посёлка Kamares Village и рядом с монастырём Св. Неофита. Виллы Zelemenos — современные дома в 1–2 этажа, преимущественно с 3 спальнями, тщательно расположенные для максимальных видов на сельскую местность и побережье Пафоса, с ландшафтным окружением. Резиденты получают доступ к инфраструктуре отмеченного наградами Kamares Village. Ориентировочные цены на виллы — примерно от €264 000 до €2 893 000 (+ НДС); типовая 3-спальная вилла — около €766 025.</p>
     <p class="muted">Элитный комплекс из индивидуальных вилл (tailor-made villas) в холмистой местности близ монастыря Св. Неофита, район Тала, Пафос. Часть застройки Leptos Kamares Village. В продаже: земельный участок (Plot 042), две 3-спальные виллы (Proposal A, блоки H1/H2) и 14-спальный особняк (Mansion 332). Цены указаны с пометкой «+ VAT». На странице присутствует брошюра через Issuu-эмбед, но прямой PDF-ссылки нет.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -214,6 +217,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.824475,32.389266" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -317,6 +321,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.824475,32.389266],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.824475,32.389266]).addTo(map).bindPopup("Zelemenos Village" + gmapsLink);
+
+
 
 });
 </script>

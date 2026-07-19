@@ -45,6 +45,9 @@
     <p>Современный жилой проект, сочетающий чистый архитектурный дизайн, функциональность и высокую эстетику. Состоит из полуотдельно стоящих домов в Цери. Каждый дом имеет 3 спальни, 3 санузла и частный сад с верандой. В проекте представлены апартаменты и дома.</p>
     <p class="muted">Проект включает полунезависимые жилые дома с 3 спальнями, частными садами и террасами. Энергоэффективные решения с фотоэлектрическими системами.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -175,6 +178,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.076021,33.332821" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -276,6 +280,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.076021,33.332821],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.076021,33.332821]).addTo(map).bindPopup("Everest Homes 35 Tseri" + gmapsLink);
+
+
 
 });
 </script>

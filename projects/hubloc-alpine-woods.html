@@ -43,6 +43,9 @@
     <p>Alpine Woods — закрытая резиденция из 20 домов в шале-стиле в Пано-Платрес (горы Троодос, Лимассол), для аренды. Каждый дом с 3 спальнями и видами на горы. На территории — подогреваемый бассейн, спортзал и круглосуточная стойка регистрации; камины и зоны для барбекю. Проект в разработке (скоро).</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -88,6 +91,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.8832375,32.8582344" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -193,6 +197,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.8832375,32.8582344],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.8832375,32.8582344]).addTo(map).bindPopup("Alpine Woods" + gmapsLink);
+
+
 
 });
 </script>

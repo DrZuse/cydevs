@@ -45,6 +45,9 @@
     <p>The Cove — 15 вилл с 3 спальнями в туристической зоне Героскипу (Пафос), в 200 м от пляжа. Два типа вилл на двух этажах, участки 228–304 м², крытые веранды. В стоимость включены: частный бассейн, VRV-охлаждение, водяной тёплый пол, фотоэлектрическая система 4.8 кВт с подготовкой под накопитель, система фильтрации и умягчения воды, электрические ворота. Класс энергоэффективности A. Осталось ограниченное число вилл (last units).</p>
     <p class="muted">Комплекс из 15 вилл, расположенных в 200 метрах от пляжа. Доступны два типа вилл (Type A и Type B). Есть возможность выбора между двумя пакетами отделки (Bold или Light).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -109,6 +112,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.738301,32.447103" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -213,6 +217,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.738301,32.447103],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.738301,32.447103]).addTo(map).bindPopup("The Cove" + gmapsLink);
+
+
 
 });
 </script>

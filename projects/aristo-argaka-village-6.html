@@ -45,6 +45,9 @@
     <p>Argaka Village 6 - это комплекс 3- и 4-спальных вилл в живописной деревне Аргака. Построенные на высоком уровне, каждая вилла имеет свой собственный участок с частным бассейном и парковкой, предлагая качество и стиль.</p>
     <p class="muted">Проект вилл в деревне Аргака, район Полис. Виллы с 3-4 спальнями. Цена от €506,000 + НДС. Площадь участка 593.85 м², покрытая площадь 160.29 м². Энергоэффективность класса A. Каждая вилла имеет собственный участок с частным бассейном и парковкой.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -103,6 +106,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.0785222,32.4866528" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -207,6 +211,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.0785222,32.4866528],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.0785222,32.4866528]).addTo(map).bindPopup("Argaka Village 6" + gmapsLink);
+
+
 
 });
 </script>

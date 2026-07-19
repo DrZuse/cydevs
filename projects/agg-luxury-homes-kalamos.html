@@ -45,6 +45,9 @@
     <p>Kalamos — здание на 18 квартир, завершённое в начале 2024 года. Расположено на 4 этажах, предлагает планировки от 1 до 3 спален. Находится в востребованном районе Пафоса, подходящем как для постоянного проживания, так и для отпуска.</p>
     <p class="muted">Жилой комплекс из 18 квартир на 4 этажах (1, 2 и 3-спальные), завершён в начале 2024 года (Q1 2024). Расположен в районе Tombs of the Kings, Пафос. Рядом английский детский сад и школа ASPIRE Private British School, супермаркеты, кафе и рестораны в пешей доступности, торговый центр в 2 км, пляж Venus в 500 м. Объявление обновлено 14 марта 2025. Цены указаны как &#39;sold&#39; (распродано).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -125,6 +128,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.785451,32.406379" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -227,6 +231,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.785451,32.406379],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.785451,32.406379]).addTo(map).bindPopup("KALAMOS" + gmapsLink);
+
+
 
 });
 </script>

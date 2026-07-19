@@ -45,6 +45,9 @@
     <p>Neon Homes — камерный проект из пяти вилл с 3 спальнями на южной окраине Пафоса (Героскипу). Два этажа: open-plan гостиная внизу, три спальни наверху. В стандартную комплектацию входят скрытая VRV-система охлаждения, зонированный водяной тёплый пол, фотоэлектрическая система 4.72 кВт, крытая парковка, электрические ворота, сигнализация и видеонаблюдение (4 камеры), зона барбекю. Частный бассейн — опционально. Класс энергоэффективности A.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -123,6 +126,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.75324,32.456254" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -227,6 +231,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.75324,32.456254],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.75324,32.456254]).addTo(map).bindPopup("Neon Homes" + gmapsLink);
+
+
 
 });
 </script>

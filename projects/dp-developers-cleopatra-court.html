@@ -45,6 +45,9 @@
     <p>Комплекс апартаментов Cleopatra Court в Колосси, западном пригороде Лимассола. По данным застройщика в продаже 2-спальные квартиры (1 с/у) от €990,000.</p>
     <p class="muted">Проект представлен на странице проектов застройщика. Подробная информация доступна на странице проекта: https://pddevelopers.com/property/cleopatra-court/</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -89,6 +92,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.68123565,32.9386588" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -197,6 +201,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.68123565,32.9386588],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.68123565,32.9386588]).addTo(map).bindPopup("Cleopatra Court" + gmapsLink);
+
+
 
 });
 </script>

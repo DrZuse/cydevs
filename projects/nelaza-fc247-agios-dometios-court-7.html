@@ -45,6 +45,9 @@
     <p>Жилой дом FC247 Agios Dometios Court 7 в районе Agios Dometios (Nicosia). Всего 11 юнитов: 3 продано, 8 свободно. Координаты — с карты застройщика.</p>
     <p class="muted">Проект FC247 Agios Dometios Court 7 расположен на улице Steliou Mavromati в районе Agios Dometios, Никосия. Напротив церкви Agios Georgios. В проекте предусмотрена закрытая парковка и кладовки. Застройщик NELAZA LTD.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -287,6 +290,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.1720152,33.3330623" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -393,6 +397,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.1720152,33.3330623],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.1720152,33.3330623]).addTo(map).bindPopup("FC247 Agios Dometios Court 7" + gmapsLink);
+
+
 
 });
 </script>

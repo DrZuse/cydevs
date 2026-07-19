@@ -45,6 +45,9 @@
     <p>Queens Sands Beachfront Villas — закрытый комплекс всего из пяти отдельно стоящих вилл на первой береговой линии в Киссонерге, за пределами курортной части Пафоса. Резиденция обеспечивает приватность и охраняемый доступ только для жителей. Виллы предлагаются в двух вариантах — с тремя или четырьмя спальнями; каждая расположена на собственном участке от 480 до 760 м² с пространством для частного сада, переливным бассейном и зоной для загара. Архитектура современная, интерьеры просторные и наполнены светом.</p>
     <p class="muted">Проект завершён в Q3 2021, расположен в Kissonerga (Pafos). В составе 5 детached вилл, все проданы (From € sold). Конкретной таблицы юнитов с номерами и площадями на странице нет (площади указаны как «No data»), поэтому units пуст. Застройщик — AGG Luxury Homes (agg-luxury-homes).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -114,6 +117,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.829149,32.390026" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -222,6 +226,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.829149,32.390026],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.829149,32.390026]).addTo(map).bindPopup("Queens Sands Beachfront Villas" + gmapsLink);
+
+
 
 });
 </script>

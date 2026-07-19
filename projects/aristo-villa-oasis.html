@@ -45,6 +45,9 @@
     <p>Новый проект Villa Oasis, анонсированный в апреле 2026 года в составе шести новых очередей Aristo Developers. Представляет собой привилегированную виллу с 4 спальнями, спроектированную на впечатляющем участке площадью 1 270 м² в составе курорта Venus Rock Golf Resort и построенную в трёх уровнях (цокольный, первый и второй этажи), с акцентом на приватность и простор, с частным бассейном.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -123,6 +126,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.696099,32.594725" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -228,6 +232,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.696099,32.594725],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.696099,32.594725]).addTo(map).bindPopup("Villa Oasis" + gmapsLink);
+
+
 
 });
 </script>

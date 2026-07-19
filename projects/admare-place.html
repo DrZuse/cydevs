@@ -45,6 +45,34 @@
     <p>The Place — клубный проект из 14 deluxe-квартир в районе Потамос Гермасойя, в 650 метрах от моря. Одно-, двух- и трёхспальные планировки (78.3-172.5 м² с верандами и общими зонами), высокие потолки, отделка премиальными материалами, VRV-кондиционирование и водяные тёплые полы (LG). Закрытая территория, бассейн с лаунж-зоной, ландшафтный дизайн, крытые паркоместа и кладовые.</p>
     
 
+    
+    
+    <div class="panel bzk" style="margin:14px 0;border-left:3px solid var(--brand)">
+      <h3 style="margin-top:0">Bazaraki <span class="muted small" style="font-weight:normal">· <a href="https://www.bazaraki.com/new-buildings/56-the_place/" target="_blank" rel="noopener">страница объявления</a> · снимок 2026-07-19</span></h3>
+      <p class="muted small" style="margin:2px 0 8px">Ниже — только сведения, которых нет на сайте застройщика (источник правды — сайт застройщика).</p>
+      
+      
+      <div class="row">
+        <span class="chip" title="Источник: bazaraki.com">срок сдачи: 2026</span><span class="chip" title="Источник: bazaraki.com">кладовая: да</span><span class="chip" title="Источник: bazaraki.com">лифт: да</span><span class="chip" title="Источник: bazaraki.com">доступ для колясок: да</span><span class="chip" title="Источник: bazaraki.com">вид: Seaview</span><span class="chip" title="Источник: bazaraki.com">энергокласс: A</span><span class="chip" title="Источник: bazaraki.com">этажей: 1-4</span>
+      </div>
+      
+      
+      
+      <p class="small muted" style="margin:8px 0 0">Рядом: airport — 60.3 km, beach — 1.2 km, city center — 6 km, school — 400 m, supermarket — 2 km, hospital — 2 km</p>
+      
+      
+      
+      <details style="margin-top:8px"><summary class="muted">Описание с bazaraki.com (EN)</summary>
+        <p class="small" style="white-space:pre-line">The Only - modern club house consisting of only 14 apartments with covered parking.
+
+The building is located in a quiet location in one of the most prestigious and sought-after areas of Limassol - Potamos Germasogeia. The rich infrastructure of the area is within walking distance from the complex, and the road to the sandy beach of the seashore is 350m.</p></details>
+      
+      
+      <p class="small muted" style="margin:8px 0 0">📍 Гео-метка bazaraki расходится с меткой застройщика на 109 м — на карте ниже показаны обе (серая — bazaraki).</p>
+      
+    </div>
+    
+
     <h2>Характеристики</h2>
     
     
@@ -84,6 +112,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.70487,33.091728" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -131,6 +160,9 @@
           <span class="muted">— главный источник (сайт застройщика)</span></li>
         
         
+        <li><a href="https://www.bazaraki.com/new-buildings/56-the_place/" target="_blank" rel="noopener">www.bazaraki.com/new-buildings/56-the_place/</a>
+          <span class="muted">· агрегатор</span></li>
+        
       </ul>
     </div>
     
@@ -154,6 +186,13 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.70487,33.091728],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.70487,33.091728]).addTo(map).bindPopup("The Place" + gmapsLink);
+
+
+
+  // вторая метка — из объявления bazaraki (расходится с меткой застройщика)
+  L.circleMarker([34.703887624695035,33.091776039784534],{radius:9,color:'#777',fillColor:'#999',fillOpacity:0.7})
+    .addTo(map).bindPopup('Метка Bazaraki (109 м от метки застройщика)<br><a href="https://www.bazaraki.com/new-buildings/56-the_place/" target="_blank" rel="noopener">Открыть объявление</a>');
+  map.fitBounds(L.latLngBounds([[34.70487,33.091728],[34.703887624695035,33.091776039784534]]).pad(0.35));
 
 });
 </script>

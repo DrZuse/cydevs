@@ -43,6 +43,9 @@
     <p>Chios Anthea Residences — проект с уникальной архитектурой и изысканной отделкой между Айос-Андреас и Айос-Дометиос в Никосии, рядом с отелем Asty. 10 квартир с 2 и 3 спальнями, просторными балконами: тёплые полы с тепловым насосом, фотовольтаика, зарядка электромобилей, умный дом, энергокласс A. По таблице застройщика доступны 2 квартиры (обе 2-спальные).</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -288,6 +291,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.1687,33.338" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -392,6 +396,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.1687,33.338],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.1687,33.338]).addTo(map).bindPopup("CHIOS ANTHEA RESIDENCES" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Perneri Villas — виллы с 3 и 4 спальнями с видом на Средиземное море и опцией частного бассейна. Отличаются высококачественной отделкой, просторными интерьерами и открытыми солнечными террасами. Расположены вблизи от инфраструктуры Пафоса. В состав также входят офисы и магазины. Цена — от €838 000.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -209,6 +212,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.834455,32.435734" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -310,6 +314,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.834455,32.435734],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.834455,32.435734]).addTo(map).bindPopup("Perneri Villas" + gmapsLink);
+
+
 
 });
 </script>

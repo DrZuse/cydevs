@@ -45,6 +45,9 @@
     <p>Эксклюзивная коллекция из 14 дизайнерских квартир в престижном жилом районе Лимассола. Включает апартаменты с одной, двумя и тремя спальнями, пентхаусы и специальную трёхспальную резиденцию с частным бассейном на крыше. Идеально расположена рядом с элитными учреждениями образования и основными удобствами города.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -111,6 +114,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.710873599454374,33.05909870558683" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -213,6 +217,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.710873599454374,33.05909870558683],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.710873599454374,33.05909870558683]).addTo(map).bindPopup("Forbes Residences" + gmapsLink);
+
+
 
 });
 </script>

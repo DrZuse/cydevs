@@ -45,6 +45,9 @@
     <p>Dimitrianna 12 — жилой дом на 30 квартир с 1, 2 и 3 спальнями в самом центре Латсии, рядом со всеми удобствами. Строится; в разделе FOR SALE на сайте застройщика не представлен.</p>
     <p class="muted">Расположен в центре Лация, рядом с удобствами. 30 квартир с 1-3 спальнями. Есть лифт, парковка, кладовки, приготовка для кондиционеров и электрического отопления, насос повышенного давления воды, частные садовые террасы на крыше с барбекю, душем и туалетом.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -616,6 +619,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.104068,33.37778" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -717,6 +721,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.104068,33.37778],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.104068,33.37778]).addTo(map).bindPopup("Dimitrianna 12" + gmapsLink);
+
+
 
 });
 </script>

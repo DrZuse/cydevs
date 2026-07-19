@@ -45,6 +45,9 @@
     <p>Проект виллы с пятью спальнями в районе Athalassa Park. Вилла строится по высоким стандартам с использованием современных технологий строительства.</p>
     <p class="muted">Vienna Residence — виллы в парке Аталасса (Athalassa Park). Стадия: Building Permit. Сдача: 2026. Спален: 5. Детали на странице проекта: https://www.stchara.com/projects/vienna-residence/</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -109,6 +112,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.117216,33.401275" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -213,6 +217,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.117216,33.401275],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.117216,33.401275]).addTo(map).bindPopup("Vienna Residence" + gmapsLink);
+
+
 
 });
 </script>

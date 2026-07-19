@@ -45,6 +45,9 @@
     <p>Famagusta BayView — жилой комплекс Right Home Developers в Деринье (округ Фамагуста). 14 юнитов, спальни 1–3. Стадия: off-plan (предпродажи), сдача 2026. Цены от €135 000+VAT.</p>
     <p class="muted">Код проекта FAB00 на сайте застройщика. Расстояния: удобства 300 m, аэропорт 40 km, море 4 km, транспорт 300 m.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -372,6 +375,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.068512,33.956231" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -475,6 +479,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.068512,33.956231],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.068512,33.956231]).addTo(map).bindPopup("Famagusta BayView" + gmapsLink);
+
+
 
 });
 </script>

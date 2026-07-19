@@ -45,6 +45,9 @@
     <p>Akropolis 275 — проект от Leptos Estates в Пафосе из просторных апартаментов с большими балконами, террасами и крытой парковкой, а также пентхаусов и офисов. Расположен в тихом районе в минутах от центра Пафоса, больницы и университета Неаполис, в 10 минутах от международного аэропорта Пафоса. Цена от €375 000.</p>
     <p class="muted">Проект расположен в Героскипу (Geroskipou) на окраине Пафоса. Предлагаются 2- и 3-спальные люкс-апартаменты с просторными балконами и террасами. Рядом: аэропорт (10 мин), центр Пафоса, больница Iasis, университет Neapolis. На странице показан только один юнит (пентхаус 201); полный список доступен по ссылке VIEW ALL.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -130,6 +133,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.760287,32.445454" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -234,6 +238,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.760287,32.445454],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.760287,32.445454]).addTo(map).bindPopup("Akropolis 275" + gmapsLink);
+
+
 
 });
 </script>

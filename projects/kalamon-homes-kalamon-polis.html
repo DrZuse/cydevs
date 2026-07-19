@@ -45,6 +45,9 @@
     <p>Kalamon Polis — комплекс современных одно-, двух- и трёхкомнатных квартир в оживлённом районе Ларнаки. В проекте — зона барбекю, детские площадки, веранда, терраса на крыше, сад и кладовые. Статус: строительство.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -118,6 +121,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.920739,33.619304" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -220,6 +224,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.920739,33.619304],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.920739,33.619304]).addTo(map).bindPopup("KALAMON POLIS" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Majestic Court расположен на тихой улице с деревьями в центральном районе Лимасола. Комплекс включает 7 квартир различной площади на четырёх этажах, включая пентхаус на верхнем этаже.</p>
     <p class="muted">Жилой комплекс в Лимассоле, тихая улица в центре города. Всего 7 апартаментов на 4 этажах, включая пентхаус на верхнем этаже. На этажах 1–3 по одному 3-спальному и одному 2-спальному апартаменту, на 4-м этаже — 3-спальный пентхаус. Каждый 3-спальный апартамент с en-suite мастер-спальней; всем апартаментам полагаются крытый паркинг и кладовая.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -206,6 +209,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.696903,33.04681" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -307,6 +311,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.696903,33.04681],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.696903,33.04681]).addTo(map).bindPopup("Majestic Court" + gmapsLink);
+
+
 
 });
 </script>

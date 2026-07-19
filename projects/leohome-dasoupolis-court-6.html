@@ -45,6 +45,9 @@
     <p>Dasoupolis Court No.6 — новый проект Leohome в престижном районе Никосии Дасуполи: 9 апартаментов с 2 спальнями (по 80 м² внутренних площадей) на трёх этажах, цены от 250 000 до 320 000 евро. Здание почти нулевого энергопотребления класса А с фотовольтаикой, тёплым полом, солнечным водонагревателем и умной инфраструктурой; для квартир верхнего этажа — опция roof garden с кладовой. Крытая парковка и кладовая у каждой квартиры. Завершение — декабрь 2026.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -260,6 +263,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.145083,33.372417" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -366,6 +370,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.145083,33.372417],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.145083,33.372417]).addTo(map).bindPopup("Leohome Dasoupolis Court No.6" + gmapsLink);
+
+
 
 });
 </script>

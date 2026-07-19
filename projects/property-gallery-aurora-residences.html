@@ -45,6 +45,9 @@
     <p>Aurora Residences — компактный закрытый жилой комплекс в одном из лучших районов Лимассола, в нескольких шагах от песчаного пляжа у отелей 5* «Londa» и «Apollonia». Комплекс включает 12 двухспальных таунхаусов площадью 108–114 м² на участках 79–153,5 м², один дуплекс-апартамент и две эксклюзивные виллы с собственными бассейнами. Таунхаусы и апартаменты выходят окнами на ухоженную зелёную территорию и бассейн необычной формы с большим патио. Проект получил международную премию International Property Award в номинации «Best Development Cyprus» как лучший девелоперский проект Кипра.</p>
     <p class="muted">Комплекс награжден INTERNATIONAL PROPERTY AWARD - &#39;BEST DEVELOPMENT CYPRUS&#39;. Расположен в 500 метрах от моря, в элитном районе Лимассола рядом с 5* отелями Londa и Apollonia. Цены указаны без учета НДС.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -335,6 +338,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.70006,33.09551" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -441,6 +445,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.70006,33.09551],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.70006,33.09551]).addTo(map).bindPopup("Aurora Residences" + gmapsLink);
+
+
 
 });
 </script>

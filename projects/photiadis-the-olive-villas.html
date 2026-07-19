@@ -45,6 +45,9 @@
     <p>The Olive Villas — три современные виллы (A, B, C) с 3 спальнями на смежных участках 239–240 посёлка Carolina Park (Дали, окраина Никосии), рядом с The Lavender. Функциональная планировка для современной семьи: открытая гостиная-столовая, просторный сад, крытые веранды. Класс энергоэффективности A, тёплый пол с тепловым насосом, кондиционеры. По availability-таблице застройщика (февраль 2026): виллы A и C проданы, доступна вилла B (участок 365 м², крытая площадь 223 м²). Сдача — через 2 года после выдачи разрешения на строительство. НДС 5% до июня 2026. Цены по запросу.</p>
     <p class="muted">Пин — центр участков 239–240 из KML официальной My Maps-карты страницы проекта. До центра города 13,2 км, до шоссе 1,8 км, до аэропорта 40,5 км (данные застройщика).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -151,6 +154,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.074573,33.38542" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -254,6 +258,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.074573,33.38542],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.074573,33.38542]).addTo(map).bindPopup("The Olive Villas" + gmapsLink);
+
+
 
 });
 </script>

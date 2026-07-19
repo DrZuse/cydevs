@@ -45,6 +45,9 @@
     <p>VOS Residences — жилой проект AGG Luxury Homes в Лимассоле, в районе Агиос Афанасиос. Комплекс расположен в пешей доступности от супермаркетов и магазинов улицы Kolonakiou; рядом приморская набережная и песчаный пляж, а центр города находится примерно в 1 км.</p>
     <p class="muted">Проект распродан (цена указана как &#39;From €Sold&#39;/&#39;From € Sold&#39;). Обновлено на сайте: 3 июля 2026. Район: Айос-Атанасиос, Лимассол. Конкретные юниты с номерами на странице не приведены — только типовые характеристики (до 4 спален, 5 санузлов, апартаменты, 4 этажа).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -167,6 +170,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6959448,33.0691116" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -271,6 +275,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.6959448,33.0691116],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.6959448,33.0691116]).addTo(map).bindPopup("VOS Residences" + gmapsLink);
+
+
 
 });
 </script>

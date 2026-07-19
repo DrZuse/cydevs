@@ -45,6 +45,9 @@
     <p>Avalon Park — премиальный жилой проект в Эмбе на 44 юнита (18 студий, 18 однокомнатных и 8 двухкомнатных апартаментов), распределённых по четырём корпусам. Комплекс предлагает два общих бассейна, полностью оборудованный тренажёрный зал и спа-зону, а за каждым апартаментом закреплено отдельное крытое парковочное место. Расположение сочетает виды на море и сельскую местность с развитой инфраструктурой близлежащего Пафоса.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -409,6 +412,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.798344,32.422976" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -510,6 +514,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.798344,32.422976],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.798344,32.422976]).addTo(map).bindPopup("Avalon Park" + gmapsLink);
+
+
 
 });
 </script>

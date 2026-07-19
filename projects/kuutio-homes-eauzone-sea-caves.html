@@ -45,6 +45,9 @@
     <p>Eauzone — проект роскошных вилл рядом с Sea Caves в Пейе, по соседству с Coral Bay и полуостровом Акамас, недалеко от знаменитого пляжа Лара. Виллы будут построены по высочайшим стандартам с частными бассейнами, большими верандами и солнечными террасами, зонами барбекю и ландшафтными садами с видом на Средиземное море.</p>
     <p class="muted">Проект Eauzone (Sea Caves) — эксклюзивные виллы класса люкс рядом с Coral Bay и Akamas Peninsula. Виллы будут построены по высочайшим стандартам с частными бассейнами, большими верандами, зонами барбекю и ландшафтными садами с видом на Средиземное море. Упомянуты VRV-система, бесконечный бассейн, видеонаблюдение, гараж, двойное остекление, алюминиевые рамы, лифт, камин и водяные тёплые полы.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -90,6 +93,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.871903,32.346754" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -192,6 +196,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.871903,32.346754],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.871903,32.346754]).addTo(map).bindPopup("Eauzone (Sea Caves)" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Sunrise Park Resort — жилой комплекс в Терсефану, Ларнака. Состоит из 91 квартиры в шести современных корпусах: студии, одно-, двух- и трёхспальные апартаменты с готовыми титульными документами. Цена от €77 000.</p>
     <p class="muted">Квартиры с готовыми титулами, полностью меблированные. Расположение: 10 км от центра Ларнаки, 5 км от пляжа и водных видов спорта. Охраняемая территория с ухоженными садами и общим бассейном.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -1657,6 +1660,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.856093,33.544808" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -1763,6 +1767,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.856093,33.544808],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.856093,33.544808]).addTo(map).bindPopup("Sunrise Park Resort" + gmapsLink);
+
+
 
 });
 </script>

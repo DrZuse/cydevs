@@ -45,6 +45,9 @@
     <p>Ivy Court предлагает однокомнатные и двухкомнатные квартиры, а также офисные помещения. Цена — 258 000 €.</p>
     <p class="muted">Проект состоит из 7 современных апартаментов (1- и 2-спальных) на трёх этажах. Каждый апартамент включает крытую парковку и личную кладовую. Застройщик характеризует проект как upcoming (на стадии планирования/строительства).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -133,6 +136,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6852901,33.0332657" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -235,6 +239,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.6852901,33.0332657],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.6852901,33.0332657]).addTo(map).bindPopup("Ivy Court" + gmapsLink);
+
+
 
 });
 </script>

@@ -43,6 +43,9 @@
     <p>Marivista от Hubloc Investments — эксклюзивный жилой комплекс в Мутайаке (Лимассол), в одной минуте от пляжа и двух минутах от трассы. Пятиуровневый закрытый проект: 18 просторных квартир с 1, 2 и 3 спальнями, кладовые в цоколе и панорамные виды на Средиземное море. На территории — люксовый открытый бассейн, оснащённый спортзал, элегантное лобби, приватная кладовая для каждого юнита и крытая парковка. В стадии строительства; в продаже.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -130,6 +133,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.7079297,33.1129289" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -235,6 +239,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.7079297,33.1129289],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.7079297,33.1129289]).addTo(map).bindPopup("Marivista" + gmapsLink);
+
+
 
 });
 </script>

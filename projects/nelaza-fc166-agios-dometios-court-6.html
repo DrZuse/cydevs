@@ -45,6 +45,9 @@
     <p>Жилой дом FC166 Agios Dometios Court 6 в районе Agios Dometios (Nicosia). Всего 18 юнитов: 8 продано, 9 свободно, 1 в брони. Координаты — с карты застройщика.</p>
     <p class="muted">Энергоэффективность класса A. Предусмотрены: теплоизоляционный фасад, система напора воды, солнечный водонагреватель, разводка под фотоэлектрическую систему, электрическое отопление и кондиционирование.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -406,6 +409,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.1749149,33.3220373" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -510,6 +514,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.1749149,33.3220373],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.1749149,33.3220373]).addTo(map).bindPopup("FC166 Agios Dometios Court 6" + gmapsLink);
+
+
 
 });
 </script>

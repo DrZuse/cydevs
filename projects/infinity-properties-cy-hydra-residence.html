@@ -45,6 +45,9 @@
     <p>Hydra Residence — новый проект Infinity в районе Ороклини в Ларнаке, в нескольких минутах от туристической зоны. Комплекс расположен в развивающемся прибрежном районе с доступом к пляжам, отелям, ресторанам и другой инфраструктуре. Подробная информация о составе квартир и ценах уточняется у застройщика.</p>
     <p class="muted">Всего 16 юнитов: 8 однокомнатных апартаментов, 4 двухкомнатных апартамента и 4 двухкомнатных пентхауса. Статус «NOT AVAILABLE» на сайте не детализируется (продано/зарезервировано) — оставлен null. Площадь (Size) указана единой величиной без разбивки на внутреннюю/веранду, поэтому записана в total_area_m2. Цены на странице отсутствуют.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -379,6 +382,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.972524,33.65442" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -483,6 +487,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.972524,33.65442],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.972524,33.65442]).addTo(map).bindPopup("Hydra Residence" + gmapsLink);
+
+
 
 });
 </script>

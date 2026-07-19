@@ -45,6 +45,9 @@
     <p>Жилой дом FC205 Irakleous Court в районе Irakleous (Nicosia). Всего 20 юнитов: 4 продано, 16 свободно. Координаты — с карты застройщика.</p>
     <p class="muted">Проект находится на стадии строительства. Упомянуто наличие парковки с крышей и легкий доступ к шоссе.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -440,6 +443,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.0230556,33.39425" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -544,6 +548,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.0230556,33.39425],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.0230556,33.39425]).addTo(map).bindPopup("FC205 Irakleous Court" + gmapsLink);
+
+
 
 });
 </script>

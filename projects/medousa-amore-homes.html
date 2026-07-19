@@ -45,6 +45,9 @@
     <p>Amore Hills — комплекс из 24 современных вилл с 4 спальнями в тихом районе Кониа, Пафос. Виллы имеют вид на море, каждая спроектирована с акцентом на комфорт и функциональность. Также в составе есть магазин.</p>
     <p class="muted">Класс A энергоэффективности, VRV-кондиционирование, водяные тёплые полы, подогрев воды солнечными панелями, зарядка для электромобилей, закрытая парковка, частные бассейны, охрана, вид на море и горы.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -508,6 +511,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.790586,32.45367" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -609,6 +613,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.790586,32.45367],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.790586,32.45367]).addTo(map).bindPopup("Amore Homes" + gmapsLink);
+
+
 
 });
 </script>

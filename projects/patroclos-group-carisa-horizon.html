@@ -45,6 +45,9 @@
     <p>Carisa Horizon — это престижный жилой комплекс из пяти зданий (четыре жилых и одно коммерческое) в престижном районе Ливадия, в 600 метрах от побережья. Включает 60 квартир с продуманным дизайном и высококлассными удобствами: бассейн, джакузи, спортзал и сауну. Также в комплексе предусмотрены офисные помещения и подземная парковка. Расположен рядом с крупными проектами, такими как Land of Tomorrow и новый университетский район, что обеспечивает долгосрочную ценность для инвесторов.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -142,6 +145,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.9443125,33.6389219" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -247,6 +251,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.9443125,33.6389219],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.9443125,33.6389219]).addTo(map).bindPopup("Carisa Horizon" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Одноуровневый дом с 3 спальнями (220 м²) на участке 5 017 м² в деревне Агиос-Терапон, построен в 2010 году; продаётся застройщиком как resale. Возможна установка частного бассейна; 3 парковочных места.</p>
     <p class="muted">Объект вторичного рынка (Resale), построен в 2010 году. Цена по запросу. 1 уровень, 3 спальни, 3 ванные (master), 3 парковочных места.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -104,6 +107,7 @@
 
     <h2>Расположение</h2>
     <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.7979839,32.8405515" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -208,6 +212,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.7979839,32.8405515],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.circle([34.7979839,32.8405515],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("House GCD169 (Agios Therapon)" + ' (примерно)' + gmapsLink);
+
+
 
 });
 </script>

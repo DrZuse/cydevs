@@ -45,6 +45,9 @@
     <p>Q Kamares Heights — жилой комплекс в районе Камарес в Ларнаке. 17 квартир с планировками 2 и 3 спальни. Некоторые апартаменты имеют вид на Соляное озеро Ларнаки, а пентхаусы — доступ к террасе с садом на крыше. Статус: строится.</p>
     <p class="muted">Проект расположен в районе Камарес, Ларнака. Включает 17 квартир (2- и 3-комнатные). Пентхаусы имеют доступ к кровельному саду с зоной барбекю. Каждая квартира оснащена закрытым парковочным местом и кладовой. Энергоэффективность класса A.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -307,6 +310,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.914138,33.600953" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -413,6 +417,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.914138,33.600953],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.914138,33.600953]).addTo(map).bindPopup("Q Kamares Heights" + gmapsLink);
+
+
 
 });
 </script>

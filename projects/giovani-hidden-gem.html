@@ -45,6 +45,9 @@
     <p>HIDDEN GEM Lifestyle Apartments — современный комплекс от Giovani Homes в динамично развивающемся районе на стыке Паралимни и Протараса. Проект состоит из двух блоков и включает 36 апартаментов с одной, двумя и тремя спальнями площадью от 52 до 105 м². Каждый апартамент отличается эргономичной планировкой, современным дизайном, качественными материалами и продуманными деталями. Комплекс расположен всего в нескольких минутах от центра города и в короткой поездке от пляжей Протараса и оживлённой марины Паралимни. Жителям доступны общий бассейн, детская площадка, баскетбольная площадка и большая зелёная зона во внутреннем саду, создающая атмосферу уединённого отдыха.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -718,6 +721,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.04347,33.98919" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -819,6 +823,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.04347,33.98919],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.04347,33.98919]).addTo(map).bindPopup("HIDDEN GEM Lifestyle Apartments" + gmapsLink);
+
+
 
 });
 </script>

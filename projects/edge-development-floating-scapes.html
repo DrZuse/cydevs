@@ -45,6 +45,9 @@
     <p>Участок расположен на побережье моря в районе Пила в Ларнаке. Проект организован в 3 зоны с видом на море; все гостевые комнаты, апартаменты и виллы выходят на море. Концепция проекта вдохновлена морем, водой, волнами, воздухом, ветром, а также образами кораблей, яхт и парусного спорта. В проекте представлены виллы, апартаменты и пентхаусы.</p>
     <p class="muted">Локация приблизительная: сайт указывает только «прибрежная линия моря в районе Пилы» — пин поставлен на береговую полосу Пилы (Pyla Beach Park, Dhekelia Road), точный участок не опубликован.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -143,6 +146,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.976,33.6859" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -245,6 +249,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.976,33.6859],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.976,33.6859]).addTo(map).bindPopup("Floating Scapes" + gmapsLink);
+
+
 
 });
 </script>

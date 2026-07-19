@@ -45,6 +45,9 @@
     <p>Жилой дом FC110 Paralimni Court в районе Paralimni (Famagusta). Всего 18 юнитов: 17 продано, 1 свободно. Координаты — с карты застройщика.</p>
     <p class="muted">Расположение: AMMOCHOSTOS - Selinis street, DERYNIA. Проект представляет собой комплекс таунхаусов и квартир с покрытой парковкой. Энергокласс A. Наличие лифта, подготовка под фотоэлектрические панели, электрическое отопление, кондиционирование, солнечный водонагреватель, систему водоподача под давлением. Отделка: импортированная керамическая плитка и санузел. Множество точек питания, телефона, ТВ, интернет.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -406,6 +409,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.0553809,33.9696578" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -512,6 +516,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.0553809,33.9696578],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.0553809,33.9696578]).addTo(map).bindPopup("FC110 Paralimni Court" + gmapsLink);
+
+
 
 });
 </script>

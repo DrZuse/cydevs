@@ -45,6 +45,9 @@
     <p>Здание изначально построено в 1904 году и недавно отремонтировано по высочайшим стандартам. Расположено рядом с замком Лимассола на улице Святого Андрея. Ранее принадлежало Феодору Хрисостомидису, оптовому торговцу. Проект включает апартаменты, студии и офисы. Статус: завершён.</p>
     <p class="muted">Коммерческий объект: здание-памятник в центре Лимассола (ул. Сент-Андрю, район замка). Изначально принадлежало Теодоросу Хрисостомидису, позже перестроено в отель Hellas. Статус — Completed (завершён/отреставрирован). Конкретных юнитов с ценами на странице не приведено; раздел PRICES AND AVAILABILITY не содержит данных в доступном контенте. Виртуальный тур доступен по ссылке VIRTUAL TOUR.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -94,6 +97,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.673436,33.042572" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -196,6 +200,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.673436,33.042572],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.673436,33.042572]).addTo(map).bindPopup("Kinnis Hellas Building" + gmapsLink);
+
+
 
 });
 </script>

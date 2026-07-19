@@ -45,6 +45,9 @@
     <p>Tony Blue Residences — уникальный комплекс из 10 роскошных вилл в живописных предгорьях района Хлорака (Chloraka) с завораживающими видами на море. Виллы с 4 спальнями спроектированы отмеченным наградами бюро Epitessera Architects, в отделке использованы улучшенные материалы, роскошная фурнитура и премиальные решения. Большие участки дают гибкость в создании собственных садов и зон отдыха под открытым небом. Каждый дом имеет эффектную террасу на крыше с панорамными видами на побережье Хлораки и средиземноморские закаты. Проект получил премию Luxury Lifestyle Awards в категории «Лучший комплекс люксовых вилл» (Best Luxury Villa Development) на Кипре.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -130,6 +133,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.800911,32.401294" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -232,6 +236,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.800911,32.401294],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.800911,32.401294]).addTo(map).bindPopup("Tony Blue Residences" + gmapsLink);
+
+
 
 });
 </script>

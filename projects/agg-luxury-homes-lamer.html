@@ -45,6 +45,9 @@
     <p>La Mer — премиальный жилой комплекс рядом с Гробницами Царей (объект ЮНЕСКО) в Пафосе. Проект предлагает панорамный вид на море и расположен в пешей доступности от пляжа. Рядом находятся британская школа Aspire, супермаркеты, рестораны и автобусная остановка. В проекте представлены апартаменты с 1–2 спальнями и пентхаусы с 3 спальнями.</p>
     <p class="muted">Люксовый жилой проект рядом с гробницами королей (Tombs of the Kings, ЮНЕСКО) в Пафосе. 16 квартир высокого качества, вид на море, в пешей доступности от пляжа. Рядом: Aspire Private British School, супермаркеты, рестораны, автобусная станция. 3 этажа. Обновлено 27 января 2026.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -144,6 +147,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.7829041,32.4073976" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -246,6 +250,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.7829041,32.4073976],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.7829041,32.4073976]).addTo(map).bindPopup("LA MER" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Oasis Park Limassol — часть концепции доступного жилья Oasis Concept от D. Zavos Group, community в одном из самых перспективных новых районов Лимассола (Zakaki), всего в 500 метрах от курортно-развлекательного комплекса City of Dreams Mediterranean Resort &amp; Casino, торгового центра My Mall и гольф-курорта Limassol Greens. Проект состоит из 11 блоков с 2-спальными квартирами и 2 блоков с 1-спальными квартирами. В центре community расположен элегантный клубный дом (clubhouse) — общественное пространство для отдыха и общения с лаунж-зоной, современным тренажёрным залом и бассейном. На территории предусмотрены удобные парковочные места, зелёные зоны, бассейны и рекреационные зоны. Цены на квартиры находятся в диапазоне 180 000 – 280 000 евро.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -122,6 +125,7 @@
 
     <h2>Расположение</h2>
     <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.664,32.997" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -194,6 +198,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.664,32.997],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.circle([34.664,32.997],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Oasis Park Limassol" + ' (примерно)' + gmapsLink);
+
+
 
 });
 </script>

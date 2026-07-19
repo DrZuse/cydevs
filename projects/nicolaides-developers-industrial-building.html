@@ -45,6 +45,9 @@
     <p>Nicolaides Industrial Building — промышленный объект компании Nicolaides Group в Ларнаке, отражающий деятельность группы в сегменте промышленной недвижимости. Подробные характеристики объекта не публикуются открыто; детали доступны по запросу у застройщика.</p>
     <p class="muted">Промышленное здание в индустриальной зоне Арадиппу (Larnaca), у шоссе Ларнака–Никосия, в 10 мин езды от центра Ларнаки. Сейчас размещает правительственный департамент дорожного транспорта (T.O.M) Министерства работ и транспорта. Цена по запросу. Детальной информации о площадях, юнитах, удобствах и документах на странице не приведено.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -96,6 +99,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.940956,33.584053" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -198,6 +202,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.940956,33.584053],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.940956,33.584053]).addTo(map).bindPopup("Nicolaides Industrial Building" + gmapsLink);
+
+
 
 });
 </script>

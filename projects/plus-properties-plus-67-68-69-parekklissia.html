@@ -45,6 +45,9 @@
     <p>Офисный проект в Парекклисии, Лимассол. Кипр, расположенный между Европой и Ближним Востоком, является инвестиционным магнитом и туристическим направлением. Проект ориентирован на иностранные и местные деловые вложения.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -74,6 +77,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.743742,33.161564" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -176,6 +180,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.743742,33.161564],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.743742,33.161564]).addTo(map).bindPopup("Plus 67-68-69 Parekklissia" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Mackenzy Star Residences — новый жилой проект Africanos Property Developers в престижном прибрежном районе Маккензи (Mackenzie) в Ларнаке, со статусом «Coming Soon» (скоро в продаже). Расположение даёт быстрый доступ к солёному озеру, международному аэропорту, центру города, набережной Финикудес и прибрежной дороге Пиале Паша. На странице проекта уже опубликована таблица из 18 квартир с 1–3 спальнями (50–104 м² внутренней площади), включая два пентхауса с приватными крышами-садами 82 и 94 м²; у каждой квартиры есть машиноместо. Цены на момент проверки не опубликованы (статусы Available/Reserved), одна квартира зарезервирована.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -392,6 +395,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.900536,33.629187" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -498,6 +502,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.900536,33.629187],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.900536,33.629187]).addTo(map).bindPopup("Mackenzy Star Residences" + gmapsLink);
+
+
 
 });
 </script>

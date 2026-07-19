@@ -45,6 +45,9 @@
     <p>Chill Beachfront Apartments — современное трёхэтажное здание на первой береговой линии в районе Аматусия рядом с мариной St. Raphael, сочетающее городской образ жизни с островной атмосферой прямо на берегу моря. Проект включает всего 6 люксовых апартаментов с 2 спальнями. Апартаменты отличаются современными планировками открытого типа, продуманным генеральным планом, большими крытыми верандами, выделенными кладовыми и крытыми парковочными местами.</p>
     <p class="muted">Готовый проект (Ready project status). Энергоэффективность класса A. 11 апартаментов с 1–2 спальнями в районе Аматусия, Лимассол, прямо на берегу моря (St. Raphael Marina). На сайте отсутствует таблица конкретных юнитов с номерами, ценами и планировками — указаны только общие характеристики проекта.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -76,6 +79,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.712756,33.165186" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -181,6 +185,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.712756,33.165186],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.712756,33.165186]).addTo(map).bindPopup("Chill Beachfront Apartments" + gmapsLink);
+
+
 
 });
 </script>

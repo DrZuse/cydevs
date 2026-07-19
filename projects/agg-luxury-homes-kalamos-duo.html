@@ -45,6 +45,9 @@
     <p>Kalamos DUO — продолжение успешного проекта Kalamos от застройщика AGG, сданного в 2024 году. Эксклюзивный комплекс включает 24 современных квартиры и 5 таунхаусов. Некоторые апартаменты имеют вид на море.</p>
     <p class="muted">Проект в стадии строительства (сдача Q3 2027). Страница не содержит таблицы конкретных юнитов с номерами, площадями и ценами по юнитам — указана только стартовая цена от €295,000 и типовые характеристики (до 3 спален, 3 ванные). Таунхаусов всего 5 (2- и 3-спальные).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -180,6 +183,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.785743,32.407387" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -281,6 +285,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.785743,32.407387],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.785743,32.407387]).addTo(map).bindPopup("KALAMOS DUO" + gmapsLink);
+
+
 
 });
 </script>

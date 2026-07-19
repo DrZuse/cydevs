@@ -45,6 +45,9 @@
     <p>Продолжение успешной серии проектов Residence, предлагающее стильные апартаменты в востребованной локации. Проект сочетает в себе качество материалов и эстетичный дизайн.</p>
     <p class="muted">Four-storey residential building with 12 apartments. Each apartment includes private parking and storage. Penthouses (4th floor) feature private roof gardens. Premium finishes, modern minimalist design. Status: Off-plan.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -311,6 +314,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.717637,33.087859" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -412,6 +416,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.717637,33.087859],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.717637,33.087859]).addTo(map).bindPopup("Cyres Residence 02" + gmapsLink);
+
+
 
 });
 </script>

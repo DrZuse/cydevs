@@ -45,6 +45,9 @@
     <p>Жилой комплекс, состоящий из 4 этажей с квартирами различной планировки.</p>
     <p class="muted">Проект Athalassa Park Residences в Лефкосии (Никосии), район Димос Лефкосияс. Стадия строительства: Under Construction. На сайте представлены планировки и площади квартир в Блоке A. Блоки B и C пока без доступных объектов.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -284,6 +287,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.1409488,33.3781801" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -388,6 +392,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.1409488,33.3781801],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.1409488,33.3781801]).addTo(map).bindPopup("Athalassa Park Residences" + gmapsLink);
+
+
 
 });
 </script>

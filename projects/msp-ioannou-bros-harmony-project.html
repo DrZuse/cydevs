@@ -45,6 +45,9 @@
     <p>Harmony Project — камерный жилой дом из 6 эксклюзивных апартаментов в районе Ипсонас (Ypsonas), Лимассол, от застройщика MSP Ioannou Bros. На момент проверки на сайте застройщика есть доступные квартиры.</p>
     <p class="muted">Проект состоит из 6 эксклюзивных квартир в районе Ипсонас, Лимассол. Высокое качество отделки, современная архитектура. Удобный доступ к центру Лимассола и автострадам.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -188,6 +191,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.694528,32.964639" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -289,6 +293,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.694528,32.964639],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.694528,32.964639]).addTo(map).bindPopup("Harmony" + gmapsLink);
+
+
 
 });
 </script>

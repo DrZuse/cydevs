@@ -45,6 +45,9 @@
     <p>La Casa De Montana Villa расположена в районе Моньятис на горе Троодос, рядом с живописными пешеходными тропами. Особняк занимает участок 1200 м² и оснащён современными удобствами, включая камин. В проекте также представлен магазин. Статус: строительство (off-plan).</p>
     <p class="muted">Проект расположен в горах, в 32 км от центра Лимассола, в 33 км от пляжа. Ближайшие магазины в 2.5 км, школы в 4 км, аэропорт в 84 км.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -103,6 +106,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.81137213528706,33.0304646755831" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -205,6 +209,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.81137213528706,33.0304646755831],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.81137213528706,33.0304646755831]).addTo(map).bindPopup("La Casa De Montana" + gmapsLink);
+
+
 
 });
 </script>

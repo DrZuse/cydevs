@@ -45,6 +45,9 @@
     <p>Nerida Residences — камерный комплекс из семи вилл в Хлораке (Пафос), спроектированный для ощущения приватности и эксклюзивности. Комплекс расположен на ровном участке примерно в 150 метрах от набережной и в 250 метрах от песчаного пляжа. Виллы предлагаются с 3 и 4 спальнями; часть из них уже готова к заселению (key-ready), с продуманным интерьером для комфортной семейной жизни и частным бассейном.</p>
     <p class="muted">Проект Nerida Residences в Chloraka (район Пафоса) — комплекс из 7 вилл в 150 м от моря и променада. На момент публикации доступна одна вилла с 4 спальнями, key-ready, с частным бассейном, полностью оборудована для проживания или сдачи в аренду. Завершение строительства Q2 2023. Всего просмотров: 1068. Листинг обновлён 22 ноября 2024.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -159,6 +162,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.80221,32.395941" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -266,6 +270,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.80221,32.395941],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.80221,32.395941]).addTo(map).bindPopup("Nerida Residences" + gmapsLink);
+
+
 
 });
 </script>

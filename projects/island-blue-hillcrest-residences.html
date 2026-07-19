@@ -45,6 +45,9 @@
     <p>Hillcrest Residences — комплекс из 8 частных вилл в деревне Тремитуса (Пафос). Включает три 4-спальные и пять 3-спальных вилл различных планировок. Каждая вилла имеет большой бассейн, зону барбекью, ландшафтный сад и панорамный вид на море.</p>
     <p class="muted">Проект Hillcrest Residences расположен в деревне Tremithousa, Пафос. Виллы предлагают частные бассейны, большие окна для вида на море, подогрев полов (опция), частную парковку, зоны барбекю и ландшафтные сады.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -298,6 +301,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.824889,32.4385" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -399,6 +403,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.824889,32.4385],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.824889,32.4385]).addTo(map).bindPopup("Hillcrest Residences" + gmapsLink);
+
+
 
 });
 </script>

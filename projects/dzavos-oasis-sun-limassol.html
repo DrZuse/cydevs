@@ -45,6 +45,9 @@
     <p>Oasis Sun Limassol (Oasis Sun Gardens) — проект доступного жилья D. Zavos Group из линейки Oasis Concept, расположенный в одном из самых быстроразвивающихся районов Лимассола, недалеко от City of Dreams Mediterranean Resort &amp; Casino и торгового центра My Mall. Комплекс состоит из двухэтажных зданий с тщательно подобранным набором из 20 двухспальных и 26 односпальных квартир. Локация обеспечивает доступ к хорошим школам, обширному гольф-курорту Limassol Greens, центру города и Limassol Marina. Цены начинаются от 99 500 евро + НДС, что делает проект одним из наиболее бюджетных предложений группы.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -136,6 +139,7 @@
 
     <h2>Расположение</h2>
     <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6852901,33.0332657" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -237,6 +241,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.6852901,33.0332657],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.circle([34.6852901,33.0332657],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Oasis Sun Limassol" + ' (примерно)' + gmapsLink);
+
+
 
 });
 </script>

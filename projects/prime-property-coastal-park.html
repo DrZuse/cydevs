@@ -45,6 +45,9 @@
     <p>Coastal Park Residence — стильный огороженный комплекс в престижном туристическом районе Папас (Лимассол) в пешей доступности от песчаного пляжа парка Дасуди. В состав входят апартаменты, пентхаусы и офисы. Статус проекта — completed.</p>
     <p class="muted">Проект расположен в тихом и безопасном районе Папас, в 2 минутах от песчаных пляжей Дасуди Парк и лучших мест для отдыха Лимассола. Постоянная прописка возможна за 60 дней.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -171,6 +174,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.694942,33.08302" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -274,6 +278,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.694942,33.08302],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.694942,33.08302]).addTo(map).bindPopup("Coastal Park" + gmapsLink);
+
+
 
 });
 </script>

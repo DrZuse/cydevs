@@ -45,6 +45,9 @@
     <p>Perfect Homes 137 — комплекс квартир на холме в районе Лакатамия (Никосия), расположенный в тихом тупиковом переулке. Проект предлагает студии, однокомнатные и двухкомнатные квартиры, спроектированные с акцентом на открытые виды и современную минималистичную архитектуру. Используются качественные строительные материалы. Точные площади, цены и стадия строительства на открытых источниках не раскрыты.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -324,6 +327,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.105583,33.296306" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -428,6 +432,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.105583,33.296306],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.105583,33.296306]).addTo(map).bindPopup("Perfect Homes 137" + gmapsLink);
+
+
 
 });
 </script>

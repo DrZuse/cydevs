@@ -45,6 +45,9 @@
     <p>Жилой дом FC198 Geri Court в районе Geri (Nicosia). Всего 16 юнитов: 5 продано, 11 свободно. Координаты — с карты застройщика.</p>
     <p class="muted">Проект завершён. Упомянуты закрытые парковки и кладовые. Энергоэффективность класса А. На сайте доступны технические спецификации на английском и греческом языках.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -372,6 +375,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.1078,33.41819" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -476,6 +480,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.1078,33.41819],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.1078,33.41819]).addTo(map).bindPopup("FC198 Geri Court" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Жилой дом FC269 Ypsonas Court 9 в районе Ypsonas (Limassol). Всего 8 юнитов: 3 продано, 5 свободно. Координаты — с карты застройщика.</p>
     <p class="muted">Проект завершён. Упомянуты гарантии на титулы. Энергосертификат класса A. Предусмотрены: теплоизолирующий алюминиевый профиль с двойным стеклом, установка лифта, солнечный водонагреватель, система напора воды, разводка под фотоэлектрическую систему, электрическое отопление и кондиционирование. Часть квартир имеет предусмотренные частные бассейны.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -270,6 +273,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.70225,32.9456111" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -374,6 +378,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.70225,32.9456111],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.70225,32.9456111]).addTo(map).bindPopup("FC269 Ypsonas Court 9" + gmapsLink);
+
+
 
 });
 </script>

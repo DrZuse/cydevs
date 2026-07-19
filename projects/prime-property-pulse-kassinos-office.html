@@ -45,6 +45,9 @@
     <p>Уникальная коммерческая недвижимость с современным дизайном после полной реновации, расположенная в деловом центре Лимассола в нескольких минутах от трассы. Здание включает три современных офиса (по одному на этаже) и общую террасу на крыше для отдыха и неформальных встреч. Статус: строится.</p>
     <p class="muted">Коммерческая недвижимость в деловом центре Лимассола, в 3.5 км от моря. Здание после полной реновации.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -90,6 +93,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.697434,33.02133" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -192,6 +196,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.697434,33.02133],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.697434,33.02133]).addTo(map).bindPopup("Pulse Kassinos Office" + gmapsLink);
+
+
 
 });
 </script>

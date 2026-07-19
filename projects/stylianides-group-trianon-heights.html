@@ -45,6 +45,36 @@
     <p>Современный жилой проект в Лимасоле. Комплекс характеризуется расположением в районе с доступом к ключевым объектам городской инфраструктуры.</p>
     <p class="muted">Энергоэффективность: сертификат класса A. Проект находится на стадии Off Plan. На странице упоминаются индивидуальные проекты вилл с возможностью кастомизации.</p>
 
+    
+    
+    <div class="panel bzk" style="margin:14px 0;border-left:3px solid var(--brand)">
+      <h3 style="margin-top:0">Bazaraki <span class="muted small" style="font-weight:normal">· <a href="https://www.bazaraki.com/new-buildings/196-trianon_heights/" target="_blank" rel="noopener">страница объявления</a> · снимок 2026-07-19</span></h3>
+      <p class="muted small" style="margin:2px 0 8px">Ниже — только сведения, которых нет на сайте застройщика (источник правды — сайт застройщика).</p>
+      <p style="margin:6px 0"><b>Цена по объявлению:</b> €1.725.000 – €3.450.000 +VAT</p>
+      
+      <div class="row">
+        <span class="chip" title="Источник: bazaraki.com">срок сдачи: 2026</span><span class="chip" title="Источник: bazaraki.com">лифт: да</span><span class="chip" title="Источник: bazaraki.com">доступ для колясок: да</span><span class="chip" title="Источник: bazaraki.com">паркинг: 2</span><span class="chip" title="Источник: bazaraki.com">парковочные места: 24</span>
+      </div>
+      
+      
+      
+      <p class="small muted" style="margin:8px 0 0">Рядом: airport — 65 km, supermarket — 3 km, beach — 4 km, school — 100 m, marina — 10 km, hospital — 600 m, city center — 8 km</p>
+      
+      
+      
+      <details style="margin-top:8px"><summary class="muted">Описание с bazaraki.com (EN)</summary>
+        <p class="small" style="white-space:pre-line">Experience the essence of luxury at Trianon, where a premium lifestyle awaits you. Immerse yourself in the exquisite charm of individually designed villas, meticulously crafted to perfection. The privileged location of Trianon, discover the most sought-after address in Cyprus, offering breathtaking views of the glistening Mediterranean Sea.  Enjoy the serenity of Trianon while still being within reach of the vibrant city life.
+
+Every residence is distinct in its design, with breathtaking architecture that complements the surrounding beauty. The homes are meticulously crafted to meet the highest standards of quality and attention to detail. Explore our exquisite selection of villas, each boasting 4, 5, or 6 bedrooms, and indulge in the chance to personalize your dream home to match your unique tastes and lifestyle. Immerse yourself in luxury with top-notch materials and finishes, cutting-edge technology, cozy underfloor heating, and a state-of-the-art VRV central air conditioning system. 
+
+Dive into relaxation with an inviting overflow swimming pool and unwind on spacious terraces that seamlessly blend indoor and outdoor entertainment areas. Surround yourself with nature&#39;s beauty as you stroll through meticulously landscaped gardens, creating a serene oasis for you to call home. Choose from our collection of villas featuring 4, 5, and 6 bedrooms, and enjoy the opportunity to customize your home to perfectly suit your preferences and lifestyle. Trianon is one-of-a-kind and specifically designed to meet the requirements of the most exacting buyers.</p></details>
+      
+      
+      <p class="small muted" style="margin:8px 0 0">📍 Гео-метка bazaraki расходится с меткой застройщика на 132 м — на карте ниже показаны обе (серая — bazaraki).</p>
+      
+    </div>
+    
+
     <h2>Характеристики</h2>
     
     
@@ -953,6 +983,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.729072570801,33.065307617188" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -961,7 +992,7 @@
     <div class="panel">
       <h3 style="margin-top:0">Кратко</h3>
       <dl class="detail">
-        <dt>Цена</dt><dd>по запросу</dd>
+        <dt>Цена</dt><dd>€1 725 000 – €3 450 000 <a href="https://www.bazaraki.com/new-buildings/196-trianon_heights/" target="_blank" rel="noopener" style="text-decoration:none" title="На сайте застройщика цена не найдена — указана по объявлению на bazaraki.com (клик — открыть источник)"><sup>?</sup></a></dd>
         <dt>Тип недвижимости</dt><dd>Виллы</dd>
         <dt>Стадия</dt><dd>В продаже · Off Plan</dd>
         <dt>Начало стройки</dt><dd>—</dd>
@@ -1031,6 +1062,9 @@
           <span class="muted">— главный источник (сайт застройщика)</span></li>
         
         
+        <li><a href="https://www.bazaraki.com/new-buildings/196-trianon_heights/" target="_blank" rel="noopener">www.bazaraki.com/new-buildings/196-trianon_heights/</a>
+          <span class="muted">· агрегатор</span></li>
+        
       </ul>
     </div>
     
@@ -1054,6 +1088,13 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.729072570801,33.065307617188],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.729072570801,33.065307617188]).addTo(map).bindPopup("Trianon Heights" + gmapsLink);
+
+
+
+  // вторая метка — из объявления bazaraki (расходится с меткой застройщика)
+  L.circleMarker([34.73024375737448,33.065061915342554],{radius:9,color:'#777',fillColor:'#999',fillOpacity:0.7})
+    .addTo(map).bindPopup('Метка Bazaraki (132 м от метки застройщика)<br><a href="https://www.bazaraki.com/new-buildings/196-trianon_heights/" target="_blank" rel="noopener">Открыть объявление</a>');
+  map.fitBounds(L.latLngBounds([[34.729072570801,33.065307617188],[34.73024375737448,33.065061915342554]]).pad(0.35));
 
 });
 </script>

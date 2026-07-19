@@ -45,6 +45,9 @@
     <p>1-, 2- и 3-комнатные апартаменты в быстро растущем районе New Marina в Ларнаке. Проект подходит для покупателей, ищущих инвестиции в сдачу в аренду. Стадия: предварительные продажи.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -103,6 +106,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.935772,33.63618" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -205,6 +209,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.935772,33.63618],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.935772,33.63618]).addTo(map).bindPopup("Plus 87 - New Marina" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>AquaView Residences — жилой комплекс Right Home Developers в Ливадии (округ Ларнака). 4 юнита, спален: 2. Стадия: готов к заселению, сдача 2024. Цены от €540 000+VAT.</p>
     <p class="muted">Код проекта Aquaview_Residences на сайте застройщика. Расстояния: удобства 100 m, аэропорт 15 km, море 100 m, транспорт 100 m.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -168,6 +171,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.937501,33.639762" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -271,6 +275,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.937501,33.639762],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.937501,33.639762]).addTo(map).bindPopup("AquaView Residences" + gmapsLink);
+
+
 
 });
 </script>

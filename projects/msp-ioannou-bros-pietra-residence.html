@@ -45,6 +45,9 @@
     <p>Pietra Residence — жилой комплекс в престижном районе Лимассола с открывающимися видами на море. Проект воплощает концепцию утончённой городской жизни, сочетая роскошь, удобство и комфорт. Апартаменты отличаются просторными и светлыми интерьерами в современном стиле с продуманными деталями отделки. Комплекс окружён современной инфраструктурой и предлагает жильцам приватность и безопасность, создавая тихий уголок в городской среде. Предусмотрены просторная и защищённая парковка и качественные материалы отделки.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -264,6 +267,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.69853,33.064486" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -365,6 +369,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.69853,33.064486],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.69853,33.064486]).addTo(map).bindPopup("Pietra Residence" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Ikaria Suites — камерный проект всего из десяти эксклюзивных апартаментов в Като Пафос с современным дизайном и высокими стандартами строительства и отделки. Доступны варианты вплоть до 3 спален. Комплекс расположен в 5 минутах ходьбы от гавани и центра Като Пафос, а также от торгового центра King&#39;s Avenue Mall — удачный выбор как для жизни, так и для отдыха.</p>
     <p class="muted">Проект состоит из десяти эксклюзивных люксовых апартаментов (Apartments, до 3 спален / 3 ванных). Расположен в Като-Пафос, в 5 минутах ходьбы от гавани, центра Като-Пафос и торгового центра King&#39;s Avenue Mall. На странице цены отображаются как «From € sold» — юниты распроданы, индивидуальной таблицы наличия с номерами нет.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -110,6 +113,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.760898,32.416658" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -215,6 +219,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.760898,32.416658],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.760898,32.416658]).addTo(map).bindPopup("Ikaria Suites" + gmapsLink);
+
+
 
 });
 </script>

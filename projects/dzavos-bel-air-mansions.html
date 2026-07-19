@@ -45,6 +45,9 @@
     <p>Bel Air Mansions — современный жилой комплекс D. Zavos Group в престижном районе Гермасойя (Germasogeia) в Лимассоле. Проект представляет собой коллекцию просторных двух- и трёхкомнатных (2- и 3-спальных) резиденций, расположенных на четырёх уровнях: на каждом этаже размещаются две 2-спальные квартиры и одна 3-спальная. Архитектура сочетает лаконичную геометрию с белыми фасадами и тёплыми деревянными акцентами. Инфраструктура включает общий бассейн с зоной отдыха, полностью оборудованный тренажёрный зал на первом этаже и эксклюзивный сад на крыше для жителей четвёртого этажа. Проект получил награду European Property Awards 2023 в категории &#39;Architecture Multiple Residence&#39;.</p>
     <p class="muted">Современный жилой комплекс в Лимассоле (район Гермасойя). Победитель European Property Awards 2023 в категории &#39;Architecture Multiple Residence&#39;. 2- и 3-спальные резиденции на 4 этажах. Общий бассейн с зоной отдыха, фитнес-зал, частные мини-бассейны (plunge pools) в двух апартаментах и джакузи в третьем.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -114,6 +117,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.721707,33.06691" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -219,6 +223,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.721707,33.06691],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.721707,33.06691]).addTo(map).bindPopup("Bel Air Mansions" + gmapsLink);
+
+
 
 });
 </script>

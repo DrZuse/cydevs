@@ -45,6 +45,9 @@
     <p>Mojo — проект современных городских апартаментов, расположенных прямо за лицеем Kykkos B в Пафосе, в непосредственной близости от всей необходимой повседневной инфраструктуры. Квартиры продуманно спланированы: просторная открытая планировка гостиной и кухни, большие раздвижные окна, выходящие на просторные веранды, а также индивидуальный бассейн для каждого юнита. Периметральные клумбы с пышной зеленью окружают дома, очищая воздух и охлаждая здание.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -94,6 +97,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.782346,32.433333" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -202,6 +206,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.782346,32.433333],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.782346,32.433333]).addTo(map).bindPopup("Mojo (El Pez)" + gmapsLink);
+
+
 
 });
 </script>

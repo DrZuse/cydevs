@@ -45,6 +45,9 @@
     <p>Zeus — эксклюзивный проект всего из 3 люксовых вилл, готовящийся к добавлению в портфель Kuutio Homes («coming soon»). Виллы предлагают панорамные виды на море, архитектуру мирового класса и расслабленную прибрежную атмосферу; фасады отделаны природным камнем, а озеленённые крыши повторяют цвета и текстуры окружающего ландшафта. У каждой виллы — бассейн-инфинити и уютные патио на улице, а внутри — люксовая отделка по последнему слову дизайна. Есть как минимум две модели: Model A (более 300 м², 5 спален) и Model B (311 м², 4 спальни с санузлами при каждой).</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -120,6 +123,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.881278,32.346111" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -222,6 +226,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.881278,32.346111],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.881278,32.346111]).addTo(map).bindPopup("Zeus" + gmapsLink);
+
+
 
 });
 </script>

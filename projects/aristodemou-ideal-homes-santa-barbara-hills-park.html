@@ -45,6 +45,9 @@
     <p>Santa Barbara Hills Park — флагманский и самый амбициозный проект Группы J. Aristodemou, крупный многофункциональный курортный комплекс на территории около 596 100 кв.м в деревне Айя-Варвара. (примечание: www.santabarbarahills.com недоступен с 2024 г., источник заменён на альтернативные ссылки)</p>
     <p class="muted">Проект смешанного назначения Santa Barbara Hills Park в Айя-Варвара (район Пафос). Площадь участка 596 110 м² (83 титула собственности выпущены). В составе: 700–1000 жилых объектов, 5-звёздочный отель-курорт (170 номеров), реабилитационный/гериатрический центр (до 400 двухместных номеров), спортивный центр, многофункциональный тематический парк и детский сад. Конкретные юниты, цены, сроки сдачи и детальные характеристики на странице &#39;О нас&#39; отсутствуют — нужна отдельная страница проекта.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -111,6 +114,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.7699256,32.5199594" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -219,6 +223,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.7699256,32.5199594],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.7699256,32.5199594]).addTo(map).bindPopup("Santa Barbara Hills Park" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Комплекс 1990 года постройки на первой линии в Потамос Гермасойяс: четыре жилых блока, большие общие бассейны (взрослый и детский), сад, прямой выход к пляжу. В каталоге собственных проектов застройщик продаёт отдельные апартаменты (вторичный фонд, часть с мебелью и титулами): 1-спальные от €320 000, 2-спальные €350 000 - €470 000. Не новостройка — продажи готовых юнитов в старом собственном комплексе.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -109,6 +112,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.694017,33.0900002" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -217,6 +221,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.694017,33.0900002],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.694017,33.0900002]).addTo(map).bindPopup("River Beach Complex" + gmapsLink);
+
+
 
 });
 </script>

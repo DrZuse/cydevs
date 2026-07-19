@@ -45,6 +45,9 @@
     <p>Grigio Court - это комплекс из шести апартаментов на 1, 2 и 3 спальни в тихой зоне на окраине деревни Продроми, окруженный прекрасными холмами и природой.</p>
     <p class="muted">Проект состоит из 6 квартир (1-3 спальни) в 3-этажном здании (подвал/ground, 1-й, 2-й этажи). Энергоэффективность класса A. Цены указаны без НДС (+19% VAT). Наличие парковки, подсобных помещений, лифта и общих удобств не указано на странице.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -189,6 +192,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.02437,32.417273" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -290,6 +294,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.02437,32.417273],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.02437,32.417273]).addTo(map).bindPopup("Grigio Court" + gmapsLink);
+
+
 
 });
 </script>

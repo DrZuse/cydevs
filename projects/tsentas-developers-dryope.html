@@ -45,6 +45,9 @@
     <p>Люксовая вилла 4+1 спальни (309 м² внутренней площади, участок 681 м²) из коллекции вилл в пригороде Никосии (район Senior School / New GSP).</p>
     <p class="muted">По каталогу юнитов на сайте: 1 доступно, 0 продано (проверено 2026-07-16).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -103,6 +106,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.102906996636015,33.347543799850186" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -205,6 +209,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.102906996636015,33.347543799850186],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.102906996636015,33.347543799850186]).addTo(map).bindPopup("Dryope" + gmapsLink);
+
+
 
 });
 </script>

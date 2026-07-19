@@ -45,6 +45,9 @@
     <p>Ouranos Villas — комплекс из трёх современных вилл в холмах Цады (Пафос), в 4,5 км от одного из лучших полей для гольфа на Кипре. Две виллы имеют по 3 спальни, одна — 4 спальни. Каждая вилла оснащена технологиями умного дома, имеет переливной бассейн, ландшафтные сады и панорамный вид на море.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -192,6 +195,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.826389,32.469083" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -293,6 +297,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.826389,32.469083],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.826389,32.469083]).addTo(map).bindPopup("Ouranos Villas" + gmapsLink);
+
+
 
 });
 </script>

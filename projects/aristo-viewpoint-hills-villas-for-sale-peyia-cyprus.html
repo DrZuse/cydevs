@@ -45,6 +45,9 @@
     <p>Viewpoint Hills - это современный комплекс с 3-, 4- и 5-спальными виллами. Расположенный в Пейе, он находится рядом с известными пляжами флагманского класса Корал Бэй и национальным парком Акамас. Каждая собственность имеет частный бассейн, большие террасы и просторные интерьеры с высококачественным оформлением. Покупая недвижимость в этом красивом комплексе, вы сможете наслаждаться незаблокированным захватывающим видом на Средиземное море.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -950,6 +953,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.880722,32.361194" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -1051,6 +1055,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.880722,32.361194],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.880722,32.361194]).addTo(map).bindPopup("Viewpoint Hills" + gmapsLink);
+
+
 
 });
 </script>

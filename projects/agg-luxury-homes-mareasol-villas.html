@@ -45,6 +45,9 @@
     <p>Mareasol Villas — эксклюзивный комплекс из шести вилл в Киссонерге (Пафос) с потрясающими видами на море. Каждая вилла имеет сад на крыше, дающий приподнятый обзор бесконечного морского горизонта, и прямой выход к средиземноморскому побережью. Проект ориентирован на приватную жизнь у моря в престижном прибрежном районе.</p>
     <p class="muted">Коллекция из 6 вилл в Kissonerga, Paphos. Расположены на склоне холма, вид на море с первого этажа, rooftop garden. Рядом: супермаркет 550 м, теннис 550 м, кафе 750 м, медцентр 1 км, пляж 2 км, школа Aspire 5,5 км. Listing обновлён: 3 июля 2026.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -152,6 +155,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.829188,32.395274" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -253,6 +257,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.829188,32.395274],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.829188,32.395274]).addTo(map).bindPopup("Mareasol Villas" + gmapsLink);
+
+
 
 });
 </script>

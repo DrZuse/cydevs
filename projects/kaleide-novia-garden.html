@@ -45,6 +45,9 @@
     <p>Novia Garden — камерный комплекс из 8 полуотдельных вилл (3–4 спальни, 124–211 м²) в тихом жилом районе Агиос Афанасиос, Лимасол. Современная архитектура с чистыми линиями, качественная отделка, рядом частные школы; 8 минут на машине до моря. Сдача — март 2028.</p>
     <p class="muted">Проект Novia Garden — 8 полудетачных вилл в Лимассоле, районе Агиос Афанасий. Стадия: Off plan. Сдача: март 2028. Цена от €583,700. Расстояние до моря 4 км, до школ 3 км. 38% продано. Виллы с 3-4 спальнями, площадью от 124.2 до 211.35 м² внутренней площади, участки 197.6-466.55 м². У виллы 8 есть частный бассейн. Высококачественная отделка, современный дизайн.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -270,6 +273,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.717494,33.046794" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -371,6 +375,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.717494,33.046794],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.717494,33.046794]).addTo(map).bindPopup("Novia Garden" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Три отдельных дома площадью 125 м² каждый с тремя спальнями и двумя ванными комнатами. Каждый дом имеет крытую парковку и расположен в спокойной зоне.</p>
     <p class="muted">Застройщик: K.A Kyprianou Construction &amp; Development. Контакты: +357 99 525 108, info@kyprianougroup.com. Дисклеймер: интерьерные рендеры являются художественными интерпретациями, финальный продукт соответствует архитектурным чертежам.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -137,6 +140,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.855822,33.571549" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -239,6 +243,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.855822,33.571549],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.855822,33.571549]).addTo(map).bindPopup("Kiti Bungalows" + gmapsLink);
+
+
 
 });
 </script>

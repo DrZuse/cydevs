@@ -45,6 +45,9 @@
     <p>Ультра-люксовая 20-этажная высотка в центре Никосии с видом на новый городской парк на месте старого стадиона GSP. Двухсветный лобби-ресепшн, wellness-этаж с бассейном, спа и джимом, консьерж, пентхаус на трёх верхних этажах со skygarden и бассейном. Архитектура Gr. G. Patsalosavvis. Сдача в 2028 году.</p>
     <p class="muted">По каталогу юнитов на сайте: 12 доступно, 0 продано (проверено 2026-07-16).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -277,6 +280,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.168635,33.356507" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -378,6 +382,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.168635,33.356507],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.168635,33.356507]).addTo(map).bindPopup("The Legacy" + gmapsLink);
+
+
 
 });
 </script>

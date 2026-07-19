@@ -45,6 +45,9 @@
     <p>Coral Residences — роскошный курортный комплекс на престижном побережье Пафоса. Включает 12 вилл и 20 апартаментов, выполненных в стиле вневременной элегантности. Резиденции расположены на возвышенности у частного нетронутого пляжа в окружении гор, открывая панорамный вид на море.</p>
     <p class="muted">Coral Residences — роскошный курортный комплекс из 12 вилл и 20 апартаментов на побережье Пафоса, Кипр. Все резиденции с фронтлайн-видом на море и горами в качестве фона. Расположен рядом с пляжем Coral Bay и планируемой мариной Пафоса. Типы вилл на сайте перечислены (6A, 5C, 4B, 3C, 2, 1), но без конкретных характеристик и номеров юнитов.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -100,6 +103,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.8500156,32.3831731" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -202,6 +206,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.8500156,32.3831731],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.8500156,32.3831731]).addTo(map).bindPopup("Coral Residences" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Belvedere Villas — эксклюзивный проект от Leptos Estates в Пафосе, включающий 17 участков под строительство вилл по индивидуальному проекту. Открывается панорамный вид на Средиземное море и живописные холмы. В состав также входят офисы и магазины. Цена от €2 529 000.</p>
     <p class="muted">Проект на первой линии у моря в Chloraka (Пафос). 17 участков под индивидуальную застройку вилл под заказ (custom-designed). Частный бассейн — опция за доплату.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -140,6 +143,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.788143,32.404728" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -244,6 +248,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.788143,32.404728],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.788143,32.404728]).addTo(map).bindPopup("Belvedere Villas" + gmapsLink);
+
+
 
 });
 </script>

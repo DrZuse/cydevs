@@ -45,6 +45,9 @@
     <p>Konia Panorama Phase 3 — третья очередь эксклюзивного закрытого (gated) посёлка на склоне холма с панорамными видами на Средиземное море и исторический Пафос. Фаза строится (11 вилл); в продаже виллы с 3 спальнями (139–173 м² внутренней площади). Всего в нескольких минутах от центра Като Пафоса и пляжей. Цены от €647 419.</p>
     <p class="muted">Всего юнитов в фазе: 11.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -260,6 +263,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.783761,32.469583" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -361,6 +365,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.783761,32.469583],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.783761,32.469583]).addTo(map).bindPopup("Konia Panorama Phase 3" + gmapsLink);
+
+
 
 });
 </script>

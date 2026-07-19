@@ -45,6 +45,9 @@
     <p>Adonis Beach Villas — эксклюзивный проект Leptos из роскошных вилл в одной из самых престижных прибрежных локаций Хлораки (Пафос), с захватывающими видами на Средиземное море. Каждая вилла имеет частный бассейн, ландшафтный сад и зоны барбекю для отдыха на открытом воздухе. На рынке доступно несколько вилл (в т. ч. с 5 спальнями) по цене примерно от €1 462 000 до €3 190 000 (+ НДС). Проект ориентирован на премиальный сегмент покупателей морской недвижимости.</p>
     <p class="muted">Комплекс вилл на первой линии моря в Chloraka (Paphos), Кипр. Каждая вилла имеет частный бассейн, ландшафтный сад и зону барбекю. Цены указаны без НДС (+VAT). Упоминается членство Leptos Lifestyle Membership.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -230,6 +233,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.797586,32.392907" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -333,6 +337,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.797586,32.392907],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.797586,32.392907]).addTo(map).bindPopup("Adonis Beach Villas" + gmapsLink);
+
+
 
 });
 </script>

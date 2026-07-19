@@ -45,6 +45,34 @@
     <p>Люкс виллы с 3 спальнями в холмистой местности Лимассола, стоимостью 1,020,000 EUR. Проект состоит из 7 домов с видом на море и легким доступом в город.</p>
     
 
+    
+    
+    <div class="panel bzk" style="margin:14px 0;border-left:3px solid var(--brand)">
+      <h3 style="margin-top:0">Bazaraki <span class="muted small" style="font-weight:normal">· <a href="https://www.bazaraki.com/new-buildings/295-lana_villas/" target="_blank" rel="noopener">страница объявления</a> · снимок 2026-07-19</span></h3>
+      <p class="muted small" style="margin:2px 0 8px">Ниже — только сведения, которых нет на сайте застройщика (источник правды — сайт застройщика).</p>
+      
+      
+      <div class="row">
+        <span class="chip" title="Источник: bazaraki.com">срок сдачи: 2025</span><span class="chip" title="Источник: bazaraki.com">паркинг: 1</span><span class="chip" title="Источник: bazaraki.com">вид: панорамный</span><span class="chip" title="Источник: bazaraki.com">парковочные места: 2</span>
+      </div>
+      
+      
+      
+      <p class="small muted" style="margin:8px 0 0">Рядом: airport — 62 km, beach — 6 km, hospital — 3 km, supermarket — 3 km, city center — 8 km, school — 1 km, marina — 10 km</p>
+      
+      
+      
+      <details style="margin-top:8px"><summary class="muted">Описание с bazaraki.com (EN)</summary>
+        <p class="small" style="white-space:pre-line">Located in desirable hills of Limassol, Lana Villas comprises 6 luxuriously appointed 3 bedroom residences, which harmoniously blend with their natural surroundings. 
+
+Lana Villas are within a short drive of award-winning sandy beaches, close to a plethora of shops, restaurants and other amenities, yet offer a serene environment and tranquility.</p></details>
+      
+      
+      <p class="small muted" style="margin:8px 0 0">📍 Гео-метка bazaraki расходится с меткой застройщика на 935 м — на карте ниже показаны обе (серая — bazaraki).</p>
+      
+    </div>
+    
+
     <h2>Характеристики</h2>
     
     
@@ -155,6 +183,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.739179,33.081282" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -233,6 +262,9 @@
           <span class="muted">— главный источник (сайт застройщика)</span></li>
         
         
+        <li><a href="https://www.bazaraki.com/new-buildings/295-lana_villas/" target="_blank" rel="noopener">www.bazaraki.com/new-buildings/295-lana_villas/</a>
+          <span class="muted">· агрегатор</span></li>
+        
       </ul>
     </div>
     
@@ -256,6 +288,13 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.739179,33.081282],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.739179,33.081282]).addTo(map).bindPopup("Lana Villas" + gmapsLink);
+
+
+
+  // вторая метка — из объявления bazaraki (расходится с меткой застройщика)
+  L.circleMarker([34.73160893709238,33.08573227116436],{radius:9,color:'#777',fillColor:'#999',fillOpacity:0.7})
+    .addTo(map).bindPopup('Метка Bazaraki (935 м от метки застройщика)<br><a href="https://www.bazaraki.com/new-buildings/295-lana_villas/" target="_blank" rel="noopener">Открыть объявление</a>');
+  map.fitBounds(L.latLngBounds([[34.739179,33.081282],[34.73160893709238,33.08573227116436]]).pad(0.35));
 
 });
 </script>

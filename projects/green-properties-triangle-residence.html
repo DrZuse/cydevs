@@ -45,6 +45,9 @@
     <p>Triangle Residence — двухэтажное здание из 4 люксовых квартир класса энергоэффективности A в престижном районе Плати Аглантзия, Никосия, с удобным доступом к центру города. Квартиры с 2-3 спальнями, комфортными интерьерами и большими основными и вспомогательными террасами. Доступны программы CRAZY DEAL и FIFTY FIFTY. Компактный формат (бутик-здание) типичен для проектов GREEN Properties в этом районе (рядом также расположен их проект Conali Residence).</p>
     <p class="muted">Проект Triangle Residence в Агландзии предлагает современные апартаменты с высоким энергоэффективным классом А, установленными фотоэлектрическими панелями для общих зон и системой солнечного нагрева воды.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -114,6 +117,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.151006,33.381199" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -218,6 +222,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.151006,33.381199],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.151006,33.381199]).addTo(map).bindPopup("Triangle Residence" + gmapsLink);
+
+
 
 });
 </script>

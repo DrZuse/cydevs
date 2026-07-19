@@ -45,6 +45,9 @@
     <p>Palma Fiore — комплекс из 56 современных квартир в четырёх корпусах в районе Ливадия, Ларнака. Квартиры с 1, 2 и 3 спальнями (77–140 м²), цены от €192 000 до €365 000 (+VAT). Общие удобства: бассейн, тренажёрный зал, паровая баня и сауна. Все квартиры — энергокласс A: двойное остекление, солнечные панели для нагрева воды, подготовка под фотоэлектрические системы.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -165,6 +168,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.9544125,33.6399844" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -269,6 +273,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.9544125,33.6399844],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.9544125,33.6399844]).addTo(map).bindPopup("Palma Fiore" + gmapsLink);
+
+
 
 });
 </script>

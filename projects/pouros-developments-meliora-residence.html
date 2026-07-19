@@ -45,6 +45,9 @@
     <p>Жилой комплекс на стадии предварительных продаж в Polemidia. Включает квартиры различных планировок.</p>
     <p class="muted">Современный жилой комплекс в Kato Polemidia, Limassol. Предлагает стильные 2-комнатные квартиры с продуманными интерьерами, высококачественной отделкой и открытыми планировками.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -123,6 +126,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.674245,33.0002029" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -225,6 +229,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.674245,33.0002029],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.674245,33.0002029]).addTo(map).bindPopup("Meliora Residence" + gmapsLink);
+
+
 
 });
 </script>

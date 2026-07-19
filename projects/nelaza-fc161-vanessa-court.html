@@ -45,6 +45,9 @@
     <p>Жилой дом FC161 Vanessa Court в районе Vanessa (Nicosia). Всего 7 юнитов: 4 продано, 3 свободно. Координаты — с карты застройщика.</p>
     <p class="muted">Жилая недвижимость класса А с гарантией на титулы. Упомянуты системы: теплоизоляционный фасад, двойное остекление, солнечный водонагреватель, система напора воды, разводка под VRV-кондиционирование, электрическое отопление и фотоэлектрическая система.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -202,6 +205,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.1026843,33.312882" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -308,6 +312,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.1026843,33.312882],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.1026843,33.312882]).addTo(map).bindPopup("FC161 Vanessa Court" + gmapsLink);
+
+
 
 });
 </script>

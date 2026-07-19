@@ -45,6 +45,9 @@
     <p>Paradise Garden — комплекс из шести апартаментов (пять двухкомнатных и одна однокомнатная) на трёх этажах в престижном районе Universal в центре Пафоса, в нескольких минутах от центра города. Площадь квартир составляет 58,5-93,75 кв.м. В зданиях предусмотрены скрытая система кондиционирования VRV, технология «умный дом», крытая парковка и кладовые помещения, а на территории — общий бассейн. Рядом с комплексом расположены парк и детская игровая площадка. Ценовой диапазон по разным источникам составляет от 220 000-250 000 до 340 000-430 000 евро в зависимости от планировки квартиры.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -121,6 +124,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.76255,32.441935" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -226,6 +230,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.76255,32.441935],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.76255,32.441935]).addTo(map).bindPopup("Paradise Garden" + gmapsLink);
+
+
 
 });
 </script>

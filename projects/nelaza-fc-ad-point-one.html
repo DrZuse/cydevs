@@ -45,6 +45,9 @@
     <p>Жилой дом FC Ad Point One в районе Fc Ad Point One (Limassol). Всего 8 юнитов: 0 продано, 8 свободно. Координаты — с карты застройщика.</p>
     <p class="muted">Небольшое здание из 8 квартир. Расположено в Лимассоле, улица Антигонис Метакса 17, район Капсалос, рядом со стадионом Цирейо. Легкий доступ к удобствам. Крытые парковочные места. Гарантия инвестиционных доходов.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -223,6 +226,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6952222,33.02375" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -329,6 +333,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.6952222,33.02375],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.6952222,33.02375]).addTo(map).bindPopup("FC Ad Point One" + gmapsLink);
+
+
 
 });
 </script>

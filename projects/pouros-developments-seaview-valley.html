@@ -45,6 +45,35 @@
     <p>Жилой комплекс из 55 домов (2 и 3 спальни) в тихом районе Ипсуполис (Ипсонас), в 10 минутах от центра Лимассола; у части домов частные бассейны, вид на море. Срок сдачи — 09/2028.</p>
     <p class="muted">По описанию застройщика в проекте 55 домов, но в Properties List на сайте виден один юнит (H7, продан) — наличие остальных на сайте не публикуется. Энергокласс проекта A, у юнита H7 указан A+.</p>
 
+    
+    
+    <div class="panel bzk" style="margin:14px 0;border-left:3px solid var(--brand)">
+      <h3 style="margin-top:0">Bazaraki <span class="muted small" style="font-weight:normal">· <a href="https://www.bazaraki.com/new-buildings/151-seaview_valley/" target="_blank" rel="noopener">страница объявления</a> · снимок 2026-07-19</span></h3>
+      <p class="muted small" style="margin:2px 0 8px">Ниже — только сведения, которых нет на сайте застройщика (источник правды — сайт застройщика).</p>
+      
+      
+      <div class="row">
+        <span class="chip" title="Источник: bazaraki.com">паркинг: 1</span><span class="chip" title="Источник: bazaraki.com">вид: панорамный</span><span class="chip" title="Источник: bazaraki.com">кладовая: да</span><span class="chip" title="Источник: bazaraki.com">парковочные места: 41</span>
+      </div>
+      
+      
+      
+      <p class="small muted" style="margin:8px 0 0">Рядом: airport — 52 km, marina — 13 km, beach — 13 km, supermarket — 3 km, hospital — 6.5 km, city center — 13 km, school — 50 m</p>
+      
+      
+      
+      <details style="margin-top:8px"><summary class="muted">Описание с bazaraki.com (EN)</summary>
+        <p class="small" style="white-space:pre-line">Seaview Valley, a stunning residential project featuring 45 beautifully designed homes in the serene Ypsoupolis area of Limassol. Perfectly crafted for modern living, this development offers a harmonious blend of comfort, style, and convenience. 
+
+Each home includes: 3 spacious en-suite bedrooms, providing privacy and luxury for every family member. 
+A contemporary open-space kitchen and inviting living area, ideal for relaxation and entertaining. Select properties feature private pools, offering the ultimate in leisure and exclusivity.
+
+ Located in Ypsoupolis, a tranquil residential neighborhood within the Ypsonas municipality, Seaview Valley is just a 10-minute drive from Limassol&#39;s city center. Residents enjoy a peaceful environment with easy access to urban amenities, schools, shopping, and entertainment. Discover the perfect combination of modern elegance and serene living at Seaview Valley – where your dream home awaits.</p></details>
+      
+      
+    </div>
+    
+
     <h2>Характеристики</h2>
     
     
@@ -139,6 +168,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.69920447,32.94219365" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -217,6 +247,9 @@
           <span class="muted">— главный источник (сайт застройщика)</span></li>
         
         
+        <li><a href="https://www.bazaraki.com/new-buildings/151-seaview_valley/" target="_blank" rel="noopener">www.bazaraki.com/new-buildings/151-seaview_valley/</a>
+          <span class="muted">· агрегатор</span></li>
+        
       </ul>
     </div>
     
@@ -240,6 +273,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.69920447,32.94219365],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.69920447,32.94219365]).addTo(map).bindPopup("Seaview Valley" + gmapsLink);
+
+
 
 });
 </script>

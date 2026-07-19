@@ -45,6 +45,9 @@
     <p>Sandy Beach Villas — комплекс из шести элегантных вилл в Героскипу, примерно в 300 метрах от пляжа и в 10 минутах от аэропорта Пафоса. Каждая вилла имеет три просторные спальни, две ванные комнаты, гостевой санузел и частный бассейн. Проект сочетает уединённость и удобство расположения рядом с морем и городской инфраструктурой.</p>
     <p class="muted">Комплекс из 6 вилл в Гeroskipou (Пафос), закрытая огороженная территория. В 300 м от пляжа, в 10 мин от аэропорта. Каждая вилла: 3 спальни, 2 ванные + гостевой туалет, личный бассейн. Обновлено на сайте: 3 июля 2026. Конкретных номеров юнитов/таблицы наличия на странице нет — добавлен типовой юнит (unit_id=null).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -144,6 +147,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.739021,32.446823" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -249,6 +253,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.739021,32.446823],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.739021,32.446823]).addTo(map).bindPopup("Sandy Beach Villas" + gmapsLink);
+
+
 
 });
 </script>

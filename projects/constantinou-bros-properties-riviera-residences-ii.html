@@ -45,6 +45,9 @@
     <p>Riviera Residences II — вторая очередь проекта Riviera в районе Пафоса, включающая 6 просторных апартаментов с двумя спальнями. Здание отличается элегантным современным дизайном с продуманными планировками, ориентированными на комфорт и рациональное использование пространства. Цены начинаются от 284 025 евро.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -188,6 +191,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.764787,32.441844" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -289,6 +293,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.764787,32.441844],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.764787,32.441844]).addTo(map).bindPopup("Riviera Residences II" + gmapsLink);
+
+
 
 });
 </script>

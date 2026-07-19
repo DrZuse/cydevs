@@ -43,6 +43,9 @@
     <p>Zenith Apartments — трёхэтажное здание в Лимассоле: 18 люксовых меблированных однокомнатных квартир и 2-спальные квартиры с садом на крыше. Сдаётся в аренду (доступно с сентября). В стадии строительства.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -104,6 +107,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.68158376000978,33.05128484995112" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -206,6 +210,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.68158376000978,33.05128484995112],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.68158376000978,33.05128484995112]).addTo(map).bindPopup("Zenith Apartments" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Carisa Celeste Homes — это жилой комплекс в лучшем районе Ливадии в Ларнаке, в 530 метрах от пляжа. Квартиры отличаются современным дизайном и высококачественными материалами. Расположен в престижном районе, что обеспечивает высокий инвестиционный потенциал.</p>
     <p class="muted">Расположен в лучшем районе Лимасола, в 530 метрах от пляжа.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -100,6 +103,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.9551625,33.6471094" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -208,6 +212,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.9551625,33.6471094],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.9551625,33.6471094]).addTo(map).bindPopup("Carisa Celeste Homes" + gmapsLink);
+
+
 
 });
 </script>

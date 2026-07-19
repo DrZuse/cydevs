@@ -45,6 +45,9 @@
     <p>Проект в пределах главного кольца Лимасола, в 3 минутах ходьбы от проспекта Макариоса и рядом с пляжем Энаэриос; 400 м до комплекса Trilogy и береговой линии. 9 двухспальных квартир на 3 этажах; квартиры верхнего этажа с просторными руф-гарденами. Интерьеры от одного из самых известных дизайнеров Кипра.</p>
     <p class="muted">Страница проекта не содержит детальной информации о самом объекте недвижимости. Доступны только ссылки на портфолио проекта (https://premierdevelopments.com.cy/portfolios/cityboutique/, https://premierdevelopments.com.cy/portfolios/cityboutique-2/, https://premierdevelopments.com.cy/portfolios/cityboutique-2-2/).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -124,6 +127,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6909354,33.0599366" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -229,6 +233,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.6909354,33.0599366],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.6909354,33.0599366]).addTo(map).bindPopup("City Boutique" + gmapsLink);
+
+
 
 });
 </script>

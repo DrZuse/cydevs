@@ -45,6 +45,9 @@
     <p>Проект состоит из 2 роскошных домов на пол-участка в Строволосе, в районе Французского посла (Галлу Пре́сви), на улице Агиу Эммануил. Каждый дом располагает большим садом, крытой парковкой и гардеробной в главной спальне. Кухня оснащена механизмами soft-close и островом из технограннита. В проекте представлены апартаменты и дома.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -80,6 +83,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.1194589,33.3513593" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -182,6 +186,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.1194589,33.3513593],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.1194589,33.3513593]).addTo(map).bindPopup("Everest Homes 10 Strovolos" + gmapsLink);
+
+
 
 });
 </script>

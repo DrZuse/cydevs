@@ -45,6 +45,9 @@
     <p>Harmony Residences — эксклюзивный трёхэтажный жилой дом на окраине Никосии (Дали, квартал Agioi Konstantinou kai Elenis) по проекту бюро MCA Architects Studio. Квартиры с 1 и 2 спальнями, спланированные с упором на пространство, естественный свет и функциональность. Все квартиры класса энергоэффективности A, у каждой отдельная фотоэлектрическая система и солнечный водонагреватель, кондиционеры в гостиных и спальнях, видеодомофоны, контроль доступа в здание, подготовка под зарядку электромобиля. По availability-таблице застройщика (июль): 6 из 7 квартир свободны, пентхаус 301 продан. Сдача — март 2027. Цены по запросу (НДС не включён).</p>
     <p class="muted">Цены по запросу; НДС не включён. Пин — точная метка застройщика (кнопка VIEW ON MAP).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -219,6 +222,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.079095,33.393719" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -322,6 +326,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.079095,33.393719],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.079095,33.393719]).addTo(map).bindPopup("Harmony Residences" + gmapsLink);
+
+
 
 });
 </script>

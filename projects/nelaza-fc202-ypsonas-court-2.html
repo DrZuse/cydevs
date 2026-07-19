@@ -45,6 +45,9 @@
     <p>Дома FC202 Ypsonas Court 2 в районе Ypsonas (Limassol). Всего 8 юнитов: 4 продано, 4 свободно. Координаты — с карты застройщика.</p>
     <p class="muted">Проект завершён. Упомянуто наличие лифта, солнечного водонагревателя, системы напора воды, импортной керамической плитки и сантехники. Предусмотрены возможности установки частной фотоэлектрической системы, электрического отопления и кондиционирования во всех зонах.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -236,6 +239,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.68144376813501,32.956692578423855" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -340,6 +344,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.68144376813501,32.956692578423855],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.68144376813501,32.956692578423855]).addTo(map).bindPopup("FC202 Ypsonas Court 2" + gmapsLink);
+
+
 
 });
 </script>

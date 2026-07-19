@@ -45,6 +45,9 @@
     <p>Akrounta — закрытый анклав современных вилл в деревне Акрунда на фоне гор: кубистическая геометрия, белые фасады с тёмными акцентами, панорамное остекление с видом на долину; у каждой резиденции свой участок с газоном и крытой парковкой. В продаже вилла 3 спальни, 141 м² (участок 427 м²), энергокласс A. Старт строительства Q2/2026, расчётная сдача Q4/2027.</p>
     <p class="muted">Отдельный жилой дом (detached), статус доступен, цена по запросу, год постройки 2027, состояние новое.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -103,6 +106,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.76696,33.07909" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -214,6 +218,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.76696,33.07909],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.76696,33.07909]).addTo(map).bindPopup("Akrounta" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Marelia Valley — комплекс из 16 двухспальных апартаментов в престижном районе Конии, в 5 минутах езды от центра Пафоса. Каждая квартира располагает крытым парковочным местом, отдельной кладовой и доступом к общей зоне барбекю. Из окон открывается вид на зелёные холмы и море. Проект находится недалеко от частных школ, супермаркетов и международного аэропорта Пафоса, статус — стадия off-plan.</p>
     <p class="muted">Проект расположен в престижном районе Konia, Paphos. Включает 16 квартир (2 спальни). Упоминается близость к частным школам, супермаркетам и международному аэропорту Пафоса (15 км).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -359,6 +362,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.78185,32.460902" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -463,6 +467,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.78185,32.460902],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.78185,32.460902]).addTo(map).bindPopup("Marelia Valley" + gmapsLink);
+
+
 
 });
 </script>

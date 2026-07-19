@@ -45,6 +45,9 @@
     <p>Жилой комплекс Athienou Court предлагает 12 квартир с 1-2 спальнями площадью 80 м² на трёх этажах. Проект включает гарантированное получение прав собственности и планируется к сдаче в 2027 году.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -130,6 +133,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.05639,33.5339" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -232,6 +236,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.05639,33.5339],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.05639,33.5339]).addTo(map).bindPopup("Athienou Court" + gmapsLink);
+
+
 
 });
 </script>

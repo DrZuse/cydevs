@@ -45,6 +45,9 @@
     <p>Жилой проект Konia Villas в районе Konia, Пафос. Современные виллы в эксклюзивном жилом районе, всего в нескольких минутах от центра города.</p>
     <p class="muted">Проект Konia Villas опубликован как &#39;New Project&#39; без детальной страницы: ссылка &#39;View Project&#39; ведёт на /contact-us, PDF-презентации нет. Известно только: город Paphos, тип — виллы, стадия Off-Plan. Площади, спальни, сроки сдачи, цены и юниты на сайте не указаны.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -122,6 +125,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.782094,32.457387" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -224,6 +228,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.782094,32.457387],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.782094,32.457387]).addTo(map).bindPopup("Konia Villas" + gmapsLink);
+
+
 
 });
 </script>

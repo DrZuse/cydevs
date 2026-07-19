@@ -45,6 +45,9 @@
     <p>Lofos — новый квартал в составе курорта Minthis, расположенный на самой высокой точке курорта. Название означает «холм» по-гречески. С высоты открываются панорамные виды на горы, поля для гольфа и Средиземное море.</p>
     <p class="muted">Проект Lofos расположен на наивысшей точке курорта Minthis (Пафос). Стартовая цена от €715,000 + VAT, диапазон площадей 110–223 кв.м. Панорамные виды 360°: море, горы, гольф-поле. Типы жилья: 2-спальные апартаменты, дуплекс-апартаменты, одноуровневые и 3-спальные виллы. На странице нет таблицы конкретных юнитов с номерами, ценами по юнитам и поэтажными планами — указаны только типовые описания.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -182,6 +185,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.823809,32.498417" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -285,6 +289,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.823809,32.498417],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.823809,32.498417]).addTo(map).bindPopup("Lofos at Minthis" + gmapsLink);
+
+
 
 });
 </script>

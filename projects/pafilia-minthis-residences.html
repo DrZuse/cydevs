@@ -45,6 +45,36 @@
     <p>Minthis Residences — коллекция уникальных домов с возможностью кастомизации. В проекте используются натуральные материалы, предусмотрены террасы и внутренние дворы. Планировку можно адаптировать под индивидуальные потребности.</p>
     
 
+    
+    
+    <div class="panel bzk" style="margin:14px 0;border-left:3px solid var(--brand)">
+      <h3 style="margin-top:0">Bazaraki <span class="muted small" style="font-weight:normal">· <a href="https://www.bazaraki.com/new-buildings/76-mintis_lofos/" target="_blank" rel="noopener">страница объявления</a> · снимок 2026-07-19</span></h3>
+      <p class="muted small" style="margin:2px 0 8px">Ниже — только сведения, которых нет на сайте застройщика (источник правды — сайт застройщика).</p>
+      <p style="margin:6px 0"><b>Цена по объявлению:</b> €720.000 – €1.955.000 +VAT</p>
+      
+      <div class="row">
+        <span class="chip" title="Источник: bazaraki.com">срок сдачи: 2027</span><span class="chip" title="Источник: bazaraki.com">паркинг: 1</span><span class="chip" title="Источник: bazaraki.com">вид: горы</span><span class="chip" title="Источник: bazaraki.com">этажей: 1-2</span><span class="chip" title="Источник: bazaraki.com">парковочные места: 18</span>
+      </div>
+      
+      
+      
+      <p class="small muted" style="margin:8px 0 0">Рядом: airport — 20 km, restaurants — 170 m, pharmacy — 8 km, school — 3 km, city center — 14 km, hospital — 10 km, beach — 16 km</p>
+      
+      
+      
+      <details style="margin-top:8px"><summary class="muted">Описание с bazaraki.com (EN)</summary>
+        <p class="small" style="white-space:pre-line">Named after and situated at the highest point of the resort, the calmness that you feel here is extraordinary. This new neighbourhood is the latest launch at Minthis, perched at the highest point of the resort, offering 360-degree panoramic views that stretch across mountain landscapes, manicured golf greens and the Mediterranean Sea beyond.
+
+Known for its seamless blend of nature and luxury, this elevated community includes a stunning selection of residences, spacious villas, and elegant apartments.
+
+Each property is designed to capture the essence of modern Mediterranean living, with open-plan layouts, expansive terraces, and floor-to-ceiling windows that maximize the spectacular views. Residents enjoy access to exclusive amenities such as infinity pools, private gardens, and tailored concierge services, all set against the serene backdrop of Minthis&#39;s natural beauty.</p></details>
+      
+      
+      <p class="small muted" style="margin:8px 0 0">📍 Точной метки на сайте застройщика нет — на карте используется метка из объявления bazaraki (заменила прежнюю приблизительную).</p>
+      
+    </div>
+    
+
     <h2>Характеристики</h2>
     
     
@@ -347,15 +377,16 @@
 
     <h2>Расположение</h2>
     
+    <p class="muted" style="margin:4px 0">Метка — из объявления на <a href="https://www.bazaraki.com/new-buildings/76-mintis_lofos/" target="_blank" rel="noopener">bazaraki.com</a> (точной метки на сайте застройщика нет).</p>
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.8256436,32.498604799999995" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.82353779999999,32.49646349999999" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
     <div class="panel">
       <h3 style="margin-top:0">Кратко</h3>
       <dl class="detail">
-        <dt>Цена</dt><dd>по запросу</dd>
+        <dt>Цена</dt><dd>€720 000 – €1 955 000 <a href="https://www.bazaraki.com/new-buildings/76-mintis_lofos/" target="_blank" rel="noopener" style="text-decoration:none" title="На сайте застройщика цена не найдена — указана по объявлению на bazaraki.com (клик — открыть источник)"><sup>?</sup></a></dd>
         <dt>Тип недвижимости</dt><dd>Смешанный</dd>
         <dt>Стадия</dt><dd>В продаже · в продаже</dd>
         <dt>Начало стройки</dt><dd>—</dd>
@@ -425,6 +456,9 @@
           <span class="muted">— главный источник (сайт застройщика)</span></li>
         
         
+        <li><a href="https://www.bazaraki.com/new-buildings/76-mintis_lofos/" target="_blank" rel="noopener">www.bazaraki.com/new-buildings/76-mintis_lofos/</a>
+          <span class="muted">· агрегатор</span></li>
+        
       </ul>
     </div>
     
@@ -443,11 +477,13 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.8256436,32.498604799999995" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.82353779999999,32.49646349999999" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
-  var map=L.map('map').setView([34.8256436,32.498604799999995],15);
+  var map=L.map('map').setView([34.82353779999999,32.49646349999999],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([34.8256436,32.498604799999995]).addTo(map).bindPopup("Minthis Residences" + gmapsLink);
+  L.marker([34.82353779999999,32.49646349999999]).addTo(map).bindPopup("Minthis Residences" + gmapsLink);
+
+
 
 });
 </script>

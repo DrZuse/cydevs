@@ -45,6 +45,36 @@
     <p>Virgo Villas — закрытый (gated) жилой комплекс в Хлораке (Пафос): 12 двухэтажных вилл с 3 спальнями плюс небольшая коллекция апартаментов. Позиционируется как для комфортного проживания, так и для инвестиций.</p>
     <p class="muted">Проект состоит из 12 двухэтажных трехспальных вилл и 8 двухспальных квартир. Виллы: площадь 150 кв.м (внутренняя), цена €385k-415k. Квартиры: общая закрытая площадь 93 кв.м, цена €275k-285k. В цену включены: кондиционеры (split units), солнечная фотоэлектрическая система 5 кВт, сигнализация, домофон. Возможна льготная ставка НДС 5% для первого жилья. Вилы можно дополнить частным бассейном и roof garden за доплату. Территория закрытая и охраняемая.</p>
 
+    
+    
+    <div class="panel bzk" style="margin:14px 0;border-left:3px solid var(--brand)">
+      <h3 style="margin-top:0">Bazaraki <span class="muted small" style="font-weight:normal">· <a href="https://www.bazaraki.com/new-buildings/392-virgo/" target="_blank" rel="noopener">страница объявления</a> · снимок 2026-07-19</span></h3>
+      <p class="muted small" style="margin:2px 0 8px">Ниже — только сведения, которых нет на сайте застройщика (источник правды — сайт застройщика).</p>
+      
+      
+      <div class="row">
+        <span class="chip" title="Источник: bazaraki.com">срок сдачи: 2028</span><span class="chip" title="Источник: bazaraki.com">лифт: да</span><span class="chip" title="Источник: bazaraki.com">вид: панорамный</span><span class="chip" title="Источник: bazaraki.com">доступ для колясок: да</span><span class="chip" title="Источник: bazaraki.com">кладовая: да</span><span class="chip" title="Источник: bazaraki.com">паркинг: 1</span><span class="chip" title="Источник: bazaraki.com">энергокласс: A</span><span class="chip" title="Источник: bazaraki.com">этажей: 1-2</span><span class="chip" title="Источник: bazaraki.com">парковочные места: 8</span>
+      </div>
+      
+      
+      
+      <p class="small muted" style="margin:8px 0 0">Рядом: airport — 25 km, city center — 4 km, beach — 1 km, school — 2 km, supermarket — 1 km, hospital — 3 km, mall — 5 km</p>
+      
+      
+      
+      <details style="margin-top:8px"><summary class="muted">Описание с bazaraki.com (EN)</summary>
+        <p class="small" style="white-space:pre-line">A gated community comprising 12 two-storey, 3-bedroom houses and 8 two-bedroom apartments. Optional private swimming pools and roof gardens are available, adding a touch of luxury to the serene surroundings.
+
+The modern architectural approach blends the development seamlessly with the natural environment, creating spacious and efficient interior spaces. The natural landscape surrounds the project, offering privacy and tranquility without compromising convenience, as all essential amenities are just 2 minutes away.
+
+Whether you are seeking an investment opportunity or a private residence, VIRGO is the ideal choice.</p></details>
+      
+      
+      <p class="small muted" style="margin:8px 0 0">📍 Гео-метка bazaraki расходится с меткой застройщика на 231 м — на карте ниже показаны обе (серая — bazaraki).</p>
+      
+    </div>
+    
+
     <h2>Характеристики</h2>
     
     
@@ -223,6 +253,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.799268,32.409722" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -303,6 +334,9 @@
           <span class="muted">— главный источник (сайт застройщика)</span></li>
         
         
+        <li><a href="https://www.bazaraki.com/new-buildings/392-virgo/" target="_blank" rel="noopener">www.bazaraki.com/new-buildings/392-virgo/</a>
+          <span class="muted">· агрегатор</span></li>
+        
       </ul>
     </div>
     
@@ -326,6 +360,13 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.799268,32.409722],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.799268,32.409722]).addTo(map).bindPopup("Virgo Villas" + gmapsLink);
+
+
+
+  // вторая метка — из объявления bazaraki (расходится с меткой застройщика)
+  L.circleMarker([34.79937364519858,32.412254000000004],{radius:9,color:'#777',fillColor:'#999',fillOpacity:0.7})
+    .addTo(map).bindPopup('Метка Bazaraki (231 м от метки застройщика)<br><a href="https://www.bazaraki.com/new-buildings/392-virgo/" target="_blank" rel="noopener">Открыть объявление</a>');
+  map.fitBounds(L.latLngBounds([[34.799268,32.409722],[34.79937364519858,32.412254000000004]]).pad(0.35));
 
 });
 </script>

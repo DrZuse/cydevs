@@ -45,6 +45,9 @@
     <p>IBC Tower — современный коммерческий центр на проспекте Апостолу Павлу в Пафосе, между центром города и туристическим районом Като Пафос. В здании расположены 2 выставочных зала (на первом этаже и антресоли), 3 офиса на 1–3 этажах, подземная парковка и сад на крыше с верандой. Рядом — университет, магазины, кафе и другие коммерческие объекты.</p>
     <p class="muted">Коммерческий проект: офисы, шоурумы, подземная парковка, крышный сад с верандой. Расположен на оживленной улице Apostolou Pavlou Avenue в Пафосе.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -115,6 +118,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.769056,32.417139" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -217,6 +221,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.769056,32.417139],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.769056,32.417139]).addTo(map).bindPopup("IBC Tower" + gmapsLink);
+
+
 
 });
 </script>

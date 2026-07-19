@@ -45,6 +45,9 @@
     <p>THE MEWS — жилой комплекс в центре Лимасола, состоящий из 30 современных двухкомнатных квартир. Проект расположен в тихом жилом районе, при этом магазины, рестораны и услуги находятся в пешей доступности.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -123,6 +126,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6852901,33.0332657" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -225,6 +229,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.6852901,33.0332657],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.6852901,33.0332657]).addTo(map).bindPopup("THE MEWS" + gmapsLink);
+
+
 
 });
 </script>

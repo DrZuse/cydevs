@@ -45,6 +45,9 @@
     <p>Жилой дом FC136 Athalassas Court 3 в районе Athalassas (Nicosia). Всего 15 юнитов: 13 продано, 2 свободно. Координаты — с карты застройщика.</p>
     <p class="muted">Проект FC136 Athalassas Court 3 расположен на проспекте Аталассас в Никосии. Близость к центру города и университету Кипра. Наличие покрытой парковки. Гарантия инвестиционных доходов. Энергоэффективность класса A. Наличие лифта, подготовка под фотоэлектрические панели, солнечный водонагреватель, система водоснабжения под давлением, теплоизолирующий фасад, двойное стекло.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -355,6 +358,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.1506375,33.4048065" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -461,6 +465,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.1506375,33.4048065],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.1506375,33.4048065]).addTo(map).bindPopup("FC136 Athalassas Court 3" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>ЖК «Pine Arc Residence» — проект компании Ark Noah&#39;s Holdings в районе Агиос Иоаннис (Лимасол). В составе студии и апартаменты с 1–2 спальнями. Всего 15 юнитов, свободно 3. Цены от €500 000 (+НДС). Проект на этапе строительства, плановый срок сдачи — Q1 2028.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -125,6 +128,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.672581,33.023294" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -227,6 +231,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.672581,33.023294],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.672581,33.023294]).addTo(map).bindPopup("Pine Arc Residence" + gmapsLink);
+
+
 
 });
 </script>

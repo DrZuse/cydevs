@@ -45,6 +45,9 @@
     <p>Akakia Villas — проект от Leptos Estates в Пафосе на склоне холма с видом на побережье и сельскую местность. Район предлагает здоровый горный климат и рассматривается как перспективная инвестиция. В состав входят виллы (3 и 4 спальни), офисы и магазины. Цена от €980 000.</p>
     <p class="muted">Проект расположен в составе закрытого комплекса Kamares Village (Пафос), на склоне холма с видами на сельскую местность и побережье. Бесплатное членство в Kamares Club (ресторан, бар, большой общий бассейн, теннисные корты, игровая комната). Транспортная доступность: 30 мин до аэропорта, 12 мин до моря, 4 мин до магазинов, 1 мин до медицины, 4 мин до школ. Виллы 3 и 4 спален с частными ландшафтными садами; часть цен указана с пометкой «+ VAT», одна без неё.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -213,6 +216,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.845985,32.430641" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -316,6 +320,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.845985,32.430641],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.845985,32.430641]).addTo(map).bindPopup("Akakia Villas" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>1- и 2-комнатные квартиры в районе Ливадия в Ларнаке. Часть квартир имеет частные террасы на крыше. Расположение — в нескольких минутах от новой марины и порта. Стадия: предварительные продажи.</p>
     <p class="muted">Новый проект в районе Ливадия. Состоит из квартир 1 и 2 спальни, некоторые с частными крышными террасами. Расположен в нескольких минутах от Новой Марины и порта.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -96,6 +99,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.954116,33.627975" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -198,6 +202,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.954116,33.627975],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.954116,33.627975]).addTo(map).bindPopup("Plus 79 - Livadia" + gmapsLink);
+
+
 
 });
 </script>

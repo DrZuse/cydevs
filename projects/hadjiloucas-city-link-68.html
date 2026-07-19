@@ -45,6 +45,9 @@
     <p>City Link (#68) — 4-этажный дом на 12 квартир на улице Othellou 13 в районе Каймакли/Оморфита, в тихом кармане за полицейским участком Оморфиты. Пешком до Frederick University, супермаркеты Lidl и Athienitis в паре минут, линейный парк Паллуриотиссы в 350 метрах. В продаже остались 3 большие однокомнатные квартиры (50 м² внутри) по €130.000+VAT. Строится (фотоотчёт май 2026).</p>
     <p class="muted">Юнит-таблица сайта (CMS ForSale): 3 доступно, 0 продано; всего в проекте 12 квартир (проверено 2026-07-16).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -124,6 +127,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.1801875,33.3895156" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -193,6 +197,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.1801875,33.3895156],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.1801875,33.3895156]).addTo(map).bindPopup("City Link (#68)" + gmapsLink);
+
+
 
 });
 </script>

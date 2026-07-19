@@ -45,6 +45,9 @@
     <p>NEMA Alto — камерный проект из трёх отдельно стоящих домов с 3 спальнями на собственных участках в районе Ипсонас, Лимассол. У каждого дома свой сад и придомовая территория, без общих стен и общих входов. Класс энергоэффективности A, ввод в эксплуатацию — Q3 2027. Цена от €445.000.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -151,6 +154,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.695667,32.969694" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -252,6 +256,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.695667,32.969694],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.695667,32.969694]).addTo(map).bindPopup("NEMA Alto" + gmapsLink);
+
+
 
 });
 </script>

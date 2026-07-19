@@ -45,6 +45,9 @@
     <p>Blue Diamond Villa — комплекс вилл Right Home Developers в Каво-Греко (округ Фамагуста). 1 юнит, спален: 4. Стадия: off-plan (предпродажи), сдача 2026. Цены от €4 200 000+VAT.</p>
     <p class="muted">Код проекта BD00 на сайте застройщика. Расстояния: удобства 300 m, аэропорт 45 km, море 600 m, транспорт 300 m.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -103,6 +106,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.985116,34.062526" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -207,6 +211,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.985116,34.062526],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.985116,34.062526]).addTo(map).bindPopup("Blue Diamond Villa" + gmapsLink);
+
+
 
 });
 </script>

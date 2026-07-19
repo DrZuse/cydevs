@@ -45,6 +45,34 @@
     <p>Garden Square — закрытый комплекс апартаментов и вилл в престижном районе Мутаянка, в 1,5 км от моря, с видами на Средиземное море и горы Троодос. Проект ориентирован на комфортную повседневную жизнь: частный сад и общий бассейн, детская игровая площадка, зона барбекю и тренажёрная зона. Квартиры сдаются со встроенной кухней и шкафами, в комплексе предусмотрен лифт и охраняемая территория с контролем доступа. Проект готов к заселению, часть юнитов ещё доступна для покупки. Точное количество спален и площади конкретных юнитов на открытых источниках не публикуются.</p>
     <p class="muted">Проект расположен в престижном районе Муттагияка (пригород Лимассола). Общая площадь участка более чем на 50% отведена под благоустроенные зоны: пешеходные дорожки, зоны отдыха, пикники, спорт и развлечения, детские площадки. Виллы оснащены VRV-кондиционированием, в квартирах предусмотрена разводка под сплит-системы. Вспомогательные помещения включают встроенные шкафы и кладовые.</p>
 
+    
+    
+    <div class="panel bzk" style="margin:14px 0;border-left:3px solid var(--brand)">
+      <h3 style="margin-top:0">Bazaraki <span class="muted small" style="font-weight:normal">· <a href="https://www.bazaraki.com/new-buildings/347-garden_square/" target="_blank" rel="noopener">страница объявления</a> · снимок 2026-07-19</span></h3>
+      <p class="muted small" style="margin:2px 0 8px">Ниже — только сведения, которых нет на сайте застройщика (источник правды — сайт застройщика).</p>
+      
+      
+      <div class="row">
+        <span class="chip" title="Источник: bazaraki.com">срок сдачи: 2025</span><span class="chip" title="Источник: bazaraki.com">вид: Seaview</span><span class="chip" title="Источник: bazaraki.com">доступ для колясок: да</span><span class="chip" title="Источник: bazaraki.com">паркинг: 1</span><span class="chip" title="Источник: bazaraki.com">этажей: 3</span><span class="chip" title="Источник: bazaraki.com">парковочные места: 1</span>
+      </div>
+      
+      
+      
+      <p class="small muted" style="margin:8px 0 0">Рядом: airport — 59 km, city center — 8 km, beach — 1 km, supermarket — 1 km, school — 2 km, hospital — 4 km, marina — 9 km</p>
+      
+      
+      
+      <details style="margin-top:8px"><summary class="muted">Описание с bazaraki.com (EN)</summary>
+        <p class="small" style="white-space:pre-line">The project is split into different zones. There are 28 exquisite apartments, each with one, two, or three bedrooms, within separate modern blocks. For residents who prefer detached houses, Garden Square additionally offers 7 luxurious villas with additional amenities to upraise the level of your living. More than half of the plot area is allocated for landscaping of the territory - with walking zones, recreation, picnics, sports and entertainment, playgrounds.
+
+Our experience in differentiated projects allowed the ergonomic layout to provide the maximum efficient use of spaces: thoughtful segmentation to private and guest zones, spacious kitchens and living rooms, planned storage spaces, master bedrooms with en-suite bathrooms, guest bathrooms all under high ceilings and protected by our uniquely designed tall doors.</p></details>
+      
+      
+      <p class="small muted" style="margin:8px 0 0">📍 Гео-метка bazaraki расходится с меткой застройщика на 202 м — на карте ниже показаны обе (серая — bazaraki).</p>
+      
+    </div>
+    
+
     <h2>Характеристики</h2>
     
     
@@ -237,6 +265,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.712389,33.106031" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -323,6 +352,9 @@
         <li><a href="https://estateofcyprus.com/new-buildings/garden-square-limassol/" target="_blank" rel="noopener">estateofcyprus.com/new-buildings/garden-squ...</a>
           <span class="muted">· агрегатор</span></li>
         
+        <li><a href="https://www.bazaraki.com/new-buildings/347-garden_square/" target="_blank" rel="noopener">www.bazaraki.com/new-buildings/347-garden_square/</a>
+          <span class="muted">· агрегатор</span></li>
+        
       </ul>
     </div>
     
@@ -346,6 +378,13 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.712389,33.106031],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.712389,33.106031]).addTo(map).bindPopup("GARDEN SQUARE" + gmapsLink);
+
+
+
+  // вторая метка — из объявления bazaraki (расходится с меткой застройщика)
+  L.circleMarker([34.712321080018135,33.108235886384094],{radius:9,color:'#777',fillColor:'#999',fillOpacity:0.7})
+    .addTo(map).bindPopup('Метка Bazaraki (202 м от метки застройщика)<br><a href="https://www.bazaraki.com/new-buildings/347-garden_square/" target="_blank" rel="noopener">Открыть объявление</a>');
+  map.fitBounds(L.latLngBounds([[34.712389,33.106031],[34.712321080018135,33.108235886384094]]).pad(0.35));
 
 });
 </script>

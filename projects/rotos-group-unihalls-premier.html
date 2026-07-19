@@ -45,6 +45,9 @@
     <p>Unihalls Premier — студенческое общежитие в престижном районе Никосии, вмещающее более 300 студентов. Состоит из 3 корпусов с холлом, тренажёрным залом, прачечными, террасами на крыше, ТВ-комнатой, учебной комнатой, зоной питания и парковкой.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -89,6 +92,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.165477,33.317145" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -191,6 +195,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.165477,33.317145],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.165477,33.317145]).addTo(map).bindPopup("Unihalls Premier" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,36 @@
     <p>Montes — бутиковая коллекция из 9 частных вилл в одной из самых престижных локаций деревни Тала (Tala), Пафос. Предлагаются дома с 3 и 4 спальнями, спроектированные так, чтобы максимизировать пространство, свет и панорамные виды на море и горы с любого ракурса. Современная архитектура органично вписана в природное окружение. Расположение — всего в нескольких минутах от инфраструктуры: центр Пафоса, пляж и гольф-поле в пределах 9 минут, деревня Тала — в 4 минутах. Проект находится в стадии строительства.</p>
     <p class="muted">Montes — бутиковая застройка вилл в Tala (Paphos). Обзор сайта заявляет 9 вилл, карточка проекта — 6 вилл, в таблице наличия перечислены 5 (N01, N03, N04, N05, N06; N02 отсутствует). Стадия Off Plan. Цена €760k–€880k. В цену включено: бассейн, крыша-сад, тёплые полы, кондиционеры (скрытые в гостиной + сплиты в спальнях), крытый паркинг с жалюзи, ворота, 5 КВт фотоэлектрическая система, сигнализация, домофон, подводка для зарядки электромобиля. Виды на море и горы.</p>
 
+    
+    
+    <div class="panel bzk" style="margin:14px 0;border-left:3px solid var(--brand)">
+      <h3 style="margin-top:0">Bazaraki <span class="muted small" style="font-weight:normal">· <a href="https://www.bazaraki.com/new-buildings/390-montes_residences/" target="_blank" rel="noopener">страница объявления</a> · снимок 2026-07-19</span></h3>
+      <p class="muted small" style="margin:2px 0 8px">Ниже — только сведения, которых нет на сайте застройщика (источник правды — сайт застройщика).</p>
+      
+      
+      <div class="row">
+        <span class="chip" title="Источник: bazaraki.com">срок сдачи: 2028</span><span class="chip" title="Источник: bazaraki.com">вид: панорамный</span><span class="chip" title="Источник: bazaraki.com">кладовая: да</span><span class="chip" title="Источник: bazaraki.com">энергокласс: A</span>
+      </div>
+      
+      
+      
+      <p class="small muted" style="margin:8px 0 0">Рядом: airport — 25 km, city center — 9 km, beach — 5 km, school — 1 km, supermarket — 4 km, hospital — 2 km, mall — 8 km</p>
+      
+      
+      
+      <details style="margin-top:8px"><summary class="muted">Описание с bazaraki.com (EN)</summary>
+        <p class="small" style="white-space:pre-line">A prestigious and exclusive development comprising just 9 luxury 3-bedroom villas, offering panoramic sea views across Pafos and Peyia Bay. Located in one of the most sought-after areas of Pafos, Tala, the project combines privacy, elegance, and exceptional surroundings.
+
+The villas feature spacious interior areas and have been thoughtfully designed to maximize the breathtaking sea and mountain views from every internal space. The development offers both 3 and 4 bedroom villa options, designed with modern architectural lines while incorporating locally sourced materials that blend harmoniously with the natural environment.
+
+Situated only 9 minutes from Pafos city center, the beach, and Tala golf course, and just 4 minutes from the village center, Iris represents an ideal location both for investment purposes and permanent living.</p></details>
+      
+      
+      <p class="small muted" style="margin:8px 0 0">📍 Гео-метка bazaraki расходится с меткой застройщика на 235 м — на карте ниже показаны обе (серая — bazaraki).</p>
+      
+    </div>
+    
+
     <h2>Характеристики</h2>
     
     
@@ -226,6 +256,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.841045,32.419177" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -307,6 +338,9 @@
         <li><a href="https://domenicasales.com/projects/montes/" target="_blank" rel="noopener">domenicasales.com/projects/montes/</a>
           <span class="muted">· риелтор</span></li>
         
+        <li><a href="https://www.bazaraki.com/new-buildings/390-montes_residences/" target="_blank" rel="noopener">www.bazaraki.com/new-buildings/390-montes_r...</a>
+          <span class="muted">· агрегатор</span></li>
+        
       </ul>
     </div>
     
@@ -330,6 +364,13 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.841045,32.419177],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.841045,32.419177]).addTo(map).bindPopup("Montes Villas" + gmapsLink);
+
+
+
+  // вторая метка — из объявления bazaraki (расходится с меткой застройщика)
+  L.circleMarker([34.84114584742682,32.421744000000004],{radius:9,color:'#777',fillColor:'#999',fillOpacity:0.7})
+    .addTo(map).bindPopup('Метка Bazaraki (235 м от метки застройщика)<br><a href="https://www.bazaraki.com/new-buildings/390-montes_residences/" target="_blank" rel="noopener">Открыть объявление</a>');
+  map.fitBounds(L.latLngBounds([[34.841045,32.419177],[34.84114584742682,32.421744000000004]]).pad(0.35));
 
 });
 </script>

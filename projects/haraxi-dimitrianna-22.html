@@ -45,6 +45,9 @@
     <p>Dimitrianna 22 — жилой дом на 10 квартир с 1 и 2 спальнями в тихом районе Лакатамии у зелёной зоны, рядом с линейным парком Педиэос. Продажи off-plan (раздел OFF PLAN сайта).</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -243,6 +246,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.121483,33.305156" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -312,6 +316,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.121483,33.305156],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.121483,33.305156]).addTo(map).bindPopup("Dimitrianna 22" + gmapsLink);
+
+
 
 });
 </script>

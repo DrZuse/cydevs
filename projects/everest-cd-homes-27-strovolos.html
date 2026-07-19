@@ -45,6 +45,9 @@
     <p>Everest Homes 27 — жилой дом на 6 просторных 2-спальных квартир (83,4 м² + крытая веранда 22,75 м²) на улице Агиу Эвлалиу 20 в Строволосе (Никосия), тихий район рядом с сервисами и правительственными зданиями. Здание энергоэффективное, с фотоэлектрическими системами 2 кВт. В продаже осталась квартира 101 — €203 000 + НДС (pricelist 06/2026), остальные 5 проданы.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -202,6 +205,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.139718,33.338353" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -271,6 +275,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.139718,33.338353],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.139718,33.338353]).addTo(map).bindPopup("Everest Homes 27" + gmapsLink);
+
+
 
 });
 </script>

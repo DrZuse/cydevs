@@ -45,6 +45,9 @@
     <p>AION — современный жилой комплекс в Като-Пафосе, самом инвестиционно привлекательном районе города. Включает пять однокомнатных и одну двухкомнатную квартиру на двух этажах. На первом этаже — парковка, предусмотрен лифт.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -189,6 +192,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.760312,32.418016" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -290,6 +294,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.760312,32.418016],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.760312,32.418016]).addTo(map).bindPopup("AION" + gmapsLink);
+
+
 
 });
 </script>

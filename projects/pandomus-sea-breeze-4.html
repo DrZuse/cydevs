@@ -45,6 +45,9 @@
     <p>Sea Breeze 4 — современный жилой комплекс из 8 апартаментов в районе Tsireio (Лимассол), сочетающий современную архитектуру и качественные материалы в открытой планировке. Квартиры комплекса отличаются просторными помещениями, большими балконами и спокойной цветовой палитрой интерьеров, что создаёт атмосферу отдыха вдали от городской суеты. Является одним из проектов серии Sea Breeze от Pandomus Group. (ПРИМЕЧАНИЕ: исходный URL указывал на sea-breeze-2, исправлен на sea-breeze-4)</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -113,6 +116,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6975737,33.0245456" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -186,6 +190,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.6975737,33.0245456],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.6975737,33.0245456]).addTo(map).bindPopup("Sea Breeze 4" + gmapsLink);
+
+
 
 });
 </script>

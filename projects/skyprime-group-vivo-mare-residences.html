@@ -45,6 +45,9 @@
     <p>Vivo Mare Residences — эксклюзивный современный проект вилл на первой линии моря в нетронутом уголке Айя-Напы, прямо у бирюзовой воды. Комплекс включает порядка девяти вилл; предлагаются крупные виллы с конфигурациями до 5–6 спален на нескольких уровнях, а также варианты с 3 спальнями. Виллы спроектированы так, чтобы обеспечить панорамные виды на море, а современная архитектура стирает границу между сушей и морем, создавая идеальную обстановку для отдыха у воды. Проект также используется под бренд элитной аренды SkyPrime Villas.</p>
     <p class="muted">primary_url — общий листинг проектов застройщика в Айя-Напе; по Vivo Mare Residences приведены только общие сведения. Посвящённая страница /our-project/vivo-mare-residences/ недоступна (404), детальные данные по юнитам, ценам и срокам сдачи на этой странице отсутствуют.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -84,6 +87,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.975907,34.0312765" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -189,6 +193,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.975907,34.0312765],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.975907,34.0312765]).addTo(map).bindPopup("Vivo Mare Residences" + gmapsLink);
+
+
 
 });
 </script>

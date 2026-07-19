@@ -45,6 +45,9 @@
     <p>Panthea — Agios Athanasios II — жилой дом на 9 квартир (1–3 спальни) в Агиос Афанасиос, Лимассол; на верхнем этаже — квартиры с руф-гарденами по 135 м².</p>
     <p class="muted">Проект указан в списке Upcoming Projects. Подробная информация доступна на странице проекта: https://easylivinghome.net/index.php/2024/03/17/panthea-agios-athanasios-ii/</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -274,6 +277,7 @@
 
     <h2>Расположение</h2>
     <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.7094757,33.0507518" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -375,6 +379,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.7094757,33.0507518],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.circle([34.7094757,33.0507518],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Panthea \u2013 Agios Athanasios II" + ' (примерно)' + gmapsLink);
+
+
 
 });
 </script>

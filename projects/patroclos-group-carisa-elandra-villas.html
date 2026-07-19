@@ -45,6 +45,9 @@
     <p>Carisa Elandra Villas — это 10 современных вилл, расположенных в 300 метрах от пляжей Ороклини. Каждая вилла оборудована частным бассейном, садом и крытой парковкой на просторных участках. Виллы предлагают элегантный дизайн и высокое качество отделки, что делает их идеальным выбором для постоянного проживания или отдыха. Некоторые виллы доступны для бронирования.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -297,6 +300,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.9649375,33.6586875" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -401,6 +405,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.9649375,33.6586875],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.9649375,33.6586875]).addTo(map).bindPopup("Carisa Elandra Villas" + gmapsLink);
+
+
 
 });
 </script>

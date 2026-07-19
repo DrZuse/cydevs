@@ -45,6 +45,9 @@
     <p>Проект Utopia Houses расположен в Никосии. Представлены дома современного дизайна с внутренней площадью 185 м² и верандами 39 м², включающие 3 спальни, 2 ванные, кухню, гостиную и просторный чердак, а также коммерческие помещения. Расположение рядом с университетом и удобный доступ к трассе делают проект подходящим для студентов.</p>
     <p class="muted">Идеально расположено для доступа к центру города и шоссе, вблизи Университета Кипра, национального парка Аталасса, торгового центра Mall of Cyprus, школ, супермаркетов, спортзалов, кафе и других магазинов.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -137,6 +140,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.108028,33.425667" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -239,6 +243,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.108028,33.425667],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.108028,33.425667]).addTo(map).bindPopup("Utopia Houses" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Малоэтажный дом Rhea Residences на западе Лимасола (Агиос-Иоаннис / Апостолос-Андреас): 3 квартиры, по одной на этаж. В продаже квартира на весь 3-й этаж (3 спальни, 95 м² внутренняя, 116.5 м² общая) за €420,000 (юнит 301); юниты 101 и 201 зарезервированы. На сайте застройщика тот же дом продублирован двумя карточками (GCD173 и GCD180) — слито в одну запись.</p>
     <p class="muted">Расположение: в 2 км от города и в 2 км от моря. Поблизости: школы, парки, детские площадки, кафе/бары/рестораны, супермаркеты, аптеки, магазины и сервисы. Год постройки 2026, состояние новое. Цена по запросу.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -150,6 +153,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.679168,33.020156" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -264,6 +268,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.679168,33.020156],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.679168,33.020156]).addTo(map).bindPopup("Rhea" + gmapsLink);
+
+
 
 });
 </script>

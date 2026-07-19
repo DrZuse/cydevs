@@ -45,6 +45,9 @@
     <p>5-этажное здание в центре Ларнаки, 4 мин от улицы Эрму, 5 мин от пляжа Финикудес: апартаменты на 2 спальни и пентхаусы с крышной террасой. Стадия пре-сейл, самые привлекательные цены на раннем этапе.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -117,6 +120,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.92167,33.630839" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -219,6 +223,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.92167,33.630839],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.92167,33.630839]).addTo(map).bindPopup("PLUS 74 (Downtown)" + gmapsLink);
+
+
 
 });
 </script>

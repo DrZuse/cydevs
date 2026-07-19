@@ -45,6 +45,9 @@
     <p>Комплекс из 18 люксовых вилл с 3 спальнями в Агиос Тихонас, Лимассол; каждая вилла с частным бассейном и парковкой на собственном участке.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -448,6 +451,7 @@
 
     <h2>Расположение</h2>
     <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.7264828,33.1409179" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -549,6 +553,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.7264828,33.1409179],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.circle([34.7264828,33.1409179],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Luxury Villas \u2013 Agios Tychonas" + ' (примерно)' + gmapsLink);
+
+
 
 });
 </script>

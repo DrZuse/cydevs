@@ -45,6 +45,9 @@
     <p>Жилой дом FC303 Makedonitissa Court 3 в районе Makedonitissa (Nicosia). Всего 7 юнитов: 1 продано, 6 свободно. Координаты — с карты застройщика.</p>
     <p class="muted">Проект завершён. Предусмотрены: теплоизоляционный фасад, алюминиевые окна с двойным стеклопакетом, лифт, солнечный водонагреватель, система напора воды. Возможна установка частной фотоэлектрической системы, электрического отопления и VRV-кондиционирования.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -219,6 +222,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.1489444,33.30475" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -325,6 +329,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.1489444,33.30475],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.1489444,33.30475]).addTo(map).bindPopup("FC303 Makedonitissa Court 3" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Закрытый (гейтед) посёлок вилл в деревне Продроми района Полис Хрисохус, окружённый цитрусовыми рощами с видом на полуостров Акамас. В пешей доступности от пляжа и центра Полиса, недалеко от марины Лачи. Villa No. 3 — вилла с 3 спальнями и 3 ванными комнатами, с террасой на крыше с видом на море и горы, собственным бассейном, кухней в итальянском стиле с гранитными столешницами и просторной гостиной открытой планировки с камином на дровах. Также упоминается Villa No. 5, доступная для аренды/продажи.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -103,6 +106,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.025202,32.410238" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -207,6 +211,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.025202,32.410238],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.025202,32.410238]).addTo(map).bindPopup("Green Valley Villas" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,34 @@
     <p>Люкс виллы на берегу в Пафосе, стоимостью 805,000 EUR. Проект из 28 вилл с уникальным прибережным расположением и панорамным видом на море.</p>
     
 
+    
+    
+    <div class="panel bzk" style="margin:14px 0;border-left:3px solid var(--brand)">
+      <h3 style="margin-top:0">Bazaraki <span class="muted small" style="font-weight:normal">· <a href="https://www.bazaraki.com/new-buildings/232-beachside_villas/" target="_blank" rel="noopener">страница объявления</a> · снимок 2026-07-19</span></h3>
+      <p class="muted small" style="margin:2px 0 8px">Ниже — только сведения, которых нет на сайте застройщика (источник правды — сайт застройщика).</p>
+      
+      
+      <div class="row">
+        <span class="chip" title="Источник: bazaraki.com">срок сдачи: 2028</span><span class="chip" title="Источник: bazaraki.com">кладовая: нет</span><span class="chip" title="Источник: bazaraki.com">доступ для колясок: нет</span><span class="chip" title="Источник: bazaraki.com">паркинг: 1</span><span class="chip" title="Источник: bazaraki.com">фотовольтаика: разводка</span><span class="chip" title="Источник: bazaraki.com">отопление: разводка</span><span class="chip" title="Источник: bazaraki.com">парковочные места: 26</span>
+      </div>
+      
+      
+      
+      <p class="small muted" style="margin:8px 0 0">Рядом: airport — 58 km, supermarket — 4 km, beach — 150 m, city center — 4 km, school — 4 km</p>
+      
+      
+      
+      <details style="margin-top:8px"><summary class="muted">Описание с bazaraki.com (EN)</summary>
+        <p class="small" style="white-space:pre-line">An extraordinary development of 28 villas designed to harmonise and enhance the lifestyle of their enviable beachside location. 
+
+Beachside Villas have been designed to sensitively blend with their privileged environment. All designs consists of four volumes that create a sequential and seamless living experience where there is a refined beauty in its simplicity. The volumes flow leading you to the open plan living area and the outdoor space to relax and enjoy Mediterranean life. Thanks to the careful villa orientation, many of the homes have stunning sea views from the living areas.</p></details>
+      
+      
+      <p class="small muted" style="margin:8px 0 0">📍 Гео-метка bazaraki расходится с меткой застройщика на 172 м — на карте ниже показаны обе (серая — bazaraki).</p>
+      
+    </div>
+    
+
     <h2>Характеристики</h2>
     
     
@@ -175,6 +203,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.08793,32.495963" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -253,6 +282,9 @@
           <span class="muted">— главный источник (сайт застройщика)</span></li>
         
         
+        <li><a href="https://www.bazaraki.com/new-buildings/232-beachside_villas/" target="_blank" rel="noopener">www.bazaraki.com/new-buildings/232-beachsid...</a>
+          <span class="muted">· агрегатор</span></li>
+        
       </ul>
     </div>
     
@@ -276,6 +308,13 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.08793,32.495963],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.08793,32.495963]).addTo(map).bindPopup("Beachside Villas" + gmapsLink);
+
+
+
+  // вторая метка — из объявления bazaraki (расходится с меткой застройщика)
+  L.circleMarker([35.08931053085983,32.49511702851164],{radius:9,color:'#777',fillColor:'#999',fillOpacity:0.7})
+    .addTo(map).bindPopup('Метка Bazaraki (172 м от метки застройщика)<br><a href="https://www.bazaraki.com/new-buildings/232-beachside_villas/" target="_blank" rel="noopener">Открыть объявление</a>');
+  map.fitBounds(L.latLngBounds([[35.08793,32.495963],[35.08931053085983,32.49511702851164]]).pad(0.35));
 
 });
 </script>

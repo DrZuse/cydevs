@@ -45,6 +45,9 @@
     <p>Kamares View Residence 2 — резиденция из 9 квартир (6 двухспальных и 3 односпальных) рядом с акведуком Камарес XVIII века в центре Ларнаки, с видом на акведук и солёное озеро. У каждой квартиры парковочное место и кладовая.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -80,6 +83,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.912301,33.59532" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -142,6 +146,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.912301,33.59532],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.912301,33.59532]).addTo(map).bindPopup("Kamares View Residence 2" + gmapsLink);
+
+
 
 });
 </script>

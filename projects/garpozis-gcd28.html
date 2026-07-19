@@ -45,6 +45,9 @@
     <p>Просторный трёхуровневый дом с 6 спальнями (крытая площадь 500 м², участок 732 м²) в районе Агия-Фила, построен в 2005 году; продаётся застройщиком как resale. Частный бассейн, камин, комната прислуги, зрелый сад, сигнализация и видеонаблюдение; вид на море и горы. Энергокласс B; 4 км до центра, 6 км до моря.</p>
     <p class="muted">Объект заявлен как Resale (вторичный), год постройки 2005, при этом указан Completion Time 2026 — противоречиво. 2 спальни с en-suite, 3 уровня, расстояние до города 4 км, до моря 6 км. Цена по запросу.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -104,6 +107,7 @@
 
     <h2>Расположение</h2>
     <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.7074482,33.0083101" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -208,6 +212,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.7074482,33.0083101],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.circle([34.7074482,33.0083101],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("House GCD28 (Agia Fyla)" + ' (примерно)' + gmapsLink);
+
+
 
 });
 </script>

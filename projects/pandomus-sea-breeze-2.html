@@ -45,6 +45,9 @@
     <p>Sea Breeze 2 — жилой дом в районе Germasogeia в Лимассоле, сдан в 2019 году. На сайте застройщика в продаже осталась одна трёхспальная квартира 201 площадью 135 м² на втором этаже.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -76,6 +79,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.7054125,33.0989844" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -146,6 +150,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.7054125,33.0989844],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.7054125,33.0989844]).addTo(map).bindPopup("Sea Breeze 2" + gmapsLink);
+
+
 
 });
 </script>

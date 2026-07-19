@@ -45,6 +45,9 @@
     <p>Akakia Residences — комплекс из 8 юнитов в центре Пафоса, вблизи моря. Включает пять 1-спальных апартаментов, две студии и пентхаус с двумя спальнями на верхнем этаже. Здание выполнено в современном стиле с использованием открытого бетона, мрамора и паркета в природной цветовой гамме. Все квартиры имеют веранды, пентхаус — просторную частную террасу с зоной барбекью.</p>
     <p class="muted">Жилой комплекс состоит из пяти квартир, двух студий и одного пентхауса. Внешняя отделка из бетона, мрамора и паркета.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -291,6 +294,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.767389,32.425397" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -392,6 +396,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.767389,32.425397],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.767389,32.425397]).addTo(map).bindPopup("Akakia Residences" + gmapsLink);
+
+
 
 });
 </script>

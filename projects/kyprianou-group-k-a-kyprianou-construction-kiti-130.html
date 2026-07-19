@@ -45,6 +45,9 @@
     <p>Проект отдельных домов на трёх уровнях, площадь 130 м² каждый. Дома предназначены для семей с тремя спальнями и удобствами для повседневной жизни.</p>
     <p class="muted">Contact: Tel: +357 99 525 108, Email: info@kyprianougroup.com, Address: Eleftherias 20, Aradippou, 7101, Larnaca. Disclaimer: interior renderings are artistic interpretations; final product delivery in accordance to architectural drawings.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -123,6 +126,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.856062,33.570294" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -225,6 +229,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.856062,33.570294],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.856062,33.570294]).addTo(map).bindPopup("Kiti 130" + gmapsLink);
+
+
 
 });
 </script>

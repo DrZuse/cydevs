@@ -45,6 +45,9 @@
     <p>Seaview Heights — проект в Лимассоле, городе между горами и морем с 17-километровой набережной. Комплекс предлагает виллы и апартаменты. Цена от €360 000.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -506,6 +509,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.723901,33.074764" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -607,6 +611,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.723901,33.074764],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.723901,33.074764]).addTo(map).bindPopup("Seaview Heights" + gmapsLink);
+
+
 
 });
 </script>

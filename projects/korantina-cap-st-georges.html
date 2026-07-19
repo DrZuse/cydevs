@@ -45,6 +45,9 @@
     <p>Виллы флагманского курорта застройщика Cap St Georges Hotel &amp; Resort — крупнейшего приморского резорта Кипра, раскинувшегося на участке около 580 000 кв. м с 2 км береговой линии на полуострове Св. Георгия в Пейе. Комплекс объединяет пятизвёздочный отель и более 200 роскошных вилл с 3–5 спальнями и панорамными видами на море. Первая очередь строительства завершена, вторая очередь (ещё около 200 вилл, а также больница, школа и спортивный центр) реализуется поэтапно ориентировочно до 2029–2030 гг. Резиденты получают доступ к клубному дому, спа, ресторанам, частному пляжу, спортивным площадкам, круглосуточному консьержу и охране. Виллы продаются как часть mixed-use курорта.</p>
     <p class="muted">Проект внесён в список престижных наград: Best Luxury Development, Best Under Construction Development, European Property Awards</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -124,6 +127,7 @@
 
     <h2>Расположение</h2>
     <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.8835052,32.3803202" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -228,6 +232,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.8835052,32.3803202],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.circle([34.8835052,32.3803202],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Cap St Georges Resort villas" + ' (примерно)' + gmapsLink);
+
+
 
 });
 </script>

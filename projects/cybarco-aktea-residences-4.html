@@ -45,6 +45,9 @@
     <p>Aktea Residences 4 — часть успешной серии городских апартаментов в нескольких минутах от побережья Лимассола, сочетающая эклектичный дизайн и премиальные материалы. Рядом — пляжи, ночная жизнь и деловой центр. В проекте представлены апартаменты от €510 000.</p>
     <p class="muted">Класс энергоэффективности A (energy performance certificate). Всего 24 городские квартиры, общий бассейн. 100% квартир в Aktea Residences 1, 2 и 3 проданы (не относится к 4-й очереди).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -250,6 +253,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6976807,33.0613501" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -351,6 +355,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.6976807,33.0613501],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.6976807,33.0613501]).addTo(map).bindPopup("Aktea Residences 4" + gmapsLink);
+
+
 
 });
 </script>

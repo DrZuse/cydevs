@@ -45,6 +45,9 @@
     <p>Carisa Olivea Resort &amp; Homes — это жилой комплекс из 35 вилл с двумя, тремя и четырьмя спальнями, расположенный в современной ландшафтной зоне в Ороклини. Виллы предлагают просторные участки, частные бассейны и высококачественные отделочные материалы. Идеально подходит для тех, кто ищет элегантный стиль жизни на средиземноморском побережье.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -281,6 +284,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.9751125,33.6523906" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -388,6 +392,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.9751125,33.6523906],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.9751125,33.6523906]).addTo(map).bindPopup("Carisa Olivea Resort \u0026 Homes" + gmapsLink);
+
+
 
 });
 </script>

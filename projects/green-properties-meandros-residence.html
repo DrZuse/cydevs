@@ -45,6 +45,9 @@
     <p>Meandros Residence — трёхэтажный жилой комплекс из 6 люксовых квартир класса энергоэффективности A в районе Строволос, Никосия, с удобным доступом к центру города. В квартирах предусмотрены солнечные водонагреватели и фотовольтаические панели с сетевым учётом (net-metering), а также итальянские кухни. Интерьеры комфортные, спальни просторные, с большими основными и вспомогательными террасами. Действует программа рассрочки MISO MISO (50% предоплата + 50 беспроцентных платежей). Один из юнитов (3-спальная квартира, ID 101) отмечен агрегатором Crypto Real Estate.</p>
     <p class="muted">Проект Meandros Residence расположен в Строволосе, Никосия. Современный жилой комплекс с акцентом на энергоэффективность.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -103,6 +106,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.148403,33.361357" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -210,6 +214,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.148403,33.361357],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.148403,33.361357]).addTo(map).bindPopup("Meandros Residence" + gmapsLink);
+
+
 
 });
 </script>

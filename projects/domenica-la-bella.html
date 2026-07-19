@@ -45,6 +45,37 @@
     <p>La Bella Apartments — это комплекс из трёх двухэтажных зданий на 16 квартир в районе Колони, Героскипу, Пафос, всего в 2 км от моря. Предусмотрены большой общий бассейн, ландшафтные сады и сады на крыше каждого здания. Комплекс находится на охраняемой территории. В продаже студии, апартаменты и виллы с 1–2 спальнями. Статус: строится.</p>
     
 
+    
+    
+    <div class="panel bzk" style="margin:14px 0;border-left:3px solid var(--brand)">
+      <h3 style="margin-top:0">Bazaraki <span class="muted small" style="font-weight:normal">· <a href="https://www.bazaraki.com/new-buildings/61-la_bella/" target="_blank" rel="noopener">страница объявления</a> · снимок 2026-07-19</span></h3>
+      <p class="muted small" style="margin:2px 0 8px">Ниже — только сведения, которых нет на сайте застройщика (источник правды — сайт застройщика).</p>
+      
+      
+      <div class="row">
+        <span class="chip" title="Источник: bazaraki.com">кладовая: да</span><span class="chip" title="Источник: bazaraki.com">лифт: да</span><span class="chip" title="Источник: bazaraki.com">доступ для колясок: да</span><span class="chip" title="Источник: bazaraki.com">паркинг: 1</span><span class="chip" title="Источник: bazaraki.com">энергокласс: A</span><span class="chip" title="Источник: bazaraki.com">вид: панорамный</span><span class="chip" title="Источник: bazaraki.com">отопление: да</span><span class="chip" title="Источник: bazaraki.com">этажей: 1-2</span><span class="chip" title="Источник: bazaraki.com">парковочные места: 6</span>
+      </div>
+      
+      
+      
+      <p class="small muted" style="margin:8px 0 0">Рядом: school — 500 m, airport — 9 km, beach — 2 km, city center — 5 km, restaurants — 500 m, golf courses — 8 km, supermarket — 500 m</p>
+      
+      
+      
+      <details style="margin-top:8px"><summary class="muted">Описание с bazaraki.com (EN)</summary>
+        <p class="small" style="white-space:pre-line">Welcome to &#34;La Bella,&#34; a beautiful housing project located just 2 kilometers from the sea. It combines the charm of the coast with modern living. The project consists of three 2-
+storey buildings, and a total of 16 luxury apartments.
+
+Tenants can enjoy a large communal swimming pool, a roof garden on each building, landscaped gardens  and the safety of a gated community.
+
+Choose from four studios, eight 1-bed or four 2-beds apartments, all designed to be comfortable and practical.</p></details>
+      
+      
+      <p class="small muted" style="margin:8px 0 0">📍 Гео-метка bazaraki расходится с меткой застройщика на 2712 м — на карте ниже показаны обе (серая — bazaraki).</p>
+      
+    </div>
+    
+
     <h2>Характеристики</h2>
     
     
@@ -226,6 +257,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.757666,32.497504" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -306,6 +338,9 @@
           <span class="muted">— главный источник (сайт застройщика)</span></li>
         
         
+        <li><a href="https://www.bazaraki.com/new-buildings/61-la_bella/" target="_blank" rel="noopener">www.bazaraki.com/new-buildings/61-la_bella/</a>
+          <span class="muted">· агрегатор</span></li>
+        
       </ul>
     </div>
     
@@ -329,6 +364,13 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.757666,32.497504],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.757666,32.497504]).addTo(map).bindPopup("La Bella Apartments" + gmapsLink);
+
+
+
+  // вторая метка — из объявления bazaraki (расходится с меткой застройщика)
+  L.circleMarker([34.749938811567766,32.4693468939894],{radius:9,color:'#777',fillColor:'#999',fillOpacity:0.7})
+    .addTo(map).bindPopup('Метка Bazaraki (2712 м от метки застройщика)<br><a href="https://www.bazaraki.com/new-buildings/61-la_bella/" target="_blank" rel="noopener">Открыть объявление</a>');
+  map.fitBounds(L.latLngBounds([[34.757666,32.497504],[34.749938811567766,32.4693468939894]]).pad(0.35));
 
 });
 </script>

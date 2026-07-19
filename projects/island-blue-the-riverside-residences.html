@@ -45,6 +45,9 @@
     <p>The Riverside Residences — эксклюзивный комплекс из двух вилл в престижном районе Кониа (Пафос). Одна вилла с 3 спальнями, вторая — с 5 спальнями. Архитектура выделяется отделкой из текстурного бетона, просторные интерьеры с открытой планировкой наполнены естественным светом. На участке — ландшафтные сады и частный бассейн.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -183,6 +186,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.779076,32.459974" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -284,6 +288,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.779076,32.459974],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.779076,32.459974]).addTo(map).bindPopup("The Riverside Residences" + gmapsLink);
+
+
 
 });
 </script>

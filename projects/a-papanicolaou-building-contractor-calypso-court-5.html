@@ -45,6 +45,9 @@
     <p>Жилой комплекс Calypso Court 5 расположен в центральной части Кития, Ларнака, с удобным доступом к пляжам и аэропорту. Проект включает апартаменты с одной и двумя спальнями с высокими стандартами отделки и открытой планировкой.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -114,6 +117,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.9196442,33.6333031" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -216,6 +220,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.9196442,33.6333031],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.9196442,33.6333031]).addTo(map).bindPopup("Calypso Court 5" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Hercules Residence — новый жилой проект застройщика Sacoco Constructions в районе Энгоми (Никосия), продолжающий линейку именных резиденций компании (после Achillius Residence No.40). Подробные характеристики квартир (число спален, площади, цены) не опубликованы в открытых источниках — детали доступны по запросу у застройщика. По аналогии с соседними проектами компании ожидается железобетонное сейсмостойкое строительство с современной отделкой.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -324,6 +327,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.167641,33.33263" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -430,6 +434,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.167641,33.33263],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.167641,33.33263]).addTo(map).bindPopup("Hercules Residence (Sacoco No.41)" + gmapsLink);
+
+
 
 });
 </script>

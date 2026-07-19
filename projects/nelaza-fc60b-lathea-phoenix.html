@@ -45,6 +45,9 @@
     <p>Жилой дом FC60B Lathea Phoenix в районе Lathea Phoenix (Larnaca). Всего 18 юнитов: 16 продано, 2 свободно. Координаты — с карты застройщика.</p>
     <p class="muted">Проект находится на стадии строительства. Упомянуты гарантии на титулы. Энергосертификат класса A. На сайте доступны технические спецификации на английском и греческом языках.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -406,6 +409,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.954294,33.5978947" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -510,6 +514,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.954294,33.5978947],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.954294,33.5978947]).addTo(map).bindPopup("FC60B Lathea Phoenix" + gmapsLink);
+
+
 
 });
 </script>

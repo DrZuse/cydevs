@@ -45,6 +45,9 @@
     <p>Kalamon Ethera — современный жилой комплекс в Кити, район Ларнаки. Включает апартаменты, пентхаусы и офисы. Удобства — тренажёрный зал, бассейн, сауна, лаунж-зона и зона барбекю. Цена от €175 000. Статус: off-plan.</p>
     <p class="muted">Расстояния: Университет 4 км, Аэропорт 3 км, Супермаркет 0.5 км, Школа 0.5 км, Больница 10 км, Пляж 3 км, Центр 0.5 км. Локация: Ларнака, Кити. Статус: Off-plan. Энергоэффективность: класс A.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -525,6 +528,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.856943,33.590913" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -626,6 +630,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.856943,33.590913],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.856943,33.590913]).addTo(map).bindPopup("KALAMON ETHERA" + gmapsLink);
+
+
 
 });
 </script>

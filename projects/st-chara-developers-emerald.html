@@ -45,6 +45,9 @@
     <p>Жилой дом на 9 люксовых квартир с 3 спальнями в Строволосе (арх. Maratheftis &amp; Yiannouris): большие веранды, частные руф-гардены, паркинг и кладовые. Сдан в июне 2023, числится в каталоге доступных объектов; таблицы наличия на странице нет.</p>
     <p class="muted">Таблицы наличия на странице проекта нет — доступность по позиции в каталоге «Available».</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -74,6 +77,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.143053,33.349359" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -176,6 +180,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.143053,33.349359],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.143053,33.349359]).addTo(map).bindPopup("Emerald Residence" + gmapsLink);
+
+
 
 });
 </script>

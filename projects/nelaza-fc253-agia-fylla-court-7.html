@@ -45,6 +45,9 @@
     <p>Жилой дом FC253 Agia Fylla Court 7 в районе Agia Fylla (Limassol). Всего 29 юнитов: 14 продано, 14 свободно, 1 в брони. Координаты — с карты застройщика.</p>
     <p class="muted">Два жилых блока (A и B), квартиры с 1-3 спальнями. Покрытая парковка, лифт, кладовые. Энергоэффективность класса A. Подготовка под фотоэлектрические панели, электрическое отопление и кондиционирование. Солнечный водонагреватель, система водоснабжения под давлением.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -593,6 +596,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.7186073,33.0063648" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -699,6 +703,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.7186073,33.0063648],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.7186073,33.0063648]).addTo(map).bindPopup("FC253 Agia Fylla Court 7" + gmapsLink);
+
+
 
 });
 </script>

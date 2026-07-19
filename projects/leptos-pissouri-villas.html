@@ -45,6 +45,9 @@
     <p>Pissouri Villas в Лимассоле предлагают выбор отдельно стоящих вилл и бунгало с 2, 3, 4 и 5 спальнями. Просторные ландшафтные сады предусматривают место для частных бассейнов и зон барбекю. Проект подходит для отдыха, постоянного проживания и инвестиций. В состав также входят офисы и магазины. Цена — от €748 000.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -172,6 +175,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.660011,32.699467" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -275,6 +279,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.660011,32.699467],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.660011,32.699467]).addTo(map).bindPopup("Pissouri Villas" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Проект в Никосии состоит из 1- и 2-спальных квартир. Расположен в 2 минутах от Mall of Engomi и в 3 минутах от Университета Никосии.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -96,6 +99,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.159391,33.313914" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -198,6 +202,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.159391,33.313914],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.159391,33.313914]).addTo(map).bindPopup("PLUS 73 (ENGOMI)" + gmapsLink);
+
+
 
 });
 </script>

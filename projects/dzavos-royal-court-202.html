@@ -45,6 +45,9 @@
     <p>Royal Court 202 расположен в Гермасойе, в 3 км от центра Лимасола и вблизи побережья. Квартиры выполнены из качественных материалов и отличаются просторными помещениями. Гостиные открытой планировки выходят на большие балконы со стеклянными ограждениями.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -76,6 +79,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6852901,33.0332657" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -178,6 +182,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.6852901,33.0332657],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.6852901,33.0332657]).addTo(map).bindPopup("ROYAL COURT 202" + gmapsLink);
+
+
 
 });
 </script>

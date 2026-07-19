@@ -45,6 +45,9 @@
     <p>Жилой дом FC102 Lakatamia Court II в районе Lakatamia (Nicosia). Всего 17 юнитов: 14 продано, 3 свободно. Координаты — с карты застройщика.</p>
     <p class="muted">Проект находится в Никосии, проспект Церьо 137, Лакатамия. Наличие покрытых парковочных мест для каждой квартиры. Энергетический класс А. Предусмотрена установка фотоэлектрической системы, электрического отопления и кондиционирования. Солнечный водонагреватель, система водоснабжения под давлением. Лифт. Импортная керамическая плитка и санузел. Некоторые квартиры имеют крытый сад на крыше.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -389,6 +392,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.0897932,33.3075884" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -495,6 +499,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.0897932,33.3075884],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.0897932,33.3075884]).addTo(map).bindPopup("FC102 Lakatamia Court II" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Conifer — жилой проект в районе Закаки, Западный Лимассол, рядом с курортом-казино City of Dreams Mediterranean, торговым центром My Mall и пляжем Lady&#39;s Mile. Предлагает квартиры с 1 и 2 спальнями класса энергоэффективности A+, с фотоэлектрическими панелями для мест общего пользования, эффектными крышными садами и видами на море. В комплексе предусмотрены тренажёрный зал, бассейн и джакузи. У проекта есть отдельный сайт compassconifer.com.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -94,6 +97,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.654579,33.002723" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -202,6 +206,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.654579,33.002723],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.654579,33.002723]).addTo(map).bindPopup("Conifer" + gmapsLink);
+
+
 
 });
 </script>

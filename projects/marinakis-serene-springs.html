@@ -45,6 +45,9 @@
     <p>Serene Springs — новый жилой проект Marinakis Property в Ларнаке. Числится в разделе Upcoming Properties на сайте девелопера.</p>
     <p class="muted">Проект в стадии Upcoming (анонсирован, ещё не сдан) в Livadia, Larnaca. Представлены только типовые планировки стандартных юнитов (1 и 2 спальни) без номеров/цен. Контакты застройщика: (+357) 24 629 000, [email protected]</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -148,6 +151,7 @@
 
     <h2>Расположение</h2>
     <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.916,33.624" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -249,6 +253,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.916,33.624],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.circle([34.916,33.624],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Serene Springs" + ' (примерно)' + gmapsLink);
+
+
 
 });
 </script>

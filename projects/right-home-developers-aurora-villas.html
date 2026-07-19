@@ -45,6 +45,9 @@
     <p>Aurora Villas — комплекс вилл Right Home Developers в Пернере (округ Фамагуста). 4 юнита, спален: 4. Стадия: off-plan (предпродажи), сдача 2026. Цены от €650 000+VAT.</p>
     <p class="muted">Код проекта AV00 на сайте застройщика. Расстояния: удобства 300 m, аэропорт 60 km, море 1 km, транспорт 300 m.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -168,6 +171,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.031205,34.030694" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -271,6 +275,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.031205,34.030694],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.031205,34.030694]).addTo(map).bindPopup("Aurora Villas" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Новый проект Ridge Residences, анонсированный в апреле 2026 года в составе шести новых очередей Aristo Developers. Состоит из двух представительных вилл с 4 спальнями (+ кладовая) на исключительно больших участках в составе курорта Venus Rock Golf Resort. Виллы построены в трёх уровнях (цокольный, первый и второй этажи), с частными бассейнами и просторными жилыми зонами, и открывают виды на Средиземное море, поле для гольфа Secret Valley и окружающий ландшафт.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -155,6 +158,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.705833,32.613611" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -261,6 +265,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.705833,32.613611],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.705833,32.613611]).addTo(map).bindPopup("Ridge Residences" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Imperial Residence — четырёхэтажный жилой комплекс из 8 люксовых квартир класса энергоэффективности A в районе Акрополис, Никосия, с удобным доступом к центру города. Комфортные интерьеры, просторные спальни, большие основные и вспомогательные террасы. По проекту доступна программа CRAZY DEAL — покупка по специальной цене со скидкой (без учёта кухонной мебели, внутренних дверей и шкафов, полов/плитки, сантехники, розеток и малярных работ, которые докупаются отдельно). Один из юнитов (2-спальная квартира, ID 301) отмечен агрегатором Crypto Real Estate.</p>
     <p class="muted">Imperial Residence расположен в районе Строволос, Никосия. Проект состоит из современных квартир с качественной отделкой.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -124,6 +127,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.149225,33.368266" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -231,6 +235,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.149225,33.368266],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.149225,33.368266]).addTo(map).bindPopup("Imperial Residence" + gmapsLink);
+
+
 
 });
 </script>

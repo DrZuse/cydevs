@@ -43,6 +43,9 @@
     <p>NEMA Brilliant — это жилой комплекс из 11 квартир в самом центре Лимассола, в пешей доступности от Старого города, марины и набережной. Комплекс предлагает квартиры с планировками 1+1, 2 и 3 спальни, расположенные на четырёх этажах. Все квартиры имеют крытую парковку и кладовую. Здание оснащено лифтом, системой видеодомофона, энергоэффективными стеклопакетами и фотогальванической системой. Класс энергоэффективности A. Ввод в эксплуатацию — Q1 2028.</p>
     <p class="muted">City-centre living in the truest sense. The old town, the marina, and the seafront are all within walking distance. Eleven apartments across four floors, from one-bedroom-plus layouts to three-bedroom homes.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -285,6 +288,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.673139,33.028972" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -386,6 +390,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.673139,33.028972],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.673139,33.028972]).addTo(map).bindPopup("NEMA Brilliant" + gmapsLink);
+
+
 
 });
 </script>

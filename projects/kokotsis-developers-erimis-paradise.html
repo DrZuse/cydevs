@@ -45,6 +45,9 @@
     <p>Современный жилой проект из 15 резиденций с 3-4 спальнями. Каждое жилище спроектировано с учётом энергоэффективности и комфорта. Развитие расположено в спокойном районе рядом со школами, супермаркетами и другими удобствами.</p>
     <p class="muted">Проект состоит из 15 резиденций с 3-4 спальнями. Энергоэффективный дизайн, современная архитектура, просторные интерьеры. Наличие парковки. Расположен в тихом районе.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -168,6 +171,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6753798,32.9171602" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -269,6 +273,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.6753798,32.9171602],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.6753798,32.9171602]).addTo(map).bindPopup("Erimis Paradise" + gmapsLink);
+
+
 
 });
 </script>

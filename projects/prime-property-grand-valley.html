@@ -45,6 +45,9 @@
     <p>Grand Valley — комплекс вилл в традиционном кипрском стиле недалеко от туристических и деловых районов Лимассола. Предлагает трёхспальные дома различных планировок, а также офисы и магазины. Статус — сдан.</p>
     <p class="muted">Проект расположен в традиционной кипрской деревне Пургос, в 2 км от моря. Предлагаются виллы с 3 спальнями, современной архитектурой и большими участками. Энергоэффективность класса A+. Основные преимущества: тихий район, близость к пляжу и туристической зоне Лимассола, инфраструктура для постоянного проживания.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -89,6 +92,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.740898,33.188956" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -191,6 +195,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.740898,33.188956],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.740898,33.188956]).addTo(map).bindPopup("Grand Valley" + gmapsLink);
+
+
 
 });
 </script>

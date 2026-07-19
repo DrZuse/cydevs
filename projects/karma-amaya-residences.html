@@ -45,6 +45,9 @@
     <p>Amaya Residences от Karma Group — новый жилой комплекс в районе Каппарис (Фамагуста), между Паралимни и Протарасом. Проект включает 37 объектов — апартаменты с 1 и 2 спальнями, с крытой площадью от 66 до 150 кв.м. Комплекс ориентирован на современный образ жизни в шаговой доступности от пляжей восточного побережья, магазинов и городских удобств. (По части источников проект также описывается как комплекс из 15 стильных апартаментов — данные о числе юнитов расходятся.)</p>
     <p class="muted">Жилой комплекс в Каппарисе (район Фамагуста, Кипр), в 1.2 км от пляжа и 600 м от магазинов. Статус Off Plan. Всего 37 юнитов (квартиры 1-2 спален и коммерческий магазин). Энергокласс A. Площади указаны как Total Buildable Area (крытая) + Verandas; сумма дана в total_area_m2.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -753,6 +756,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.04773,34.00749" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -854,6 +858,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.04773,34.00749],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.04773,34.00749]).addTo(map).bindPopup("Amaya Residences" + gmapsLink);
+
+
 
 });
 </script>

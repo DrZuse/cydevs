@@ -45,6 +45,9 @@
     <p>Avaton Residence — новый жилой комплекс из 8 люксовых квартир класса энергоэффективности A+ в районе Меса Гитония, Лимасол, примерно в 1 км от моря, рядом с муниципальным парком, с удобным доступом к центру города и автомагистрали. Использованы энергоэффективные алюминиевые системы, подогрев полов, кондиционирование, солнечный водонагреватель и фотовольтаические панели. У каждой квартиры крытое парковочное место и кладовая. Квартиры с открытыми, ничем не перекрытыми видами и просторными верандами.</p>
     <p class="muted">Avaton Residence расположен в районе Mesa Geitonia, Лимассол. Проект включает современные апартаменты с крытыми парковочными местами и кладовыми.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -76,6 +79,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.694867,33.058006" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -183,6 +187,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.694867,33.058006],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.694867,33.058006]).addTo(map).bindPopup("Avaton Residence" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Prime Tower — жилой высотный проект, указанный в каталоге девелопмента Prime Property Group. Публичная информация по нему крайне ограничена: при поиске данные о локации, этажности, квартирографии, ценах и сроках не подтверждаются отдельно и во многих источниках пересекаются с проектом Sky Tower. Ввиду недостатка верифицированных данных характеристики следует уточнять напрямую у застройщика; во избежание ошибок конкретные параметры здесь не приводятся.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -106,6 +109,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.700168,33.091673" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -213,6 +217,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.700168,33.091673],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.700168,33.091673]).addTo(map).bindPopup("Prime Tower" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Almond Tree Villas — роскошная вилла в центре Пафоса, в 200 метрах от ратуши, школ и центральной площади. Вилла на трёх уровнях насчитывает 4 спальни и 4 ванные комнаты, оснащена частным лифтом. Главная особенность — сад на крыше с бассейном и зоной барбекью, откуда открывается панорамный вид на город и море.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -144,6 +147,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.771806,32.4265" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -246,6 +250,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.771806,32.4265],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.771806,32.4265]).addTo(map).bindPopup("Almond Tree Villas" + gmapsLink);
+
+
 
 });
 </script>

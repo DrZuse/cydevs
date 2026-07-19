@@ -45,6 +45,9 @@
     <p>Жилой комплекс Habitat Apartment Residences предлагает современные апартаменты с продуманной планировкой, оптимизирующей пространство и естественное освещение. Проект включает в себя смарт-технологии, парковочные места, кладовые и благоустроенные общие зоны, что делает его привлекательным вариантом для инвестиций и комфортного проживания.</p>
     <p class="muted">Страница описывает пилотисный этаж (Pilotis Floor) комплекса Habitat Apartment Residences: прихожая, общие зоны, лифт, парковка для резидентов/гостей/инвалидов, кладовые, сад, мусорная зона, кабинет счетчиков EAC.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -84,6 +87,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.7519527,32.4292465" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -198,6 +202,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.7519527,32.4292465],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.7519527,32.4292465]).addTo(map).bindPopup("Habitat Apartment Residences" + gmapsLink);
+
+
 
 });
 </script>

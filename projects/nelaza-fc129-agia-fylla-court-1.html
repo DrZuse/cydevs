@@ -45,6 +45,9 @@
     <p>Жилой дом FC129 Agia Fylla Court A в районе Agia Fylla A (Limassol). Всего 10 юнитов: 8 продано, 2 свободно. Координаты — с карты застройщика.</p>
     <p class="muted">Расположен на улице Rossias Street в Лимассоле, рядом со старшей школой Agia Fyla. Легкий доступ в центр города и к удобствам. Наличие закрытой парковки. Энергоэффективность класса A. Подготовка к установке фотоэлектрических панелей, электрического отопления и кондиционирования. Солнечный водонагреватель, система напора воды. Лифт, кладовые.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -270,6 +273,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.7248726,33.0156016" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -376,6 +380,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.7248726,33.0156016],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.7248726,33.0156016]).addTo(map).bindPopup("FC129 Agia Fylla Court A" + gmapsLink);
+
+
 
 });
 </script>

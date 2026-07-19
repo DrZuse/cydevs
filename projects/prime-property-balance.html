@@ -45,6 +45,9 @@
     <p>Balance — огороженный многофункциональный комплекс в Ливадии (Ларнака), объединяющий жилые и рабочие пространства. Проект предлагает апартаменты, студии и офисы в безопасной архитектурной среде, ориентированной на семейные ценности и современные профессиональные потребности. Статус проекта — off-plan.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -150,6 +153,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.943425,33.635877" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -251,6 +255,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.943425,33.635877],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.943425,33.635877]).addTo(map).bindPopup("Balance" + gmapsLink);
+
+
 
 });
 </script>

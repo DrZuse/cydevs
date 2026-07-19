@@ -45,6 +45,9 @@
     <p>BANGLAY — эко-дом класса энергоэффективности А в туристической зоне Лимассола, в 1 км от пляжа Dasoudi. Здание состоит из 4 этажей и включает 14 квартир: на каждом из первых трёх этажей по 3 квартиры с 2 спальнями и 1 квартире с 1 спальней, а на четвёртом этаже — 2 пентхауса с 3 спальнями. Апартаменты отличаются открытыми планировками, просторными верандами и эксклюзивными крышными садами с частными бассейнами у пентхаусов. Предусмотрены умный дом, охраняемая парковка и общий бассейн.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -366,6 +369,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.70002,33.082193" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -470,6 +474,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.70002,33.082193],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.70002,33.082193]).addTo(map).bindPopup("BANGLAY" + gmapsLink);
+
+
 
 });
 </script>

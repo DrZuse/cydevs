@@ -45,6 +45,9 @@
     <p>QUATRRO — комплекс элитных апартаментов Kuutio Homes в Пафосе на четырёх этажах. Проект сочетает современный минимализм и природные элементы, с верхних этажей открывается панорамный вид.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -103,6 +106,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.769103,32.413617" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -205,6 +209,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.769103,32.413617],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.769103,32.413617]).addTo(map).bindPopup("Quatroo" + gmapsLink);
+
+
 
 });
 </script>

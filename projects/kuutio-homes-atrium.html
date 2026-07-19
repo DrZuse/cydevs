@@ -45,6 +45,9 @@
     <p>Atrium — закрытый (gated) комплекс из 50 тщательно спроектированных апартаментов с 1, 2 и 3 спальнями в районе Геroskипу, в пешей доступности от моря, Като Пафоса, торгового центра Kings Avenue Mall и множества ресторанов. На территории — большой общий бассейн, окружённый ландшафтным озеленением, современный тренажёрный зал, подземный паркинг (скрывающий машины с территории комплекса) и консьерж-сервис. Проект позиционируется как инвестиционная возможность с высокой доходностью, под него создан отдельный инвестиционный сайт-микросайт. Строительство было официально начато (initiation of construction), о чём компания сообщала в новостях.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -168,6 +171,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.755333,32.433194" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -278,6 +282,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.755333,32.433194],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.755333,32.433194]).addTo(map).bindPopup("Atrium" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Agnades Village 1 - это красивый прибрежный комплекс вилл в Полисе, Кипр. Этот проект предлагает 3- и 4-спальные виллы с частными бассейнами, закрытыми и открытыми верандами, и просторными интерьерами.</p>
     <p class="muted">Проект Agnades Village 1 — жилой комплекс вилл 3-4 спален в приморской загородной зоне Полис, Кипр. Виллы имеют частные бассейны, закрытые и открытые веранды, большие внутренние площади, традиционный средиземноморский дизайн. Виды на море и горы. Рядом национальный парк Акамас и пляж Блу Лагун.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -627,6 +630,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.031333,32.366139" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -730,6 +734,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.031333,32.366139],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.031333,32.366139]).addTo(map).bindPopup("Agnades Village 1" + gmapsLink);
+
+
 
 });
 </script>

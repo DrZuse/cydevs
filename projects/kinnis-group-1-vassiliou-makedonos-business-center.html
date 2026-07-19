@@ -45,6 +45,9 @@
     <p>Vasiliou Makedonos Business Centre — пятиуровневый бизнес-центр в центре Лимасола, в нескольких минутах ходьбы от делового и торгового района, набережной и новой марины. Включает 6 просторных современных офисов с открытыми верандами, зелёными зонами, общей лаунж-зоной с кафе на 4-м этаже и тренажёрным залом на 5-м этаже.</p>
     <p class="muted">Коммерческий проект (офисный центр) в историческом центре Лимассола, статус For Rent (сдаётся в аренду), сдан 01/07/2023. 5-уровневое здание, тренажёрный зал на 5 этаже.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -94,6 +97,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.676899,33.047268" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -196,6 +200,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.676899,33.047268],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.676899,33.047268]).addTo(map).bindPopup("Vassiliou Makedonos Business Center" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Современные 2-комнатные таунхаусы в эксклюзивном районе Konia, Пафос, стоимостью 465,000 EUR. Проект предлагает средиземноморские сады и премиум отделку.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -123,6 +126,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.779261,32.467498" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -225,6 +229,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.779261,32.467498],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.779261,32.467498]).addTo(map).bindPopup("Konia Townhouses" + gmapsLink);
+
+
 
 });
 </script>

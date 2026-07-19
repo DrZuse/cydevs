@@ -45,6 +45,9 @@
     <p>Жилой дом FC241 Akrotiri Court в районе Akrotiri (Limassol). Всего 12 юнитов: 0 продано, 12 свободно. Координаты — с карты застройщика.</p>
     <p class="muted">Проект FC241 Akrotiri Court расположен на улице Vasilissas Elisavet в Лимассоле. Заявлены: вид на море, покрытая парковка, лифты, высокая энергоэффективность (класс A). Есть подготовка к фотоэлектрическим панелям, электрическому отоплению и кондиционированию. Солнечные водонагреватели, система водоснабжения под давлением. Отделка: импортная керамика, сантехника. Гарантия инвестиционных доходов (по материалам застройщика).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -291,6 +294,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.5997014,32.9611181" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -397,6 +401,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.5997014,32.9611181],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.5997014,32.9611181]).addTo(map).bindPopup("FC241 Akrotiri Court" + gmapsLink);
+
+
 
 });
 </script>

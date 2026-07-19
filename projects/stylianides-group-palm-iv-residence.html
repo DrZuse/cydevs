@@ -45,6 +45,9 @@
     <p>Жилой комплекс, состоящий из современных апартаментов, расположенных в Лимасоле. Проект акцентирует внимание на эргономике жилых пространств.</p>
     <p class="muted">Проект расположен в районе Колумбия (Columbia Area), Лимассол. Состоит из 3 этажей, на каждом по одной 2-спальной и одной 3-спальной квартире. Все квартиры с покрытыми верандами и кладовой. Наличие покрытого паркинга. Умный дом с полным набором датчиков и управления. Энергоэффективность класса A. Цены указаны без НДС.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -222,6 +225,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.706237792969,33.078670501709" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -323,6 +327,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.706237792969,33.078670501709],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.706237792969,33.078670501709]).addTo(map).bindPopup("Palm IV Residence" + gmapsLink);
+
+
 
 });
 </script>

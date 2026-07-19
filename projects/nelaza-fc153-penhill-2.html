@@ -45,6 +45,9 @@
     <p>Дома FC153 Pen Hill – Houses в районе Pen Hill (Nicosia). Всего 2 юнитов: 1 продано, 1 свободно. Координаты — с карты застройщика.</p>
     <p class="muted">Дома расположены рядом с General Hospital в Никосии. Упомянута простая доступность к шоссе.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -133,6 +136,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.1207386,33.3998515" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -240,6 +244,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.1207386,33.3998515],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.1207386,33.3998515]).addTo(map).bindPopup("FC153 Pen Hill \u2013 Houses" + gmapsLink);
+
+
 
 });
 </script>

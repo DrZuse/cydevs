@@ -45,6 +45,40 @@
     <p>Kiti Magic Residences — современный жилой комплекс Africanos Property Developers в живописной деревне Кити (Kiti), примерно в 8 км (10 минут) от международного аэропорта Ларнаки и в 11 км (15 минут) от центра города, около 2 км от моря. Проект состоит из двух блоков (A и B); Block A насчитывает 8 современных апартаментов с 2 спальнями и 2 ванными комнатами в здании с сертификатом энергоэффективности класса «A», обеспечивающим низкое энергопотребление и экологичность. Отдельные квартиры на втором этаже имеют собственные крыши-сады с местом под джакузи и видами на спокойный жилой район. Каждая квартира включает частное машиноместо и кладовую на первом этаже. Общий бассейн, разделяемый с Block B, дополняет комфортный образ жизни. Завершение проекта ожидается в марте 2027 года.</p>
     <p class="muted">Блок А в Кити (Ларнака), 8 квартир (часть — 2+1 с комнатами на крыше и roof garden 67 м²). График оплаты: 40% при подписании контракта, далее 10% за этапы (котлован, каркас, кладка, плитка, завершение). Цены в таблице не указаны (только статусы).</p>
 
+    
+    
+    <div class="panel bzk" style="margin:14px 0;border-left:3px solid var(--brand)">
+      <h3 style="margin-top:0">Bazaraki <span class="muted small" style="font-weight:normal">· <a href="https://www.bazaraki.com/new-buildings/126-kiti_magic_residences_block_a/" target="_blank" rel="noopener">страница объявления</a> · снимок 2026-07-19</span></h3>
+      <p class="muted small" style="margin:2px 0 8px">Ниже — только сведения, которых нет на сайте застройщика (источник правды — сайт застройщика).</p>
+      
+      
+      <div class="row">
+        <span class="chip" title="Источник: bazaraki.com">лифт: да</span><span class="chip" title="Источник: bazaraki.com">доступ для колясок: да</span><span class="chip" title="Источник: bazaraki.com">вид: панорамный</span><span class="chip" title="Источник: bazaraki.com">этажей: 1-2</span>
+      </div>
+      
+      
+      
+      <p class="small muted" style="margin:8px 0 0">Рядом: airport — 4.4 km, school — 500 m, supermarket — 1 km, restaurants — 600m, hospital — 10 km, beach — 7 km, city center — 9 km</p>
+      
+      
+      
+      <details style="margin-top:8px"><summary class="muted">Описание с bazaraki.com (EN)</summary>
+        <p class="small" style="white-space:pre-line">KITI MAGIC RESIDENCES BLOCK A’is located in the village of Kiti which is only 8km and 3 minutes from Larnaca International Airport, and a 11km and 15 minutes from Larnaca town center. The village provides for a full range of amenities. As such, Kiti is equipped with all business, shopping and entertainment facilities, and has received many awards for its perfect sanitation.  
+
+The project boasts sixteen apartments in total 8 two bedroom &amp; two bathrooms on the first and 8 two bedroom &amp; two bathrooms on the second floor – all with spacious and contemporary living areas. Some of the second floor apartments benefit from individual private and luxury roof-gardens with amazing views of the lovely Neighbourhood. Each apartment has one parking bay and a storage room on the ground level.
+
+KITI MAGIC RESIDENCES BLOCK A’ is situated in a quiet family orientated neighborhood composed of detached villas and large plots. Situated in an already developed yet spacious environment, this project provides all requirements (and more) for a perfect Home in the Sun. The project is very near to supermarkets, school and has immediate access to highways.
+
+KITI MAGIC RESIDENCES BLOCK A’ has been fully designed and studied by our professional team of Architects, Engineers and Interior Designers. The modern design makes excellent use of features like top quality italian ceramic finish, unique glass balconies and clever layout of living areas designed to offer optional space, privacy and also a views of the prestigious neighbourhood.
+
+The project is expected to be completed March 2027.</p></details>
+      
+      
+      <p class="small muted" style="margin:8px 0 0">📍 Гео-метка bazaraki расходится с меткой застройщика на 119 м — на карте ниже показаны обе (серая — bazaraki).</p>
+      
+    </div>
+    
+
     <h2>Характеристики</h2>
     
     
@@ -291,6 +325,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.85552,33.58028" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -371,6 +406,9 @@
           <span class="muted">— главный источник (сайт застройщика)</span></li>
         
         
+        <li><a href="https://www.bazaraki.com/new-buildings/126-kiti_magic_residences_block_a/" target="_blank" rel="noopener">www.bazaraki.com/new-buildings/126-kiti_mag...</a>
+          <span class="muted">· агрегатор</span></li>
+        
       </ul>
     </div>
     
@@ -394,6 +432,13 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.85552,33.58028],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.85552,33.58028]).addTo(map).bindPopup("Kiti Magic Residences" + gmapsLink);
+
+
+
+  // вторая метка — из объявления bazaraki (расходится с меткой застройщика)
+  L.circleMarker([34.8557885227092,33.58154600260539],{radius:9,color:'#777',fillColor:'#999',fillOpacity:0.7})
+    .addTo(map).bindPopup('Метка Bazaraki (119 м от метки застройщика)<br><a href="https://www.bazaraki.com/new-buildings/126-kiti_magic_residences_block_a/" target="_blank" rel="noopener">Открыть объявление</a>');
+  map.fitBounds(L.latLngBounds([[34.85552,33.58028],[34.8557885227092,33.58154600260539]]).pad(0.35));
 
 });
 </script>

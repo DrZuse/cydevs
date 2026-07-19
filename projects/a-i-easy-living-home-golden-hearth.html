@@ -45,6 +45,9 @@
     <p>Golden Hearth (в описании на сайте — Panthea 2) — дом на 10 квартир с 1–3 спальнями в районе Меса-Гитония, Лимассол, с прямым выездом на шоссе.</p>
     <p class="muted">Проект перечислен в разделе Upcoming Projects на сайте застройщика. Детальная информация об объекте на данной странице отсутствует.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -243,6 +246,7 @@
 
     <h2>Расположение</h2>
     <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.701862,33.0449947" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -344,6 +348,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.701862,33.0449947],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.circle([34.701862,33.0449947],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Golden Hearth" + ' (примерно)' + gmapsLink);
+
+
 
 });
 </script>

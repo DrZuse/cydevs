@@ -45,6 +45,9 @@
     <p>Дом с 6 спальнями (250 м²) на большом участке 13 156 м² в деревне Лувара, завершён в 2022 году. Возможна установка бассейна; 5 парковочных мест, энергокласс A.</p>
     <p class="muted">Год постройки 2022, состояние New. Кондиционирование VRV, центральное отопление. 4 спальни с собственными ванными (en suite). Цена по запросу.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -104,6 +107,7 @@
 
     <h2>Расположение</h2>
     <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.836624,33.0392094" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -208,6 +212,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.836624,33.0392094],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.circle([34.836624,33.0392094],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("House GCD177 (Louvaras)" + ' (примерно)' + gmapsLink);
+
+
 
 });
 </script>

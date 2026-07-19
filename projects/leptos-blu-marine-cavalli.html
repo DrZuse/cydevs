@@ -45,6 +45,9 @@
     <p>Cavalli Tower at Limassol Blu Marine — 30-этажная башня брендированных резиденций на первой береговой линии Лимассола, реализуемая в партнёрстве Leptos Estates и модного дома Roberto Cavalli. Стоимость проекта — около €200 млн; это первый средиземноморский девелопмент-проект Roberto Cavalli и первые брендированные жилые резиденции Cavalli в регионе. В продаже апартаменты с 1, 2, 3, 4 и 5 спальнями по цене от €845 000. Интерьеры и лобби оформлены по авторскому дизайну Roberto Cavalli. Среди удобств — круглосуточный консьерж, крытый и открытый бассейны, люкс-спа, современный тренажёрный зал, кинозал, ландшафтные сады и подземный паркинг. Башня активно строится.</p>
     <p class="muted">Cavalli Tower at Limassol Blu Marine — первый в Европе жилой проект резиденций Roberto Cavalli на набережной Лимассола. Есть онлайн-трансляция хода строительства (WATCH DEVELOPMENT LIVE). Страница носит маркетинговый характер: конкретных юнитов, цен, сроков сдачи, энергокласса и деталей амьенитиз на ней нет — данные о наличии на отдельной странице /availability-views/, амьенитиз на /amenities/.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -133,6 +136,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6684523,33.0312087" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -241,6 +245,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.6684523,33.0312087],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.6684523,33.0312087]).addTo(map).bindPopup("Cavalli Tower at Limassol Blu Marine" + gmapsLink);
+
+
 
 });
 </script>

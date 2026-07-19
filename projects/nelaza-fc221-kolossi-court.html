@@ -45,6 +45,9 @@
     <p>Жилой дом FC221 Kolossi Court в районе Kolossi (Limassol). Всего 14 юнитов: 4 продано, 7 свободно, 3 в брони. Координаты — с карты застройщика.</p>
     <p class="muted">Проект FC221 Kolossi Court находится в Лимассоле на улице Ayion Konstantinou &amp; Elenis. Вид на море. Наличие лифта, заготовка под фотоэлектрические панели, солнечный водонагреватель, система водяного напора, тепловая фасадная система, теплоизолирующие окна с двойным стеклом. Есть закрытая парковка и кладовки. Гарантия инвестиционной доходности (по заявлению застройщика).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -338,6 +341,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6661389,32.9371389" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -444,6 +448,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.6661389,32.9371389],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.6661389,32.9371389]).addTo(map).bindPopup("FC221 Kolossi Court" + gmapsLink);
+
+
 
 });
 </script>

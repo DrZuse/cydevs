@@ -45,6 +45,9 @@
     <p>Avora Court - это стильный жилой комплекс с 2- и 3-спальными апартаментами в тихой зоне Петридии на окраине Пафоса.</p>
     <p class="muted">Проект Avora Court в районе Петридия, Пафос. Трехэтажное здание с квартирами 2-3 спален. Покрытая площадь 140-192 кв.м. Цены от €295,000 + НДС. Энергоэффективность класса A.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -202,6 +205,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.791008,32.424425" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -305,6 +309,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.791008,32.424425],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.791008,32.424425]).addTo(map).bindPopup("Avora Court" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Konia Hills Phase 2 — вторая очередь закрытого (gated) посёлка эксклюзивных вилл в деревне Кония с видами на Средиземное море и город Пафос. Фаза строится (18 вилл); в продаже виллы с 2 и 3 спальнями (93–134 м² внутренней площади). Стандарты и оснащение аналогичны первой фазе: плиточные веранды, частные сады, парковка, опция бассейна. Цены от €394 174.</p>
     <p class="muted">Всего юнитов в фазе: 18.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -123,6 +126,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.787021,32.468473" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -225,6 +229,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.787021,32.468473],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.787021,32.468473]).addTo(map).bindPopup("Konia Hills Phase 2" + gmapsLink);
+
+
 
 });
 </script>

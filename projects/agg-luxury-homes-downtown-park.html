@@ -45,6 +45,9 @@
     <p>Downtown Park — один из первых комплексов с сервисными апартаментами на проспекте Гробниц Царей в центре Като-Пафоса. Проект включает два современных пятиэтажных здания с качественной отделкой. Жителям доступны фитнес-центр, сауна, ландшафтные сады и круглосуточная стойка регистрации.</p>
     <p class="muted">Комплекс полностью распродан («From € sold»). Дата завершения Q2 2022, статус Completed. Застройщик: AGG Luxury Homes (agg-luxury-homes). Управляется профессиональной командой, подходит для краткосрочной и долгосрочной аренды. Тип недвижимости — апартаменты (сервисные), до 4 спален / 4 ванных.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -110,6 +113,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.779907,32.45971" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -212,6 +216,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.779907,32.45971],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.779907,32.45971]).addTo(map).bindPopup("DOWNTOWN PARK" + gmapsLink);
+
+
 
 });
 </script>

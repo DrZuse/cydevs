@@ -45,6 +45,9 @@
     <p>Жилой дом FC204 Fasouri Court 4 в районе Fasouri (Limassol). Всего 12 юнитов: 7 продано, 5 свободно. Координаты — с карты застройщика.</p>
     <p class="muted">Проект завершён. Упомянуты гарантии на титулы. Энергосертификат класса A.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -304,6 +307,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6559424,32.9661995" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -410,6 +414,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.6559424,32.9661995],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.6559424,32.9661995]).addTo(map).bindPopup("FC204 Fasouri Court 4" + gmapsLink);
+
+
 
 });
 </script>

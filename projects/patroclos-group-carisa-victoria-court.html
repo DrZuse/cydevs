@@ -45,6 +45,9 @@
     <p>Carisa Victoria Court — это жилой комплекс из двух двухэтажных зданий с 10 двухкомнатными квартирами, расположенный рядом с зелёным парком в Перволии. Квартиры отличаются классическим дизайном, гармонично вписанным в окружающую среду. Расположен в 1,4 км от моря и в 8 км от аэропорта. Все квартиры доступны для бронирования на стадии строительства.</p>
     <p class="muted">Проект состоит из 2 двухэтажных зданий с 10 двухкомнатными квартирами. Расположен рядом с зеленым парком, в тихом районе в 1,4 км от моря. Классический дизайн экстерьера и интерьера.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -243,6 +246,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.8321125,33.5737969" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -347,6 +351,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.8321125,33.5737969],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.8321125,33.5737969]).addTo(map).bindPopup("Carisa Victoria Court" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Eden Beach Apartments — приморский комплекс в Лимассоле, расположенный рядом с развитой инфраструктурой, пляжами с наградой «голубой флаг» и мариной Лимассола. В состав входят апартаменты, офисы и магазины. Лимассол является одним из крупнейших городов Кипра, значимым туристическим и торговым центром.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -96,6 +99,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.680326,33.050738" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -198,6 +202,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.680326,33.050738],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.680326,33.050738]).addTo(map).bindPopup("Eden Beach Apartments" + gmapsLink);
+
+
 
 });
 </script>

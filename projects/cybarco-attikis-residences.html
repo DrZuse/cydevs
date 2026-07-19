@@ -45,6 +45,9 @@
     <p>Бутиковый проект ультра-люксовых апартаментов, знаменующий возвращение Cybarco в Никосию. Состоит из двух корпусов на 22 апартамента с 2 и 3 спальнями в престижном районе Аглантзия, в нескольких минутах ходьбы от национального леса Академии, с удобным выездом на автостраду и близостью к магазинам, банкам, школам и супермаркетам. Просторные квартиры с большими террасами и частными парковочными местами. Дизайн — известное бюро Kythreotis Architects, интерьеры — Maria Kythreotou. Проект пользуется высоким спросом: около 70% квартир продано. Строительство стартовало в 2023 году.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -128,6 +131,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.152462,33.376808" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -239,6 +243,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.152462,33.376808],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.152462,33.376808]).addTo(map).bindPopup("Attikis Residences" + gmapsLink);
+
+
 
 });
 </script>

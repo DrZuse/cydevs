@@ -45,6 +45,9 @@
     <p>Paniotis Treehouse Villa — это 5-спальная вилла премиум-класса в самом престижном районе Лимассола. Вилла предлагает баланс уединённости и доступности ко всем удобствам города, включая рестораны, магазины и пляжи. Статус: продаётся. В проекте представлены виллы (5 спален), апартаменты (5 спален) и студии.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -123,6 +126,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.7166,33.073296" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -225,6 +229,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.7166,33.073296],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.7166,33.073296]).addTo(map).bindPopup("Paniotis Treehouse Villa" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Azure — проект из 3 роскошных вилл на прибрежной равнине Пафоса в районе Хлораки, в пешей доступности от моря и в 5 минутах езды от центра города. Виллы имеют открытые планировки, современную отделку и крытые зоны al fresco для комфортного проживания внутри-снаружи. Каждая вилла оснащена частным бассейном, зоной барбекю, ландшафтным садом, верандой, просторной парковкой и энергетическим классом A.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -103,6 +106,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.802286,32.40456" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -205,6 +209,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.802286,32.40456],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.802286,32.40456]).addTo(map).bindPopup("Azure" + gmapsLink);
+
+
 
 });
 </script>

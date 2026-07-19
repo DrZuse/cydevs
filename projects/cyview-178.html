@@ -45,6 +45,9 @@
     <p>Дом на 5 квартир (2-3 спальни) в 3 этажа, Латсия.</p>
     <p class="muted">Проект Cyview 178 в районе Лакатамия. 5 квартир на 2 этажах (ground, 1st, 2nd). В продаже есть 2- и 3-комнатные квартиры. Часть юнитов уже продана. Детали по площадям: внутренняя площадь, крытая веранда, кладовая (aux), общая площадь. Цены не указаны на странице.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -191,6 +194,7 @@
 
     <h2>Расположение</h2>
     <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.0995648,33.3815988" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -292,6 +296,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.0995648,33.3815988],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.circle([35.0995648,33.3815988],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Cyview 178" + ' (примерно)' + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Готовая вилла с 5 спальнями и 5 ванными в Лациа: частный бассейн, тёплые полы, фотовольтаика, полный участок. Продажа без НДС. Страница в архивном разделе сайта, но юнит GH12 помечен Available.</p>
     <p class="muted">Карточка в разделе /sold/, однако в таблице наличия юнит GH12 — Available; таблица юнитов важнее листинга.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -89,6 +92,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.11238264575693,33.37092893954508" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -191,6 +195,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.11238264575693,33.37092893954508],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.11238264575693,33.37092893954508]).addTo(map).bindPopup("Georgian Home 12" + gmapsLink);
+
+
 
 });
 </script>

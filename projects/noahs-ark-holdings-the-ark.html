@@ -45,6 +45,9 @@
     <p>ЖК «The Ark» — проект компании Ark Noah&#39;s Holdings в районе Католики (Лимасол). В составе студии и апартаменты с 1–3 спальнями. Всего 66 юнитов, свободно 42. Цены от €263 000 (+НДС). Проект на стадии проектирования и старта продаж, плановый срок сдачи — Q4 2029.</p>
     <p class="muted">Проект находится на стадии строительства с планируемой сдачей в 2026 году. Квартиры предлагаются с отделкой под ключ. Предусмотрены льготные условия НДС 5% для первого жилья.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -617,6 +620,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.677853,33.035208" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -720,6 +724,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.677853,33.035208],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.677853,33.035208]).addTo(map).bindPopup("The Ark" + gmapsLink);
+
+
 
 });
 </script>

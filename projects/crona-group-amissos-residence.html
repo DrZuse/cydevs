@@ -45,6 +45,9 @@
     <p>Amissos Residence — бутиковый жилой дом на 7 люксовых резиденций в престижном районе Лимасола, в 1,5 км от моря и всего в 5 минутах езды от центра города. В отделке использованы кварцевые поверхности и натуральные цветовые решения, панорамные окна и высокие балконные двери открывают виды на зелёное окружение. В квартирах предусмотрены большая встроенная кухня, дополнительные кладовые и современные системы безопасности. Проект находится в стадии строительства, стартовая цена — от €342 000.</p>
     <p class="muted">Проект расположен в Columbia, в 1,5 км от моря. Общая информация: 7 люксовых резиденций (квартиры), высота потолков, встроенная кухня, центральное VRV-кондиционирование, класс энергоэффективности A, охраняемая территория с частными бассейнами, подземная парковка, видеодомофон, система подогрева полов (заложена разводка).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -117,6 +120,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.70655,33.081827" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -196,9 +200,6 @@
           <span class="muted">— главный источник (сайт застройщика)</span></li>
         
         
-        <li><a href="https://www.bazaraki.com/new-buildings/331-amissos/" target="_blank" rel="noopener">www.bazaraki.com/new-buildings/331-amissos/</a>
-          <span class="muted">· агрегатор</span></li>
-        
       </ul>
     </div>
     
@@ -222,6 +223,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.70655,33.081827],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.70655,33.081827]).addTo(map).bindPopup("AMISSOS Residence" + gmapsLink);
+
+
 
 });
 </script>

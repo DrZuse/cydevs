@@ -45,6 +45,9 @@
     <p>The Avenue Residences — эксклюзивная коллекция из 8 элегантных уютных квартир с 2 спальнями в оживлённом центре Пафоса (район Universal). Квартиры спроектированы для комфорта и утончённого проживания: просторные планировки, высокие потолки и частные балконы. Для жителей предусмотрен изысканный общий бассейн. Расположение в шаговой доступности от ресторанов, магазинов и развлекательных заведений, а также от лучших пляжей района с кристально чистой водой. Проект ориентирован на семьи, инвесторов и покупателей второго жилья.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -109,6 +112,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.784173,32.416183" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -211,6 +215,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.784173,32.416183],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.784173,32.416183]).addTo(map).bindPopup("The Avenue Residences" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>bbf: ace — закрытый жилой комплекс с контролируемым доступом в районе Закаки на западе Лимассола, рядом с проектом bbf: fremont. Комплекс включает три корпуса и предлагает студии (~48,5 м²), а также апартаменты с одной–тремя спальнями (однокомнатные 63–66 м², двухкомнатные 99–131 м², трёхкомнатные ~129 м²). Для жителей предусмотрены общий бассейн, тренажёрный зал и сауна. Стартовые цены — от 280 000 евро. Проект находится на стадии офф-план, ввод в эксплуатацию запланирован на IV квартал 2026 года.</p>
     <p class="muted">Проект расположен в развивающемся районе Закаки, Лимассол. Доступна инфраструктура: City of Dreams, My Mall, гольф-курорт, пляж Lady&#39;s Mile.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -150,6 +153,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.649583,33.002778" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -258,6 +262,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.649583,33.002778],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.649583,33.002778]).addTo(map).bindPopup("bbf: ace" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Almond — небольшой жилой проект из 6 квартир в одном из привлекательных районов центра Лимассола, недалеко от магазинов, школ и пляжа. На первом и втором этажах расположены квартиры с 1 и 2 спальнями.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -195,6 +198,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.690847,33.05239" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -296,6 +300,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.690847,33.05239],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.690847,33.05239]).addTo(map).bindPopup("Almond" + gmapsLink);
+
+
 
 });
 </script>

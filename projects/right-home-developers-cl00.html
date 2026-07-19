@@ -45,6 +45,9 @@
     <p>Cozy Living — комплекс вилл Right Home Developers в Сотире (округ Фамагуста). 12 юнитов, спальни 2–4. Стадия: off-plan (предпродажи), сдача 2026. Цены от €260 000+VAT.</p>
     <p class="muted">Код проекта CL00 на сайте застройщика. Расстояния: удобства 300 m, аэропорт 35 km, море 4 km, транспорт 200 m.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -331,6 +334,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.017585,33.954876" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -434,6 +438,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.017585,33.954876],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.017585,33.954876]).addTo(map).bindPopup("Cozy Living" + gmapsLink);
+
+
 
 });
 </script>

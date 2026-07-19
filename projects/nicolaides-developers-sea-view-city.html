@@ -45,6 +45,9 @@
     <p>Nicolaides Sea View City — 14-этажное коммерческое здание в центре делового района Ларнаки, с магазинами, офисами и апартаментами. Самое высокое здание на морской стороне Ларнаки с видом на порт, марину и пляж Финикудес. Построено, ведётся продажа оставшихся единиц.</p>
     <p class="muted">Цена по запросу. Расположен в центре Ларнаки, напротив Марины и пляжа Финикудес. Комплекс сочетает шоурумы, торговые площади, офисы, апартаменты и двухуровневые пентхаусы. Этажность — 11. Упоминается прогресс строительства (вкладка Construction progress), но явная стадия/срок сдачи не указаны.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -165,6 +168,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.918388,33.636372" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -272,6 +276,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.918388,33.636372],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.918388,33.636372]).addTo(map).bindPopup("Nicolaides Sea View City" + gmapsLink);
+
+
 
 });
 </script>

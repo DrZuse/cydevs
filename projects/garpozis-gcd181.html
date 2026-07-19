@@ -45,6 +45,9 @@
     <p>Cloud — новый комплекс с видом на море в тихом жилом районе Агиос-Афанасиос: 2 корпуса на 28 квартир, 2 минуты до шоссе. По таблице юнитов застройщика доступна квартира 201 (2 спальни, 86 м² внутренняя, 135 м² общая) за €370,000 + VAT; остальные 10 юнитов таблицы проданы.</p>
     <p class="muted">Расстояние до города 6 км, до моря 6 км. Отопление электрическое (разводка), кондиционирование (разводка). Цена по запросу.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -287,6 +290,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.716427,33.05756" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -397,6 +401,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.716427,33.05756],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.716427,33.05756]).addTo(map).bindPopup("Cloud" + gmapsLink);
+
+
 
 });
 </script>

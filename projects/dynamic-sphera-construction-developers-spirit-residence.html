@@ -45,6 +45,9 @@
     <p>SPIRIT RESIDENCE — новый жилой комплекс в районе Айос Спиридонас (Лимассол): 3 этажа, 7 люксовых апартаментов с 1 и 2 спальнями. Застройщик включает фотоэлектрические системы в каждую квартиру. Продано 2 из 7 юнитов (по данным сайта застройщика).</p>
     <p class="muted">Project located in Agios Spyridonas area, Limassol. 7 luxury apartments across 3 floors. Photovoltaic systems included for each apartment. Location map: https://maps.app.goo.gl/GK5RTcUGLKQSZbCr9?g_st=iv</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -253,6 +256,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.663951,33.0151" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -354,6 +358,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.663951,33.0151],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.663951,33.0151]).addTo(map).bindPopup("SPIRIT RESIDENCE" + gmapsLink);
+
+
 
 });
 </script>

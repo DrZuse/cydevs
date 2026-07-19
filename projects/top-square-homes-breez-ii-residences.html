@@ -45,6 +45,9 @@
     
     <p class="muted">2 дома в новом тихом квартале района Green Dot – GSP, Никосия. House 1 — 4 спальни (3 + офис/гостевая), House 2 — 3 спальни по описанию застройщика (в таблице на сайте у обоих «Four»). Гео-пин — goo.gl-ссылка застройщика со страницы проекта (35.109290, 33.338430), ~90 м от пина Green Dot Residences.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -120,6 +123,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.10929,33.33843" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -225,6 +229,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.10929,33.33843],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.10929,33.33843]).addTo(map).bindPopup("Br\u00e9ez II Residences" + gmapsLink);
+
+
 
 });
 </script>

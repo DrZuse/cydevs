@@ -45,6 +45,9 @@
     <p>Проект из 26 просторных вилл, каждая с частным бассейном, в одном из красивейших районов острова — рядом с Sea Caves и оживлённым Coral Bay, в 5 минутах ходьбы от флагманского курорта Cap St Georges Hotel &amp; Resort. Резиденты получают эксклюзивный доступ к инфраструктуре курорта: клубный дом с консьержем, спа, рестораны высокой кухни, спортивные объекты, частные пляжи. Планировки: виллы 3 и 6 спален, покрытая площадь 194–363 м², участки 240–1 163 м². Продажи ведутся off-plan, объект строится.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -138,6 +141,7 @@
 
     <h2>Расположение</h2>
     <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.8863887,32.3325108" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -242,6 +246,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.8863887,32.3325108],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.circle([34.8863887,32.3325108],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Sunset View Villas" + ' (примерно)' + gmapsLink);
+
+
 
 });
 </script>

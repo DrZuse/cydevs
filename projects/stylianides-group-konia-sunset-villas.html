@@ -45,6 +45,36 @@
     <p>Комплекс вилл, расположенный в районе Кония, Пафос. Проект характеризуется близостью к местной инфраструктуре и панорамными видами на прилегающую местность.</p>
     <p class="muted">Project Code: PAF-KV. Energy Efficiency Certificate: A. 20 private detached three-bedroom villas with a large landscaped communal garden. Contemporary architecture with high-quality finishes.</p>
 
+    
+    
+    <div class="panel bzk" style="margin:14px 0;border-left:3px solid var(--brand)">
+      <h3 style="margin-top:0">Bazaraki <span class="muted small" style="font-weight:normal">· <a href="https://www.bazaraki.com/new-buildings/203-konia_sunset_villas/" target="_blank" rel="noopener">страница объявления</a> · снимок 2026-07-19</span></h3>
+      <p class="muted small" style="margin:2px 0 8px">Ниже — только сведения, которых нет на сайте застройщика (источник правды — сайт застройщика).</p>
+      <p style="margin:6px 0"><b>Цена по объявлению:</b> €530.000 – €542.500 +VAT</p>
+      
+      <div class="row">
+        <span class="chip" title="Источник: bazaraki.com">паркинг: 1</span><span class="chip" title="Источник: bazaraki.com">вид: панорамный</span><span class="chip" title="Источник: bazaraki.com">парковочные места: 4</span>
+      </div>
+      
+      
+      
+      <p class="small muted" style="margin:8px 0 0">Рядом: airport — 10 km, supermarket — 1.5 km, beach — 6 km, school — 1 km, hospital — 2 km, city center — 5 km</p>
+      
+      
+      
+      <details style="margin-top:8px"><summary class="muted">Описание с bazaraki.com (EN)</summary>
+        <p class="small" style="white-space:pre-line">Konia Residences offer owners the best of both worlds. Its rural location ensures tranquillity and privacy, yet it’s just a few minutes’ drive from the cosmopolitan city of Paphos, with its wealth of amenities. It additionally provides easy access to the motorway 2km, easy access to Paphos International Airport and the other major towns on the island. 
+
+Situated on the outskirts of Paphos, the area is surrounded by traditional villages with their excellent selection of local taverns. Additionally, conveniently located just moments away from Paphos leading international schools.
+
+Konia Residences comprises 20 private detached three-bedroom villas with a large landscaped communal garden. The contemporary designs offer privacy and relaxation to residents and their families. Choice of contemporary or modern architecture design, with high quality finishes offer a beautiful home in a truly unique setting.</p></details>
+      
+      
+      <p class="small muted" style="margin:8px 0 0">📍 Гео-метка bazaraki расходится с меткой застройщика на 251 м — на карте ниже показаны обе (серая — bazaraki).</p>
+      
+    </div>
+    
+
     <h2>Характеристики</h2>
     
     
@@ -515,6 +545,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.784122467041,32.45161819458" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -523,7 +554,7 @@
     <div class="panel">
       <h3 style="margin-top:0">Кратко</h3>
       <dl class="detail">
-        <dt>Цена</dt><dd>по запросу</dd>
+        <dt>Цена</dt><dd>€530 000 – €542 500 <a href="https://www.bazaraki.com/new-buildings/203-konia_sunset_villas/" target="_blank" rel="noopener" style="text-decoration:none" title="На сайте застройщика цена не найдена — указана по объявлению на bazaraki.com (клик — открыть источник)"><sup>?</sup></a></dd>
         <dt>Тип недвижимости</dt><dd>Виллы</dd>
         <dt>Стадия</dt><dd>В продаже · Under Construction</dd>
         <dt>Начало стройки</dt><dd>—</dd>
@@ -593,6 +624,9 @@
           <span class="muted">— главный источник (сайт застройщика)</span></li>
         
         
+        <li><a href="https://www.bazaraki.com/new-buildings/203-konia_sunset_villas/" target="_blank" rel="noopener">www.bazaraki.com/new-buildings/203-konia_su...</a>
+          <span class="muted">· агрегатор</span></li>
+        
       </ul>
     </div>
     
@@ -616,6 +650,13 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.784122467041,32.45161819458],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.784122467041,32.45161819458]).addTo(map).bindPopup("Konia Sunset Villas" + gmapsLink);
+
+
+
+  // вторая метка — из объявления bazaraki (расходится с меткой застройщика)
+  L.circleMarker([34.78475482645666,32.454259],{radius:9,color:'#777',fillColor:'#999',fillOpacity:0.7})
+    .addTo(map).bindPopup('Метка Bazaraki (251 м от метки застройщика)<br><a href="https://www.bazaraki.com/new-buildings/203-konia_sunset_villas/" target="_blank" rel="noopener">Открыть объявление</a>');
+  map.fitBounds(L.latLngBounds([[34.784122467041,32.45161819458],[34.78475482645666,32.454259]]).pad(0.35));
 
 });
 </script>

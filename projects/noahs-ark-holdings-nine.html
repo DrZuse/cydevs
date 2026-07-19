@@ -45,6 +45,9 @@
     <p>ЖК «9 (NINE) by ARK» — проект компании Ark Noah&#39;s Holdings в районе Агиос Иоаннис (Лимасол). В составе апартаменты с 1–3 спальнями. Всего 9 юнитов, свободно 2. Цены от €410 000 (+НДС). Проект на этапе строительства, плановый срок сдачи — Q4 2027.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -137,6 +140,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.669758,33.024893" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -241,6 +245,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.669758,33.024893],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.669758,33.024893]).addTo(map).bindPopup("9 (NINE) by ARK" + gmapsLink);
+
+
 
 });
 </script>

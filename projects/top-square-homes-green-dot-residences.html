@@ -45,6 +45,9 @@
     
     <p class="muted">Проект в стадии проработки (Under Study, на листинге застройщика — «Under Study - Available»): дома с внутренней площадью 170+ и 180+ м² в районе Green Dot – GSP, Никосия (площади в таблице — минимумы по описанию застройщика). Гео-пин — точная place-ссылка застройщика на странице проекта (35.108564, 33.338056), подтверждена картой-схемой (юго-западнее кругового на новой дороге GSP–Tseriou/Argyroupoleos). Таблица характеристик и брошюра на странице скопированы с других проектов (Egkomi Hills II / Elea Residence) — не записаны.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -147,6 +150,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.108564,33.338056" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -252,6 +256,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.108564,33.338056],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.108564,33.338056]).addTo(map).bindPopup("Green Dot Residences" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Avalon Valley — современный жилой комплекс в деревне Эмба (Пафос), включающий 36 домов и два корпуса апартаментов на 32 квартиры. В составе представлены трёхспальные виллы, одно- и двухспальные апартаменты, а также студии. В центре комплекса — большой плавательный бассейн и детский бассейн, имеются зона приёма, вестибюль и тренажёрный зал. Комплекс расположен вблизи строящегося Metropolitan Private Hospital.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -389,6 +392,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.800528,32.433194" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -490,6 +494,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.800528,32.433194],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.800528,32.433194]).addTo(map).bindPopup("Avalon Valley" + gmapsLink);
+
+
 
 });
 </script>

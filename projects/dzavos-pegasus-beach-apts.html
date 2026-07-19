@@ -45,6 +45,9 @@
     <p>PEGASUS BEACH APTS — проект в Лимасоле, включающий двухкомнатные апартаменты и офисные помещения. Цена — €640 000.</p>
     <p class="muted">Расположен в Yermasogeia, туристической зоне Лимассола. На странице дана только типовая планировка (один 2-спальный апартамент, 112 кв.м, без номера юнита), таблицы наличия юнитов нет.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -89,6 +92,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.6852901,33.0332657" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -193,6 +197,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.6852901,33.0332657],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.6852901,33.0332657]).addTo(map).bindPopup("PEGASUS BEACH APTS" + gmapsLink);
+
+
 
 });
 </script>

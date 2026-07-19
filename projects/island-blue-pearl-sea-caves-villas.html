@@ -45,6 +45,9 @@
     <p>Pearl Sea Caves Villas — престижный проект в живописном районе Си Кейвз (Пейя), включающий 7 виллы со сплит-уровнями (4-5 спален) и 2 двухэтажные виллы (5-6 спален), у каждой из которых собственный частный бассейн. Локация находится в 5 минутах езды от знаменитого пляжа Корал-Бей и в 10 минутах от рыбацкой гавани Святого Георгия, с потрясающими видами на Средиземное море. Проект неоднократно отмечался наградами как один из знаковых люксовых комплексов Пафоса.</p>
     <p class="muted">Расположение: Sea Caves, Paphos, Peyia. Близко к Akamas National Park, Coral Bay Beach (5 мин), St George fishing harbor (10 мин). Район с низкой плотностью застройки, только крупные виллы на просторных участках. Известен живописными морскими пещерами и природными достопримечательностями.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -338,6 +341,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.871861,32.349889" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -451,6 +455,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.871861,32.349889],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.871861,32.349889]).addTo(map).bindPopup("Pearl Sea Caves Villas" + gmapsLink);
+
+
 
 });
 </script>

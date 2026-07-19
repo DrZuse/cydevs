@@ -45,6 +45,9 @@
     <p>Жилой дом FC122 Agios Dometios Court 4 в районе Agios Dometios (Nicosia). Всего 10 юнитов: 9 продано, 1 свободно. Координаты — с карты застройщика.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -270,6 +273,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.1763573,33.3327478" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -376,6 +380,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.1763573,33.3327478],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.1763573,33.3327478]).addTo(map).bindPopup("FC122 Agios Dometios Court 4" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Жилой комплекс в районе Закаки рядом с City of Dreams — крупнейшим казино Европы. Проект спроектирован признанным международным архитектурным бюро и включает 112 современных апартаментов делюкс, а также бассейны, тренажёрный зал и спа.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -110,6 +113,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.64561029196714,32.999455673300915" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -215,6 +219,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.64561029196714,32.999455673300915],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.64561029196714,32.999455673300915]).addTo(map).bindPopup("Limassol Dreams" + gmapsLink);
+
+
 
 });
 </script>

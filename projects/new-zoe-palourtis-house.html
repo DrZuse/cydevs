@@ -45,6 +45,9 @@
     <p>Жилой дом на Декелия-роуд в туристическом районе Ларнаки, в шаговой доступности от пляжа с голубым флагом. В продаже 5 квартир с 1–3 спальнями (47–81 м²).</p>
     <p class="muted">Расположен на Dhekelia Road, в 300 метрах от пляжа. Близко к отелям Palm Beach 5-star и Radisson Blu. В 800 метрах от жилого комплекса &#34;Land of Tomorrow&#34;. Низкая плотность застройки, в основном частные дома. Долгосрочные виды на море. Высокий инвестиционный потенциал. Пешеходная дорожка вдоль пляжа (2.5 км) с кафе и ресторанами. В 12 минутах езды от международного аэропорта Ларнаки.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -206,6 +209,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.973499,33.674909" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -307,6 +311,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.973499,33.674909],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.973499,33.674909]).addTo(map).bindPopup("Palourtis House" + gmapsLink);
+
+
 
 });
 </script>

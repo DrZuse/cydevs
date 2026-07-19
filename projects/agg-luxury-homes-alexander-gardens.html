@@ -45,6 +45,9 @@
     <p>Alexander Gardens — эксклюзивный комплекс из 12 вилл уникального дизайна в нижней части Хлораки (Пафос), примерно в 900 метрах от пляжа. Каждая вилла отличается современной архитектурой и индивидуальным внешним обликом, сочетая роскошь и комфорт, с потрясающими видами на море с крыши.</p>
     <p class="muted">Эксклюзивная застройка из 12 индивидуально спроектированных вилл в Нижней Хлораке, Пафос. В 900 м от пляжа, в 1 км от British Aspire School, рядом с гаванью Пафоса и аэропортом Пафоса, в 8 км от Coral Bay. Вид на море с крыши (закаты). Статус цен: продано (sold).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -124,6 +127,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.794851,32.406044" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -226,6 +230,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.794851,32.406044],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.794851,32.406044]).addTo(map).bindPopup("Alexander Gardens" + gmapsLink);
+
+
 
 });
 </script>

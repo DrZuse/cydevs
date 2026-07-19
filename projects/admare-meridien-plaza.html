@@ -45,6 +45,9 @@
     <p>Meridien Plaza — анонсированный многофункциональный комплекс резиденций и коммерческих площадей в премиальном прибрежном районе восточного Лимассола, рядом с 5-звёздочным курортом Parklane (бывший Le Méridien) и яхтенной мариной, около 500 метров от моря. Проект предусматривает два средневысотных жилых блока с бассейнами, спа и спортзалами, публичные пространства, магазины и бутики, шоурумы и паркинг более чем на 800 машин; для резиденций заявлен собственный 5-звёздочный консьерж-сервис. Планировки и цены не опубликованы; на сайте — страница-тизер, координаты ориентировочные (по отелю Parklane).</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -75,6 +78,7 @@
 
     <h2>Расположение</h2>
     <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.714977,33.175458" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -144,6 +148,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.714977,33.175458],13);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.circle([34.714977,33.175458],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Meridien Plaza" + ' (примерно)' + gmapsLink);
+
+
 
 });
 </script>

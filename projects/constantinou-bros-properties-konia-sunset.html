@@ -45,6 +45,9 @@
     <p>Konia Sunset — небольшой эксклюзивный проект из 3 вилл с двумя и тремя спальнями в впечатляющей локации в деревне Кония с изысканными панорамными видами на море. Виллы построены по высоким стандартам: главная спальня с собственной ванной комнатой, камин, отделанный камнем, и частный сад. Тихое расположение с видом на Средиземное море и близость к городу Пафос.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -165,6 +168,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.784981,32.466032" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -266,6 +270,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.784981,32.466032],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.784981,32.466032]).addTo(map).bindPopup("Konia Sunset" + gmapsLink);
+
+
 
 });
 </script>

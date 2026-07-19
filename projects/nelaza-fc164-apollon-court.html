@@ -45,6 +45,9 @@
     <p>Жилой дом FC164 Apollon Court в районе Apollon (Nicosia). Всего 8 юнитов: 2 продано, 6 свободно. Координаты — с карты застройщика.</p>
     <p class="muted">Проект находится на стадии строительства. Упомянуты: гарантия на титулы, система напора воды, солнечный водонагреватель, возможность установки частных фотоэлектрических панелей, электрического отопления и кондиционирования.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -253,6 +256,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.1720712,33.3849248" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -357,6 +361,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.1720712,33.3849248],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.1720712,33.3849248]).addTo(map).bindPopup("FC164 Apollon Court" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Quattro Residences — приватный люкс-дом всего на 4 квартиры в сердце туристического района Ермасойи (Лимассол), 250 м до пляжа. Здание сдано; застройщик продаёт resale-квартиры с готовыми титулами: две с 2 спальнями по €475 000 и пентхаус с 3 спальнями, руф-гарденом и бассейном за €1 200 000.</p>
     <p class="muted">Здание сдано (Complete). В продаже от застройщика 3 resale-юнита с титулами: Flat 101, Flat 102 (по €475 000) и пентхаус 3сп (€1 200 000, руф-гарден 110 м² с бассейном). Четвёртая квартира (3сп) продана.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -168,6 +171,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.7007696,33.0941194" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -278,6 +282,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.7007696,33.0941194],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.7007696,33.0941194]).addTo(map).bindPopup("Quattro Residences" + gmapsLink);
+
+
 
 });
 </script>

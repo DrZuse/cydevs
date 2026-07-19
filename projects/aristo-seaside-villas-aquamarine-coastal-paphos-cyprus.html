@@ -45,6 +45,9 @@
     <p>Aquamarine Villas - это современный прибрежный комплекс с виллами на 3, 4 и 5 спален в Пафосе. Виллы спроектированы на больших участках и оснащены большими террасами и частными бассейнами.</p>
     <p class="muted">Проект Aquamarine Coastal Villas — современное прибрежное развитие вилл с 3-5 спальнями в Пафосе. Виллы расположены на больших участках, имеют большие террасы и частные бассейны. Энергоэффективность классов B+ и A. Цены указаны без НДС (+19%).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -780,6 +783,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.73474722,32.45472222" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -883,6 +887,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.73474722,32.45472222],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.73474722,32.45472222]).addTo(map).bindPopup("Aquamarine Coastal Villas" + gmapsLink);
+
+
 
 });
 </script>

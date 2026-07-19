@@ -45,6 +45,9 @@
     <p>Отдельно стоящие виллы с 5 спальнями прямо на берегу моря в Ормидии, на возвышенности с панорамным видом на море, с подогреваемым бассейном в форме почки и фотовольтаическими панелями. Полная приватность, подходят как для отдыха, так и для постоянного проживания. В 15 минутах от центра Ларнаки и набережной Финикудес, в 20 минутах от аэропорта, в 200 м от рыбацкой гавани Ксилофагу. По данным на июль 2026 в продаже вилла с 5 спальнями (240 м²).</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -130,6 +133,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.978788,33.783195" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -232,6 +236,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.978788,33.783195],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.978788,33.783195]).addTo(map).bindPopup("Beach Front Ormidia Villa" + gmapsLink);
+
+
 
 });
 </script>

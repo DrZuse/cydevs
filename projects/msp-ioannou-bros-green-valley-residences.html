@@ -45,6 +45,9 @@
     <p>Green Valley Residences — реализованный жилой проект застройщика MSP Ioannou Bros в Лимассоле, входящий в портфель завершённых объектов компании.</p>
     <p class="muted">Проект Green Valley Residences расположен в районе Trachoni, Limassol. Состоит из трех блоков (A, B, C) люксовых апартаментов. Статус: блоки B и C доступны. Застройщик MSP Ioannou Bros, основана в 1987 году. На сайте представлена брошюра на английском языке. Детальные планы этажей и ценовые листы не найдены на странице.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -1226,6 +1229,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.649972,32.960314" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -1327,6 +1331,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.649972,32.960314],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.649972,32.960314]).addTo(map).bindPopup("Green Valley Residences" + gmapsLink);
+
+
 
 });
 </script>

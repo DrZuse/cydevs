@@ -45,6 +45,9 @@
     <p>Topos Residences — новейший проект в курорте Minthis, представляющий собой дома курортного типа. Архитектура отличается парящей крышей-бабочкой и использованием натуральных материалов ручной работы.</p>
     <p class="muted">Проект Topos Residences в курорте Minthis. Представляет собой виллы с индивидуальным дизайном (Strato, Nimbus, Alto, Skye, Cirro) с инфинити-бассейнами, панорамными видами на горы, бабочьими крышами, натуральными материалами. Энергокласс A. Площади 240-360 кв.м, 3-5 спален. Видео: https://youtu.be/VooArwpo7VM.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -227,6 +230,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.824796,32.498031" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -328,6 +332,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.824796,32.498031],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.824796,32.498031]).addTo(map).bindPopup("Topos Residences" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>2-комнатные апартаменты в районе Mackenzie в Ларнаке, в пешей доступности от пляжа и ресторанов. Девятый проект застройщика в данном районе.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -115,6 +118,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.893077,33.636965" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -217,6 +221,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.893077,33.636965],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.893077,33.636965]).addTo(map).bindPopup("Plus 77 - Mackenzie" + gmapsLink);
+
+
 
 });
 </script>

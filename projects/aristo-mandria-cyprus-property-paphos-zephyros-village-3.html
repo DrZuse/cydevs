@@ -45,6 +45,9 @@
     <p>Zephyros Village 3 - это жилой комплекс в Мандрии, предлагающий традиционные средиземноморские и современные 3- и 4-спальные виллы, а также 2- и 3-спальные полувиллы. Все резиденции окружены красивыми пейзажами и имеют просторные наружные территории.</p>
     <p class="muted">Проект сочетает традиционное средиземноморское и современное дизайны. Виллы с 3-4 спальнями и полуотсоединенные дома с 2-3 спальнями. Все резиденции имеют просторные открытые территории и закрытые веранды. Энергоэффективность класса B+. Расположен в деревне Мандрия, район Пафос.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -831,6 +834,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.709833,32.529861" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -932,6 +936,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.709833,32.529861],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.709833,32.529861]).addTo(map).bindPopup("Zephyros Village 3" + gmapsLink);
+
+
 
 });
 </script>

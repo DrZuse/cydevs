@@ -45,6 +45,9 @@
     <p>Velaro Homes — коллекция из 19 вилл класса люкс в районе Sea Caves (Пейя, Пафос) с 3 и 4 спальнями на участках от 315 до 765 м². В каждой вилле: частный бассейн, водяной тёплый пол, скрытая VRV-система охлаждения, фотоэлектрическая система 10.1 кВт, зарядка для электромобиля, сигнализация и видеонаблюдение. Итальянская керамическая плитка, энергоэффективность класса A. Проект подходит под кипрскую программу ПМЖ. Сроки сдачи — по запросу.</p>
     
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -140,6 +143,7 @@
     
 
     <h2>Расположение</h2>
+    
     
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.885563,32.359511" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
@@ -244,6 +248,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.885563,32.359511],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.885563,32.359511]).addTo(map).bindPopup("Velaro Homes" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Эксклюзивная коллекция гольф-вилл Royal Residences в средиземноморском стиле в составе курорта Venus Rock Golf Resort. Предлагает виллы с 3, 4 и 5 спальнями на больших участках с собственными бассейнами, качественной отделкой и премиальными спецификациями. Виллы расположены непосредственно над чемпионским полем для гольфа Secret Valley, что обеспечивает виды на грины и близость к клубному дому. Проект ориентирован на состоятельных покупателей, любителей гольфа и инвесторов.</p>
     <p class="muted">Курорт Venus Rock Golf Resort, Пафос. Виллы 3-5 спален, площадь участка 1011–1560 м², крытая площадь 197.91–309.50 м². Все виллы с собственными частными бассейнами. Цены от €1,125,000 +VAT. Энергоэффективность класса B. Рядом чемпионский гольф-курс Secret Valley.</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -474,6 +477,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.699083,32.602306" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -575,6 +579,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([34.699083,32.602306],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([34.699083,32.602306]).addTo(map).bindPopup("Royal Residences (Venus Rock)" + gmapsLink);
+
+
 
 });
 </script>

@@ -45,6 +45,9 @@
     <p>Armonia (#78) — 2-этажный дом в одном из самых динамично развивающихся районов Никосии, на границе со Строволосом и Латсией, недалеко от стадиона GSP (улица Theofilou Georgiadi, Лакатамия). Детская площадка на территории, больше одного паркоместа по запросу. В продаже 4 из 10 двухспальных квартир (от €180.000+VAT).</p>
     <p class="muted">Юнит-таблица сайта (CMS ForSale): 4 доступно, 6 продано; всего в проекте 10 квартир (проверено 2026-07-16).</p>
 
+    
+    
+
     <h2>Характеристики</h2>
     
     
@@ -256,6 +259,7 @@
 
     <h2>Расположение</h2>
     
+    
     <div id="map"></div>
     <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.1042125,33.3371719" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
@@ -360,6 +364,8 @@ document.addEventListener('DOMContentLoaded',function(){
   var map=L.map('map').setView([35.1042125,33.3371719],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
   L.marker([35.1042125,33.3371719]).addTo(map).bindPopup("Armonia (#78)" + gmapsLink);
+
+
 
 });
 </script>
