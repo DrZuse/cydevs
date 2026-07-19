@@ -924,7 +924,7 @@ This exclusive residential project offers a range of thoughtfully designed homes
     
     
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.7246847,33.0667444" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://earth.google.com/web/search/34.7246847,33.0667444" target="_blank" rel="noopener">Открыть в Google Earth</a></p>
   </div>
 
   <aside>
@@ -1030,7 +1030,7 @@ This exclusive residential project offers a range of thoughtfully designed homes
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.7246847,33.0667444" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+  var gmapsLink='<br><a href="https://earth.google.com/web/search/34.7246847,33.0667444" target="_blank" rel="noopener">Открыть в Google Earth</a>';
 
   var map=L.map('map').setView([34.7246847,33.0667444],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);

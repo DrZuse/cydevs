@@ -429,7 +429,7 @@ With developments in Universal enjoying higher rental yields and strong capital 
     
     
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.757395,32.429829" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://earth.google.com/web/search/34.757395,32.429829" target="_blank" rel="noopener">Открыть в Google Earth</a></p>
   </div>
 
   <aside>
@@ -529,7 +529,7 @@ With developments in Universal enjoying higher rental yields and strong capital 
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.757395,32.429829" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+  var gmapsLink='<br><a href="https://earth.google.com/web/search/34.757395,32.429829" target="_blank" rel="noopener">Открыть в Google Earth</a>';
 
   var map=L.map('map').setView([34.757395,32.429829],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);

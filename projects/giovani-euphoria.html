@@ -470,7 +470,7 @@ Contact us today to find out more about our new apartment project and book your 
     
     
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=35.04779,33.986426" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://earth.google.com/web/search/35.04779,33.986426" target="_blank" rel="noopener">Открыть в Google Earth</a></p>
   </div>
 
   <aside>
@@ -568,7 +568,7 @@ Contact us today to find out more about our new apartment project and book your 
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=35.04779,33.986426" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+  var gmapsLink='<br><a href="https://earth.google.com/web/search/35.04779,33.986426" target="_blank" rel="noopener">Открыть в Google Earth</a>';
 
   var map=L.map('map').setView([35.04779,33.986426],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);

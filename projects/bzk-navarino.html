@@ -111,7 +111,7 @@ Whether you&#39;re relaxing in the stunning rooftop pool, or enjoying a peaceful
     
     <p class="muted" style="margin:4px 0">Метка — из объявления на <a href="https://www.bazaraki.com/new-buildings/287-navarino/" target="_blank" rel="noopener">bazaraki.com</a> (точной метки на сайте застройщика нет).</p>
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.9191168143321,33.62682447450481" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://earth.google.com/web/search/34.9191168143321,33.62682447450481" target="_blank" rel="noopener">Открыть в Google Earth</a></p>
   </div>
 
   <aside>
@@ -174,7 +174,7 @@ Whether you&#39;re relaxing in the stunning rooftop pool, or enjoying a peaceful
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.9191168143321,33.62682447450481" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+  var gmapsLink='<br><a href="https://earth.google.com/web/search/34.9191168143321,33.62682447450481" target="_blank" rel="noopener">Открыть в Google Earth</a>';
 
   var map=L.map('map').setView([34.9191168143321,33.62682447450481],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);

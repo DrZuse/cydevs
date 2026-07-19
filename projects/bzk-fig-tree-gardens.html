@@ -141,7 +141,7 @@ Fig Tree Gardens offers the perfect combination of modern living, tranquility, a
     
     <p class="muted" style="margin:4px 0">Метка — из объявления на <a href="https://www.bazaraki.com/new-buildings/280-fig_tree_gardens/" target="_blank" rel="noopener">bazaraki.com</a> (точной метки на сайте застройщика нет).</p>
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://www.google.com/maps/search/?api=1&query=34.65878443833937,33.00499289815052" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://earth.google.com/web/search/34.65878443833937,33.00499289815052" target="_blank" rel="noopener">Открыть в Google Earth</a></p>
   </div>
 
   <aside>
@@ -204,7 +204,7 @@ Fig Tree Gardens offers the perfect combination of modern living, tranquility, a
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://www.google.com/maps/search/?api=1&query=34.65878443833937,33.00499289815052" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+  var gmapsLink='<br><a href="https://earth.google.com/web/search/34.65878443833937,33.00499289815052" target="_blank" rel="noopener">Открыть в Google Earth</a>';
 
   var map=L.map('map').setView([34.65878443833937,33.00499289815052],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
