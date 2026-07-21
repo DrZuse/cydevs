@@ -139,7 +139,7 @@ The penthouse units also include a private roof garden.</p></details>
     
     <p class="muted" style="margin:4px 0">Метка — из объявления на <a href="https://www.bazaraki.com/new-buildings/46-charm_31/" target="_blank" rel="noopener">bazaraki.com</a> (точной метки на сайте застройщика нет).</p>
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://earth.google.com/web/search/35.1103712342128,33.293725245526026" target="_blank" rel="noopener">Открыть в Google Earth</a></p>
+    <p style="margin:6px 0 0">🌍 <a href="https://earth.google.com/web/search/35.1103712342128,33.293725245526026" target="_blank" rel="noopener">Открыть в Google Earth</a> · 🗺️ <a href="https://www.google.com/maps/search/?api=1&amp;query=35.1103712342128,33.293725245526026" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -207,7 +207,7 @@ The penthouse units also include a private roof garden.</p></details>
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://earth.google.com/web/search/35.1103712342128,33.293725245526026" target="_blank" rel="noopener">Открыть в Google Earth</a>';
+  var gmapsLink='<br><a href="https://earth.google.com/web/search/35.1103712342128,33.293725245526026" target="_blank" rel="noopener">Открыть в Google Earth</a><br><a href="https://www.google.com/maps/search/?api=1&query=35.1103712342128,33.293725245526026" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
   var map=L.map('map').setView([35.1103712342128,33.293725245526026],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);

@@ -364,7 +364,7 @@ The interior of each villa is designed in a way that combines the interior with 
     
     
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://earth.google.com/web/search/35.06049,34.00057" target="_blank" rel="noopener">Открыть в Google Earth</a></p>
+    <p style="margin:6px 0 0">🌍 <a href="https://earth.google.com/web/search/35.06049,34.00057" target="_blank" rel="noopener">Открыть в Google Earth</a> · 🗺️ <a href="https://www.google.com/maps/search/?api=1&amp;query=35.06049,34.00057" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -467,7 +467,7 @@ The interior of each villa is designed in a way that combines the interior with 
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://earth.google.com/web/search/35.06049,34.00057" target="_blank" rel="noopener">Открыть в Google Earth</a>';
+  var gmapsLink='<br><a href="https://earth.google.com/web/search/35.06049,34.00057" target="_blank" rel="noopener">Открыть в Google Earth</a><br><a href="https://www.google.com/maps/search/?api=1&query=35.06049,34.00057" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
   var map=L.map('map').setView([35.06049,34.00057],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);

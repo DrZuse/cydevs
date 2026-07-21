@@ -123,7 +123,7 @@ Set in a prime residential neighborhood surrounded by luxury homes and modern de
     
     <p class="muted" style="margin:4px 0">Метка — из объявления на <a href="https://www.bazaraki.com/new-buildings/353-aquamarine_diamond_residence/" target="_blank" rel="noopener">bazaraki.com</a> (точной метки на сайте застройщика нет).</p>
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://earth.google.com/web/search/35.10235023522972,33.38840397646798" target="_blank" rel="noopener">Открыть в Google Earth</a></p>
+    <p style="margin:6px 0 0">🌍 <a href="https://earth.google.com/web/search/35.10235023522972,33.38840397646798" target="_blank" rel="noopener">Открыть в Google Earth</a> · 🗺️ <a href="https://www.google.com/maps/search/?api=1&amp;query=35.10235023522972,33.38840397646798" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -191,7 +191,7 @@ Set in a prime residential neighborhood surrounded by luxury homes and modern de
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://earth.google.com/web/search/35.10235023522972,33.38840397646798" target="_blank" rel="noopener">Открыть в Google Earth</a>';
+  var gmapsLink='<br><a href="https://earth.google.com/web/search/35.10235023522972,33.38840397646798" target="_blank" rel="noopener">Открыть в Google Earth</a><br><a href="https://www.google.com/maps/search/?api=1&query=35.10235023522972,33.38840397646798" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
   var map=L.map('map').setView([35.10235023522972,33.38840397646798],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);

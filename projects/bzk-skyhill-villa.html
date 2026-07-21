@@ -113,7 +113,7 @@ The swimming pool is 14 meters long and it&#39;s dressed with turquoise tone-col
     
     <p class="muted" style="margin:4px 0">Метка — из объявления на <a href="https://www.bazaraki.com/new-buildings/139-skyhill_villa/" target="_blank" rel="noopener">bazaraki.com</a> (точной метки на сайте застройщика нет).</p>
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://earth.google.com/web/search/34.72584915634632,33.0904141650752" target="_blank" rel="noopener">Открыть в Google Earth</a></p>
+    <p style="margin:6px 0 0">🌍 <a href="https://earth.google.com/web/search/34.72584915634632,33.0904141650752" target="_blank" rel="noopener">Открыть в Google Earth</a> · 🗺️ <a href="https://www.google.com/maps/search/?api=1&amp;query=34.72584915634632,33.0904141650752" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -180,7 +180,7 @@ The swimming pool is 14 meters long and it&#39;s dressed with turquoise tone-col
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://earth.google.com/web/search/34.72584915634632,33.0904141650752" target="_blank" rel="noopener">Открыть в Google Earth</a>';
+  var gmapsLink='<br><a href="https://earth.google.com/web/search/34.72584915634632,33.0904141650752" target="_blank" rel="noopener">Открыть в Google Earth</a><br><a href="https://www.google.com/maps/search/?api=1&query=34.72584915634632,33.0904141650752" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
   var map=L.map('map').setView([34.72584915634632,33.0904141650752],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);

@@ -268,7 +268,7 @@ The modern design offers spacious layouts, landscaped gardens, and secure, guard
     
     
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://earth.google.com/web/search/34.700664520264,33.071506500244" target="_blank" rel="noopener">Открыть в Google Earth</a></p>
+    <p style="margin:6px 0 0">🌍 <a href="https://earth.google.com/web/search/34.700664520264,33.071506500244" target="_blank" rel="noopener">Открыть в Google Earth</a> · 🗺️ <a href="https://www.google.com/maps/search/?api=1&amp;query=34.700664520264,33.071506500244" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -368,7 +368,7 @@ The modern design offers spacious layouts, landscaped gardens, and secure, guard
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://earth.google.com/web/search/34.700664520264,33.071506500244" target="_blank" rel="noopener">Открыть в Google Earth</a>';
+  var gmapsLink='<br><a href="https://earth.google.com/web/search/34.700664520264,33.071506500244" target="_blank" rel="noopener">Открыть в Google Earth</a><br><a href="https://www.google.com/maps/search/?api=1&query=34.700664520264,33.071506500244" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
   var map=L.map('map').setView([34.700664520264,33.071506500244],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
