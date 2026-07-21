@@ -278,7 +278,7 @@ Choose from four studios, eight 1-bed or four 2-beds apartments, all designed to
     
     
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://earth.google.com/web/search/34.757666,32.497504" target="_blank" rel="noopener">Открыть в Google Earth</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://earth.google.com/web/search/34.750278,32.468833" target="_blank" rel="noopener">Открыть в Google Earth</a></p>
   </div>
 
   <aside>
@@ -369,7 +369,7 @@ Choose from four studios, eight 1-bed or four 2-beds apartments, all designed to
 </div>
 
 <div class="foot">
-  Данные обновлены: 2026-07-20. Дашборд застройщиков жилой недвижимости Кипра.
+  Данные обновлены: 2026-07-21. Дашборд застройщиков жилой недвижимости Кипра.
   Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
 </div>
 </main>
@@ -380,18 +380,18 @@ Choose from four studios, eight 1-bed or four 2-beds apartments, all designed to
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://earth.google.com/web/search/34.757666,32.497504" target="_blank" rel="noopener">Открыть в Google Earth</a>';
+  var gmapsLink='<br><a href="https://earth.google.com/web/search/34.750278,32.468833" target="_blank" rel="noopener">Открыть в Google Earth</a>';
 
-  var map=L.map('map').setView([34.757666,32.497504],15);
+  var map=L.map('map').setView([34.750278,32.468833],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([34.757666,32.497504]).addTo(map).bindPopup("La Bella Apartments" + gmapsLink);
+  L.marker([34.750278,32.468833]).addTo(map).bindPopup("La Bella Apartments" + gmapsLink);
 
 
 
   // вторая метка — из объявления bazaraki (расходится с меткой застройщика)
   L.circleMarker([34.749938811567766,32.4693468939894],{radius:9,color:'#777',fillColor:'#999',fillOpacity:0.7})
     .addTo(map).bindPopup('Метка Bazaraki (2712 м от метки застройщика)<br><a href="https://www.bazaraki.com/new-buildings/61-la_bella/" target="_blank" rel="noopener">Открыть объявление</a>');
-  map.fitBounds(L.latLngBounds([[34.757666,32.497504],[34.749938811567766,32.4693468939894]]).pad(0.35));
+  map.fitBounds(L.latLngBounds([[34.750278,32.468833],[34.749938811567766,32.4693468939894]]).pad(0.35));
 
 });
 </script>

@@ -128,8 +128,6 @@ The project consists of just 9 spacious and elegantly designed houses, creating 
 The price includes provisions for an alarm system, entrance gate, intercom, and a photovoltaic system, with additional provisions for an electric car charger and BBQ area. The project also offers the option for a private swimming pool and roof garden, enhancing the outdoor living experience.</p></details>
       
       
-      <p class="small muted" style="margin:8px 0 0">📍 Гео-метка bazaraki расходится с меткой застройщика на 236 м — на карте ниже показаны обе (серая — bazaraki).</p>
-      
     </div>
     
 
@@ -330,7 +328,7 @@ The price includes provisions for an alarm system, entrance gate, intercom, and 
     
     
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://earth.google.com/web/search/34.818318,32.44836" target="_blank" rel="noopener">Открыть в Google Earth</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://earth.google.com/web/search/34.818333,32.450944" target="_blank" rel="noopener">Открыть в Google Earth</a></p>
   </div>
 
   <aside>
@@ -421,7 +419,7 @@ The price includes provisions for an alarm system, entrance gate, intercom, and 
 </div>
 
 <div class="foot">
-  Данные обновлены: 2026-07-20. Дашборд застройщиков жилой недвижимости Кипра.
+  Данные обновлены: 2026-07-21. Дашборд застройщиков жилой недвижимости Кипра.
   Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
 </div>
 </main>
@@ -432,18 +430,13 @@ The price includes provisions for an alarm system, entrance gate, intercom, and 
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://earth.google.com/web/search/34.818318,32.44836" target="_blank" rel="noopener">Открыть в Google Earth</a>';
+  var gmapsLink='<br><a href="https://earth.google.com/web/search/34.818333,32.450944" target="_blank" rel="noopener">Открыть в Google Earth</a>';
 
-  var map=L.map('map').setView([34.818318,32.44836],15);
+  var map=L.map('map').setView([34.818333,32.450944],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([34.818318,32.44836]).addTo(map).bindPopup("Uptown Luxury Villas" + gmapsLink);
+  L.marker([34.818333,32.450944]).addTo(map).bindPopup("Uptown Luxury Villas" + gmapsLink);
 
 
-
-  // вторая метка — из объявления bazaraki (расходится с меткой застройщика)
-  L.circleMarker([34.81834337012657,32.45094135395152],{radius:9,color:'#777',fillColor:'#999',fillOpacity:0.7})
-    .addTo(map).bindPopup('Метка Bazaraki (236 м от метки застройщика)<br><a href="https://www.bazaraki.com/new-buildings/389-uptown_residences/" target="_blank" rel="noopener">Открыть объявление</a>');
-  map.fitBounds(L.latLngBounds([[34.818318,32.44836],[34.81834337012657,32.45094135395152]]).pad(0.35));
 
 });
 </script>

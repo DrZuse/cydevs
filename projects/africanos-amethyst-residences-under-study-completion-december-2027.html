@@ -104,8 +104,6 @@ The project will have an energy efficiency of grade “A” since photovoltaic p
 The project is expected to be completed BEFORE December 2027.</p></details>
       
       
-      <p class="small muted" style="margin:8px 0 0">📍 Гео-метка bazaraki расходится с меткой застройщика на 238 м — на карте ниже показаны обе (серая — bazaraki).</p>
-      
     </div>
     
 
@@ -343,7 +341,7 @@ The project is expected to be completed BEFORE December 2027.</p></details>
     
     
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://earth.google.com/web/search/34.913036,33.623343" target="_blank" rel="noopener">Открыть в Google Earth</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://earth.google.com/web/search/34.913028,33.625917" target="_blank" rel="noopener">Открыть в Google Earth</a></p>
   </div>
 
   <aside>
@@ -434,7 +432,7 @@ The project is expected to be completed BEFORE December 2027.</p></details>
 </div>
 
 <div class="foot">
-  Данные обновлены: 2026-07-20. Дашборд застройщиков жилой недвижимости Кипра.
+  Данные обновлены: 2026-07-21. Дашборд застройщиков жилой недвижимости Кипра.
   Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
 </div>
 </main>
@@ -445,18 +443,13 @@ The project is expected to be completed BEFORE December 2027.</p></details>
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://earth.google.com/web/search/34.913036,33.623343" target="_blank" rel="noopener">Открыть в Google Earth</a>';
+  var gmapsLink='<br><a href="https://earth.google.com/web/search/34.913028,33.625917" target="_blank" rel="noopener">Открыть в Google Earth</a>';
 
-  var map=L.map('map').setView([34.913036,33.623343],15);
+  var map=L.map('map').setView([34.913028,33.625917],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([34.913036,33.623343]).addTo(map).bindPopup("Amethyst Residences" + gmapsLink);
+  L.marker([34.913028,33.625917]).addTo(map).bindPopup("Amethyst Residences" + gmapsLink);
 
 
-
-  // вторая метка — из объявления bazaraki (расходится с меткой застройщика)
-  L.circleMarker([34.91325594665513,33.6259393782246],{radius:9,color:'#777',fillColor:'#999',fillOpacity:0.7})
-    .addTo(map).bindPopup('Метка Bazaraki (238 м от метки застройщика)<br><a href="https://www.bazaraki.com/new-buildings/114-amethyst_residences/" target="_blank" rel="noopener">Открыть объявление</a>');
-  map.fitBounds(L.latLngBounds([[34.913036,33.623343],[34.91325594665513,33.6259393782246]]).pad(0.35));
 
 });
 </script>

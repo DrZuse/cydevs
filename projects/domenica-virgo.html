@@ -72,8 +72,6 @@ The modern architectural approach blends the development seamlessly with the nat
 Whether you are seeking an investment opportunity or a private residence, VIRGO is the ideal choice.</p></details>
       
       
-      <p class="small muted" style="margin:8px 0 0">📍 Гео-метка bazaraki расходится с меткой застройщика на 231 м — на карте ниже показаны обе (серая — bazaraki).</p>
-      
     </div>
     
 
@@ -257,7 +255,7 @@ Whether you are seeking an investment opportunity or a private residence, VIRGO 
     
     
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://earth.google.com/web/search/34.799268,32.409722" target="_blank" rel="noopener">Открыть в Google Earth</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://earth.google.com/web/search/34.799278,32.412306" target="_blank" rel="noopener">Открыть в Google Earth</a></p>
   </div>
 
   <aside>
@@ -348,7 +346,7 @@ Whether you are seeking an investment opportunity or a private residence, VIRGO 
 </div>
 
 <div class="foot">
-  Данные обновлены: 2026-07-20. Дашборд застройщиков жилой недвижимости Кипра.
+  Данные обновлены: 2026-07-21. Дашборд застройщиков жилой недвижимости Кипра.
   Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
 </div>
 </main>
@@ -359,18 +357,13 @@ Whether you are seeking an investment opportunity or a private residence, VIRGO 
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://earth.google.com/web/search/34.799268,32.409722" target="_blank" rel="noopener">Открыть в Google Earth</a>';
+  var gmapsLink='<br><a href="https://earth.google.com/web/search/34.799278,32.412306" target="_blank" rel="noopener">Открыть в Google Earth</a>';
 
-  var map=L.map('map').setView([34.799268,32.409722],15);
+  var map=L.map('map').setView([34.799278,32.412306],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([34.799268,32.409722]).addTo(map).bindPopup("Virgo Villas" + gmapsLink);
+  L.marker([34.799278,32.412306]).addTo(map).bindPopup("Virgo Villas" + gmapsLink);
 
 
-
-  // вторая метка — из объявления bazaraki (расходится с меткой застройщика)
-  L.circleMarker([34.79937364519858,32.412254000000004],{radius:9,color:'#777',fillColor:'#999',fillOpacity:0.7})
-    .addTo(map).bindPopup('Метка Bazaraki (231 м от метки застройщика)<br><a href="https://www.bazaraki.com/new-buildings/392-virgo/" target="_blank" rel="noopener">Открыть объявление</a>');
-  map.fitBounds(L.latLngBounds([[34.799268,32.409722],[34.79937364519858,32.412254000000004]]).pad(0.35));
 
 });
 </script>

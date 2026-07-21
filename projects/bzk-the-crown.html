@@ -141,9 +141,9 @@ Our stunning building offers a selection of apartments, including elegant 1 and 
 
     <h2>Расположение</h2>
     
-    <p class="muted" style="margin:4px 0">Метка — из объявления на <a href="https://www.bazaraki.com/new-buildings/156-the_crown/" target="_blank" rel="noopener">bazaraki.com</a> (точной метки на сайте застройщика нет).</p>
+    
     <div id="map"></div>
-    <p style="margin:6px 0 0">🗺️ <a href="https://earth.google.com/web/search/34.717291510407094,33.053782186506915" target="_blank" rel="noopener">Открыть в Google Earth</a></p>
+    <p style="margin:6px 0 0">🗺️ <a href="https://earth.google.com/web/search/34.717,33.05375" target="_blank" rel="noopener">Открыть в Google Earth</a></p>
   </div>
 
   <aside>
@@ -200,7 +200,7 @@ Our stunning building offers a selection of apartments, including elegant 1 and 
 </div>
 
 <div class="foot">
-  Данные обновлены: 2026-07-20. Дашборд застройщиков жилой недвижимости Кипра.
+  Данные обновлены: 2026-07-21. Дашборд застройщиков жилой недвижимости Кипра.
   Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
 </div>
 </main>
@@ -211,11 +211,11 @@ Our stunning building offers a selection of apartments, including elegant 1 and 
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://earth.google.com/web/search/34.717291510407094,33.053782186506915" target="_blank" rel="noopener">Открыть в Google Earth</a>';
+  var gmapsLink='<br><a href="https://earth.google.com/web/search/34.717,33.05375" target="_blank" rel="noopener">Открыть в Google Earth</a>';
 
-  var map=L.map('map').setView([34.717291510407094,33.053782186506915],15);
+  var map=L.map('map').setView([34.717,33.05375],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([34.717291510407094,33.053782186506915]).addTo(map).bindPopup("THE Crown" + gmapsLink);
+  L.marker([34.717,33.05375]).addTo(map).bindPopup("THE Crown" + gmapsLink);
 
 
 
