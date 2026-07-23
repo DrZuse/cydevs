@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nine Residences, Yeroskipou · cydevs</title>
+<link rel="preconnect" href="https://unpkg.com">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+
+<link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><a href="../index.html" style="color:inherit"><span>cy</span>devs</a></div>
+  <nav class="main">
+    <a href="../index.html" class="">Обзор</a>
+    <a href="../projects.html" class="active">Проекты</a>
+    <a href="../completed.html" class="">Завершённые</a>
+    <a href="../news.html" class="">Новости</a>
+    <a href="../legal.html" class="">Суды</a>
+    <a href="../about.html" class="">О проекте</a>
+  </nav>
+  <button class="theme-btn" onclick="toggleTheme()" title="Светлая/тёмная тема">◐ Тема</button>
+</header>
+<main>
+
+<div class="crumbs"><a href="../index.html">Обзор</a> / <a href="../projects.html">Проекты</a> / Nine Residences, Yeroskipou</div>
+<h1>Nine Residences, Yeroskipou <span class="tag selling">В продаже</span></h1>
+<p class="muted">
+  <a href="../developers/collegium-developing.html">Collegium Developing</a> · 
+  Квартиры · Paphos, Yeroskipou (Geroskipou)
+</p>
+
+
+
+<div class="notice" style="margin:14px 0">
+  📷 Фото, планировки и подробности — на странице проекта у застройщика:
+  <a href="https://collegiumdeveloping.com/flats-in-paphos/" target="_blank" rel="noopener">collegiumdeveloping.com/flats-in-paphos/</a>
+</div>
+
+
+<div class="split">
+  <div>
+    <p>Nine Residences — комплекс из 9 новых квартир с 1 и 2 спальнями (56–76 м² внутренней площади + 8–12 м² веранды) в спокойном зелёном районе Героскипу рядом с археологическим парком и морем. Рассчитан на пары, покупателей меньшего жилья и инвесторов под аренду. Открыто бронирование (Now reserving), готовность — 2026 год. Цены не опубликованы. Ранее в базе значился распроданным — на актуальной версии сайта застройщика продажи открыты.</p>
+    
+
+    
+    
+
+    <h2>Характеристики</h2>
+    
+    
+    
+    
+    
+    <div class="table-wrap">
+    
+    
+    
+    
+    <table>
+      <thead><tr><th>Тип</th><th>Спальни</th><th>Площадь, м²</th><th>Этаж</th><th>Цена</th></tr></thead>
+      <tbody>
+      
+        <tr><td>apartment</td><td>1</td>
+          <td>56</td><td>—</td>
+          <td><span class="muted">по запросу (Now reserving)</span></td></tr>
+    
+        <tr><td>apartment</td><td>2</td>
+          <td>76</td><td>—</td>
+          <td><span class="muted">по запросу (Now reserving)</span></td></tr>
+    
+      </tbody>
+      
+    </table>
+    
+    </div>
+
+    
+    
+
+    
+
+    <h2>Расположение</h2>
+    <p class="muted" style="margin:4px 0">Расположение примерное — точной метки на сайте застройщика нет.</p>
+    
+    <div id="map"></div>
+    <p style="margin:6px 0 0">🌍 <a href="https://earth.google.com/web/search/34.7611753,32.4526968" target="_blank" rel="noopener">Открыть в Google Earth</a> · 🗺️ <a href="https://www.google.com/maps/search/?api=1&amp;query=34.7611753,32.4526968" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+  </div>
+
+  <aside>
+    <div class="panel">
+      <h3 style="margin-top:0">Кратко</h3>
+      <dl class="detail">
+        <dt>Цена</dt><dd>по запросу</dd>
+        <dt>Тип недвижимости</dt><dd>Квартиры</dd>
+        <dt>Стадия</dt><dd>В продаже · строится, открыто бронирование («Now reserving», Ready 2026 — сайт застройщика, проверено 2026-07-23)</dd>
+        <dt>Начало стройки</dt><dd>—</dd>
+        <dt>Завершение</dt><dd>2026</dd>
+        
+        
+        
+        
+        
+        
+      </dl>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Оснащение</h3>
+      
+      <div class="row">
+        <span class="chip on">☀ фотовольтаика: да</span>
+        <span class="chip ">♨ тёплый пол: ?</span>
+        
+        <span class="chip">паркинг</span>
+        
+        
+        
+        <span class="chip">крытая парковка</span><span class="chip">солнечные панели</span><span class="chip">подготовка под зарядку электромобилей</span><span class="chip">балкон с видом на город</span><span class="chip">гранитные кухонные столешницы</span><span class="chip">ванная при мастер-спальне</span>
+      </div>
+      
+    </div>
+    
+    
+    <div class="panel" style="margin-top:16px">
+      <h3 style="margin-top:0">Источники</h3>
+      <ul class="linklist small">
+        
+        
+        <li>✅ <a href="https://collegiumdeveloping.com/flats-in-paphos/" target="_blank" rel="noopener"><strong>collegiumdeveloping.com/flats-in-paphos/</strong></a>
+          <span class="muted">— главный источник (сайт застройщика)</span></li>
+        
+        
+      </ul>
+      
+    </div>
+    
+  </aside>
+</div>
+
+<div class="foot">
+  Данные обновлены: 2026-07-23. Дашборд застройщиков жилой недвижимости Кипра.
+  Источники и ограничения — на странице <a href="../about.html">О проекте</a>.
+</div>
+</main>
+<script src="../assets/app.js"></script>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+  if(typeof L==='undefined')return;
+  var gmapsLink='<br><a href="https://earth.google.com/web/search/34.7611753,32.4526968" target="_blank" rel="noopener">Открыть в Google Earth</a><br><a href="https://www.google.com/maps/search/?api=1&query=34.7611753,32.4526968" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+
+  var map=L.map('map').setView([34.7611753,32.4526968],13);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
+  L.circle([34.7611753,32.4526968],{radius:600,color:'#888',fillOpacity:0.15}).addTo(map).bindPopup("Nine Residences, Yeroskipou" + ' (примерно)' + gmapsLink);
+
+
+
+});
+</script>
+
+
+</body>
+</html>
