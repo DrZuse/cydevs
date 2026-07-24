@@ -278,7 +278,7 @@
     
     
     <div id="map"></div>
-    <p style="margin:6px 0 0">🌍 <a href="https://earth.google.com/web/search/35.059417,33.96952" target="_blank" rel="noopener">Открыть в Google Earth</a> · 🗺️ <a href="https://www.google.com/maps/search/?api=1&amp;query=35.059417,33.96952" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+    <p style="margin:6px 0 0">🌍 <a href="https://earth.google.com/web/search/35.059217,33.969702" target="_blank" rel="noopener">Открыть в Google Earth</a> · 🗺️ <a href="https://www.google.com/maps/search/?api=1&amp;query=35.059217,33.969702" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -346,11 +346,11 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://earth.google.com/web/search/35.059417,33.96952" target="_blank" rel="noopener">Открыть в Google Earth</a><br><a href="https://www.google.com/maps/search/?api=1&query=35.059417,33.96952" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+  var gmapsLink='<br><a href="https://earth.google.com/web/search/35.059217,33.969702" target="_blank" rel="noopener">Открыть в Google Earth</a><br><a href="https://www.google.com/maps/search/?api=1&query=35.059217,33.969702" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
-  var map=L.map('map').setView([35.059417,33.96952],15);
+  var map=L.map('map').setView([35.059217,33.969702],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([35.059417,33.96952]).addTo(map).bindPopup("Pendeli Residences" + gmapsLink);
+  L.marker([35.059217,33.969702]).addTo(map).bindPopup("Pendeli Residences" + gmapsLink);
 
 
 

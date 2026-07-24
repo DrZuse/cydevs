@@ -144,7 +144,7 @@
     
     
     <div id="map"></div>
-    <p style="margin:6px 0 0">🌍 <a href="https://earth.google.com/web/search/34.831192,32.472274" target="_blank" rel="noopener">Открыть в Google Earth</a> · 🗺️ <a href="https://www.google.com/maps/search/?api=1&amp;query=34.831192,32.472274" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
+    <p style="margin:6px 0 0">🌍 <a href="https://earth.google.com/web/search/34.831206,32.474461" target="_blank" rel="noopener">Открыть в Google Earth</a> · 🗺️ <a href="https://www.google.com/maps/search/?api=1&amp;query=34.831206,32.474461" target="_blank" rel="noopener">Открыть в Google Maps</a></p>
   </div>
 
   <aside>
@@ -241,11 +241,11 @@
 <script>
 document.addEventListener('DOMContentLoaded',function(){
   if(typeof L==='undefined')return;
-  var gmapsLink='<br><a href="https://earth.google.com/web/search/34.831192,32.472274" target="_blank" rel="noopener">Открыть в Google Earth</a><br><a href="https://www.google.com/maps/search/?api=1&query=34.831192,32.472274" target="_blank" rel="noopener">Открыть в Google Maps</a>';
+  var gmapsLink='<br><a href="https://earth.google.com/web/search/34.831206,32.474461" target="_blank" rel="noopener">Открыть в Google Earth</a><br><a href="https://www.google.com/maps/search/?api=1&query=34.831206,32.474461" target="_blank" rel="noopener">Открыть в Google Maps</a>';
 
-  var map=L.map('map').setView([34.831192,32.472274],15);
+  var map=L.map('map').setView([34.831206,32.474461],15);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(map);
-  L.marker([34.831192,32.472274]).addTo(map).bindPopup("Vikla Villas" + gmapsLink);
+  L.marker([34.831206,32.474461]).addTo(map).bindPopup("Vikla Villas" + gmapsLink);
 
 
 
